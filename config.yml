@@ -1,0 +1,10 @@
+recipe: default.v1
+language: fr
+pipeline:
+  - name: WhitespaceTokenizer
+  - name: CountVectorsFeaturizer
+  - name: DIETClassifier
+  - name: EntitySynonymMapper
+    epochs: 20
+    random_seed: 2
+    constrain_similarities: true

@@ -1,0 +1,171 @@
+
+## possible_type_compte1
+
+* verifier_types_des_comptes
+- utter_voir_type_compte
+- utter_besoin_plus_aide
+* refuser
+- utter_comme_vous_voulez
+- utter_bye
+
+
+## possible_type_compte2
+
+* saluer
+-utter_saluer
+-utter_assister
+* verifier_types_des_comptes
+- utter_voir_type_compte
+- utter_besoin_plus_aide
+* refuser
+- utter_comme_vous_voulez
+- utter_bye
+
+
+
+## possible_type_compte+création_compte1
+
+* verifier_types_des_comptes
+- utter_voir_type_compte
+- utter_besoin_plus_aide
+* Créer_compte
+-utter_créer_compte
+- utter_besoin_plus_aide
+* refuser
+- utter_comme_vous_voulez
+- utter_bye
+
+## possible_type_compte+création_compte2
+
+* saluer
+-utter_saluer
+-utter_assister
+* verifier_types_des_comptes
+- utter_voir_type_compte
+- utter_besoin_plus_aide
+* Créer_compte
+-utter_créer_compte
+- utter_besoin_plus_aide
+* refuser
+- utter_comme_vous_voulez
+- utter_bye
+
+## possible_type_compte+création_compte+ s'identifier1
+
+* verifier_types_des_comptes
+- utter_voir_type_compte
+- utter_besoin_plus_aide
+* Créer_compte
+-utter_créer_compte
+- utter_besoin_plus_aide
+* refuser
+- utter_comme_vous_voulez
+- utter_bye
+
+## possible_type_compte+création_compte+ s'identifier2
+
+* saluer
+-utter_saluer
+-utter_assister
+* verifier_types_des_comptes
+- utter_voir_type_compte
+- utter_besoin_plus_aide
+* Créer_compte
+-utter_créer_compte
+- utter_besoin_plus_aide
+* refuser
+- utter_comme_vous_voulez
+- utter_bye
+
+## Comptes_possibles+offers1
+
+* verifier_types_des_comptes
+- utter_voir_type_compte
+- utter_besoin_plus_aide
+* verifier_les_offres_et_services_bancaires
+- utter_voir_offres_et_services_banque
+* refuser
+- utter_comme_vous_voulez
+- utter_bye
+
+## Comptes_possibles+offers2
+
+* saluer
+-utter_saluer
+-utter_assister
+* verifier_types_des_comptes
+- utter_voir_type_compte
+- utter_besoin_plus_aide
+* verifier_les_offres_et_services_bancaires
+- utter_voir_offres_et_services_banque
+* refuser
+- utter_comme_vous_voulez
+- utter_bye
+
+## Comptes_possibles+offers+création_compte1
+
+* verifier_types_des_comptes
+- utter_voir_type_compte
+- utter_besoin_plus_aide
+* verifier_les_offres_et_services_bancaires
+- utter_voir_offres_et_services_banque
+* Créer_compte
+-utter_créer_compte
+- utter_besoin_plus_aide
+* refuser
+- utter_comme_vous_voulez
+- utter_bye
+
+## Comptes_possibles+offers+création_compte2
+
+* saluer
+-utter_saluer
+-utter_assister
+* verifier_types_des_comptes
+- utter_voir_type_compte
+- utter_besoin_plus_aide
+* verifier_les_offres_et_services_bancaires
+- utter_voir_offres_et_services_banque
+* Créer_compte
+-utter_créer_compte
+- utter_besoin_plus_aide
+* refuser
+- utter_comme_vous_voulez
+- utter_bye
+
+## Comptes_possibles+offers+création_compte+s'identifier1
+
+* verifier_types_des_comptes
+- utter_voir_type_compte
+- utter_besoin_plus_aide
+* verifier_les_offres_et_services_bancaires
+- utter_voir_offres_et_services_banque
+* Créer_compte
+-utter_créer_compte
+- utter_besoin_plus_aide
+* s'identifier
+-utter_s'identifier
+-utter_besoin_plus_aide
+* refuser
+- utter_comme_vous_voulez
+- utter_bye
+
+## Comptes_possibles+offers+création_compte+s'identifier2
+
+* saluer
+-utter_saluer
+-utter_assister
+* verifier_types_des_comptes
+- utter_voir_type_compte
+- utter_besoin_plus_aide
+* verifier_les_offres_et_services_bancaires
+- utter_voir_offres_et_services_banque
+* Créer_compte
+-utter_créer_compte
+- utter_besoin_plus_aide
+* s'identifier
+-utter_s'identifier
+-utter_besoin_plus_aide
+* refuser
+- utter_comme_vous_voulez
+- utter_bye

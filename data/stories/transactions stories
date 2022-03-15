@@ -1,0 +1,162 @@
+## vérifier les transactions et les revenus
+
+* les transactions et les revenus précédentes
+- s'identifier
+- utter_vérifier_épargne
+- utter_plus_aide
+* refuser
+- utter_comme_vous_voulez
+- utter_bye
+
+## vérifier les transactions et les revenus2
+
+* saluer
+- utter_salut
+- utter_assister
+* les transactions et les revenus précédentes
+-s'identifier
+-utter_vérifier_épargne
+- utter_plus_aide
+* refuser
+- utter_comme_vous_voulez
+- utter_bye
+
+## vérifier les transactions et le solde1
+
+* salut
+-utter_salut
+-utter_assister
+* precedent_transactions_et_revenus
+- utter_s'identifier
+- utter_demander_revenus
+- utter_besoin_plus_aide
+* check_soldes
+- utter_voir 
+- utter_plus_aide
+* refuser
+- utter_comme_vous_voulez
+- utter_bye
+
+## vérifier les transactions et le solde2
+
+* precedent_transactions_et_revenus
+- utter_s'identifier
+- utter_demander_revenus
+- utter_besoin_plus_aide
+* check_soldes
+- utter_voir 
+- utter_plus_aide
+* refuser
+- utter_comme_vous_voulez
+- utter_bye
+
+## vérifier les transactions et le solde + paiement_cc1
+
+* saluer
+-utter_saluer
+-utter_assister
+* precedent_transactions_et_revenus
+- utter_s'identifier
+- utter_demander_revenus
+- utter_besoin_plus_aide
+* check_soldes
+- utter_voir_solde
+- utter_plus_aide
+* refuser
+- utter_comme_vous_voulez
+- utter_bye
+
+
+## vérifier les transactions et le solde + paiement_cc2
+
+
+* precedent_transactions_et_revenus
+- utter_s'identifier
+- utter_demander_revenus
+- utter_besoin_plus_aide
+* check_soldes
+- utter_voir_balance 
+- utter_plus_aide
+* refuser
+- utter_comme_vous_voulez
+- utter_bye
+
+
+## check_tansactions+balance+pay_cc+transfert_monnaie1
+
+* precedent_transactions_et_revenus
+- utter_s'identifier
+- utter_demander_revenus
+- utter_besoin_plus_aide
+* check_soldes
+- utter_voir_balance 
+- utter_besoin_plus_assistance
+* paiement_cc
+- utter_paiement_cc
+* Transférer de l'argent
+- utter_transfert_argent
+- utter_plus_aide
+* refuser
+- utter_comme_vous_voulez
+- utter_bye
+
+
+## check_tansactions+balance+pay_cc+transfert_monnaie2
+
+* salut
+- utter_salut
+- utter_assister
+* precedent_transactions_et_revenus
+- utter_s'identifier
+- utter_demander_revenus
+- utter_besoin_plus_aide
+* check_soldes
+- utter_voir_balance 
+- utter_besoin_plus_assistance
+* paiement_cc
+- utter_paiement_cc
+* Transférer de l'argent
+- utter_transfert_argent
+- utter_plus_aide
+* refuser
+- utter_comme_vous_voulez
+- utter_bye
+
+## vérifier les transactions et le solde + paiement_cc+tranferts_monnaie + revérifier_solde1
+
+* precedent_transactions_et_revenus
+- utter_s'identifier
+- utter_demander_revenus
+- utter_besoin_plus_aide
+* vérifier_soldes
+- utter_voir_balance 
+- utter_besoin_plus_assistance
+* paiement_cc
+- utter_paiement_cc
+* Transférer de l'argent
+- utter_transfert_argent
+- utter_plus_aide
+* refuser
+- utter_comme_vous_voulez
+- utter_bye
+
+## vérifier les transactions et le solde + paiement_cc+tranferts_monnaie + revérifier_solde2
+
+* salut
+- utter_salut
+- utter_assister
+* precedent_transactions_et_revenus
+- utter_s'identifier
+- utter_demander_revenus
+- utter_besoin_plus_aide
+* vérifier_soldes
+- utter_voir_balance 
+- utter_besoin_plus_assistance
+* paiement_cc
+- utter_paiement_cc
+* Transférer de l'argent
+- utter_transfert_argent
+- utter_plus_aide
+* refuser
+- utter_comme_vous_voulez
+- utter_bye

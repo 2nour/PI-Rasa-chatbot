@@ -1,0 +1,30 @@
+version: "2.8"
+
+intents:
+- verifier_humain 
+- se_connecter 
+- verifier_types_des_comptes 
+- transferer_argent 
+- supprimer_compte 
+- verifier_le_solde 
+- demender_aide 
+- salut 
+- payer_cc 
+- transactions_et_gains_anterieurs 
+- merci
+- consulter_humain
+- credit_possible
+- nouveau_compte
+- affirmer
+- verifier_les_offres_et_services_bancaires
+- bye
+- refuser
+
+entities: 
+- somme_argent
+
+responses:
+  utter_bye:
+    - text: "au  revoir"
+  utter_salut:
+    - text: "hello"
