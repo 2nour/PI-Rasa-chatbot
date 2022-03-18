@@ -1,157 +1,155 @@
 ## Paiement_cc1
 
 * payer_cc
-- utter_s'identifier
+- utter_se_connceter
 - utter_paiement_cc
--utter_besoin_plus_d'aide
+- utter_plus_aide
 * refuser
--utter_comme_vous_voulez
--utter_bye
+- utter_comme_vous_voulez
+- utter_bye
 
 ## Paiement_cc2
 
 * salut
--utter_saluer
--utter_assister
+- utter_salut
+- utter_assister
 * paiement_cc
-- utter_s'identifier
+- utter_se_connceter
 - utter_paiement_cc
--utter_besoin_plus_d'aide
+- utter_plus_aide
 * refuser
--utter_comme_vous_voulez
--utter_bye
+- utter_comme_vous_voulez
+- utter_bye
 
 ## Paiement_cc+transfert_monnaie1
 
 
 * payer_cc
-- utter_s'identifier
+- utter_se_connceter
 - utter_paiement_cc
--utter_besoin_plus_d'aide
+- utter_plus_aide
 * transferer_argent
--utter_transfert_monnaie
--utter_besoin_plus_aide
+- utter_transfert_monnaie
+- utter_plus_aide
 * refuser
--utter_comme_vous_voulez
--utter_bye
+- utter_comme_vous_voulez
+- utter_bye
 
 
 ## Paiement_cc+transfert_monnaie2
 
 * salut
--utter_saluer
--utter_assister
+- utter_salut
+- utter_assister
 * payer_cc
-- utter_s'identifier
+- utter_se_connceter
 - utter_paiement_cc
--utter_besoin_plus_d'aide
+- utter_plus_aide
 * transferer_argent
--utter_transfert_monnaie
--utter_besoin_plus_aide
+- utter_transfert_monnaie
+- utter_plus_aide
 * refuser
--utter_comme_vous_voulez
--utter_bye
+- utter_comme_vous_voulez
+- utter_bye
 
 ## Paiement_cc + verifier_le_solde1
 
 
 * payer_cc
-- utter_s'identifier
+- utter_se_connceter
 - utter_paiement_cc
--utter_besoin_plus_d'aide
+- utter_plus_aide
 * verifier_le_solde
--utter_verifier_le_solde
--utter_besoin_plus_aide
+- utter_verifier_le_solde
+- utter_plus_aide
 * refuser
--utter_comme_vous_voulez
--utter_bye
+- utter_comme_vous_voulez
+- utter_bye
 
 ## Paiement_cc + verifier_le_solde2
 
 * salut
--utter_saluer
--utter_assister
+- utter_salut
+- utter_assister
 * payer_cc
-- utter_s'identifier
+- utter_se_connceter
 - utter_paiement_cc
--utter_besoin_plus_d'aide
+- utter_plus_aide
 * verifier_le_solde
--utter_verifier_le_solde
--utter_besoin_plus_aide
+- utter_verifier_le_solde
+- utter_plus_aide
 * refuser
--utter_comme_vous_voulez
--utter_bye
+- utter_comme_vous_voulez
+- utter_bye
 
 ## Paiement_cc + verifier_le_solde + Transfert_monnaie1
 
 
 * payer_cc
-- utter_s'identifier
+- utter_se_connceter
 - utter_paiement_cc
--utter_besoin_plus_d'aide
+- utter_plus_aide
 * verifier_le_solde
--utter_verifier_le_solde
--utter_besoin_plus_aide
+- utter_verifier_le_solde
+- utter_plus_aide
 * transferer_argent
--utter_transfert_monnaie
--utter_besoin_plus_aide
+- utter_transfert_monnaie
+- utter_plus_aide
 * refuser
--utter_comme_vous_voulez
--utter_bye
+- utter_comme_vous_voulez
+- utter_bye
 
 ## Paiement_cc + verifier_le_solde + Transfert_monnaie2
 
 * salut
--utter_saluer
--utter_assister
+- utter_salut
+- utter_assister
 * payer_cc
-- utter_s'identifier
+- utter_se_connceter
 - utter_paiement_cc
--utter_besoin_plus_d'aide
+- utter_plus_aide
 * verifier_le_solde
--utter_verifier_le_solde
--utter_besoin_plus_aide
+- utter_verifier_le_solde
+- utter_plus_aide
 * transferer_argent
--utter_transfert_monnaie
--utter_besoin_plus_aide
+- utter_transfert_monnaie
+- utter_plus_aide
 * refuser
--utter_comme_vous_voulez
--utter_bye
+- utter_comme_vous_voulez
+- utter_bye
 
 ## Paiement_cc +Transfert_monnaie + verifier_le_solde1
 
 * payer_cc
-- utter_s'identifier
+- utter_se_connceter
 - utter_paiement_cc
--utter_besoin_plus_d'aide
-
+- utter_plus_aide
 * transferer_argent
--utter_transfert_monnaie
--utter_besoin_plus_aide
+- utter_transfert_monnaie
+- utter_plus_aide
 * verifier_le_solde
--utter_verifier_le_solde
--utter_besoin_plus_aide
+- utter_verifier_le_solde
+- utter_plus_aide
 * refuser
--utter_comme_vous_voulez
--utter_bye
+- utter_comme_vous_voulez
+- utter_bye
 
 ## Paiement_cc +Transfert_monnaie + verifier_le_solde2
 
 
 * salut
--utter_saluer
--utter_assister
+- utter_salut
+- utter_assister
 * payer_cc
-- utter_s'identifier
+- utter_se_connceter
 - utter_paiement_cc
--utter_besoin_plus_d'aide
-
+- utter_plus_aide
 * transferer_argent
--utter_transfert_monnaie
--utter_besoin_plus_aide
+- utter_transfert_monnaie
+- utter_plus_aide
 * verifier_le_solde
--utter_verifier_le_solde
--utter_besoin_plus_aide
+- utter_verifier_le_solde
+- utter_plus_aide
 * refuser
--utter_comme_vous_voulez
--utter_bye
+- utter_comme_vous_voulez
+- utter_bye

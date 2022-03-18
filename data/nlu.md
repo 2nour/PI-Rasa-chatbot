@@ -166,41 +166,41 @@
 ## intent: verifier_le_solde
 - Combien d'argent est dans mon compte ?
 - Combien d'argent se trouve dans mon compte [bank](type_compte) ?
-- quel est mon [solde](montant d'argent) ?
-- quel est mon [solde actuel](montant d'argent) ?
+- quel est mon [solde](somme_argent) ?
+- quel est mon [solde actuel](somme_argent) ?
 - Que reste-t-il dans ce compte ?
 - Combien ai-je dans ce compte ?
-- Quel est le [solde](montant d'argent) dans ce compte ?
+- Quel est le [solde](somme_argent) dans ce compte ?
 - Combien d'argent reste-t-il dans ce compte ?
 - quel est mon compte [solde](somme_argent)
 - quel est mon compte [solde](somme_argent) ?
 - quel est mon compte [solde](somme_argent)
 - quel est mon compte [solde](somme_argent)
-- quel est mon compte [bancaire](type de compte) [solde](somme_argent)
+- quel est mon compte [bancaire](type_compte) [solde](somme_argent)
 - quel est le [solde](somme_argent) de mon compte [bank](type_compte) ?
-- quel est mon compte [bancaire](type de compte) [solde](somme_argent)
-- quel est mon compte [banque](type de compte) [solde](somme_argent)
-- Quel est mon [carte de crédit](type_de_compte) [solde](somme_argent)
-- Quel est mon [crédit](type de compte) [solde](somme_argent)
+- quel est mon compte [bancaire](type_compte) [solde](somme_argent)
+- quel est mon compte [banque](type_compte) [solde](somme_argent)
+- Quel est mon [carte de crédit](type_compte) [solde](somme_argent)
+- Quel est mon [crédit](type_compte) [solde](somme_argent)
 - Combien d'argent dois-je dans mes [cartes de crédit](type_compte) ?
-- Montrez-moi ma [carte de crédit](type de compte) [solde](somme_argent)
-- Quels comptes de [crédit](type_de_compte) ai-je ?
+- Montrez-moi ma [carte de crédit](type_compte) [solde](somme_argent)
+- Quels comptes de [crédit](type_compte) ai-je ?
 - Montrez-moi mes comptes [credit](type_compte)
-- Quel est le [solde](somme_argent) dans mon compte [crédit](type de compte)
+- Quel est le [solde](somme_argent) dans mon compte [crédit](type_compte)
 - Quel est mon compte [credit](type_compte) ?
 - Quel est mon [emblème](carte_credit) [card](type_compte) [balance](somme_argent)
-- Montrez-moi mon [banque de fer](carte_de_crédit) [solde](somme_argent)
+- Montrez-moi mon [banque de fer](carte_credit) [solde](somme_argent)
 - Quel est mon [banque de justice](carte_credit) [balance](somme_argent)
 - Quel est le [solde](somme_argent) sur le compte [justice bank](carte_credit) ?
 - quel est mon [emblème](carte_credit) [credit card](type_compte) [balance](somme_argent) ?
-- quel est mon [carte de crédit](type_de_compte) [solde](somme_argent) ?
-- quel est le [solde](somme_argent) de mon compte [carte de crédit](type_de_compte) ?
+- quel est mon [carte de crédit](type_compte) [solde](somme_argent) ?
+- quel est le [solde](somme_argent) de mon compte [carte de crédit](type_compte) ?
 - Quel est mon [emblème](carte_credit) [card](type_compte) [balance](somme_argent) ?
-- quel est mon [carte de crédit](type de compte) [solde](somme_argent)
-- Quel est mon [emblème](carte_de_crédit) [solde](montant-d'argent) ?
+- quel est mon [carte de crédit](type_compte) [solde](somme_argent)
+- Quel est mon [emblème](carte_credit) [solde](somme_argent) ?
 - quel est mon [emblème](carte_credit) [card](type_compte) [balance](somme_argent) ?
-- quel est le [solde](somme_argent) de ma [carte](type_de_compte) ?
-- quel est le [solde](somme_argent) de mon compte [emblème](carte_de_crédit) ?
+- quel est le [solde](somme_argent) de ma [carte](type_compte) ?
+- quel est le [solde](somme_argent) de mon compte [emblème](carte_credit) ?
 - Combien d'argent ai-je dépensé dernièrement>
 - Je devrais vérifier ma [carte de crédit]{"entity": "type_compte", "value": "credit"} [balance](somme_argent) [first](type_compte)
 - vérifier ma [carte de crédit]{"entity": "type_compte", "value": "credit"} [balance](somme_argent)
@@ -220,61 +220,61 @@
 - Solde s'il vous plait
 
 ## intent: transferer_argent
-- Je veux payer [John](PERSON)
-- Je veux transférer 100 $ à [Bob](PERSON)
-- puis-je transférer de l'argent à [Sally](PERSON)
+- Je veux payer [John](PERSONNE)
+- Je veux transférer 100 $ à [Bob](PERSONNE)
+- puis-je transférer de l'argent à [Sally](PERSONNE)
 - Je veux transférer de l'argent
 - Je veux payer quelqu'un
 - Je veux transférer de l'argent
 - Je veux payer quelqu'un
-- Je veux payer [John](PERSON)
-- Je veux transférer 100 $ à [Bob](PERSON)
+- Je veux payer [John](PERSONNE)
+- Je veux transférer 100 $ à [Bob](PERSONNE)
 - puis-je payer quelqu'un
 - J'ai besoin de transférer de l'argent à un ami
-- puis-je transférer de l'argent à ma [maman](PERSON)
-- Je veux payer [Bert](PERSON)
+- puis-je transférer de l'argent à ma [maman](PERSONNE)
+- Je veux payer [Bert](PERSONNE)
 - payer mon ami
 - Transférer de l'argent
-- Je veux transférer 100 $ à [Tommy](PERSON)
-- je veux transférer 400 $ à [Akela](PERSON)
-- Je veux payer [Paula Handy](PERSON)
+- Je veux transférer 100 $ à [Tommy](PERSONNE)
+- je veux transférer 400 $ à [Akela](PERSONNE)
+- Je veux payer [Paula Handy](PERSONNE)
 - payez Katy Parrow 40 $ s'il vous plaît
-- transférer 60 $ à [Jason Jacob](PERSON)
+- transférer 60 $ à [Jason Jacob](PERSONNE)
 - payer [Evan Oslo](PERSONNE)
-- payez [Lisa](PERSON) s'il vous plait
-- puis-je transférer de l'argent à [Kyle Gardner](PERSON) ?
+- payez [Lisa](PERSONNE) s'il vous plait
+- puis-je transférer de l'argent à [Kyle Gardner](PERSONNE) ?
 - Payer [Karen](PERSONNE) 60 Euros
 - payer [Mona](PERSONNE) 60 $
-- transférer 60 $ à [Sally](PERSON)
+- transférer 60 $ à [Sally](PERSONNE)
 - besoin de transférer de l'argent
-- Je veux être transféré à [Kelly](PERSON)
+- Je veux être transféré à [Kelly](PERSONNE)
 - Payer [Percy](PERSONNE) 50 $
-- Payer 50 $ à [Pat](PERSON)
-- Ok paye [Emma](PERSON)
-- payer [Emanuel](PERSON)
-- je veux transférer 100 $ à [Jane smith](PERSON)
-- je veux transférer 100 $ à ma [fille](PERSON)
+- Payer 50 $ à [Pat](PERSONNE)
+- Ok paye [Emma](PERSONNE)
+- payer [Emanuel](PERSONNE)
+- je veux transférer 100 $ à [Jane smith](PERSONNE)
+- je veux transférer 100 $ à ma [fille](PERSONNE)
 - je veux transférer de l'argent s'il vous plaît
 - je veux dire que je veux transférer de l'argent
 - Je dois payer un ami.
-- transférer de l'argent à [ethan oswald](PERSON)
-- transférer de l'argent à [sara](PERSON)
-- Je dois transférer de l'argent à ma grand-mère [Judith](PERSON).
-- je veux transférer de l'argent à [Latisha](PERSON)
-- Je dois effectuer un transfert urgent vers [Bob](PERSON), pouvez-vous le faire ?
-- Ahh, d'accord, donc je veux faire un transfert à [Bob](PERSON).
+- transférer de l'argent à [ethan oswald](PERSONNE)
+- transférer de l'argent à [sara](PERSONNE)
+- Je dois transférer de l'argent à ma grand-mère [Judith](PERSONNE).
+- je veux transférer de l'argent à [Latisha](PERSONNE)
+- Je dois effectuer un transfert urgent vers [Bob](PERSONNE), pouvez-vous le faire ?
+- Ahh, d'accord, donc je veux faire un transfert à [Bob](PERSONNE).
 - Puis-je transférer de l'argent à un ami ?
-- Je dois transférer de l'argent à [Jeff](PERSON), mon fils
+- Je dois transférer de l'argent à [Jeff](PERSONNE), mon fils
 - Je dois envoyer de l'argent à mon enfant
 - J'ai besoin de transférer de l'argent
-- envoyer 50 $ à [john jacob](PERSON)
+- envoyer 50 $ à [john jacob](PERSONNE)
 - Je dois transférer de l'argent à mon collègue qui a payé le déjeuner
 - Salut, j'aime envoyer de l'argent
-- J'aimerais envoyer 50 $ à [John](PERSON)
-- Bonjour, j'aimerais envoyer de l'argent à [John](PERSON)
-- Veuillez transférer 50 dollars à [Andreas](PERSON)
-- Je souhaite transférer de l'argent à [Philipp](PERSON)
-- Je souhaite transférer 50 $ à [Joschka](PERSON)
+- J'aimerais envoyer 50 $ à [John](PERSONNE)
+- Bonjour, j'aimerais envoyer de l'argent à [John](PERSONNE)
+- Veuillez transférer 50 dollars à [Andreas](PERSONNE)
+- Je souhaite transférer de l'argent à [Philipp](PERSONNE)
+- Je souhaite transférer 50 $ à [Joschka](PERSONNE)
 
 ## intent: transactions_et_gains_anterieurs
 - Montrez-moi ma liste de [transactions](transactions)
@@ -297,7 +297,7 @@
 - laissez-moi voir les options de [crédit](somme_argent)
 - Combien d'argent la banque peut-elle m'accorder comme [crédit](somme_argent) ?
 - Puis-je vérifier le [crédit](somme_argent) possible que je peux obtenir ?
-- Quel est le montant possible de [crédit](montant-d'argent) que je peux emprunter ?
+- Quel est le montant possible de [crédit](somme_argent) que je peux emprunter ?
 ## synonym: credit
 - solde
 - pret
@@ -337,10 +337,10 @@
 - compte bancaire
 
 ## intent: payer_cc
-- Je souhaite payer le [solde minimum](somme_argent) sur ma [embelm](carte_credit) [carte](type-compte)
-- Je veux payer ma [carte de crédit](type-compte)
-- Je veux payer ma [carte](type-compte)
-- Payer ma [carte](type-compte)
+- Je souhaite payer le [solde minimum](somme_argent) sur ma [embelm](carte_credit) [carte](type_compte)
+- Je veux payer ma [carte de crédit](type_compte)
+- Je veux payer ma [carte](type_compte)
+- Payer ma [carte](type_compte)
 - Je veux payer ma facture [justice bank](carte_credit)
 - Payer ma [decouvet](carte_credit)
 - Je veux payer ma facture [iron bank](carte_credit)
@@ -357,8 +357,8 @@
 - je veux payer ma [carte de crédit](type_compte)
 - Je veux payer mon [solde actuel de la carte](somme_argent) sur ma [embelm](carte_credit) [credit card](type_compte)
     carte_credit) [carte de crédit](type_compte)
-- Je souhaite payer 500 USD sur ma [carte de crédit](type de compte) dimanche
-- Je veux payer mon [balance actuelle](somme_argent) sur ma [emblem](carte_credit) [credit card](type-compte) aujourd'hui
+- Je souhaite payer 500 USD sur ma [carte de crédit](type_compte) dimanche
+- Je veux payer mon [balance actuelle](somme_argent) sur ma [emblem](carte_credit) [credit card](type_compte) aujourd'hui
 - je dois payer ma [carte de crédit](type_compte)
 - Veuillez programmer un paiement sur ma [carte de crédit](type_compte) pour le 12 avril
 - Puis-je programmer un paiement sur ma [carte de crédit](type_compte) pour demain ?
@@ -383,13 +383,11 @@
 
 ## intent: se_connecter
 - Je veux me connecter à mon [compte](compte)
-- Je souhaite me connecter à mon[compte](compte)
+- Je souhaite me connecter à mon [compte](compte)
 - Je veux me connecter
-- je veux me connecter
 - Je veux accéder à mon [compte](compte)
 
 ## intent: supprimer_compte
 - Je veux supprimer mon [compte](compte)
-- Je veux supprimer mon[compte](compte)
-- Je veux supprimer mon [compte](compte)
-- Je veux supprimer mon [compte](compte)
+- Je veux annuler mon [compte](compte)
+- Je veux retirer mon [compte](compte)

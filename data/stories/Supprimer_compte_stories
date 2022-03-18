@@ -1,7 +1,7 @@
 ## account_delete1
 * Supprimer_compte
 - utter_poser_question
-- utter_s'identifier
+- utter_se_connceter
 - utter_supprimer
 - utter_plus_aide
 * refuser
@@ -15,7 +15,7 @@
 - utter_assister
 * Supprimer_compte
 - utter_poser_question
-- utter_s'identifier
+- utter_se_connceter
 - utter_supprimer
 - utter_plus_aide
 * refuser

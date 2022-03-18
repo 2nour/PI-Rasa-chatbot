@@ -1,33 +1,33 @@
-## vérifier les transactions et les revenus
+## verifier les transactions et les revenus
 
-* les transactions et les revenus précédentes
-- s'identifier
-- utter_vérifier_épargne
+* transactions_et_gains_anterieurs
+- utter_se_connceter
+- utter_verifier_epargne
 - utter_plus_aide
 * refuser
 - utter_comme_vous_voulez
 - utter_bye
 
-## vérifier les transactions et les revenus2
-
-* saluer
-- utter_salut
-- utter_assister
-* les transactions et les revenus précédentes
--s'identifier
--utter_vérifier_épargne
-- utter_plus_aide
-* refuser
-- utter_comme_vous_voulez
-- utter_bye
-
-## vérifier les transactions et le solde1
+## verifier les transactions et les revenus2
 
 * salut
--utter_salut
--utter_assister
-* precedent_transactions_et_revenus
-- utter_s'identifier
+- utter_salut
+- utter_assister
+* transactions_et_gains_anterieurs
+- utter_se_connceter
+- utter_verifier_epargne
+- utter_plus_aide
+* refuser
+- utter_comme_vous_voulez
+- utter_bye
+
+## verifier les transactions et le solde1
+
+* salut
+- utter_salut
+- utter_assister
+* transactions_et_gains_anterieurs
+- utter_utter_se_connceter
 - utter_demander_revenus
 - utter_besoin_plus_aide
 * check_soldes
@@ -37,10 +37,10 @@
 - utter_comme_vous_voulez
 - utter_bye
 
-## vérifier les transactions et le solde2
+## verifier les transactions et le solde2
 
 * precedent_transactions_et_revenus
-- utter_s'identifier
+- utter_utter_se_connceter
 - utter_demander_revenus
 - utter_besoin_plus_aide
 * check_soldes
@@ -50,13 +50,13 @@
 - utter_comme_vous_voulez
 - utter_bye
 
-## vérifier les transactions et le solde + paiement_cc1
+## verifier les transactions et le solde + paiement_cc1
 
-* saluer
--utter_saluer
--utter_assister
+* salut
+- utter_salut
+- utter_assister
 * precedent_transactions_et_revenus
-- utter_s'identifier
+- utter_utter_se_connceter
 - utter_demander_revenus
 - utter_besoin_plus_aide
 * check_soldes
@@ -67,11 +67,11 @@
 - utter_bye
 
 
-## vérifier les transactions et le solde + paiement_cc2
+## verifier les transactions et le solde + paiement_cc2
 
 
 * precedent_transactions_et_revenus
-- utter_s'identifier
+- utter_utter_se_connceter
 - utter_demander_revenus
 - utter_besoin_plus_aide
 * check_soldes
@@ -85,7 +85,7 @@
 ## check_tansactions+balance+pay_cc+transfert_monnaie1
 
 * precedent_transactions_et_revenus
-- utter_s'identifier
+- utter_utter_se_connceter
 - utter_demander_revenus
 - utter_besoin_plus_aide
 * check_soldes
@@ -93,7 +93,7 @@
 - utter_besoin_plus_assistance
 * paiement_cc
 - utter_paiement_cc
-* Transférer de l'argent
+* transferer_argent
 - utter_transfert_argent
 - utter_plus_aide
 * refuser
@@ -107,7 +107,7 @@
 - utter_salut
 - utter_assister
 * precedent_transactions_et_revenus
-- utter_s'identifier
+- utter_utter_se_connceter
 - utter_demander_revenus
 - utter_besoin_plus_aide
 * check_soldes
@@ -115,46 +115,46 @@
 - utter_besoin_plus_assistance
 * paiement_cc
 - utter_paiement_cc
-* Transférer de l'argent
+* transferer_argent
 - utter_transfert_argent
 - utter_plus_aide
 * refuser
 - utter_comme_vous_voulez
 - utter_bye
 
-## vérifier les transactions et le solde + paiement_cc+tranferts_monnaie + revérifier_solde1
+## verifier les transactions et le solde + paiement_cc+tranferts_monnaie + reverifier_solde1
 
 * precedent_transactions_et_revenus
-- utter_s'identifier
+- utter_se_connceter
 - utter_demander_revenus
 - utter_besoin_plus_aide
-* vérifier_soldes
+* verifier_le_solde
 - utter_voir_balance 
 - utter_besoin_plus_assistance
 * paiement_cc
 - utter_paiement_cc
-* Transférer de l'argent
+* transferer_argent
 - utter_transfert_argent
 - utter_plus_aide
 * refuser
 - utter_comme_vous_voulez
 - utter_bye
 
-## vérifier les transactions et le solde + paiement_cc+tranferts_monnaie + revérifier_solde2
+## verifier les transactions et le solde + paiement_cc+tranferts_monnaie + reverifier_solde2
 
 * salut
 - utter_salut
 - utter_assister
 * precedent_transactions_et_revenus
-- utter_s'identifier
+- utter_utter_se_connceter
 - utter_demander_revenus
 - utter_besoin_plus_aide
-* vérifier_soldes
+* verifier_le_solde
 - utter_voir_balance 
-- utter_besoin_plus_assistance
+- utter_plus_aide
 * paiement_cc
 - utter_paiement_cc
-* Transférer de l'argent
+* transferer_argent
 - utter_transfert_argent
 - utter_plus_aide
 * refuser

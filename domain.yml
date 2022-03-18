@@ -1,30 +1,70 @@
-version: "2.8"
-
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
 intents:
-- verifier_humain 
-- se_connecter 
-- verifier_types_des_comptes 
-- transferer_argent 
-- supprimer_compte 
-- verifier_le_solde 
-- demender_aide 
-- salut 
-- payer_cc 
-- transactions_et_gains_anterieurs 
+- nouveau_compte
+- salut
+- bye
+- verifier_humain
+- se_connecter
+- verifier_types_des_comptes
+- transferer_argent
+- supprimer_compte
+- verifier_le_solde
+- demender_aide
+- payer_cc
+- transactions_et_gains_anterieurs
 - merci
 - consulter_humain
 - credit_possible
-- nouveau_compte
 - affirmer
 - verifier_les_offres_et_services_bancaires
-- bye
 - refuser
-
-entities: 
+entities:
+- PERSONNE
+- carte_credit
+- compte
 - somme_argent
-
+- transactions
+- type_compte
 responses:
   utter_bye:
-    - text: "au  revoir"
+  - text: au  revoir
   utter_salut:
-    - text: "hello"
+  - text: hello
+  utter_default:
+  - text: j'ai pas compris, pouvez vous reformuler la question?
+  utter_assister:
+  - text: comment je peux vous assister?
+  utter_credit_possible:
+  - text: voici le montant de credit possible
+  utter_plus_aide:
+  - text: Autre question?
+  utter_comme_vous_voulez:
+  - text: Comme vous voulez
+  utter_nouveau_compte:
+  - text: rempissez ce formulaire
+  utter_montrer_offre_banquaire_et_services:
+  - text: voici nos offres banquaires
+  utter_creer_compte:
+  - text: rempissez ce formulaire
+  utter_se_connceter:
+  - text: rempissez ce formulaire
+  utter_paiement_cc:
+  - text: merci de remplir ce formulaire
+  utter_transfert_monnaie:
+  - text: merci de remplir ce formulaire
+  utter_verifier_le_solde:
+  - text: merci de remplir ce formulaire
+  utter_voir_type_compte:
+  - text: merci de remplir ce formulaire
+  utter_verifier_epargne:
+  - text: merci de remplir ce formulaire
+  utter_verifier_humain:
+  - text: non je suis un bot
+actions:
+- utter_assister
+- utter_bye
+- utter_nouveau_compte
+- utter_salut
