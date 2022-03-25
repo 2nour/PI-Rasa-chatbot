@@ -3,18 +3,10 @@
 - utter_salut
 - utter_assister
 * credit_possible
-- utter_credit_possible
+- validate_credit_form
+- form{"name":"validate_credit_form"}
+- form{"name":"null"}
 - utter_plus_aide
 * refuser
 - utter_comme_vous_voulez
 - utter_bye
-
-## montant_credit_possible2
-* credit_possible
-- utter_credit_possible
-- utter_plus_aide
-* refuser
-- utter_comme_vous_voulez
-- utter_bye
-
-

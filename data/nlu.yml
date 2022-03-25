@@ -3,9 +3,31 @@ nlu:
 - intent: salut
   examples: |
     - hi
+    - hello
 - intent: nouveau_compte
   examples: |
     - je veux creeeeer un [compte](compte)
 - intent: bye
   examples: |
     - bye
+    - ok bye
+- intent: credit_possible
+  examples: |
+    - je veux un [credit](type_compte)
+    - je veux [credit](type_compte)
+    - je veux un [credi](type_compte)
+    - je veux un [credit](type_compte)
+- intent: salaire
+  examples: |
+    - je gagne [1000](salaire) euro par mois
+    - mon salaire est [2000](salaire) [dnt](somme_argent)
+    - [2000](duree)
+    - [200](salaire) par mois
+    - mon salaire est [2500](salaire)
+- intent: duree
+  examples: |
+    - [5](duree) annees
+    - [7](duree) ans
+    - [6](duree)
+    - [5](duree)
+    - [5](duree) ans

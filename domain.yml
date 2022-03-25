@@ -3,9 +3,12 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- nouveau_compte
-- salut
+- duree
+- credit_possible
+- salaire
 - bye
+- salut
+- nouveau_compte
 - verifier_humain
 - se_connecter
 - verifier_types_des_comptes
@@ -17,7 +20,6 @@ intents:
 - transactions_et_gains_anterieurs
 - merci
 - consulter_humain
-- credit_possible
 - affirmer
 - verifier_les_offres_et_services_bancaires
 - refuser
@@ -25,9 +27,18 @@ entities:
 - PERSONNE
 - carte_credit
 - compte
+- duree
+- salaire
 - somme_argent
 - transactions
 - type_compte
+slots:
+  salaire:
+    type: unfeaturized
+    influence_conversation: false
+  duree:
+    type: unfeaturized
+    influence_conversation: false
 responses:
   utter_bye:
   - text: au  revoir
@@ -63,8 +74,29 @@ responses:
   - text: merci de remplir ce formulaire
   utter_verifier_humain:
   - text: non je suis un bot
+  utter_ask_salary:
+  - text: votre salaire s'il vous plait ?
+  utter_ask_duration:
+  - text: la duree du credit ?
+  utter_wrong_salary:
+  - text: Desolée mais ce montant est trop bas
+  utter_wrong_duration:
+  - text: Desolée cette duree est trop petite
+   utter_submit:
+  - text: Ok. merci!
 actions:
+- utter_ask_duration
+- utter_ask_salary
 - utter_assister
 - utter_bye
 - utter_nouveau_compte
 - utter_salut
+- validate_credit_form
+
+forms:
+  validate_credit_form:
+    salaire:
+    - type : unfeaturized
+    duree:
+    - type : unfeaturized
+  

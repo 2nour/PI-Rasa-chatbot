@@ -1,14 +1,27 @@
 
 version: "2.0"
 stories:
+
 - story: interactive_story_1
   steps:
-  - intent: salut
-  - action: utter_salut
-  - action: utter_assister
-  - intent: nouveau_compte
+  - intent: credit_possible
     entities:
-    - compte: compte
-  - action: utter_nouveau_compte
-  - intent: bye
-  - action: utter_bye
+    - credit: credit
+  - action: validate_credit_form
+  - active_loop: validate_credit_form
+  - slot_was_set:
+    - requested_slot: salaire
+  - slot_was_set:
+    - salaire: 2000
+  - slot_was_set:
+    - requested_slot: duree
+  - slot_was_set:
+    - last_name: 5
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: utter_submit
+ 
+
+
+

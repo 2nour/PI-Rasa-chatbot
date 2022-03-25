@@ -1,3 +1,15 @@
+## intent: salaire
+- mon slaire est [2000](salaire)
+- je peux depenser [5000](salaire)
+- mon gagne [1000](salaire) par mois
+-    
+## intent: duree 
+- je veux payee le credit sur [7](duree) annees
+- sur [5](duree) annees
+- [2](duree) ans 
+- [1](duree) an
+- [50](duree)
+
 ## intent: salut
 - salut
 - bonjour
@@ -391,3 +403,6 @@
 - Je veux supprimer mon [compte](compte)
 - Je veux annuler mon [compte](compte)
 - Je veux retirer mon [compte](compte)
+
+
+
