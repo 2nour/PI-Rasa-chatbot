@@ -1,0 +1,314 @@
+version: "3.0"
+stories:
+- story: check_transactions_and_earnings1
+  steps:
+  - intent: previous_transactions_and_earnings
+  - action: action_sign_in
+  - action: action_check_earnings
+  - action: utter_need_more_assist
+  - intent: deny
+  - action: utter_as_you_like
+  - action: utter_goodbye
+
+- story: check_transactions_and_earnings2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_assist
+  - intent: previous_transactions_and_earnings
+  - action: action_sign_in
+  - action: action_check_earnings
+  - action: utter_need_more_assist
+  - intent: deny
+  - action: utter_as_you_like
+  - action: utter_goodbye
+
+- story: check_tansactions+balance1
+  steps:
+  - intent: previous_transactions_and_earnings
+  - action: action_sign_in
+  - action: action_check_earnings
+  - action: utter_need_more_assist
+  - intent: check_balance
+  - action: action_show_balance
+  - action: utter_need_more_assist
+  - intent: deny
+  - action: utter_as_you_like
+  - action: utter_goodbye
+
+- story: check_tansactions+balance2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_assist
+  - intent: previous_transactions_and_earnings
+  - action: action_sign_in
+  - action: action_check_earnings
+  - action: utter_need_more_assist
+  - intent: check_balance
+  - action: action_show_balance
+  - action: utter_need_more_assist
+  - intent: deny
+  - action: utter_as_you_like
+  - action: utter_goodbye
+
+- story: check_tansactions+balance+transfer_money1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_assist
+  - intent: previous_transactions_and_earnings
+  - action: action_sign_in
+  - action: action_check_earnings
+  - action: utter_need_more_assist
+  - intent: check_balance
+  - action: action_show_balance
+  - action: utter_need_more_assist
+  - intent: transfer_money
+  - action: action_transfer_money
+  - action: utter_need_more_assist
+  - intent: deny
+  - action: utter_as_you_like
+  - action: utter_goodbye
+
+- story: check_tansactions+balance+transfer_money2
+  steps:
+  - intent: previous_transactions_and_earnings
+  - action: action_sign_in
+  - action: action_check_earnings
+  - action: utter_need_more_assist
+  - intent: check_balance
+  - action: action_show_balance
+  - action: utter_need_more_assist
+  - intent: transfer_money
+  - action: action_transfer_money
+  - action: utter_need_more_assist
+  - intent: deny
+  - action: utter_as_you_like
+  - action: utter_goodbye
+
+- story: check_tansactions+balance+pay_cc1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_assist
+  - intent: previous_transactions_and_earnings
+  - action: action_sign_in
+  - action: action_check_earnings
+  - action: utter_need_more_assist
+  - intent: check_balance
+  - action: action_show_balance
+  - action: utter_need_more_assist
+  - intent: pay_cc
+  - action: action_pay_cc
+  - action: utter_need_more_assist
+  - intent: deny
+  - action: utter_as_you_like
+  - action: utter_goodbye
+
+- story: check_tansactions+balance+pay_cc2
+  steps:
+  - intent: previous_transactions_and_earnings
+  - action: action_sign_in
+  - action: action_check_earnings
+  - action: utter_need_more_assist
+  - intent: check_balance
+  - action: action_show_balance
+  - action: utter_need_more_assist
+  - intent: pay_cc
+  - action: action_pay_cc
+  - action: utter_need_more_assist
+  - intent: deny
+  - action: utter_as_you_like
+  - action: utter_goodbye
+
+- story: check_tansactions+balance+pay_cc+transfer_money1
+  steps:
+  - intent: previous_transactions_and_earnings
+  - action: action_sign_in
+  - action: action_check_earnings
+  - action: utter_need_more_assist
+  - intent: check_balance
+  - action: action_show_balance
+  - action: utter_need_more_assist
+  - intent: pay_cc
+  - action: action_pay_cc
+  - action: utter_need_more_assist
+  - intent: transfer_money
+  - action: action_transfer_money
+  - action: utter_need_more_assist
+  - intent: deny
+  - action: utter_as_you_like
+  - action: utter_goodbye
+
+- story: check_tansactions+balance+pay_cc+transfer_money2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_assist
+  - intent: previous_transactions_and_earnings
+  - action: action_sign_in
+  - action: action_check_earnings
+  - action: utter_need_more_assist
+  - intent: check_balance
+  - action: action_show_balance
+  - action: utter_need_more_assist
+  - intent: pay_cc
+  - action: action_pay_cc
+  - action: utter_need_more_assist
+  - intent: transfer_money
+  - action: action_transfer_money
+  - action: utter_need_more_assist
+  - intent: deny
+  - action: utter_as_you_like
+  - action: utter_goodbye
+
+- story: check_tansactions+balance+pay_cc+transfer_money+recheck_balance1
+  steps:
+  - intent: previous_transactions_and_earnings
+  - action: action_sign_in
+  - action: action_check_earnings
+  - action: utter_need_more_assist
+  - intent: check_balance
+  - action: action_show_balance
+  - action: utter_need_more_assist
+  - intent: pay_cc
+  - action: action_pay_cc
+  - action: utter_need_more_assist
+  - intent: transfer_money
+  - action: action_transfer_money
+  - action: utter_need_more_assist
+  - intent: check_balance
+  - action: action_show_balance
+  - action: utter_need_more_assist
+  - intent: deny
+  - action: utter_as_you_like
+  - action: utter_goodbye
+
+- story: check_tansactions+balance+pay_cc+transfer_money+recheck_balance2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_assist
+  - intent: previous_transactions_and_earnings
+  - action: action_sign_in
+  - action: action_check_earnings
+  - action: utter_need_more_assist
+  - intent: check_balance
+  - action: action_show_balance
+  - action: utter_need_more_assist
+  - intent: pay_cc
+  - action: action_pay_cc
+  - action: utter_need_more_assist
+  - intent: transfer_money
+  - action: action_transfer_money
+  - action: utter_need_more_assist
+  - intent: check_balance
+  - action: action_show_balance
+  - action: utter_need_more_assist
+  - intent: deny
+  - action: utter_as_you_like
+  - action: utter_goodbye
+
+- story: check_tansactions+balance+transfer_money+pay_cc1
+  steps:
+  - intent: previous_transactions_and_earnings
+  - action: action_sign_in
+  - action: action_check_earnings
+  - action: utter_need_more_assist
+  - intent: check_balance
+  - action: action_show_balance
+  - action: utter_need_more_assist
+  - intent: transfer_money
+  - action: action_transfer_money
+  - action: utter_need_more_assist
+  - intent: pay_cc
+  - action: action_pay_cc
+  - action: utter_need_more_assist
+  - intent: transfer_money
+  - action: action_transfer_money
+  - action: utter_need_more_assist
+  - intent: deny
+  - action: utter_as_you_like
+  - action: utter_goodbye
+
+- story: check_tansactions+balance+transfer_money+pay_cc2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_assist
+  - intent: previous_transactions_and_earnings
+  - action: action_sign_in
+  - action: action_check_earnings
+  - action: utter_need_more_assist
+  - intent: check_balance
+  - action: action_show_balance
+  - action: utter_need_more_assist
+  - intent: transfer_money
+  - action: action_transfer_money
+  - action: utter_need_more_assist
+  - intent: pay_cc
+  - action: action_pay_cc
+  - action: utter_need_more_assist
+  - intent: transfer_money
+  - action: action_transfer_money
+  - action: utter_need_more_assist
+  - intent: deny
+  - action: utter_as_you_like
+  - action: utter_goodbye
+
+- story: check_tansactions+balance+transfer_money+pay_cc+recheck_balance1
+  steps:
+  - intent: previous_transactions_and_earnings
+  - action: action_sign_in
+  - action: action_check_earnings
+  - action: utter_need_more_assist
+  - intent: check_balance
+  - action: action_show_balance
+  - action: utter_need_more_assist
+  - intent: transfer_money
+  - action: action_transfer_money
+  - action: utter_need_more_assist
+  - intent: pay_cc
+  - action: action_pay_cc
+  - action: utter_need_more_assist
+  - intent: transfer_money
+  - action: action_transfer_money
+  - action: utter_need_more_assist
+  - intent: check_balance
+  - action: action_show_balance
+  - action: utter_need_more_assist
+  - intent: deny
+  - action: utter_as_you_like
+  - action: utter_goodbye
+
+- story: check_tansactions+balance+transfer_money+pay_cc+recheck_balance2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_assist
+  - intent: previous_transactions_and_earnings
+  - action: action_sign_in
+  - action: action_check_earnings
+  - action: utter_need_more_assist
+  - intent: check_balance
+  - action: action_show_balance
+  - action: utter_need_more_assist
+  - intent: transfer_money
+  - action: action_transfer_money
+  - action: utter_need_more_assist
+  - intent: pay_cc
+  - action: action_pay_cc
+  - action: utter_need_more_assist
+  - intent: transfer_money
+  - action: action_transfer_money
+  - action: utter_need_more_assist
+  - intent: check_balance
+  - action: action_show_balance
+  - action: utter_need_more_assist
+  - intent: deny
+  - action: utter_as_you_like
+  - action: utter_goodbye
+
+
+

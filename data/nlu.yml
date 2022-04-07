@@ -1,0 +1,548 @@
+version: "3.0"
+nlu:
+- intent : greet 
+  examples: |
+    - hi
+    - hey
+    - hello
+    - how are you
+    - hola
+    - good evening
+    - whats up
+    - wassup
+    - yo
+    - good morning 
+    - hey there
+    - hey
+    - good evening
+    - hello 
+    - HEY
+    - hello are you still there
+    - hallo
+    - HI
+    - Hey
+    - Hi
+    - hi!
+    - hello there
+    - hi there
+    - Hello
+    - hello its ella
+    - Hola.
+    - welcome
+    - howdy
+    - good day
+
+- intent: goodbye
+  examples: |
+    - see you later
+    - goodbye 
+    - i'm done
+    - quit
+    - stop
+    - bye
+    - Adios
+    - BYEE
+    - GOODBYE
+    - Thanks a lot. See ya later
+    - have a good day. time to go, bye
+    - bye bye
+    - ok i gtg
+    - bye bye bot
+    - bye for now
+    - bye udo
+    - bye was nice talking to you
+    - bye!
+    - byee
+    - catch you later
+    - ciao
+    - cya
+    - farewell
+    - good bye
+    - good bye rasa bot!
+    - good night
+    - goodbye
+    - goodnight
+    - gotta go
+
+- intent: affirm
+  examples: |
+    - indeed
+    - correct
+    - that sounds good
+    - yess please
+    - of course
+    - yup
+    - yeah
+    - yes please
+    - yes plz
+    - Sure
+    - Ok
+    - sweet
+    - cool,
+    - yes...
+    - ok
+    - ye
+    - okay
+    - That would be great
+    - YUP
+    - Yea
+    - Yeah
+    - Yeah sure
+    - Yep
+    - Yep that's fine
+    - Yep!
+    - Yepp
+    - Yes I do
+    - Yes please
+    - Yes please!
+    - Yes, I accept
+    - yes 
+    - Yes 
+ 
+- intent: deny
+  examples: |
+    - not really
+    - no
+    - I don't think so
+    - never
+    - no way
+    - nope
+    - no thanks
+    - I dunno
+    - Nothing!
+    - nevermind
+    - n
+    - i decline
+    - i don not like this
+    - i don't think so
+    - i don't want either of those
+    - i don't want to
+    - i don't want to give you my email
+    - i dont want to
+    - i dont want to accept :P lol
+    - i guess it means - no
+    - i'm afraid not
+    - i'm not sure
+    - Thank you , i'm done
+    - Thank you but i need to move on
+    - Maybe next time
+    - I'm Grateful , but it's all right
+    - Gratitude , next time
+    - Thank you so much , maybe another time
+    - It's fine 
+
+- intent: ask_for_help
+  examples: |
+    - can you help me ?
+    - can you help me please ?
+    - can you help me plz ?
+    - i need some help
+    - can you assist me ?
+    - can you assist me please ?
+    - can you assist me plz ?
+    - help
+    - what can you do?
+    - what can I ask you?
+    - what do you do?
+    - what can you help me with?
+    - help me
+    - help, what do you do
+    - how do I use this
+    - how can you help me
+    - What are the things that you can do?
+    - What else can you help me with?
+    - can you do anything else?
+    - can you help me?
+    - come back
+    - cool! can I do something else here?
+    - hello what can you do for me
+    - help
+    - help me
+    - help please
+    - help pls
+    - help?
+    - hep me
+
+- intent: check_human
+  examples: |
+    - are you a bot?
+    - am i speaking to an ai?
+    - are you a human or a bot?
+    - are you real? 
+    - are you virtual? 
+    - are you an ai?
+    - aren't you a bot
+    - are you a chatbot
+    - are you a rasa bot?
+    - are you a real bot?
+    - are you a robot
+    - are you ai
+    - are you artificial
+    - are you artificial intelligence
+    - are you real
+    - are you really a bot
+    - are you robot
+    - are you sure that you're a bot?
+    - bot?
+
+- intent: consult_human
+  examples: |
+    - handoff
+    - operator
+    - I want a human
+    - can I speak to an agent
+    - real agent please
+    - real human
+    - chat with a live agent
+    - give me a person please
+    - i want to talk to a human
+    - transfer to a human
+    - Please give me to a human
+    - can I talk to human?
+    - can I talk to human
+    - talk to human
+    - i want human :(
+    - can i talk to human
+    - i want to talk to a human
+    - i want to speak to human
+    - can i talk to a real person?
+    - connect me to a real person
+    - I need a real person
+    - can i took with a real person
+    - let me speak to a real person
+    - let me speak to a real person please
+    - i want to talk to a real person
+
+- intent: thanking
+  examples: |
+    - thank you goodbye
+    - okay thank you goodbye
+    - thank you bye
+    - um okay thank you good bye
+    - thank you
+    - and thats all thank you and good bye
+    - okay thank you
+    - thanks
+    - thanks goodbye
+    - thank you and good bye
+    - Thanks!
+    - Awesome, you are a good bot!
+    - great!
+    - I see, thanks
+    - Oh thats good!
+    - it's good :-)
+    - thnaks
+    - good job bot
+    - great
+    - thanks for the help
+    - thanks you
+    - thanks!
+    - thankyou
+    - thnks
+    - thx
+    - thanks for your information
+    - thanks f
+    - Gratitude
+    - I'm grateful
+
+- intent: check_balance
+  examples: |
+    - How much money is on my account?
+    - How much money is on my [bank](account_type) account?
+    - what's my [balance](amount-of-money)?
+    - what's my [current balance](amount-of-money)?
+    - What's left on that account?
+    - How much do I have on that account?
+    - What's the [balance](amount-of-money) on that account?
+    - How much money is left on that account?
+    - what is my account [balance](amount-of-money)
+    - what's my account [balance](amount-of-money)?
+    - what's my account [balance](amount-of-money)
+    - whats my account [balance](amount-of-money)
+    - what is my [bank](account_type) account [balance](amount-of-money)
+    - what's my [bank](account_type) account [balance](amount-of-money)?
+    - what's my [bank](account_type) account [balance](amount-of-money)
+    - whats my [bank](account_type) account [balance](amount-of-money)
+    - What's my [credit card](account_type) [balance](amount-of-money)
+    - What's my [credit](account_type) [balance](amount-of-money)
+    - How much money do I owe on my [credit cards](account_type)
+    - Show me my [credit card](account_type) [balance](amount-of-money)
+    - What [credit](account_type) accounts do I have
+    - Show me my [credit](account_type) accounts
+    - Whats the [balance](amount-of-money) on my [credit](account_type) account
+    - What's my [credit](account_type) account
+    - What's my [emblem](credit_card) [card](account_type) [balance](amount-of-money)
+    - Show me my [iron bank](credit_card) [balance](amount-of-money)
+    - What's my [justice bank](credit_card) [balance](amount-of-money)
+    - What's the [balance](amount-of-money) on the [justice bank](credit_card) account
+    - what's my [emblm](credit_card) [credit card](account_type) [balance](amount-of-money)?
+    - what's my [credit card](account_type) [balance](amount-of-money)?
+    - what's my [credit card](account_type) account [balance](amount-of-money)?
+    - What is my [emblem](credit_card) [card](account_type) [balance](amount-of-money)?
+    - whats my [credit card](account_type) [balance](amount-of-money)
+    - What is my [emblem](credit_card) [balance](amount-of-money)?
+    - whats my [emblm](credit_card) [card](account_type) [balance](amount-of-money)?
+    - what's my [embelm](credit_card)'s [card](account_type) [balance](amount-of-money)?
+    - what's my [emblm](credit_card) account [balance](amount-of-money)?
+    - How much money have i spent lately>
+    - I should check my [credit card] [balance](amount-of-money)
+    - check my [credit card] [balance](amount-of-money)
+    - check my [credit card] [balance](amount-of-money)
+    - Can you tell me my account [balance](amount-of-money)?
+    - Hello, I would like to know how much money is in much money is in my account
+    - hi, whats my account bal please
+    - so.... what's my [balance](amount-of-money)?
+    - whats my [current balance](amount-of-money)
+    - What's my [balance](amount-of-money)?
+    - How much money do I have?
+    - Yeah, I like coffee 👀 But how much money do I have?
+    - Yeah, I know 😀 Since it's so nice: How much money do I have?
+    - what places have I spent money?
+    - Wait, I'll have to check my balance first. Can you do that please?
+    - Hi, I need to know how much money is in my [checking](account_type) account
+    - Balance please
+
+- intent: transfer_money
+  examples: |
+    - I want to pay [John](PERSON)
+    - I want to transfer $100 to [Bob](PERSON)
+    - can i transfer money to [Sally](PERSON)
+    - I want to transfer money
+    - I want to pay someone
+    - I wanna transfer money
+    - I wanna  pay someone
+    - I wanna pay [John](PERSON)
+    - I wanna transfer $100 to [Bob](PERSON)
+    - can I pay someone
+    - I need to transfer money to a friend
+    - can I transfer money to my [mom](PERSON)
+    - I want to pay [Bert](PERSON)
+    - pay my friend
+    - transfer money
+    - I want to transfer $100 to [Tommy](PERSON)
+    - i want to transfer $400 to [Akela](PERSON)
+    - I want to pay [Paula Handy](PERSON)
+    - pay Katy Parrow $40 please
+    - transfer $60 to [Jason Jacob](PERSON)
+    - pay [Evan Oslo](PERSON)
+    - pay [Lisa](PERSON) please
+    - can I transfer money to [Kyle Gardner](PERSON)?
+    - Pay [Karen](PERSON) 60 Euros
+    - pay [Mona](PERSON) $60
+    - transfer $60 to [Sally](PERSON)
+    - need to transfer money
+    - II want to transfer to [Kelly](PERSON)
+    - Pay [Percy](PERSON) $50
+    - Pay $50 to [Pat](PERSON)
+    - Ok pay [Emma](PERSON)
+    - pay [Emanual](PERSON)
+    - i want to transfer $100 to [Jane smith](PERSON)
+    - i want to transfer $100 to my [daughter](PERSON)
+    - i want to transfer money please
+    - i mean i want to transfer money
+    - I need to pay a friend.
+    - transfer money to [ethan oswald](PERSON)
+    - transfer money to [sara](PERSON)
+    - I need to transfer money to my grandma [Judith](PERSON).
+    - i want to transfer money to [Latisha](PERSON)
+    - I need to make an urgent transfer to [Bob](PERSON), can you do it?
+    - Ahh, okay so I want to make a transfer to [Bob](PERSON).
+    - Can I transfer money to a friend?
+    - I need to transfer money to [Jeff](PERSON), my son
+    - I need to send money to my kid
+    - I need to transfer money
+    - send $50 to [john jacob](PERSON)
+    - I need to transfer money to my co-worker who paid for lunch
+    - Hi I like to send money
+    - I'd like to send 50$ to [John](PERSON)
+    - Hi I like to send money to [John](PERSON)
+    - Please transfer 50 dollars to [Andreas](PERSON)
+    - I would like to transfer money to [Philipp](PERSON)
+    - I would like to transfer 50$ to [Joschka](PERSON)
+
+- intent: previous_transactions_and_earnings
+  examples: |
+    - Show me my list of [transactions](transactions)
+    - Show me my previous [transactions](transactions)
+    - can I access to my list of [transactions](transactions)?
+    - can I see the list of known [transactions](transactions)?
+    - what's my [transactions](transactions) list
+    - can I see my [transactions](transactions) list ?
+    - show me my [transactions](transactions) list 
+
+- synonym: transactions
+  examples: |
+    - Recipients
+    - money-sending
+    - earnings
+
+- intent: possible_credit
+  examples: |
+    - How much [credit](credit) can the bank afford me ?
+    - What amount of [credit](credit)  can i get ?
+    - I wanna check possible [credit](credit) amounts 
+    - let me see [credit](credit) options
+    - How much money can the bank afford me as a [credit](credit) ?
+    - Can I check possible [credit](credit) i can get ?
+    - What is the possible amount of [credit](credit) i can borrow ?
+
+- intent: get_salary
+  examples: |
+    - my salary is [2500](salary) 
+    - my earnings are [4000](salary)
+    - the monthly amount is [3000](salary)
+    - I get paid[4000](salary) a month
+    - [5000](salary)
+
+
+- intent: get_duration
+  examples: |
+    - my credit time length is [5](duration)
+    - the credit duration is [3](duration)
+    - the duration is [20](duration)
+    - duration is [4](duration) 
+    -[7](duration)
+
+- synonym: credit
+  examples: |
+    - loan
+
+- intent: check_bank_offers_and_services
+  examples: |
+    - Can you inform me about bank offers 
+    - Can you show me your bank privileges
+    - I want to see your banking-services
+    - I wanna see your offers
+    - I wanna dicover your services and offers
+    - I want check your special offers
+    - show me what bring this bank as advantages 
+    - Tell me about your services and offers
+
+- intent: check_type_of_accounts
+  examples: |
+    - Can you show me different types of accounts available please
+    - I wanna be a new customer , show me the potential accounts 
+    - Show me the tye of accounts this bank afford
+    - Can i check the banking accounts list
+    - I want to register as new customer , show me the type af accounts
+
+- intent: create_new_account
+  examples: |
+    - I wanna create a new [account](account) 
+    - I want to create an [account](account) 
+    - I want to create an [account](account) ,can you help me please ?
+    - May you help me to register ?
+    - I wanna sign up 
+    - I wannt to sign up 
+    - I wanna sign up , can you help me ? 
+    - I want to sign up , may you help me ?
+    - How can I create o new accoun ?
+    - How may I be a new customer ? 
+
+- synonym: account
+  examples: |
+    - customer-account
+    - bank-account
+
+- intent: pay_cc
+  examples: |
+    - I would like to pay the [minimum balance](amount-of-money) on my [embelm](credit_card) [card](account_type)
+    - I want to pay my [credit card](account_type)
+    - I want to pay my [card](account_type)
+    - Pay my [card](account_type)
+    - I want to pay my [justice bank](credit_card) bill
+    - Pay my [discover](credit_card)
+    - I want to pay my [iron bank](credit_card) bill
+    - Pay my [visa](credit_card)
+    - I want to pay my [visa](credit_card) bill
+    - Pay my [mastercard](credit_card)
+    - I want to pay my [MasterCard](credit_card) bill
+    - I want to pay my [credit card](account_type) bill
+    - I want to pay the [current balance](amount-of-money) on my [credit card](account_type)
+    - can you help me pay the [current balance](amount-of-money) on my [credit card](account_type)
+    - I want to pay off my [credit card](account_type)
+    - I want to pay off my [credit card](account_type)
+    - i want to pay my [credit card](account_type)
+    - i want to pay off my[credit card](account_type)
+    - I want to pay my [card current balance](amount-of-money) on my [embelm](credit_card) [credit card](account_type)
+    - I want to pay $500 on my [credit card](account_type) on Sunday
+    - I want to pay my [current balance](amount-of-money) on my [emblem](credit_card) [credit card](account_type) today
+    - i need to pay off my [credit card](account_type)
+    - Please schedule  a payment towards my [credit card](account_type) for April 12th
+    - Can I schedule a payment towards my [credit card](account_type) for tomorrow?
+    - Pay off my [minimum balance](amount-of-money) please
+    - i would like to pay $1200 to my [credit card][balance](amount-of-money)
+    - I would also like to pay my [visa](credit_card) bill
+    - Pay off my [credit card][credit card][balance](amount-of-money), please
+    - I guess it is. Since it's so much, let's pay off my [credit](account_type)
+    - Let's pay that [credit card][credit card][balance](amount-of-money) bill
+    - I want to pay 100 dollars toward my [Emblem](credit_card) [card](account_type), tomorrow
+    - pay 100 towards  [card](account_type), tomorrow
+    - id like to pay my bill
+    - could I pay off my [credit card][balance](amount-of-money)
+    - pay off my [credit card][balance](amount-of-money)
+    - i wanna pay my [credit card][balance](amount-of-money)
+    - pay a bill
+
+- synonym: credit_card
+  examples: |
+    - cc
+    - card
+
+- intent: sign_in
+  examples: |
+    - I want to sign in to my [account](account)
+    - I want to log in to my[account](account)
+    - I wanna sign in
+    - I wanna log in  
+    - I wanna access to my [account](account)
+
+- intent: delete_account
+  examples: |
+    - I want delete my [account](account)
+    - I want remove my[account](account)
+    - I wanna delete my [account](account)
+    - I wanna remove my [account](account)
+
+
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?

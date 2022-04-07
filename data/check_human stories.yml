@@ -1,0 +1,31 @@
+version: "3.0"
+stories:
+- story: check_is_human1
+  steps:
+  - intent: check_human
+  - action: utter_iamabot
+  - action: utter_assist
+  - intent: deny
+  - action: utter_as_you_like
+  - action: utter_goodbye
+
+- story: check_is_human2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_assist
+  - intent: check_human
+  - action: utter_iamabot
+  - action: utter_assist
+  - intent: deny
+  - action: utter_as_you_like
+  - action: utter_goodbye
+
+- story: check_is_human1
+  steps:
+  - intent: check_human
+  - action: utter_iamabot
+  - action: utter_assist
+  - intent: consult_human
+  - action: utter_your_welcome
+  - action: utter_pass_to_human

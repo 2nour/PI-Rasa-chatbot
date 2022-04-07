@@ -1,0 +1,183 @@
+version: "3.0"
+stories:
+- story: possible_account_types1
+  steps:
+  - intent: check_type_of_accounts
+  - action: utter_show_account_types
+  - action: utter_need_more_assist
+  - intent: deny
+  - action: utter_as_you_like
+  - action: utter_goodbye
+
+- story: possible_account_types2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_assist 
+  - intent: check_type_of_accounts
+  - action: utter_show_account_types
+  - action: utter_need_more_assist
+  - intent: deny
+  - action: utter_as_you_like
+  - action: utter_goodbye
+
+- story: possible_account+create_account1
+  steps:
+  - intent: check_type_of_accounts
+  - action: utter_show_account_types
+  - action: utter_need_more_assist
+  - intent: create_new_account
+  - action: action_create_account
+  - action: utter_need_more_assist
+  - intent: deny
+  - action: utter_as_you_like 
+  - action: utter_goodbye
+
+- story: possible_account+create_account2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_assist 
+  - intent: check_type_of_accounts
+  - action: utter_show_account_types
+  - action: utter_need_more_assist
+  - intent: create_new_account
+  - action: action_create_account
+  - action: utter_need_more_assist
+  - intent: deny
+  - action: utter_as_you_like 
+  - action: utter_goodbye
+
+- story: possible_account+create_account+signin1
+  steps:
+  - intent: check_type_of_accounts
+  - action: utter_show_account_types
+  - action: utter_need_more_assist
+  - intent: create_new_account
+  - action: action_create_account
+  - action: utter_need_more_assist
+  - intent: sign_in
+  - action: action_sign_in
+  - action: utter_need_more_assist
+  - intent: deny
+  - action: utter_as_you_like 
+  - action: utter_goodbye
+
+- story: possible_account+create_account+signin2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_assist 
+  - intent: check_type_of_accounts
+  - action: utter_show_account_types
+  - action: utter_need_more_assist
+  - intent: create_new_account
+  - action: action_create_account
+  - action: utter_need_more_assist
+  - intent: sign_in
+  - action: action_sign_in
+  - action: utter_need_more_assist
+  - intent: deny
+  - action: utter_as_you_like 
+  - action: utter_goodbye
+
+- story: possible_account+offers1
+  steps:
+  - intent: check_type_of_accounts
+  - action: utter_show_account_types
+  - action: utter_need_more_assist
+  - intent: check_bank_offers_and_services
+  - action: utter_show_offers_and_services
+  - action: utter_need_more_assist
+  - intent: deny
+  - action: utter_as_you_like 
+  - action: utter_goodbye
+
+- story: possible_account+offers2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_assist 
+  - intent: check_type_of_accounts
+  - action: utter_show_account_types
+  - action: utter_need_more_assist
+  - intent: check_bank_offers_and_services
+  - action: utter_show_offers_and_services
+  - action: utter_need_more_assist
+  - intent: deny
+  - action: utter_as_you_like 
+  - action: utter_goodbye
+
+- story: possible_account+offers+create_account1
+  steps:
+  - intent: check_type_of_accounts
+  - action: utter_show_account_types
+  - action: utter_need_more_assist
+  - intent: check_bank_offers_and_services
+  - action: utter_show_offers_and_services
+  - action: utter_need_more_assist
+  - intent: create_new_account
+  - action: action_create_account
+  - action: utter_need_more_assist
+  - intent: deny
+  - action: utter_as_you_like 
+  - action: utter_goodbye
+
+- story: possible_account+offers+create_account2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_assist 
+  - intent: check_type_of_accounts
+  - action: utter_show_account_types
+  - action: utter_need_more_assist
+  - intent: check_bank_offers_and_services
+  - action: utter_show_offers_and_services
+  - action: utter_need_more_assist
+  - intent: create_new_account
+  - action: action_create_account
+  - action: utter_need_more_assist
+  - intent: deny
+  - action: utter_as_you_like 
+  - action: utter_goodbye
+
+- story: possible_account+offers+create_account+signin1
+  steps:
+  - intent: check_type_of_accounts
+  - action: utter_show_account_types
+  - action: utter_need_more_assist
+  - intent: check_bank_offers_and_services
+  - action: utter_show_offers_and_services
+  - action: utter_need_more_assist
+  - intent: create_new_account
+  - action: action_create_account
+  - action: utter_need_more_assist
+  - intent: sign_in
+  - action: action_sign_in
+  - action: utter_need_more_assist
+  - intent: deny
+  - action: utter_as_you_like 
+  - action: utter_goodbye
+
+- story: possible_account+offers+create_account+signin2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_assist 
+  - intent: check_type_of_accounts
+  - action: utter_show_account_types
+  - action: utter_need_more_assist
+  - intent: check_bank_offers_and_services
+  - action: utter_show_offers_and_services
+  - action: utter_need_more_assist
+  - intent: create_new_account
+  - action: action_create_account
+  - action: utter_need_more_assist
+  - intent: sign_in
+  - action: action_sign_in
+  - action: utter_need_more_assist
+  - intent: deny
+  - action: utter_as_you_like 
+  - action: utter_goodbye
+
+

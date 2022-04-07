@@ -1,0 +1,129 @@
+version: "3.0"
+
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- ask_for_help
+- check_human
+- consult_human
+- thanking
+- check_balance
+- transfer_money
+- previous_transactions_and_earnings
+- possible_credit
+- check_bank_offers_and_services
+- check_type_of_accounts
+- create_new_account
+- pay_cc
+- sign_in
+- delete_account
+- get_salary
+- get_duration
+- mood_great
+- mood_unhappy
+- bot_challenge
+
+entities:
+- account
+- Person
+- account_type
+- amount-of-money
+- transactions
+- credit
+- salary
+- duration
+
+slots:
+  salary:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: salary
+  duration:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: duration
+
+responses:
+  utter_greet:
+  - text: Hello
+  - text: Hi 
+  - text: Welcome
+  - text: Hey there
+  - text: Hola
+  utter_goodbye:
+  - text: See you soon
+  - text: See you later
+  - text: Bye
+  - text: Goodbye
+  - text: Farewell
+  utter_assist:
+  - text: How can I help you ?
+  - text: How may I assist you ?
+  - text: Do you want some help ?
+  - text: What are you looking for ?
+  - text: Are you looking for something ?
+  utter_help:
+  - text: How can I help you ?
+  - text: How may I assist you ?
+  - text: How can I solve your issue ?
+  - text: What are you looking for ?
+  utter_need_more_assist:
+  - text: Do you need more help ?
+  - text: Are you done or you need more assist ?
+  - text: Did you finish all your tasks or you wanna do something more ?
+  - text: Do you have any other request ?
+  utter_as_you_like:
+  - text: As you like
+  - text: As you want
+  - text: As you desire
+  - text: That's fine as you wish 
+  utter_iamabot:
+  - text: I'm a bot
+  - text: I'm a banking chatbot
+  - text: No I'm a chatbot 
+  utter_your_welcome:
+  - text: You're welcome sir
+  - text: Of course sir
+  - text: Your wish is gonna be reality  
+  utter_pass_to_human:
+  - text: To consult a customer service agent you need to call +2163048573 or to visit our website www.banking-bank.com
+  utter_enter_salary :
+  - text: please enter your monthly salary , it should be greater than 450 TND 
+  - text: please pass your monthly earnings , it should be greater than 450 TND
+  utter_duration:
+  - text: please enter the desired credit duration , only 3 , 5 , 7 , 10 and 20 years commitments are possible
+  - text: please enter the desired loan duration , only 3 , 5 , 7 , 10 and 20 years commitments are possible
+  utter_wrong_salary:
+  - text: "salary should be greater than 450 TND , please try again"
+  utter_wrong_duration:
+  - text: "wrong duration please choosed an adequate duration"
+  utter_show_offers_and_services:
+  - text: "aaa"
+  utter_show_account_types:
+  - text: "bbb"
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+  utter_did_that_help:
+  - text: "Did that help you?"
+  utter_happy:
+  - text: "Great, carry on!"
+
+actions:
+- action_create_account
+- action_sign_in
+- action_show_balance
+- action_transfer_money
+- action_pay_cc
+- action_ask why
+- action_delete
+- action_check_earnings
+- action_possible_credit
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

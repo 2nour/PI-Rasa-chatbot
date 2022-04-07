@@ -1,0 +1,22 @@
+version: "3.0"
+stories:
+- story: possible_credit_amount1
+  steps:
+  - intent: possible_credit
+  - action: utter_enter_salary
+  - intent: get_salary
+  - action: utter_duration
+  - intent: get_duration
+  - action: action_possible_credit
+
+- story: possible_credit_amount2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_assist
+  - intent: possible_credit
+  - action: utter_enter_salary
+  - intent: get_salary
+  - action: utter_duration
+  - intent: get_duration
+  - action: action_possible_credit
