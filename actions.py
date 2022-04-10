@@ -33,7 +33,7 @@ class ValidateCreditForm(FormValidationAction):
         domain: DomainDict,
     ) -> Dict[Text, Any]:
         """Validate salary value."""
-        salary_int = int(re.findall(r'[0-9]+', value)[0])
+        salary_int = tracker.get_slot('salaire')
         if salary_int > 450 :
             # validation succeeded, set the value of the "cuisine" slot to value
             return {"salaire": salary_int}
@@ -51,7 +51,7 @@ class ValidateCreditForm(FormValidationAction):
         domain: DomainDict,
     ) -> Dict[Text, Any]:
         """Validate duration value."""
-        duration_int = int(re.findall(r'[0-9]+', value)[0])
+        duration_int = tracker.get_slot('duree')
         if duration_int > 1 and duration_int < 25 :
             # validation succeeded, set the value of the "cuisine" slot to value
             return {"duree": duration_int}

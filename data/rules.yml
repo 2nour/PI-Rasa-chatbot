@@ -11,19 +11,3 @@ rules:
   steps:
   - intent: verifier_humain
   - action: utter_verifier_humain
-
-- rule: Activate form
-  steps:
-  - intent: credit_possible
-  - action: validate_credit_form
-  - active_loop: validate_credit_form
-
-- rule: Submit form
-  condition:
-  - active_loop: validate_credit_form
-  steps:
-  - action: validate_credit_form
-  - active_loop: null
-  - slot_was_set:
-    - requested_slot: null
-  - action: utter_submit
