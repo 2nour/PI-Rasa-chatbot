@@ -1,0 +1,12 @@
+
+version: "2.0"
+stories:
+- story: interactive_story_1
+  steps:
+  - intent: salut
+  - action: utter_salut
+  - action: utter_assister
+  - intent: transactions_et_gains_anterieurs
+  - action: utter_se_connceter
+  - intent: utter_verifier_epargne
+   

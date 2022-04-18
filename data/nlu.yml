@@ -1,5 +1,38 @@
 version: "2.0"
 nlu:
+- intent: name
+  examples: |
+    - je m'appelle [nour hadrich](name)
+    - [john doe](name)
+- intent: email
+  examples: |
+    - mon mail est[johndoe@gmail.com](email)
+    - [johndoe@gmail.com](email)
+- intent: idcard
+  examples: |
+    - [13014562](idcard)
+    - mon cin est [13014562](idcard)
+- intent: birthdate
+  examples: |
+    - [2000-02-02](birthdate)
+- intent: phonenumber
+  examples: |
+    - [20052552](phonenumber)
+    - mon num [95752552](phonenumber)
+- intent : address
+  examples: |
+    - j'habite a [24 rue d'inde](address)
+    - j'habite a [24 rue d'irak](address)
+- intent : login
+  examples: |
+    - [nourhadrich](login)
+    - [nourhadrich123](login)
+    - [john doe](login)
+- intent : password
+  examples: |
+    - [123456789](password)
+    - [000000000](password)
+    - [abc123abc](password)
 - intent: salut
   examples: |
     - hello
@@ -40,6 +73,7 @@ nlu:
     - je peux depenser [5000](salaire)
     - je gagne [1000](salaire) par mois
     - [2000](salaire)
+    - [5000](salaire) par mois
 - intent: duree
   examples: |
     - 7ans[]{"entity": "duree", "value": "7"}

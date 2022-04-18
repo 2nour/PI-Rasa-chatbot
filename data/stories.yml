@@ -7,56 +7,29 @@ stories:
   - action: utter_salut
   - action: utter_assister
   - intent: credit_possible
-  - action: validate_credit_form
-  - slot_was_set:
-    - requested_slot: null
   - action: utter_ask_salary
   - intent: salaire
     entities:
-    - salaire: '2500'
+    - salaire: '2000'
   - slot_was_set:
-    - salaire: '2500'
+    - salaire: '2000'
   - action: utter_ask_duration
   - intent: duree
     entities:
     - duree: '7'
   - slot_was_set:
     - duree: '7'
- 
-
-
-- story: interactive_story_2
-  steps:
-  - intent: credit_possible
   - action: validate_credit_form
-  - slot_was_set:
-    - requested_slot: null
-  - action: utter_ask_salary
-  - intent: salaire
-    entities:
-    - salaire: '2500'
-  - slot_was_set:
-    - salaire: '2500'
-  - action: utter_ask_duration
-  - action: utter_ask_duration
-  - intent: duree
-    entities:
-    - duree: '7'
-  - slot_was_set:
-    - duree: '7'
- 
+
 - story: interactive_story_1
   steps:
-  - intent: salut
-  - action: utter_salut
-  - action: utter_assister
   - intent: credit_possible
   - action: utter_ask_salary
   - intent: salaire
     entities:
-    - salaire: '2000'
+    - salaire: '5000'
   - slot_was_set:
-    - salaire: '2000'
+    - salaire: '5000'
   - action: utter_ask_duration
   - intent: duree
     entities:
@@ -64,3 +37,4 @@ stories:
   - slot_was_set:
     - duree: '7'
   - action: validate_credit_form
+  - intent: merci

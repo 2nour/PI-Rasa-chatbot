@@ -1,12 +1,13 @@
-version: '2.0'
+version: '3.1'
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
 - salaire
 - duree
-- salut
 - credit_possible
+- merci
+- salut
 - bye
 - nouveau_compte
 - verifier_humain
@@ -18,7 +19,6 @@ intents:
 - demender_aide
 - payer_cc
 - transactions_et_gains_anterieurs
-- merci
 - consulter_humain
 - affirmer
 - verifier_les_offres_et_services_bancaires
@@ -36,13 +36,59 @@ entities:
 slots:
   salaire:
     type: text
-    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: salaire
   duree:
     type: text
-    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: duree
+  name:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: name
+  idcard:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: idcard
+  email:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: email
+  birthdate:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: birthdate
+  phonenumber:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: phonenumber
+  address:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: address
+  login:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: login
+  password:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: password
+  
 responses:
   utter_bye:
   - text: au  revoir
+  - text : bye
   utter_salut:
   - text: hello
   utter_assister:
@@ -60,7 +106,7 @@ responses:
   utter_creer_compte:
   - text: rempissez ce formulaire
   utter_se_connceter:
-  - text: rempissez ce formulaire
+  - text: Veuiller se connecter a travers http://127.0.0.1:8000/login/
   utter_paiement_cc:
   - text: merci de remplir ce formulaire
   utter_transfert_monnaie:
@@ -83,6 +129,22 @@ responses:
   - text: Desolée cette duree est trop petite
   utter_submit:
   - text: Ok. merci!
+  utter_ask_name:
+  - text : votre nom et prenom ?
+  utter_ask_idcard:
+  - text: votre cin?
+  utter_ask_email:
+  - text : votre address email?
+  utter_ask_birthdate:
+  - text : votre date de naissance?
+  utter_ask_phonenumber:
+  - text : votre numero tel ?
+  utter_ask_address:
+  - text: votre addresse?
+  utter_ask_login: 
+  - text : veuillez donner un login
+  utter_ask_password: 
+  - text : veuillez donner un password
 
 actions:
 - utter_ask_duration

@@ -1,0 +1,12 @@
+
+version: "2.0"
+stories:
+- story: interactive_story_1
+  steps:
+  - intent: salut
+  - action: utter_salut
+  - action: utter_assister
+  - intent: Supprimer_compte
+  - action: utter_se_connceter
+  - action: utter_supprimer
+
