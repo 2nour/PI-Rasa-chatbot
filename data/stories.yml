@@ -38,3 +38,15 @@ stories:
     - duree: '7'
   - action: validate_credit_form
   - intent: merci
+
+- story: interactive_story_1
+  steps:
+  - intent: verifier_humain
+  - action: utter_verifier_humain
+  - intent: verifier_le_solde
+    entities:
+    - somme_argent: credit
+  - action: utter_se_connceter
+  - intent: verifier_le_solde
+    entities:
+    - somme_argent: credit

@@ -21,7 +21,7 @@ class ValidateCreditForm(FormValidationAction):
         ## somme totale : salaire + 0.25 * 12 
         salaire = tracker.get_slot('salaire')
         duree = tracker.get_slot('duree')
-        creditPossible = salaire *0.25/12 - 12 * duree
+        creditPossible = int(salaire) *0.25/12 - 12 * int(duree)
     
         return dispatcher.utter_message(text = "Montant de credit est " + str(creditPossible) + "par mois" )
 
@@ -34,7 +34,7 @@ class ValidateCreditForm(FormValidationAction):
     ) -> Dict[Text, Any]:
         """Validate salary value."""
         salary_int = tracker.get_slot('salaire')
-        if salary_int > 450 :
+        if int(salary_int) > 450 :
             # validation succeeded, set the value of the "cuisine" slot to value
             return {"salaire": salary_int}
         else:
@@ -52,7 +52,7 @@ class ValidateCreditForm(FormValidationAction):
     ) -> Dict[Text, Any]:
         """Validate duration value."""
         duration_int = tracker.get_slot('duree')
-        if duration_int > 1 and duration_int < 25 :
+        if int(duration_int) > 1 and duration_int < 25 :
             # validation succeeded, set the value of the "cuisine" slot to value
             return {"duree": duration_int}
         else:

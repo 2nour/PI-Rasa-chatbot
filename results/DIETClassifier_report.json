@@ -1,11 +1,4 @@
 {
-  "compte": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 10,
-    "confused_with": {}
-  },
   "transactions": {
     "precision": 1.0,
     "recall": 1.0,
@@ -13,11 +6,27 @@
     "support": 7,
     "confused_with": {}
   },
-  "PERSONNE": {
+  "name": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1-score": 0.6666666666666666,
+    "support": 4,
+    "confused_with": {
+      "login": 2
+    }
+  },
+  "address": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
-    "support": 42,
+    "support": 8,
+    "confused_with": {}
+  },
+  "email": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1-score": 0.6666666666666666,
+    "support": 2,
     "confused_with": {}
   },
   "carte_credit": {
@@ -27,6 +36,13 @@
     "support": 28,
     "confused_with": {}
   },
+  "login": {
+    "precision": 0.6666666666666666,
+    "recall": 1.0,
+    "f1-score": 0.8,
+    "support": 4,
+    "confused_with": {}
+  },
   "type_compte": {
     "precision": 1.0,
     "recall": 1.0,
@@ -34,29 +50,92 @@
     "support": 101,
     "confused_with": {}
   },
+  "birthdate": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1,
+    "confused_with": {}
+  },
+  "phonenumber": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1-score": 0.6666666666666666,
+    "support": 2,
+    "confused_with": {
+      "password": 1
+    }
+  },
+  "duree": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 5,
+    "confused_with": {}
+  },
+  "idcard": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1-score": 0.6666666666666666,
+    "support": 2,
+    "confused_with": {
+      "password": 1
+    }
+  },
+  "salaire": {
+    "precision": 1.0,
+    "recall": 0.8333333333333334,
+    "f1-score": 0.9090909090909091,
+    "support": 6,
+    "confused_with": {
+      "password": 1
+    }
+  },
+  "password": {
+    "precision": 0.5,
+    "recall": 1.0,
+    "f1-score": 0.6666666666666666,
+    "support": 3,
+    "confused_with": {}
+  },
   "somme_argent": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
-    "support": 54,
+    "support": 56,
+    "confused_with": {}
+  },
+  "PERSONNE": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 42,
+    "confused_with": {}
+  },
+  "compte": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 9,
     "confused_with": {}
   },
   "micro avg": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 242
+    "precision": 0.982078853046595,
+    "recall": 0.9785714285714285,
+    "f1-score": 0.9803220035778175,
+    "support": 280
   },
   "macro avg": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 242
+    "precision": 0.9479166666666666,
+    "recall": 0.8645833333333334,
+    "f1-score": 0.8776515151515152,
+    "support": 280
   },
   "weighted avg": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 242
-  }
+    "precision": 0.9898809523809522,
+    "recall": 0.9785714285714285,
+    "f1-score": 0.9797186147186147,
+    "support": 280
+  },
+  "accuracy": 0.9966740576496674
 }

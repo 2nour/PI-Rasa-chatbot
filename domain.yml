@@ -3,92 +3,91 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- salaire
-- duree
-- credit_possible
-- merci
-- salut
-- bye
-- nouveau_compte
-- verifier_humain
-- se_connecter
-- verifier_types_des_comptes
-- transferer_argent
-- supprimer_compte
-- verifier_le_solde
-- demender_aide
-- payer_cc
-- transactions_et_gains_anterieurs
-- consulter_humain
 - affirmer
-- verifier_les_offres_et_services_bancaires
-- refuser
+- bye
+- consulter_humain
+- credit_possible
+- demender_aide
+- duree
 - erifier_le_solde
+- merci
+- nouveau_compte
+- payer_cc
+- refuser
+- salaire
+- salut
+- se_connecter
+- supprimer_compte
+- transactions_et_gains_anterieurs
+- transferer_argent
+- verifier_humain
+- verifier_le_solde
+- verifier_les_offres_et_services_bancaires
+- verifier_types_des_comptes
 entities:
+- somme_argent
 - PERSONNE
 - carte_credit
 - compte
 - duree
 - salaire
-- somme_argent
 - transactions
 - type_compte
 slots:
   salaire:
     type: text
     mappings:
-      - type: from_entity
-        entity: salaire
+    - type: from_entity
+      entity: salaire
   duree:
     type: text
     mappings:
-      - type: from_entity
-        entity: duree
+    - type: from_entity
+      entity: duree
   name:
     type: text
     mappings:
-      - type: from_entity
-        entity: name
+    - type: from_entity
+      entity: name
   idcard:
     type: text
     mappings:
-      - type: from_entity
-        entity: idcard
+    - type: from_entity
+      entity: idcard
   email:
     type: text
     mappings:
-      - type: from_entity
-        entity: email
+    - type: from_entity
+      entity: email
   birthdate:
     type: text
     mappings:
-      - type: from_entity
-        entity: birthdate
+    - type: from_entity
+      entity: birthdate
   phonenumber:
     type: text
     mappings:
-      - type: from_entity
-        entity: phonenumber
+    - type: from_entity
+      entity: phonenumber
   address:
     type: text
     mappings:
-      - type: from_entity
-        entity: address
+    - type: from_entity
+      entity: address
   login:
     type: text
     mappings:
-      - type: from_entity
-        entity: login
+    - type: from_entity
+      entity: login
   password:
     type: text
     mappings:
-      - type: from_entity
-        entity: password
-  
+    - type: from_entity
+      entity: password
 responses:
   utter_bye:
   - text: au  revoir
-  - text : bye
+  - text: bye
   utter_salut:
   - text: hello
   utter_assister:
@@ -130,22 +129,21 @@ responses:
   utter_submit:
   - text: Ok. merci!
   utter_ask_name:
-  - text : votre nom et prenom ?
+  - text: votre nom et prenom ?
   utter_ask_idcard:
   - text: votre cin?
   utter_ask_email:
-  - text : votre address email?
+  - text: votre address email?
   utter_ask_birthdate:
-  - text : votre date de naissance?
+  - text: votre date de naissance?
   utter_ask_phonenumber:
-  - text : votre numero tel ?
+  - text: votre numero tel ?
   utter_ask_address:
   - text: votre addresse?
-  utter_ask_login: 
-  - text : veuillez donner un login
-  utter_ask_password: 
-  - text : veuillez donner un password
-
+  utter_ask_login:
+  - text: veuillez donner un login
+  utter_ask_password:
+  - text: veuillez donner un password
 actions:
 - utter_ask_duration
 - utter_ask_salary
@@ -153,4 +151,6 @@ actions:
 - utter_bye
 - utter_nouveau_compte
 - utter_salut
+- utter_se_connceter
+- utter_verifier_humain
 - validate_credit_form

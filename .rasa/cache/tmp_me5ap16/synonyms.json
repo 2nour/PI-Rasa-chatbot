@@ -1,0 +1,14 @@
+{
+  "carte de crédit": "credit",
+  "carte": "credit",
+  "solde": "credit",
+  "pret": "credit",
+  "creance": "credit",
+  "emprunt": "credit",
+  "cc": "carte_credit",
+  "destinataires": "transaction",
+  "envoi d'argent": "transaction",
+  "gains": "transaction",
+  "compte client": "compte",
+  "compte bancaire": "compte"
+}

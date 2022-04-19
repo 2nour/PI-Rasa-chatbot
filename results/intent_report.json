@@ -1,51 +1,37 @@
 {
-  "verifier_les_offres_et_services_bancaires": {
+  "address": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "email": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "verifier_humain": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 20,
+    "confused_with": {}
+  },
+  "login": {
+    "precision": 0.75,
+    "recall": 1.0,
+    "f1-score": 0.8571428571428571,
+    "support": 3,
+    "confused_with": {}
+  },
+  "credit_possible": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
     "support": 8,
-    "confused_with": {}
-  },
-  "payer_cc": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 35,
-    "confused_with": {}
-  },
-  "affirmer": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 19,
-    "confused_with": {}
-  },
-  "supprimer_compte": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 3,
-    "confused_with": {}
-  },
-  "consulter_humain": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 22,
-    "confused_with": {}
-  },
-  "verifier_le_solde": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 51,
-    "confused_with": {}
-  },
-  "transferer_argent": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 51,
     "confused_with": {}
   },
   "salut": {
@@ -55,25 +41,11 @@
     "support": 10,
     "confused_with": {}
   },
-  "se_connecter": {
+  "duree": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
-    "support": 4,
-    "confused_with": {}
-  },
-  "merci": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 24,
-    "confused_with": {}
-  },
-  "bye": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 9,
+    "support": 6,
     "confused_with": {}
   },
   "verifier_types_des_comptes": {
@@ -83,25 +55,55 @@
     "support": 5,
     "confused_with": {}
   },
-  "demender_aide": {
+  "merci": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
-    "support": 26,
+    "support": 24,
+    "confused_with": {}
+  },
+  "salaire": {
+    "precision": 1.0,
+    "recall": 0.8333333333333334,
+    "f1-score": 0.9090909090909091,
+    "support": 6,
+    "confused_with": {
+      "password": 1
+    }
+  },
+  "verifier_les_offres_et_services_bancaires": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 8,
     "confused_with": {}
   },
   "nouveau_compte": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
-    "support": 10,
+    "support": 9,
     "confused_with": {}
   },
-  "credit_possible": {
+  "se_connecter": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
-    "support": 7,
+    "support": 4,
+    "confused_with": {}
+  },
+  "consulter_humain": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 22,
+    "confused_with": {}
+  },
+  "bye": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 9,
     "confused_with": {}
   },
   "refuser": {
@@ -111,6 +113,82 @@
     "support": 9,
     "confused_with": {}
   },
+  "verifier_le_solde": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 104,
+    "confused_with": {}
+  },
+  "password": {
+    "precision": 0.5,
+    "recall": 1.0,
+    "f1-score": 0.6666666666666666,
+    "support": 3,
+    "confused_with": {}
+  },
+  "affirmer": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 19,
+    "confused_with": {}
+  },
+  "demender_aide": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 26,
+    "confused_with": {}
+  },
+  "birthdate": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1,
+    "confused_with": {}
+  },
+  "idcard": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1-score": 0.6666666666666666,
+    "support": 2,
+    "confused_with": {
+      "password": 1
+    }
+  },
+  "name": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1-score": 0.6666666666666666,
+    "support": 2,
+    "confused_with": {
+      "login": 1
+    }
+  },
+  "supprimer_compte": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 3,
+    "confused_with": {}
+  },
+  "payer_cc": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 35,
+    "confused_with": {}
+  },
+  "phonenumber": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1-score": 0.6666666666666666,
+    "support": 2,
+    "confused_with": {
+      "password": 1
+    }
+  },
   "transactions_et_gains_anterieurs": {
     "precision": 1.0,
     "recall": 1.0,
@@ -118,24 +196,23 @@
     "support": 7,
     "confused_with": {}
   },
-  "verifier_humain": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 19,
-    "confused_with": {}
-  },
-  "accuracy": 1.0,
+  "accuracy": 0.9886039886039886,
   "macro avg": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 319
+    "precision": 0.9722222222222222,
+    "recall": 0.9382716049382717,
+    "f1-score": 0.9419592752926087,
+    "support": 351
   },
   "weighted avg": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 319
+    "precision": 0.9935897435897436,
+    "recall": 0.9886039886039886,
+    "f1-score": 0.9886779886779886,
+    "support": 351
+  },
+  "micro avg": {
+    "precision": 0.9886039886039886,
+    "recall": 0.9886039886039886,
+    "f1-score": 0.9886039886039886,
+    "support": 351
   }
 }

@@ -1,4 +1,4 @@
-version: "2.0"
+version: "3.1"
 nlu:
 - intent: name
   examples: |
@@ -19,16 +19,16 @@ nlu:
   examples: |
     - [20052552](phonenumber)
     - mon num [95752552](phonenumber)
-- intent : address
+- intent: address
   examples: |
     - j'habite a [24 rue d'inde](address)
     - j'habite a [24 rue d'irak](address)
-- intent : login
+- intent: login
   examples: |
     - [nourhadrich](login)
     - [nourhadrich123](login)
     - [john doe](login)
-- intent : password
+- intent: password
   examples: |
     - [123456789](password)
     - [000000000](password)
@@ -82,7 +82,6 @@ nlu:
     - sur [5](duree) annees
     - [2](duree) ans
     - [1](duree) an
-    - [7](duree) ans
 - intent: affirmer
   examples: |
     - oui
@@ -164,6 +163,7 @@ nlu:
     - es-tu un robot
     - es-tu sûr d'être un bot ?
     - robot ?
+    - t'es un bot ?
 - intent: consulter_humain
   examples: |
     - remise
@@ -318,6 +318,8 @@ nlu:
     - Veuillez transférer 50 dollars à [Andreas](PERSONNE)
     - Je souhaite transférer de l'argent à [Philipp](PERSONNE)
     - Je souhaite transférer 50 $ à [Joschka](PERSONNE)
+    - je veux consulter mon [solde]{"entity": "somme_argent", "value": "credit"}
+    - mon [solde]{"entity": "somme_argent", "value": "credit"} svp
 - intent: transactions_et_gains_anterieurs
   examples: |
     - Montrez-moi ma liste de [transactions](transactions)

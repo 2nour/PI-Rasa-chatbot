@@ -1,0 +1,34 @@
+[
+  {
+    "text": "john doe",
+    "intent": "name",
+    "intent_prediction": {
+      "name": "login",
+      "confidence": 0.5036739706993103
+    }
+  },
+  {
+    "text": "13014562",
+    "intent": "idcard",
+    "intent_prediction": {
+      "name": "password",
+      "confidence": 0.40114501118659973
+    }
+  },
+  {
+    "text": "20052552",
+    "intent": "phonenumber",
+    "intent_prediction": {
+      "name": "password",
+      "confidence": 0.40114501118659973
+    }
+  },
+  {
+    "text": "2000",
+    "intent": "salaire",
+    "intent_prediction": {
+      "name": "password",
+      "confidence": 0.40114501118659973
+    }
+  }
+]
