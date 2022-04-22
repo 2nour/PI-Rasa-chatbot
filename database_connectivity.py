@@ -16,7 +16,7 @@ mycursor = mydatabase.cursor()
 #mycursor.execute("CREATE TABLE Credit (id int AUTO_INCREMENT PRIMARY KEY,  date DATE NOT NULL , duration int  NOT NULL , ammount float NOT NULL , credit_type varchar(255) NOT NULL  , account_id int NOT NULL , CONSTRAINT FK FOREIGN KEY (account_id) REFERENCES  Account(id))")
 #mycursor.execute("CREATE TABLE Credit_card (id int AUTO_INCREMENT PRIMARY KEY, credit_card_number int NOT NULL , date_exp date NOT NULL , cvv int NOT NULL , pin_code int NOT NULL , account_id int NOT NULL , constraint FK FOREIGN KEY  (account_id) REFERENCES Account(id))")
 #mycursor.execute("CREATE TABLE Transactions (id int AUTO_INCREMENT PRIMARY KEY, date DATETIME NOT NULL , amount_of_transaction float NOT NULL , transaction_type varchar(255) NOT NULL , account_id int NOT NULL , external_account_id int NOT NULL ,constraint FK FOREIGN KEY  (account_id) REFERENCES Account(id), constraint FK1 FOREIGN KEY  (account_id) references  Account(id))" )
-#mycursor.execute("CREATE TABLE Reclamation(id int AUTO_INCREMENT PRIMARY KEY, description varchar(255) NOT NULL , rib int(16) NOT NULL , state varchar(255) DEFAULT "In progress" , ref_code int NOT NULL)")
+#mycursor.execute("CREATE TABLE Reclamation(id int AUTO_INCREMENT PRIMARY KEY, description varchar(255) NOT NULL , rib int(16) NOT NULL , status varchar(255) DEFAULT "In progress" , ref_code int NOT NULL)")
 
 def verif_cin(cin):
   a = mycursor.execute('SELECT cin from Customers where cin='+cin)
@@ -94,3 +94,8 @@ def verif_rib(rib):
   sql = 'SELECT RIB From Account where RIB='+rib
   r = mycursor.execute(sql) 
   return r
+
+def complaint_status(rib):
+  sql = 'SELECT status FROM Reclamations where rib='+rib
+  stat = mycursor.execute(sql)
+  return stat

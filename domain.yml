@@ -55,6 +55,7 @@ intents:
 - complaint_typee
 - submit_problem
 - submit_rib
+- check_complaint_status
 
 
 
@@ -293,6 +294,7 @@ actions:
 - action_create_credit
 - action_create_complaint 
 - action_complaint_type
+- action_check_complaint_status
 ########################
 - action_check_mandat_state
 - action_send_mandat

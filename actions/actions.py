@@ -334,7 +334,7 @@ class ComplaintTypoeAction(Action):
     
         return []
 
-class CloseAccountAction(Action):
+class CreateComplaintAction(Action):
     def name(self) -> Text:
         return "action_create_complaint"
 
@@ -351,9 +351,27 @@ class CloseAccountAction(Action):
         if(len(verif_rib(int(rib)))==0):
             dispatcher.utter_message(text = "Invalid RIB")
         elif(desc == "other prtoblem"):
-            create_complaint(problem, rib, ref)
+            create_complaint(problem, int(rib), ref)
             dispatcher.utter_message(text = "Complaint stored succesffully")
         else:
-            create_complaint(desc, rib, ref)
+            create_complaint(desc, int(rib), ref)
             dispatcher.utter_message(text = "Complaint stored succesffully")
+        return []
+
+class CheckComplaintAction(Action):
+    def name(self) -> Text:
+        return "action_check_complaint_status"
+
+    def run(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) ->List[Dict[Text, Any]]:
+        rib = tracker.get_slot("rib")
+        stat = complaint_status(rib)
+        if(len(verif_rib(int(rib)))==0):
+            dispatcher.utter_message(text = "Invalid RIB")
+        else:
+            dispatcher.utter_message(text = "Your complaint is+"+stat)
         return []

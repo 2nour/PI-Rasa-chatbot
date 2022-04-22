@@ -658,6 +658,14 @@ nlu:
     - [I have an email issue with transactions](problem)
     - [I cant't get the desired credit amount](problem)
 
+- intent: check_complaint_status
+  examples: |
+    - i want to check my complaint status
+    - i want to check my complaint request
+    - i wanna look at my complaint status
+    - can you check my complaint request status
+    - please check my complaint status    
+
 
 
 
