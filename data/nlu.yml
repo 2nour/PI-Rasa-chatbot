@@ -405,6 +405,7 @@ nlu:
     - Je veux supprimer mon [compte](compte)
     - Je veux annuler mon [compte](compte)
     - Je veux retirer mon [compte](compte)
+    - supprimer [compte](compte)
 - synonym: credit
   examples: |
     - carte de crédit

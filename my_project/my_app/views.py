@@ -2,9 +2,6 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.contrib.auth.forms import UserCreationForm
 import pymysql
-from rest_framework.views import APIView
-from rest_framework.response import Response
-from rest_framework.permissions import IsAuthenticated
 
 # Create your views here.
 
@@ -32,11 +29,10 @@ def loginView(request):
             return render(request,'registration/login.html') 
         else :
             print(t)
-            permission_classes = (IsAuthenticated,)
-            print(permission_classes)
             return render(request,"chatroom.html")
+    return render(request,'registration/login.html') 
+
     
-   # res = list(map(itemgetter(0)))
 
 
 

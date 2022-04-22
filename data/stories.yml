@@ -50,3 +50,13 @@ stories:
   - intent: verifier_le_solde
     entities:
     - somme_argent: credit
+
+- story: interactive_story_1
+  steps:
+  - intent: salut
+  - action: utter_salut
+  - action: utter_assister
+  - intent: supprimer_compte
+    entities:
+    - compte: compte
+  - action: action_email

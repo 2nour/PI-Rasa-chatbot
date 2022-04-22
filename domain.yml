@@ -3,16 +3,24 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
+- address
 - affirmer
+- birthdate
 - bye
 - consulter_humain
 - credit_possible
 - demender_aide
 - duree
+- email
 - erifier_le_solde
+- idcard
+- login
 - merci
+- name
 - nouveau_compte
+- password
 - payer_cc
+- phonenumber
 - refuser
 - salaire
 - salut
@@ -25,14 +33,22 @@ intents:
 - verifier_les_offres_et_services_bancaires
 - verifier_types_des_comptes
 entities:
+- compte
 - somme_argent
 - PERSONNE
 - carte_credit
-- compte
 - duree
 - salaire
 - transactions
 - type_compte
+- name
+- idcard
+- email
+- birthdate
+- phonenumber
+- address
+- login
+- password
 slots:
   salaire:
     type: text
@@ -145,6 +161,7 @@ responses:
   utter_ask_password:
   - text: veuillez donner un password
 actions:
+- action_email
 - utter_ask_duration
 - utter_ask_salary
 - utter_assister
