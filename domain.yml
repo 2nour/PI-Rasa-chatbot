@@ -1,6 +1,19 @@
 version: "3.0"
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
 
 intents:
+- possible_credit
+- get_salary
+- get_duration5
+- get_duration7
+- get_duration10
+- get_duration15
+- get_duration20
+- create_new_id
+- identity
+- password
 - greet
 - goodbye
 - affirm
@@ -12,45 +25,173 @@ intents:
 - check_balance
 - transfer_money
 - previous_transactions_and_earnings
-- possible_credit
 - check_bank_offers_and_services
 - check_type_of_accounts
 - create_new_account
 - pay_cc
 - sign_in
 - delete_account
-- get_salary
-- get_duration
 - mood_great
 - mood_unhappy
 - bot_challenge
+- fullname
+- email
+- birthdate
+- number
+- address
+- login
+- savings_account_ty
+- current_account_ty
+- salary_account_ty
+- choose_account
+- get_credit
+- personal_credit
+- car_credit
+- real_estate_credit
+- desired_amount
+- last_five_trans
+- all_trans
+- complaint_request
+- complaint_typee
+- submit_problem
+- submit_rib
+
+
 
 entities:
-- account
 - Person
+- account
 - account_type
-- amount-of-money
-- transactions
+- addresse
+- balancee
+- birth_date
+- choose_account
 - credit
-- salary
 - duration
+- full_name
+- id_number
+- loginn
+- mail
+- pass
+- phone_number
+- salaryy
+- transactions
+- amount-of-money
+- credit_type
+- credit_amount
+- transactions_type
+- complaint_type
+- rib
+- problem
 
 slots:
   salary:
     type: any
+    influence_conversation: false
     mappings:
-      - type: from_entity
-        entity: salary
+    - type: from_entity
+      entity: salaryy
   duration:
     type: any
+    influence_conversation: false
     mappings:
-      - type: from_entity
-        entity: duration
+    - type: from_entity
+      entity: duration
+  name:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: full_name
+  id:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: id_number
+  email:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: mail
+  birthdate:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: birth_date
+  number:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: phone_number
+  address:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: addresse
+  login:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: loginn
+  password:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: pass
+  account_type:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: account_type
+  credit_type:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: credit_type
+  credit_amount:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: credit_amount
+  transactions_type:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: transactions_type
+  comlplaint_type:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: complaint_type
+  rib:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: rib
+  problem:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: problem
 
 responses:
   utter_greet:
   - text: Hello
-  - text: Hi 
+  - text: Hi
   - text: Welcome
   - text: Hey there
   - text: Hola
@@ -80,50 +221,87 @@ responses:
   - text: As you like
   - text: As you want
   - text: As you desire
-  - text: That's fine as you wish 
+  - text: That's fine as you wish
   utter_iamabot:
   - text: I'm a bot
   - text: I'm a banking chatbot
-  - text: No I'm a chatbot 
+  - text: No I'm a chatbot
   utter_your_welcome:
   - text: You're welcome sir
   - text: Of course sir
-  - text: Your wish is gonna be reality  
+  - text: Your wish is gonna be reality
   utter_pass_to_human:
   - text: To consult a customer service agent you need to call +2163048573 or to visit our website www.banking-bank.com
-  utter_enter_salary :
-  - text: please enter your monthly salary , it should be greater than 450 TND 
+  utter_enter_salary:
+  - text: please enter your monthly salary , it should be greater than 450 TND
   - text: please pass your monthly earnings , it should be greater than 450 TND
   utter_duration:
   - text: please enter the desired credit duration , only 3 , 5 , 7 , 10 and 20 years commitments are possible
   - text: please enter the desired loan duration , only 3 , 5 , 7 , 10 and 20 years commitments are possible
   utter_wrong_salary:
-  - text: "salary should be greater than 450 TND , please try again"
+  - text: salary should be greater than 450 TND , please try again
   utter_wrong_duration:
-  - text: "wrong duration please choosed an adequate duration"
+  - text: wrong duration please choosed an adequate duration
   utter_show_offers_and_services:
-  - text: "aaa"
+  - text: aaa
   utter_show_account_types:
-  - text: "bbb"
+  - text: bbb
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
   utter_did_that_help:
-  - text: "Did that help you?"
+  - text: Did that help you?
   utter_happy:
-  - text: "Great, carry on!"
+  - text: Great, carry on!
+  utter_enter_your_name:
+  - text: please enter your fullname
+  utter_enter_cin:
+  - text: please enter your identity card number
+  utter_enter_email:
+  - text: please enter your email address
+  utter_enter_birthdate:
+  - text: please enter your birthdate it should follows this format(yyyy-mm-dd)
+  utter_enter_number:
+  - text: please enter your phone number
+  utter_enter_adress:
+  - text: please enter your full address
+  utter_enter_login:
+  - text: please choose your login it should be a mix between words and numbers
+  utter_enter_password:
+  - text: please choose your password it should be 7 characters
+  utter_desired_amount:
+  - text: please enter the credit amount you desire 
+  utter_enter_account_number:
+  - text: please enter your account number (RIB)
 
 actions:
-- action_create_account
-- action_sign_in
-- action_show_balance
-- action_transfer_money
-- action_pay_cc
-- action_ask why
-- action_delete
+- action_account_type
+- action_ask_why
 - action_check_earnings
+- action_create_account
+- action_create_id
+- action_delete
+- action_pay_cc
 - action_possible_credit
-
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+- action_show_balance
+- action_sign_in
+- action_transfer_money
+- action_personal_credit_duration
+- action_car_credit_duration
+- action_real_estate_credit_duration
+- action_credit_type
+- action_create_credit
+- action_create_complaint 
+- action_complaint_type
+########################
+- action_check_mandat_state
+- action_send_mandat
+- action_nearest_agency
+- action_cheque_request
+- action_currency_calculator
+- action_check_all_earnings
+- action_activate_cc
+- action_extrait_bancaire
+- action_check_balance_null
+- action_rhan
+- action_rouge

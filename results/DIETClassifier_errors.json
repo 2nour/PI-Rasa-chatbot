@@ -1,0 +1,182 @@
+[
+  {
+    "text": "i want to pay off mycredit card",
+    "entities": [
+      {
+        "start": 20,
+        "end": 31,
+        "value": "credit card",
+        "entity": "account_type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i would like to pay $1200 to my [credit card]balance",
+    "entities": [
+      {
+        "start": 45,
+        "end": 52,
+        "value": "balance",
+        "entity": "amount-of-money"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Pay off my [credit card][credit card]balance, please",
+    "entities": [
+      {
+        "start": 37,
+        "end": 44,
+        "value": "balance",
+        "entity": "amount-of-money"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Let's pay that [credit card][credit card]balance bill",
+    "entities": [
+      {
+        "start": 41,
+        "end": 48,
+        "value": "balance",
+        "entity": "amount-of-money"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "could I pay off my [credit card]balance",
+    "entities": [
+      {
+        "start": 32,
+        "end": 39,
+        "value": "balance",
+        "entity": "amount-of-money"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "pay off my [credit card]balance",
+    "entities": [
+      {
+        "start": 24,
+        "end": 31,
+        "value": "balance",
+        "entity": "amount-of-money"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i wanna pay my [credit card]balance",
+    "entities": [
+      {
+        "start": 28,
+        "end": 35,
+        "value": "balance",
+        "entity": "amount-of-money"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I want to log in to myaccount",
+    "entities": [
+      {
+        "start": 22,
+        "end": 29,
+        "value": "account",
+        "entity": "account"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "09954231",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "09954231",
+        "entity": "id_number"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "salaryy",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.5908235311508179,
+        "value": "09954231",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "54312678",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "54312678",
+        "entity": "phone_number"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "salaryy",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.5908235311508179,
+        "value": "54312678",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "20052651",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "20052651",
+        "entity": "phone_number"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "salaryy",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.5908235311508179,
+        "value": "20052651",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "93124759",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "93124759",
+        "entity": "phone_number"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "salaryy",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.5908235311508179,
+        "value": "93124759",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

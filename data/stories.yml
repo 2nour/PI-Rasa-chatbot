@@ -31,3 +31,9 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+- story: deny path
+  steps:
+  - intent: deny
+  - action: utter_as_you_like
+  - action: utter_goodbye
+

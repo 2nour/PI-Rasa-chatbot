@@ -1,6 +1,6 @@
 version: "3.0"
 nlu:
-- intent : greet 
+- intent: greet
   examples: |
     - hi
     - hey
@@ -11,11 +11,8 @@ nlu:
     - whats up
     - wassup
     - yo
-    - good morning 
+    - good morning
     - hey there
-    - hey
-    - good evening
-    - hello 
     - HEY
     - hello are you still there
     - hallo
@@ -31,11 +28,10 @@ nlu:
     - welcome
     - howdy
     - good day
-
 - intent: goodbye
   examples: |
     - see you later
-    - goodbye 
+    - goodbye
     - i'm done
     - quit
     - stop
@@ -60,10 +56,8 @@ nlu:
     - good bye
     - good bye rasa bot!
     - good night
-    - goodbye
     - goodnight
     - gotta go
-
 - intent: affirm
   examples: |
     - indeed
@@ -96,9 +90,8 @@ nlu:
     - Yes please
     - Yes please!
     - Yes, I accept
-    - yes 
-    - Yes 
- 
+    - yes
+    - Yes
 - intent: deny
   examples: |
     - not really
@@ -129,8 +122,7 @@ nlu:
     - I'm Grateful , but it's all right
     - Gratitude , next time
     - Thank you so much , maybe another time
-    - It's fine 
-
+    - It's fine
 - intent: ask_for_help
   examples: |
     - can you help me ?
@@ -156,20 +148,17 @@ nlu:
     - come back
     - cool! can I do something else here?
     - hello what can you do for me
-    - help
-    - help me
     - help please
     - help pls
     - help?
     - hep me
-
 - intent: check_human
   examples: |
     - are you a bot?
     - am i speaking to an ai?
     - are you a human or a bot?
-    - are you real? 
-    - are you virtual? 
+    - are you real?
+    - are you virtual?
     - are you an ai?
     - aren't you a bot
     - are you a chatbot
@@ -184,7 +173,6 @@ nlu:
     - are you robot
     - are you sure that you're a bot?
     - bot?
-
 - intent: consult_human
   examples: |
     - handoff
@@ -203,7 +191,6 @@ nlu:
     - talk to human
     - i want human :(
     - can i talk to human
-    - i want to talk to a human
     - i want to speak to human
     - can i talk to a real person?
     - connect me to a real person
@@ -212,7 +199,6 @@ nlu:
     - let me speak to a real person
     - let me speak to a real person please
     - i want to talk to a real person
-
 - intent: thanking
   examples: |
     - thank you goodbye
@@ -244,64 +230,45 @@ nlu:
     - thanks f
     - Gratitude
     - I'm grateful
-
 - intent: check_balance
   examples: |
     - How much money is on my account?
-    - How much money is on my [bank](account_type) account?
-    - what's my [balance](amount-of-money)?
-    - what's my [current balance](amount-of-money)?
+    - How much money is on my bank account?
+    - what's my [balance](balancee)?
+    - what's my [current balance](balancee)?
     - What's left on that account?
     - How much do I have on that account?
-    - What's the [balance](amount-of-money) on that account?
+    - What's the [balance](balancee) on that account?
     - How much money is left on that account?
-    - what is my account [balance](amount-of-money)
-    - what's my account [balance](amount-of-money)?
-    - what's my account [balance](amount-of-money)
-    - whats my account [balance](amount-of-money)
-    - what is my [bank](account_type) account [balance](amount-of-money)
-    - what's my [bank](account_type) account [balance](amount-of-money)?
-    - what's my [bank](account_type) account [balance](amount-of-money)
-    - whats my [bank](account_type) account [balance](amount-of-money)
-    - What's my [credit card](account_type) [balance](amount-of-money)
-    - What's my [credit](account_type) [balance](amount-of-money)
-    - How much money do I owe on my [credit cards](account_type)
-    - Show me my [credit card](account_type) [balance](amount-of-money)
-    - What [credit](account_type) accounts do I have
-    - Show me my [credit](account_type) accounts
+    - what is my account [balance](balancee)
+    - what's my account [balance](balancee)?
+    - whats my account [balance](balancee)
+    - what is my bank account [balance](balancee)?
+    - what's my bank account [balance](balancee)?
+    - what's my bank account [balance](balancee)?
+    - How much money do I owe on my account 
+    - What [balance](balancee) do I have
+    - Show me my account balance
     - Whats the [balance](amount-of-money) on my [credit](account_type) account
-    - What's my [credit](account_type) account
-    - What's my [emblem](credit_card) [card](account_type) [balance](amount-of-money)
-    - Show me my [iron bank](credit_card) [balance](amount-of-money)
-    - What's my [justice bank](credit_card) [balance](amount-of-money)
-    - What's the [balance](amount-of-money) on the [justice bank](credit_card) account
-    - what's my [emblm](credit_card) [credit card](account_type) [balance](amount-of-money)?
-    - what's my [credit card](account_type) [balance](amount-of-money)?
-    - what's my [credit card](account_type) account [balance](amount-of-money)?
-    - What is my [emblem](credit_card) [card](account_type) [balance](amount-of-money)?
-    - whats my [credit card](account_type) [balance](amount-of-money)
-    - What is my [emblem](credit_card) [balance](amount-of-money)?
-    - whats my [emblm](credit_card) [card](account_type) [balance](amount-of-money)?
-    - what's my [embelm](credit_card)'s [card](account_type) [balance](amount-of-money)?
-    - what's my [emblm](credit_card) account [balance](amount-of-money)?
-    - How much money have i spent lately>
-    - I should check my [credit card] [balance](amount-of-money)
-    - check my [credit card] [balance](amount-of-money)
-    - check my [credit card] [balance](amount-of-money)
-    - Can you tell me my account [balance](amount-of-money)?
+    - What's my account status
+    - Show me my account status
+    - What's my account status
+    - How much money i got in my balance
+    - I should check my account [balance](balancee)
+    - check my account status
+    - Can you tell me my account [balance](balancee)?
     - Hello, I would like to know how much money is in much money is in my account
     - hi, whats my account bal please
-    - so.... what's my [balance](amount-of-money)?
-    - whats my [current balance](amount-of-money)
-    - What's my [balance](amount-of-money)?
+    - so.... what's my [balance](balancee)?
+    - whats my [current balance](balancee)
+    - What's my [balance](balancee)?
     - How much money do I have?
     - Yeah, I like coffee 👀 But how much money do I have?
     - Yeah, I know 😀 Since it's so nice: How much money do I have?
     - what places have I spent money?
     - Wait, I'll have to check my balance first. Can you do that please?
-    - Hi, I need to know how much money is in my [checking](account_type) account
+    - Hi, I need to know how much money is in my account
     - Balance please
-
 - intent: transfer_money
   examples: |
     - I want to pay [John](PERSON)
@@ -359,7 +326,6 @@ nlu:
     - Please transfer 50 dollars to [Andreas](PERSON)
     - I would like to transfer money to [Philipp](PERSON)
     - I would like to transfer 50$ to [Joschka](PERSON)
-
 - intent: previous_transactions_and_earnings
   examples: |
     - Show me my list of [transactions](transactions)
@@ -368,81 +334,110 @@ nlu:
     - can I see the list of known [transactions](transactions)?
     - what's my [transactions](transactions) list
     - can I see my [transactions](transactions) list ?
-    - show me my [transactions](transactions) list 
-
-- synonym: transactions
-  examples: |
-    - Recipients
-    - money-sending
-    - earnings
-
+    - show me my [transactions](transactions) list
 - intent: possible_credit
   examples: |
     - How much [credit](credit) can the bank afford me ?
-    - What amount of [credit](credit)  can i get ?
-    - I wanna check possible [credit](credit) amounts 
-    - let me see [credit](credit) options
+    - What amount of [credit](credit) can i get ?
+    - I wanna check possible [credit](credit) amount
+    - let me see possible [credit](credit) amount
     - How much money can the bank afford me as a [credit](credit) ?
     - Can I check possible [credit](credit) i can get ?
-    - What is the possible amount of [credit](credit) i can borrow ?
+    - What is the possible amount of money i can borrow ?
+    - what is my possible [credit](credit) amount
+    - what is my potential [credit](credit) amouint
+- intent: get_credit
+  examples: |
+    - i want a [credit](credit)
+    - i want to purchase a [credit](credit)
+    - i would like to get a [credit](credit)
+    - i want to borrow money
 
 - intent: get_salary
   examples: |
-    - my salary is [2500](salary) 
-    - my earnings are [4000](salary)
-    - the monthly amount is [3000](salary)
-    - I get paid[4000](salary) a month
-    - [5000](salary)
-
-
-- intent: get_duration
+    - my salary is [2500](salaryy)
+    - my earnings are [4000](salaryy)
+    - the monthly amount is [3000](salaryy)
+    - I get paid [4000](salaryy) a month
+    - [5000](salaryy)
+    - [4000](salaryy)
+    - [2500](salaryy)
+    - [500](salaryy)
+    - [1500](salaryy)
+    - [750](salaryy)
+    - [1250](salaryy)
+- intent: get_duration5
   examples: |
-    - my credit time length is [5](duration)
-    - the credit duration is [3](duration)
-    - the duration is [20](duration)
-    - duration is [4](duration) 
-    -[7](duration)
+    - my credit time length is [5](duration) years
+    - the credit duration is [5](duration) years
+    - the duration is [5](duration) years
+    - duration is [5](duration) years
+    - [5](duration) years
 
-- synonym: credit
+- intent: get_duration7
   examples: |
-    - loan
+    - my credit time length is [7](duration) years
+    - the credit duration is [7](duration) years
+    - the duration is [7](duration) years
+    - duration is [7](duration) years
+    - [7](duration) years
+- intent: get_duration10
+  examples: |
+    - my credit time length is [10](duration) years
+    - the credit duration is [10](duration) years
+    - the duration is [10](duration) years
+    - duration is [10](duration) years
+    - [10](duration) years
+- intent: get_duration15
+  examples: |
+    - my credit time length is [15](duration) years
+    - the credit duration is [15](duration) years
+    - the duration is [15](duration) years
+    - duration is [15](duration) years
+    - [15](duration) years
 
+- intent: get_duration20
+  examples: |
+    - my credit time length is [20](duration) years
+    - the credit duration is [20](duration) years
+    - the duration is [20](duration) years
+    - duration is [20](duration) years
+    - [20](duration) years
+    
 - intent: check_bank_offers_and_services
   examples: |
-    - Can you inform me about bank offers 
+    - Can you inform me about bank offers
     - Can you show me your bank privileges
     - I want to see your banking-services
     - I wanna see your offers
     - I wanna dicover your services and offers
     - I want check your special offers
-    - show me what bring this bank as advantages 
+    - show me what bring this bank as advantages
     - Tell me about your services and offers
-
 - intent: check_type_of_accounts
   examples: |
     - Can you show me different types of accounts available please
-    - I wanna be a new customer , show me the potential accounts 
+    - I wanna be a new customer , show me the potential accounts
     - Show me the tye of accounts this bank afford
     - Can i check the banking accounts list
     - I want to register as new customer , show me the type af accounts
-
 - intent: create_new_account
   examples: |
-    - I wanna create a new [account](account) 
-    - I want to create an [account](account) 
-    - I want to create an [account](account) ,can you help me please ?
+    - I wanna create a new account
+    - I want to create an account
+    - I want to create a new account
+    - I desire to create an account
+    - I want to register
+    - Can you create a new account
+    - I desire to be a customer
+    - I desire to be a client 
+    - I desire to register please 
+    - I want to create an account ,can you help me please ?
     - May you help me to register ?
-    - I wanna sign up 
-    - I wannt to sign up 
-    - I wanna sign up , can you help me ? 
-    - I want to sign up , may you help me ?
-    - How can I create o new accoun ?
-    - How may I be a new customer ? 
-
-- synonym: account
-  examples: |
-    - customer-account
-    - bank-account
+    - I want to register as new customer
+    - I want to be a customer 
+    - How can I create a new account ?
+    - How may I be a new customer ?
 
 - intent: pay_cc
   examples: |
@@ -460,7 +455,6 @@ nlu:
     - I want to pay my [credit card](account_type) bill
     - I want to pay the [current balance](amount-of-money) on my [credit card](account_type)
     - can you help me pay the [current balance](amount-of-money) on my [credit card](account_type)
-    - I want to pay off my [credit card](account_type)
     - I want to pay off my [credit card](account_type)
     - i want to pay my [credit card](account_type)
     - i want to pay off my[credit card](account_type)
@@ -483,28 +477,23 @@ nlu:
     - pay off my [credit card][balance](amount-of-money)
     - i wanna pay my [credit card][balance](amount-of-money)
     - pay a bill
-
-- synonym: credit_card
-  examples: |
-    - cc
-    - card
-
 - intent: sign_in
   examples: |
     - I want to sign in to my [account](account)
     - I want to log in to my[account](account)
     - I wanna sign in
-    - I wanna log in  
+    - I wanna log in
     - I wanna access to my [account](account)
-
 - intent: delete_account
   examples: |
-    - I want delete my [account](account)
-    - I want remove my[account](account)
-    - I wanna delete my [account](account)
-    - I wanna remove my [account](account)
-
-
+    - I want to close my [account](account)
+    - I want to remove my [account](account)
+    - I wanna to delete my [account](account)
+    - I wanna to remove my [account](account)
+    - I want to delete my [account](account)
+    - I wish to close my [account](account)
+    - I wish to remove my [account](account)
+    - I wanna close my [account](account)
 
 - intent: mood_great
   examples: |
@@ -522,7 +511,6 @@ nlu:
     - so so perfect
     - so good
     - so perfect
-
 - intent: mood_unhappy
   examples: |
     - my day was horrible
@@ -539,10 +527,154 @@ nlu:
     - extremly sad
     - so saad
     - so sad
-
 - intent: bot_challenge
   examples: |
     - are you a bot?
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+- intent: fullname
+  examples: |
+    - my name is [Hedy Ezzine](full_name)
+    - [Nour Hadrich](full_name)
+    - my fullname is [Amine ZArrouki](full_name)
+    - [hakim atmine rous](full_name)
+    - I'm [amen tbini](full_name)
+    - it's [ramzi mansour](full_name)
+- intent: identity
+  examples: |
+    - my identity card number is [10823131](id_number)
+    - my id is [10822112](id_number)
+    - [09954231](id_number)
+    - my id is [10815479](id_number)
+- intent: email
+  examples: |
+    - my email is [medezzine@gmail.com](mail)
+    - my mail is [nouri@yahoo.fr](mail)
+    - [naaimzarrouki@hotmail.com](mail)
+    - [mrbedis@outlook.com](mail)
+- intent: birthdate
+  examples: |
+    - my birthdate is [1997-08-22](birth_date)
+    - [1973-05-10](birth_date)
+    - [1997-6-13](birth_date)
+    - my birth date is [2000-12-3](birth_date)
+    - I was born in [1980-01-05](birth_date)
+- intent: number
+  examples: |
+    - my phone number is [27816709](phone_number)
+    - [54312678](phone_number)
+    - [20052651](phone_number)
+    - [93124759](phone_number)
+    - my number is [42137894](phone_number)
+- intent: address
+  examples: |
+    - my address is [zaghouan Tunisia](addresse)
+    - [Earth street ariana](addresse)
+    - [street of honor Tunis](addresse)
+    - my home address is [32 street of ghana, Nabeul](addresse)
+- intent: login
+  examples: |
+    - my login is [7hedi88](loginn)
+    - [nour49](loginn)
+    - [77f4amine](loginn)
+    - [127ahmed85](loginn)
+    - i want as login [17dfhf88](loginn)
+- intent: password
+  examples: |
+    - my password is [1245673](pass)
+    - [ahjdff88](pass)
+    - [mpoffgh](pass)
+    - [24amine](pass)
+    - my password is [cris778](pass)
+- intent: savings_account_ty
+  examples: |
+    - i want as account type [savings account](account_type)
+    - [savings account](account_type)
+- intent: current_account_ty
+  examples: |
+    - i want as account type [current account](account_type)
+    - [current account](account_type)
+- intent: salary_account_ty
+  examples: |
+    - i want as account type [salary account](account_type)
+    - [salary account](account_type)
+- intent: choose_account
+  examples: |
+    - i want to choose my account type
+    - i want select my account type
+
+- intent: personal_credit
+  examples: |
+    - i want as credit type [personal credit](credit_type)
+    - [personal credit](credit_type)
+- intent: car_credit
+  examples: |
+    - i want as credit type [car credit](credit_type)
+    - [car credit](credit_type)
+- intent: real_estate_credit
+  examples: |
+    - i want as credit type [real estate credit](credit_type)
+    - [real estate credit](credit_type)
+
+- intent: desired_amount
+  examples: |
+    - i want [40000](credit_amount) as credit amount
+    - i want [50000](credit_amount) as a loan
+    - i want borrow [100000](credit_amount)
+    - i would like to get [75000](credit_amount)  
+
+- intent: last_five_trans
+  examples: |
+    - i want only [last five](transactions_type)
+
+- intent: all_trans
+  examples: |
+    - i want [All](transactions_type)
+
+- intent: complaint_request
+  examples: |
+    - i have a problem i want to send a complaint request
+    - i have an issue i want to send a complaint request
+    - i want to complain about something
+    - i want to complain about a bug
+    - i have a frequent problem i want to complain about
+- intent: complaint_typee
+  examples: |
+    - [server crash problem](complaint_type)
+    - [transactions problem](complaint_type)
+    - [sign_in problem](complaint_type)
+    - [other problem](complaint_type)
+
+- intent: submit_rib
+  examples: |
+    - my rib is [1234568970035467](rib)
+    - [1478965230142678](rib)
+    - my account number is[1478965230654789](rib)
+    - [1034278596321547](rib)
+- intent: submit_problem
+  examples: |
+    - [I have an issue with my credit card](problem)
+    - [I have an email issue with transactions](problem)
+    - [I cant't get the desired credit amount](problem)
+
+
+
+
+
+- synonym: transactions
+  examples: |
+    - Recipients
+    - money-sending
+    - earnings
+- synonym: credit
+  examples: |
+    - loan
+- synonym: account
+  examples: |
+    - customer_account
+    - bank_account
+- synonym: credit_card
+  examples: |
+    - cc
+    - card

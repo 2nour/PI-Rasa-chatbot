@@ -1,0 +1,50 @@
+[
+  {
+    "text": "great",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "thanking",
+      "confidence": 0.7784130573272705
+    }
+  },
+  {
+    "text": "are you a bot?",
+    "intent": "bot_challenge",
+    "intent_prediction": {
+      "name": "check_human",
+      "confidence": 0.9027594923973083
+    }
+  },
+  {
+    "text": "09954231",
+    "intent": "identity",
+    "intent_prediction": {
+      "name": "get_salary",
+      "confidence": 0.5704683065414429
+    }
+  },
+  {
+    "text": "54312678",
+    "intent": "number",
+    "intent_prediction": {
+      "name": "get_salary",
+      "confidence": 0.5704683065414429
+    }
+  },
+  {
+    "text": "20052651",
+    "intent": "number",
+    "intent_prediction": {
+      "name": "get_salary",
+      "confidence": 0.5704683065414429
+    }
+  },
+  {
+    "text": "93124759",
+    "intent": "number",
+    "intent_prediction": {
+      "name": "get_salary",
+      "confidence": 0.5704683065414429
+    }
+  }
+]

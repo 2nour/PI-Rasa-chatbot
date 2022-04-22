@@ -11,3 +11,18 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: action_duration after intent get salary
+  steps:
+  - intent: get_salary
+  - action: action_credit_duration
+
+- rule: utter salary after intent possible credit
+  steps:
+  - intent: possible_credit
+  - action: utter_enter_salary
+
+- rule: action account type after intent
+  steps:
+  - intent: create_new_account
+  - action: action_account_type

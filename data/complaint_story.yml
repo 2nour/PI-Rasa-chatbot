@@ -1,0 +1,100 @@
+version: "3.0"
+stories:
+- story: sc_complaint_script1
+  steps:
+  - intent: complaint_request
+  - action: action_complaint_type
+  - intent: complaint_typee
+    entities: 
+      - complaint_type: "server crash problem"
+  - slot_was_set:
+      - camplaint_type: "server crash problem"
+  - action: utter_enter_account_number
+  - intent: submit_rib
+  - action: action_create_complaint
+  - action: utter_need_more_assist
+
+  - story: sc_complaint_script2
+  steps:
+  - action: action_sign_in
+  - intent: complaint_request
+  - action: action_complaint_type
+  - intent: complaint_typee
+    entities: 
+      - complaint_type: "server crash problem"
+  - slot_was_set:
+      - camplaint_type: "server crash problem"
+  - action: action_create_complaint
+
+  - story: transaction_complaint_script1
+  steps:
+  - intent: complaint_request
+  - action: action_complaint_type
+  - intent: complaint_typee
+    entities: 
+      - complaint_type: "transactions problem"
+  - slot_was_set:
+      - camplaint_type: "transactions problem"
+  - action: utter_enter_account_number
+  - intent: submit_rib
+  - action: action_create_complaint
+  - action: utter_need_more_assist
+
+  - story: transaction_complaint_script2
+  steps:
+  - action: action_sign_in
+  - intent: complaint_request
+  - action: action_complaint_type
+  - intent: complaint_typee
+    entities: 
+      - complaint_type: "transactions problem"
+  - slot_was_set:
+      - camplaint_type: "transactions problem"
+  - action: action_create_complaint
+  - action: utter_need_more_assist
+
+  - story: sign_in_complaint_script
+  steps:
+  - intent: complaint_request
+  - action: action_complaint_type
+  - intent: complaint_typee
+    entities: 
+      - complaint_type: "sign_in problem"
+  - slot_was_set:
+      - camplaint_type: "sign_in problem"
+  - action: utter_enter_account_number
+  - intent: submit_rib
+  - action: action_create_complaint
+  - action: utter_need_more_assist
+
+  - story: other_complaint_script1
+  steps:
+  - intent: complaint_request
+  - action: action_complaint_type
+  - intent: complaint_typee
+    entities: 
+      - complaint_type: "other problem"
+  - slot_was_set:
+      - camplaint_type: "other problem"
+  - action: utter_enter_account_number
+  - intent: submit_rib
+  - action: uttter_enter_problem
+  - intent: submit_problem
+  - action: action_create_complaint
+  - action: utter_need_more_assist
+
+  - story: other_complaint_script2
+  steps:
+  - action: action_sign_in
+  - intent: complaint_request
+  - action: action_complaint_type
+  - intent: complaint_typee
+    entities: 
+      - complaint_type: "other problem"
+  - slot_was_set:
+      - camplaint_type: "other problem"
+  - action: uttter_enter_problem
+  - intent: submit_problem
+  - action: action_create_complaint
+  - action: utter_need_more_assist
+

@@ -10,21 +10,21 @@ pipeline:
     min_ngram: 1
     max_ngram: 4
   - name: DIETClassifier
-    epochs: 200
+    epochs: 285
+    constrain_similarities: True
   - name: FallbackClassifier
     threshold: 0.3
-  - name: SpacyNLP
-    model: "en_core_web_md"
-    case_sensitive: false
   - name: EntitySynonymMapper
-    epochs: 200
+    epochs: 300
     random_seed: 2
+  - name: ResponseSelector
+    epochs: 250
     constrain_similarities: True
 policies:
   - name: AugmentedMemoizationPolicy
   - name: TEDPolicy
     max_history: 5
-    epochs: 300
+    epochs: 250
   - name: RulePolicy
     core_fallback_threshold: 0.4
     enable_fallback_prediction: True

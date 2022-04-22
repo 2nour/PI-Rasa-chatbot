@@ -1,29 +1,57 @@
 version: "3.0"
 stories:
-- story: creation_account1
+- story: creation_savings_account
   steps:
   - intent: create_new_account
+  - action: action_account_type
+  - intent: savings_account_ty
+    entities: 
+      - account_type: "savings account"
+  - slot_was_set:
+      - account_type: "savings account"
+  - action: utter_enter_your_name
+  - intent: fullname
+  - action: utter_enter_cin
+  - intent: identity
+  - action: utter_enter_email
+  - intent: email
+  - action: utter_enter_birthdate
+  - intent: birthdate
+  - action: utter_enter_number
+  - intent: number 
+  - action: utter_enter_adress
+  - intent: address
+  - action: utter_enter_login
+  - intent: login
+  - action: utter_enter_password
+  - intent: password
   - action: action_create_account
-  - action: utter_need_more_assist
-  - intent: deny
-  - action: utter_as_you_like
-  - action: utter_goodbye
 
-- story: creation_account2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - action: utter_assist
-  - intent: create_new_account
-  - action: action_create_account
-  - action: utter_need_more_assist
-  - intent: deny
-  - action: utter_as_you_like
-  - action: utter_goodbye
-
-- story: creation_account+signin1
+- story: creation_savings_account+signin
   steps:
   - intent: create_new_account
+  - action: action_account_type
+  - intent: savings_account_ty
+    entities: 
+      - account_type: "savings account"
+  - slot_was_set:
+      - account_type: "savings account"
+  - action: utter_enter_your_name
+  - intent: fullname
+  - action: utter_enter_cin
+  - intent: identity
+  - action: utter_enter_email
+  - intent: email
+  - action: utter_enter_birthdate
+  - intent: birthdate
+  - action: utter_enter_number
+  - intent: number 
+  - action: utter_enter_adress
+  - intent: address
+  - action: utter_enter_login
+  - intent: login
+  - action: utter_enter_password
+  - intent: password
   - action: action_create_account
   - action: utter_need_more_assist
   - intent: sign_in
@@ -33,12 +61,119 @@ stories:
   - action: utter_as_you_like
   - action: utter_goodbye
 
-- story: creation_account+signin2
+- story: creation_current_account
   steps:
-  - intent: greet
-  - action: utter_greet
-  - action: utter_assist
   - intent: create_new_account
+  - action: action_account_type
+  - intent: savings_account_ty
+    entities: 
+      - account_type: "current account"
+  - slot_was_set:
+      - account_type: "current account"
+  - action: utter_enter_your_name
+  - intent: fullname
+  - action: utter_enter_cin
+  - intent: identity
+  - action: utter_enter_email
+  - intent: email
+  - action: utter_enter_birthdate
+  - intent: birthdate
+  - action: utter_enter_number
+  - intent: number 
+  - action: utter_enter_adress
+  - intent: address
+  - action: utter_enter_login
+  - intent: login
+  - action: utter_enter_password
+  - intent: password
+  - action: action_create_account
+
+- story: creation_current_account+signin
+  steps:
+  - intent: create_new_account
+  - action: action_account_type
+  - intent: savings_account_ty
+    entities: 
+      - account_type: "current account"
+  - slot_was_set:
+      - account_type: "current account"
+  - action: utter_enter_your_name
+  - intent: fullname
+  - action: utter_enter_cin
+  - intent: identity
+  - action: utter_enter_email
+  - intent: email
+  - action: utter_enter_birthdate
+  - intent: birthdate
+  - action: utter_enter_number
+  - intent: number 
+  - action: utter_enter_adress
+  - intent: address
+  - action: utter_enter_login
+  - intent: login
+  - action: utter_enter_password
+  - intent: password
+  - action: action_create_account
+  - action: utter_need_more_assist
+  - intent: sign_in
+  - action: action_sign_in
+  - action: utter_need_more_assist
+  - intent: deny
+  - action: utter_as_you_like
+  - action: utter_goodbye
+
+- story: creation_salary_account
+  steps:
+  - intent: create_new_account
+  - action: action_account_type
+  - intent: savings_account_ty
+    entities: 
+      - account_type: "salary account"
+  - slot_was_set:
+      - account_type: "salary account"
+  - action: utter_enter_your_name
+  - intent: fullname
+  - action: utter_enter_cin
+  - intent: identity
+  - action: utter_enter_email
+  - intent: email
+  - action: utter_enter_birthdate
+  - intent: birthdate
+  - action: utter_enter_number
+  - intent: number
+  - action: utter_enter_adress
+  - intent: address
+  - action: utter_enter_login
+  - intent: login
+  - action: utter_enter_password
+  - intent: password
+  - action: action_create_account
+
+- story: creation_salary_account+signin
+  steps:
+  - intent: create_new_account
+  - action: action_account_type
+  - intent: savings_account_ty
+    entities: 
+      - account_type: "salary account"
+  - slot_was_set:
+      - account_type: "salary account"
+  - action: utter_enter_your_name
+  - intent: fullname
+  - action: utter_enter_cin
+  - intent: identity
+  - action: utter_enter_email
+  - intent: email
+  - action: utter_enter_birthdate
+  - intent: birthdate
+  - action: utter_enter_number
+  - intent: number 
+  - action: utter_enter_adress
+  - intent: address
+  - action: utter_enter_login
+  - intent: login
+  - action: utter_enter_password
+  - intent: password
   - action: action_create_account
   - action: utter_need_more_assist
   - intent: sign_in
