@@ -1,5 +1,25 @@
 version: "3.1"
 nlu:
+- intent: desired_amount
+  examples: |
+    - je veux [40000](credit_amount) de credit
+    - je veux [50000](credit_amount) comme somme 
+    - je  veux emprunter [100000](credit_amount)
+    - je veux avoir [75000](credit_amount) de credit
+    - je veux avoir [25000](credit_amount)
+- intent: personal_credit
+  examples: |
+    - Je veux un credit [personal credit](credit_type)
+    - [personal credit](credit_type)
+- intent: car_credit
+  examples: |
+    - Je veux un credit [car credit](credit_type)
+    - [car credit](credit_type)
+- intent: real_estate_credit
+  examples: |
+    - Je veux un credit [real estate credit](credit_type)
+    - [real estate credit](credit_type)
+
 - intent: name
   examples: |
     - je m'appelle [nour hadrich](name)

@@ -1,67 +1,98 @@
 
+from datetime import datetime
 from typing import Text, List, Any, Dict
 
 from rasa_sdk import Tracker, FormValidationAction, Action
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.types import DomainDict
+from datetime import date
+from mydatabase import *
 import smtplib
 
+
+class PossibleCreditAction(Action):
+    def name(self) -> Text:
+        return "action_possible_credit"
+
+    def run(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) ->List[Dict[Text, Any]]:
+        salary = tracker.get_slot("salaire")
+        duration = tracker.get_slot("duree")
+        credit_type = tracker.get_slot("credit_type")
+        if (credit_type =="personal credit"):
+            credit = int(salary) * int(duration) * 12 * 0.25 * 0.9
+        elif (credit_type == "car credit"):
+            credit = int(salary) * int(duration) * 12 * 0.30 * 0.9
+        else:
+            credit = int(salary) * int(duration) * 12 * 0.40 * 0.9
+        
+        dispatcher.utter_message(text = "Le montant de credit possible est"+str(credit))
+        return []
+
+class CreateCreditAction(Action):
+    def name(self) -> Text:
+        return "action_create_credit"
+
+    def run(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) ->List[Dict[Text, Any]]:
+        salary = tracker.get_slot("salaire")
+        duration = tracker.get_slot("duree")
+        credit_type = tracker.get_slot("credit_type")
+        desired_amount = tracker.get_slot("credit_amount")
+        today = date.today()
+        date_sub = today.strftime("%Y-%m-%d")
+        if (credit_type =="personal credit"):
+            credit = int(salary) * int(duration) * 12 * 0.25 * 0.9
+        elif (credit_type == "car credit"):
+            credit = int(salary) * int(duration) * 12 * 0.30 * 0.9
+        else:
+            credit = int(salary) * int(duration) * 12 * 0.40 * 0.9
+        account_id=1
+        if (credit<int(desired_amount)): 
+            dispatcher.utter_message(text = "Ce montant depasse le seuil de credit possible")
+        else:
+            create_credit(date_sub, int(duration), int(desired_amount), credit_type, account_id,0 , 1)
+            dispatcher.utter_message(text = "Success, ce credit a etais ajouter dans votre solde")
+        return []
 
 
 class ValidateCreditForm(Action):
     def name(self) -> Text:
         return "validate_credit_form"
 
-    @staticmethod
-    def credit(
+    def run(
         self,
-        slot_value: Any,
         dispatcher: CollectingDispatcher,
         tracker: Tracker,
-        domain: DomainDict,
-    ) -> Dict[Text, Any]:
-        ## somme totale : salaire + 0.25 * 12 
-        salaire = tracker.get_slot('salaire')
-        duree = tracker.get_slot('duree')
-        creditPossible = int(salaire) *0.25/12 - 12 * int(duree)
-    
-        return dispatcher.utter_message(text = "Montant de credit est " + str(creditPossible) + "par mois" )
-
-    def validate_salary(
-        self,
-        slot_value: Any,
-        dispatcher: CollectingDispatcher,
-        tracker: Tracker,
-        domain: DomainDict,
-    ) -> Dict[Text, Any]:
-        """Validate salary value."""
-        salary_int = tracker.get_slot('salaire')
-        if int(salary_int) > 450 :
-            # validation succeeded, set the value of the "cuisine" slot to value
-            return {"salaire": salary_int}
+        domain: Dict[Text, Any],
+    ) ->List[Dict[Text, Any]]:
+        salary = tracker.get_slot("salaire")
+        duration = tracker.get_slot("duree")
+        credit_type = tracker.get_slot("credit_type")
+        desired_amount = tracker.get_slot("credit_amount")
+        today = date.today()
+        date_sub = today.strftime("%Y-%m-%d")
+        if (credit_type =="personal credit"):
+            credit = int(salary) * int(duration) * 12 * 0.25 * 0.9
+        elif (credit_type == "car credit"):
+            credit = int(salary) * int(duration) * 12 * 0.30 * 0.9
         else:
-            # validation failed, set this slot to None so that the
-            # user will be asked for the slot again
-            dispatcher.utter_message(template = "utter_wrong_salary")
-            return {"salaire": None}
-    
-    def validate_duration(
-        self,
-        slot_value: Any,
-        dispatcher: CollectingDispatcher,
-        tracker: Tracker,
-        domain: DomainDict,
-    ) -> Dict[Text, Any]:
-        """Validate duration value."""
-        duration_int = tracker.get_slot('duree')
-        if int(duration_int) > 1 and duration_int < 25 :
-            # validation succeeded, set the value of the "cuisine" slot to value
-            return {"duree": duration_int}
+            credit = int(salary) * int(duration) * 12 * 0.40 * 0.9
+        account_id=1
+        if (credit<int(desired_amount)): 
+            dispatcher.utter_message(text = "Ce montant depasse le seuil de credit possible")
         else:
-            # validation failed, set this slot to None so that the
-            # user will be asked for the slot again
-            dispatcher.utter_message(template = "utter_wrong_duration")
-            return {"duree": None}
+            create_credit(date_sub, int(duration), int(desired_amount), credit_type, account_id,0 , 1)
+            dispatcher.utter_message(text = "Success, ce credit a etais ajouter dans votre solde")
+        return []
 
 
 
@@ -89,13 +120,13 @@ class ActionEmail(Action):
         s.starttls() 
           
         # Authentication
-        s.login("lovelovern12@gmail.com", "Nn2121997")
+        s.login("bankingchatbot1@gmail.com", "bank123bank")
           
         # Message to be sent
         message = "Hello {} , This is a demo message".format('nour')
           
         # Sending the mail
-        s.sendmail("lovelovern12@gmail.com",'lovelovern12@gmail.com', message)
+        s.sendmail("bankingchatbot1@gmail.com",'bankingchatbot1@gmail.com', message)
           
         # Closing the connection
         s.quit()

@@ -49,6 +49,8 @@ entities:
 - address
 - login
 - password
+- credit_type
+- credit_amount
 slots:
   salaire:
     type: text
@@ -100,6 +102,16 @@ slots:
     mappings:
     - type: from_entity
       entity: password
+  credit_type:
+    type: any
+    mappings:
+    - type: from_entity
+      entity: credit_type
+  credit_amount:
+    type: any
+    mappings:
+    - type: from_entity
+      entity: credit_amount
 responses:
   utter_bye:
   - text: au  revoir
@@ -171,3 +183,4 @@ actions:
 - utter_se_connceter
 - utter_verifier_humain
 - validate_credit_form
+- action_credit_type
