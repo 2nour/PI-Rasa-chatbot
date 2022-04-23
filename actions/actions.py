@@ -325,12 +325,12 @@ class ComplaintTypoeAction(Action):
         domain: Dict[Text, Any],
     ) ->List[Dict[Text, Any]]:
         buttons = []
-        buttons.append({"title": "Server crash problem", "payload":'/transactions_typee{"complaint_type":"server crash problem}'})
-        buttons.append({"title": "Transactions problem", "payload":'/transactions_typee{"complaint_type":"transactions problem}'})
-        buttons.append({"title": "Sign_in problem", "payload":'/transactions_typee{"complaint_type":"sign_in problem}'})
-        buttons.append({"title": "Other problem", "payload":'/transactions_typee{"complaint_type":"other problem}'})
+        buttons.append({"title": "Server crash problem", "payload":'/complaint_typee{"complaint_type":"server crash problem}'})
+        buttons.append({"title": "Transactions problem", "payload":'/complaint_typee{"complaint_type":"transactions problem}'})
+        buttons.append({"title": "Sign_in problem", "payload":'/complaint_typee{"complaint_type":"sign_in problem}'})
+        buttons.append({"title": "Other problem", "payload":'/complaint_typee{"complaint_type":"other problem}'})
     
-        dispatcher.utter_message(text="Please select the trasnactions you want to get", buttons = buttons)
+        dispatcher.utter_message(text="Please select the complaint type ", buttons = buttons)
     
         return []
 

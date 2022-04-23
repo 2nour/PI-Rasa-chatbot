@@ -6,7 +6,7 @@ stories:
   - action: action_sign_in
   - action: action_transactions_type
   - intent: last_five_trans
-      entities: 
+    entities: 
       - transactions_type: "last five"
   - slot_was_set:
       - transactions_type: "last five"
@@ -19,7 +19,7 @@ stories:
   - action: action_sign_in
   - action: action_transactions_type
   - intent: all_trans
-      entities: 
+    entities: 
       - transactions_type: "All"
   - slot_was_set:
       - transactions_type: "All"

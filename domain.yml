@@ -170,12 +170,6 @@ slots:
     mappings:
     - type: from_entity
       entity: transactions_type
-  comlplaint_type:
-    type: any
-    influence_conversation: false
-    mappings:
-    - type: from_entity
-      entity: complaint_type
   rib:
     type: any
     influence_conversation: false
@@ -188,6 +182,12 @@ slots:
     mappings:
     - type: from_entity
       entity: problem
+  complaint_type:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: complaint_type
 
 responses:
   utter_greet:
