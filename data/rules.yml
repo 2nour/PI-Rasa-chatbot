@@ -11,3 +11,8 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: run action_extrait_bnk after intent extrait_bnk
+  steps:
+  - intent: extrait_bnk
+  - action: action_extrait_bnk

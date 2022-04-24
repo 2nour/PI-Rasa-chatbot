@@ -665,7 +665,13 @@ nlu:
     - i wanna look at my complaint status
     - can you check my complaint request status
     - please check my complaint status    
-
+  
+- intent: extrait_bnk
+  examples: |
+    - I want a bank statement of my account
+    - I wanna bank statement
+    - bank statement please
+    - bank statement
 
 
 

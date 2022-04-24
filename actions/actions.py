@@ -1,15 +1,33 @@
+from os import link
 import random
 from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker  
 from rasa_sdk.executor import CollectingDispatcher
 from datetime import date
-
+from pdf.table_class import *
 from typing import Text, List, Any, Dict
 
 from rasa_sdk import Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from database_connectivity import *
 
+class extrait_bnk(Action):
+     def name(self) -> Text:
+        return "action_extrait_bnk"
+
+     def run(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) ->List[Dict[Text, Any]]:
+        extrait()
+        #attachment = {"document": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"}
+        #dispatcher.utter_custom_json(attachment)
+        rep="file:///C:/Users/Amine/Desktop/PI-Rasa-chatbot/extrait.pdf"
+        dispatcher.utter_message(rep)
+        #dispatcher.utter_template("utter_info" , tracker, link = rep)
+        return []
 
 
 class PossibleCreditAction(Action):
