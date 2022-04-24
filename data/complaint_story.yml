@@ -78,7 +78,7 @@ stories:
       - complaint_type: "other problem"
   - action: utter_enter_account_number
   - intent: submit_rib
-  - action: uttter_enter_problem
+  - action: utter_enter_problem
   - intent: submit_problem
   - action: action_create_complaint
   - action: utter_need_more_assist
@@ -93,7 +93,7 @@ stories:
       - complaint_type: "other problem"
   - slot_was_set:
       - complaint_type: "other problem"
-  - action: uttter_enter_problem
+  - action: utter_enter_problem
   - intent: submit_problem
   - action: action_create_complaint
   - action: utter_need_more_assist
