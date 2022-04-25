@@ -3,6 +3,8 @@ language: en
 pipeline:
   - name: WhitespaceTokenizer
   - name: RegexFeaturizer
+  - name: RegexEntityExtractor
+    use_regexes: true
   - name: LexicalSyntacticFeaturizer
   - name: CountVectorsFeaturizer
   - name: CountVectorsFeaturizer
@@ -13,7 +15,7 @@ pipeline:
     epochs: 285
     constrain_similarities: True
   - name: FallbackClassifier
-    threshold: 0.6
+    threshold: 0.5
     ambiguity_threshold: 0.1
   - name: EntitySynonymMapper
     epochs: 300

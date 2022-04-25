@@ -558,6 +558,7 @@ nlu:
     - [10225793](id_number)
     - [10432679](id_number)
     - [09947516](id_number)
+    - my id num is [07815469](id_number)
 
 
 - intent: email
@@ -793,7 +794,14 @@ nlu:
     - What are the steps I should follow to create an account ?
     - What is the inscription process ?
     - How can I be client ?
-    
+
+- intent: convert_currency
+  examples: |
+    - I want to convert [150](transf_amount) from [EUR](currency_dep) to [USD](currency_arriv)
+    - I wish to transform [75](transf_amount) from [EUR](currency_dep) to [USD](currency_arriv)
+    - Convert [220](transf_amount) from [EUR](currency_dep) to [USD](currency_arriv)
+    - Transform [350](transf_amount) from [EUR](currency_dep) to [USD](currency_arriv)
+    - Change [50](transf_amount) from [EUR](currency_dep) to [USD](currency_arriv)
 
 - synonym: transactions
   examples: |
@@ -811,3 +819,426 @@ nlu:
   examples: |
     - cc
     - card
+
+- lookup: currency_dep
+  examples: |
+    - AED
+    - AFN
+    - ALL
+    - AMD
+    - ANG
+    - AOA
+    - ARS
+    - AUD
+    - AWG
+    - AZN
+    - BAM
+    - BBD
+    - BDT
+    - BGN
+    - BHD
+    - BIF
+    - BMD
+    - BND
+    - BOB
+    - BRL
+    - BSD
+    - BTC
+    - BTN
+    - BWP
+    - BYN
+    - BZD
+    - CAD
+    - CDF
+    - CHF
+    - CLF
+    - CLP
+    - CNH
+    - CNY
+    - COP
+    - CRC
+    - CUC
+    - CUP
+    - CVE
+    - CZK
+    - DJF
+    - DKK
+    - DOP
+    - DZD
+    - EGP
+    - ERN
+    - ETB
+    - EUR
+    - FJD
+    - FKP
+    - GBP
+    - GEL
+    - GGP
+    - GHS
+    - GIP
+    - GMD
+    - GNF
+    - GTQ
+    - GYD
+    - HKD
+    - HNL
+    - HRK
+    - HTG
+    - HUF
+    - IDR
+    - ILS
+    - IMP
+    - INR
+    - IQD
+    - IRR
+    - ISK
+    - JEP
+    - JMD
+    - JOD
+    - JPY
+    - KES
+    - KGS
+    - KHR
+    - KMF
+    - KPW
+    - KRW
+    - KWD
+    - KYD
+    - KZT
+    - LAK
+    - LBP
+    - LKR
+    - LRD
+    - LSL
+    - LYD
+    - MAD
+    - MDL
+    - MGA
+    - MKD
+    - MMK
+    - MNT
+    - MOP
+    - MRU
+    - MUR
+    - MVR
+    - MWK
+    - MXN
+    - MYR
+    - MZN
+    - NAD
+    - NGN
+    - NIO
+    - NOK
+    - NPR
+    - NZD
+    - OMR
+    - PAB
+    - PEN
+    - PGK
+    - PHP
+    - PKR
+    - PLN
+    - PYG
+    - QAR
+    - RON
+    - RSD
+    - RUB
+    - RWF
+    - SAR
+    - SBD
+    - SCR
+    - SDG
+    - SEK
+    - SGD
+    - SHP
+    - SLL
+    - SOS
+    - SRD
+    - SSP
+    - STD
+    - STN
+    - SVC
+    - SYP
+    - SZL
+    - THB
+    - TJS
+    - TMT
+    - TND
+    - TOP
+    - TRY
+    - TTD
+    - TWD
+    - TZS
+    - UAH
+    - UGX
+    - USD
+    - UYU
+    - UZS
+    - VEF
+    - VES
+    - VND
+    - VUV
+    - WST
+    - XAF
+    - XAG
+    - XAU
+    - XCD
+    - XDR
+    - XOF
+    - XPD
+    - XPF
+    - XPT
+    - YER
+    - ZAR
+    - ZMW
+    - ZWL
+- lookup: currency_arriv
+  examples: |
+    - AED
+    - AFN
+    - ALL
+    - AMD
+    - ANG
+    - AOA
+    - ARS
+    - AUD
+    - AWG
+    - AZN
+    - BAM
+    - BBD
+    - BDT
+    - BGN
+    - BHD
+    - BIF
+    - BMD
+    - BND
+    - BOB
+    - BRL
+    - BSD
+    - BTC
+    - BTN
+    - BWP
+    - BYN
+    - BZD
+    - CAD
+    - CDF
+    - CHF
+    - CLF
+    - CLP
+    - CNH
+    - CNY
+    - COP
+    - CRC
+    - CUC
+    - CUP
+    - CVE
+    - CZK
+    - DJF
+    - DKK
+    - DOP
+    - DZD
+    - EGP
+    - ERN
+    - ETB
+    - EUR
+    - FJD
+    - FKP
+    - GBP
+    - GEL
+    - GGP
+    - GHS
+    - GIP
+    - GMD
+    - GNF
+    - GTQ
+    - GYD
+    - HKD
+    - HNL
+    - HRK
+    - HTG
+    - HUF
+    - IDR
+    - ILS
+    - IMP
+    - INR
+    - IQD
+    - IRR
+    - ISK
+    - JEP
+    - JMD
+    - JOD
+    - JPY
+    - KES
+    - KGS
+    - KHR
+    - KMF
+    - KPW
+    - KRW
+    - KWD
+    - KYD
+    - KZT
+    - LAK
+    - LBP
+    - LKR
+    - LRD
+    - LSL
+    - LYD
+    - MAD
+    - MDL
+    - MGA
+    - MKD
+    - MMK
+    - MNT
+    - MOP
+    - MRU
+    - MUR
+    - MVR
+    - MWK
+    - MXN
+    - MYR
+    - MZN
+    - NAD
+    - NGN
+    - NIO
+    - NOK
+    - NPR
+    - NZD
+    - OMR
+    - PAB
+    - PEN
+    - PGK
+    - PHP
+    - PKR
+    - PLN
+    - PYG
+    - QAR
+    - RON
+    - RSD
+    - RUB
+    - RWF
+    - SAR
+    - SBD
+    - SCR
+    - SDG
+    - SEK
+    - SGD
+    - SHP
+    - SLL
+    - SOS
+    - SRD
+    - SSP
+    - STD
+    - STN
+    - SVC
+    - SYP
+    - SZL
+    - THB
+    - TJS
+    - TMT
+    - TND
+    - TOP
+    - TRY
+    - TTD
+    - TWD
+    - TZS
+    - UAH
+    - UGX
+    - USD
+    - UYU
+    - UZS
+    - VEF
+    - VES
+    - VND
+    - VUV
+    - WST
+    - XAF
+    - XAG
+    - XAU
+    - XCD
+    - XDR
+    - XOF
+    - XPD
+    - XPF
+    - XPT
+    - YER
+    - ZAR
+    - ZMW
+    - ZWL
+
+- lookup: transf_amount
+  examples: |
+    - 1
+    - 1.5
+    - 0.5
+    - 5
+    - 5.5
+    - 10
+    - 11
+    - 32.5
+    - 10.75
+    - 13.564
+    - 18.268945
+    - 50
+    - 150
+    - 56.2
+    - 123
+    - 6123
+    - 65456.550
+    - 10000
+    - 100
+    - 1
+    - 0
+    - 2.3
+    - 965
+    - 3.22
+    - 74
+    - 12
+    - 564.741
+    - 89798
+    - 99999999
+    - 8952132165
+    - 999999
+    - 1000000000
+    - 100000
+    - 1000000
+    - 500000
+    - 500
+    - 5000000
+    - 663
+    - 632.005
+    - 5447.963
+    - 6897
+    - 78
+    - 9
+    - 128
+
+- lookup: full_name
+  examples: |
+    - Med Hedy Sayari
+    - Mohamed Amine Zarrouki
+    - Hakim Atrous 
+    - Feriel darraji
+    - Achref Douiri
+    - Amenallah Amamou
+    - Mehdi Ben Dhifallah
+    - Harrsion Afful
+    - Tasnim Kallel
+    - Beya Mlika
+    - Baya ben Hmida
+    - Khalil Cherif
+    - Mohamed Anis Saighi
+    - Med Ali Bouchouicha
+    - Talel Ben Mansour 
+    - Hamed Aounallah
+    - Raya Ayari
+    - Patrick Kroos
+    - Sofien Medimagh
+    - Leila Ouannes
+    - ritej Abdelli
+    - Lamia Chikhaoui
+    - Mary Macron
+    - Frank Ribery
+    - Raphael Varane
+    - Paul Pogba
+    - Vincent Valbuena
+    - Jeremy Mathieu

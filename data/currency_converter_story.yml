@@ -1,0 +1,6 @@
+version: "3.0"
+stories:
+- story: currency_convert_story
+  steps:
+  - intent: convert_currency
+  - action: action_currency_calculator

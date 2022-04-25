@@ -3,7 +3,7 @@ from pdf.create_table_fpdf2 import PDF
 import pymysql
 
 def extrait():
-    mydatabase =  pymysql.connect(host="127.0.0.1", port=3306, user="root", passwd="", database="rasa")
+    mydatabase =  pymysql.connect(host="localhost", port=3308, user="root", passwd="", database="rasadatabase")
 
 
     mycursor = mydatabase.cursor()
@@ -32,7 +32,7 @@ def extrait():
         for i in range(1,6) :
             if(i!=4): 
                 if(i==5):
-                    mycursor.execute('SELECT first_name from account A, customer C where A.customer_id=C.id and A.id = '+str(x[5]))
+                    mycursor.execute('SELECT full_name from account A, Customers C where A.customer_id=C.id and A.id = '+str(x[5]))
                     output1 = mycursor.fetchall()
                     lst.append(str(output1[0]))
                     break; 

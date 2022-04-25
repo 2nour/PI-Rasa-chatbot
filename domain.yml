@@ -63,6 +63,7 @@ intents:
 - reciever_rib
 - amount_sent
 - extrait_bnk
+- convert_currency
 
 
 
@@ -93,6 +94,8 @@ entities:
 - problem
 - track_status
 - transf_amount
+- currency_dep
+- currency_arriv
 
 slots:
   salary:
@@ -209,6 +212,18 @@ slots:
     mappings:
     - type: from_entity
       entity: transf_amount
+  currency_dep:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: currency_dep
+  currency_arriv:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: currency_arriv
 
 
 responses:
@@ -332,6 +347,7 @@ actions:
 - action_show_agencies
 - action_use_location
 - action_nearest_agency
+- action_currency_calculator
 ########################
 - action_check_mandat_state
 - action_send_mandat
