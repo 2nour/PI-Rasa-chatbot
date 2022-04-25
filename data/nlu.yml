@@ -740,6 +740,7 @@ nlu:
     - i wanna look at my complaint status
     - can you check my complaint request status
     - please check my complaint status    
+<<<<<<< HEAD
 
 - intent: check_agencies
   examples: |
@@ -747,6 +748,15 @@ nlu:
     - i want to see all agencies
     - let me check bank agencies
     - show me bank agencies   
+=======
+  
+- intent: extrait_bnk
+  examples: |
+    - I want a bank statement of my account
+    - I wanna bank statement
+    - bank statement please
+    - bank statement
+>>>>>>> 365674220143426116173fa835f3f9e5da38e164
 
 - intent: track_location
   examples: |

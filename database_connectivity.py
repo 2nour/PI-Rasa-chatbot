@@ -1,13 +1,14 @@
 from colorama import Cursor
 from django.db import connection
 import pymysql
-mydatabase = pymysql.connect(
-  host="localhost",
-  port=3308 ,
-  user="root",
-  password="",
-  database="rasadatabase"
-)
+#mydatabase = pymysql.connect(
+#  host="localhost",
+#  port=3308 ,
+#  user="root",
+#  password="",
+#  database="rasadatabase"
+#)
+mydatabase =  pymysql.connect(host="127.0.0.1", port=3306, user="root", passwd="", database="rasa")
 
 mycursor = mydatabase.cursor()
 

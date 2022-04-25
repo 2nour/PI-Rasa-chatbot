@@ -13,7 +13,7 @@ pipeline:
     epochs: 285
     constrain_similarities: True
   - name: FallbackClassifier
-    threshold: 0.3
+    threshold: 0.7
   - name: EntitySynonymMapper
     epochs: 300
     random_seed: 2

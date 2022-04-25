@@ -1,10 +1,20 @@
+from os import link
 import random
 from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker  
 from rasa_sdk.executor import CollectingDispatcher
 from datetime import date
+<<<<<<< HEAD
 import pandas as pd
 from typing import Text, List, Any, Dict
+=======
+from pdf.table_class import *
+from typing import Text, List, Any, Dict
+import smtplib
+import imghdr
+from email.message import EmailMessage
+
+>>>>>>> 365674220143426116173fa835f3f9e5da38e164
 from rasa_sdk import Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from database_connectivity import *
@@ -12,6 +22,47 @@ import webbrowser
 from nearest_agency import *
 
 
+
+
+
+class extrait_bnk(Action):
+     def name(self) -> Text:
+        return "action_extrait_bnk"
+
+     def run(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) ->List[Dict[Text, Any]]:
+        extrait()
+        rep="file:///C:/Users/Amine/Desktop/PI-Rasa-chatbot/extrait.pdf"
+        dispatcher.utter_message(rep)
+
+        msg = EmailMessage()
+        msg['Subject'] = 'Check out Bronx as a puppy!'
+        msg['From'] = 'bankingchatbot1@gmail.com'
+        msg['To'] = 'bankingchatbot1@gmail.com'
+        
+
+        msg.set_content('This is a plain text email')
+
+        file ="C:/Users/Amine/Desktop/PI-Rasa-chatbot/extrait.pdf"
+        with open(file,'rb') as f :
+            file_data= f.read()
+            file_type = imghdr.what(f.name)
+            file_name = f.name
+        msg.add_attachment(file_data,maintype='application',subtype='octet-stram',filename=file_name)
+
+        with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
+            smtp.login("bankingchatbot1@gmail.com", "bank123bank")
+            smtp.send_message(msg)
+        dispatcher.utter_message(text="Email has been sent.")
+    
+        #attachment = {"document": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"}
+        #dispatcher.utter_custom_json(attachment)
+        
+        return []
 
 
 class PossibleCreditAction(Action):

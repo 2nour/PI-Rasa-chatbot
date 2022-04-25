@@ -56,12 +56,17 @@ intents:
 - submit_problem
 - submit_rib
 - check_complaint_status
+<<<<<<< HEAD
 - check_agencies
 - track_location
 - nearest_agency_position
 - reciever_name
 - reciever_rib
 - amount_sent
+=======
+- extrait_bnk
+
+>>>>>>> 365674220143426116173fa835f3f9e5da38e164
 
 
 entities:
@@ -301,10 +306,11 @@ responses:
   utter_enter_reciever_rib:
   - text: please enter reciever account number (RIB)
   utter_enter_amount_send:
-  - text: please enter the amount you want to send
+  - text: enter the amount you want to send
   utter_fill_form:
   - text: to create coount i'll guide you to fill the inscription form step by step , and also you need to assist me with some requuired infomations (ID number ,e-mail , phone number, address, )
-
+  utter_please_rephrase:
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
 actions:
 - action_account_type
 - action_ask_why
@@ -336,7 +342,8 @@ actions:
 - action_currency_calculator
 - action_check_all_earnings
 - action_activate_cc
-- action_extrait_bancaire
+- action_extrait_bnk
 - action_check_balance_null
 - action_rhan
 - action_rouge
+##  les nouvelles offres - les avantagees de notre banque - 

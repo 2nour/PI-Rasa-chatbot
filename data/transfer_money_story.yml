@@ -9,4 +9,4 @@ stories:
   - intent: reciever_rib
   - action: utter_enter_amount_send
   - intent: amount_sent
-  - action: action_transfer_money
+  - action: action_transfer_moneys
