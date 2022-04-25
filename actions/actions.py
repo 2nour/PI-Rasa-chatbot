@@ -6,10 +6,16 @@ from rasa_sdk.executor import CollectingDispatcher
 from datetime import date
 from pdf.table_class import *
 from typing import Text, List, Any, Dict
+import smtplib
+import imghdr
+from email.message import EmailMessage
 
 from rasa_sdk import Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from database_connectivity import *
+
+
+
 
 class extrait_bnk(Action):
      def name(self) -> Text:
@@ -22,11 +28,32 @@ class extrait_bnk(Action):
         domain: Dict[Text, Any],
     ) ->List[Dict[Text, Any]]:
         extrait()
-        #attachment = {"document": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"}
-        #dispatcher.utter_custom_json(attachment)
         rep="file:///C:/Users/Amine/Desktop/PI-Rasa-chatbot/extrait.pdf"
         dispatcher.utter_message(rep)
-        #dispatcher.utter_template("utter_info" , tracker, link = rep)
+
+        msg = EmailMessage()
+        msg['Subject'] = 'Check out Bronx as a puppy!'
+        msg['From'] = 'bankingchatbot1@gmail.com'
+        msg['To'] = 'bankingchatbot1@gmail.com'
+        
+
+        msg.set_content('This is a plain text email')
+
+        file ="C:/Users/Amine/Desktop/PI-Rasa-chatbot/extrait.pdf"
+        with open(file,'rb') as f :
+            file_data= f.read()
+            file_type = imghdr.what(f.name)
+            file_name = f.name
+        msg.add_attachment(file_data,maintype='application',subtype='octet-stram',filename=file_name)
+
+        with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
+            smtp.login("bankingchatbot1@gmail.com", "bank123bank")
+            smtp.send_message(msg)
+        dispatcher.utter_message(text="Email has been sent.")
+    
+        #attachment = {"document": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"}
+        #dispatcher.utter_custom_json(attachment)
+        
         return []
 
 
