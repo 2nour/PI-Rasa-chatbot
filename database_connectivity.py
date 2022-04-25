@@ -11,7 +11,7 @@ mydatabase = pymysql.connect(
 
 mycursor = mydatabase.cursor()
 
-#mycursor.execute("CREATE TABLE Customers (id int AUTO_INCREMENT PRIMARY KEY, full_name VARCHAR(255) , cin int(8) , email varchar(255)  , birthdate DATETIME , phone_number int ,address VARCHAR(255) ,login VARCHAR(255), password varchar(255) NOT NULL)")
+#mycursor.execute("CREATE TABLE Customers (id int AUTO_INCREMENT PRIMARY KEY, full_name VARCHAR(255) , cin int(8) , email varchar(255)  , birthdate DATETIME , phone_number varchar(255) ,address VARCHAR(255) ,login VARCHAR(255), password int(7) NOT NULL)")
 #mycursor.execute("CREATE TABLE Account (id int AUTO_INCREMENT PRIMARY KEY, RIB int(16) NOT NULL,  date_opened DATETIME NOT NULL , date_closed DATETIME , balance float NOT NULL , account_type varchar(255) NOT NULL , customer_id int NOT NULL , CONSTRAINT FK FOREIGN KEY (customer_id) REFERENCES Customers(id) )")
 #mycursor.execute("CREATE TABLE Credit (id int AUTO_INCREMENT PRIMARY KEY,  date DATE NOT NULL , duration int  NOT NULL , ammount float NOT NULL , credit_type varchar(255) NOT NULL  , account_id int NOT NULL , CONSTRAINT FK FOREIGN KEY (account_id) REFERENCES  Account(id))")
 #mycursor.execute("CREATE TABLE Credit_card (id int AUTO_INCREMENT PRIMARY KEY, credit_card_number int NOT NULL , date_exp date NOT NULL , cvv int NOT NULL , pin_code int NOT NULL , account_id int NOT NULL , constraint FK FOREIGN KEY  (account_id) REFERENCES Account(id))")

@@ -1,0 +1,6 @@
+version: "3.0"
+stories:
+- story: show_agencies
+  steps:
+  - intent: check_agencies
+  - action: action_show_agencies
