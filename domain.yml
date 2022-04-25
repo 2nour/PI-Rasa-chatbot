@@ -56,17 +56,14 @@ intents:
 - submit_problem
 - submit_rib
 - check_complaint_status
-<<<<<<< HEAD
 - check_agencies
 - track_location
 - nearest_agency_position
 - reciever_name
 - reciever_rib
 - amount_sent
-=======
 - extrait_bnk
 
->>>>>>> 365674220143426116173fa835f3f9e5da38e164
 
 
 entities:

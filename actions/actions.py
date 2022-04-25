@@ -4,17 +4,14 @@ from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker  
 from rasa_sdk.executor import CollectingDispatcher
 from datetime import date
-<<<<<<< HEAD
 import pandas as pd
 from typing import Text, List, Any, Dict
-=======
 from pdf.table_class import *
 from typing import Text, List, Any, Dict
 import smtplib
 import imghdr
 from email.message import EmailMessage
 
->>>>>>> 365674220143426116173fa835f3f9e5da38e164
 from rasa_sdk import Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from database_connectivity import *
@@ -125,7 +122,7 @@ class CreateAccountAction(Action):
         elif(len(c)!=0):
             dispatcher.utter_message(text = "the login is allready used")
         else:
-            #create_account(name, cin, email, birthdate, num, address, login, password, RIB, date_open , balance, account_type) 
+            create_account(name, cin, email, birthdate, num, address, login, password, RIB, date_open , balance, account_type) 
 
             dispatcher.utter_message(text = "your account is added successfully ")
         return []

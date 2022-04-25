@@ -740,7 +740,6 @@ nlu:
     - i wanna look at my complaint status
     - can you check my complaint request status
     - please check my complaint status    
-<<<<<<< HEAD
 
 - intent: check_agencies
   examples: |
@@ -748,7 +747,6 @@ nlu:
     - i want to see all agencies
     - let me check bank agencies
     - show me bank agencies   
-=======
   
 - intent: extrait_bnk
   examples: |
@@ -756,7 +754,6 @@ nlu:
     - I wanna bank statement
     - bank statement please
     - bank statement
->>>>>>> 365674220143426116173fa835f3f9e5da38e164
 
 - intent: track_location
   examples: |
@@ -777,11 +774,11 @@ nlu:
 
 - intent: reciever_rib
   examples: |
-    - The reciver RIB is [1111112348657951](rib)
-    - [1111112348657428](rib)
-    - [1111112348611145](rib)
-    - [1111112348657989](rib)
-    - [1111112348657976](rib)
+    - The reciver RIB is [1111112342](rib)
+    - [1111117428](rib)
+    - [1111115745](rib)
+    - [1111117989](rib)
+    - [1111117976](rib)
 
 - intent: amount_sent
   examples: |
