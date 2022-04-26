@@ -32,7 +32,7 @@ def currencyConversion (amnt,frm,to) :
 
     amount =amnt
     fromCurrency =frm
-    toCurrency =frm
+    toCurrency =to
     convertedAmount = round( amount * dataRates[toCurrency]/dataRates [fromCurrency ],2)
     msg=""+str(amount)+" "+str(fromCurrency)+" = "+str(convertedAmount)+" "+str(toCurrency)
     print(f"{amount} {fromCurrency} = {convertedAmount} {toCurrency}")

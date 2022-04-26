@@ -352,7 +352,6 @@ actions:
 - action_check_mandat_state
 - action_send_mandat
 - action_cheque_request
-- action_currency_calculator
 - action_check_all_earnings
 - action_activate_cc
 - action_extrait_bnk

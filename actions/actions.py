@@ -16,7 +16,7 @@ from rasa_sdk import Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from database_connectivity import *
 import webbrowser
-from nearest_agency import *
+#from nearest_agency import *
 
 
 
@@ -33,7 +33,7 @@ class currency(Action):
         amnt = tracker.get_slot("transf_amount")
         frm = tracker.get_slot("currency_dep")
         to = tracker.get_slot("currency_arriv")
-        msg=currencyConversion (amnt,frm,to)
+        msg=currencyConversion (int(amnt),frm,to)
         dispatcher.utter_message(text=msg)
 
         return []
@@ -490,22 +490,22 @@ class AccceptLocationAction(Action):
     
         return []
 
-class NearestagencyAction(Action):
-    def name(self) -> Text:
-        return "action_nearest_agency"
+#class NearestagencyAction(Action):
+#    def name(self) -> Text:
+#        return "action_nearest_agency"
 
-    def run(
-        self,
-        dispatcher: CollectingDispatcher,
-        tracker: Tracker,
-        domain: Dict[Text, Any],
-    ) ->List[Dict[Text, Any]]:
-        bool = tracker.get_slot("track_status")
-        if(bool=="Yes"):
-            map = nearest_ag()
-            map.save("map.html")
-            webbrowser.open("map.html")
-        else:
-            dispatcher.utter_message(text ="As you like you wish")
+ #   def run(
+  #      self,
+   #     dispatcher: CollectingDispatcher,
+    #    tracker: Tracker,
+     #   domain: Dict[Text, Any],
+    #) ->List[Dict[Text, Any]]:
+     #   bool = tracker.get_slot("track_status")
+      #  if(bool=="Yes"):
+       #     map = nearest_ag()
+        #    map.save("map.html")
+         #   webbrowser.open("map.html")
+        #else:
+         #   dispatcher.utter_message(text ="As you like you wish")
     
-        return []
+  #      return []
