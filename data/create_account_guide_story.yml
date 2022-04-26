@@ -1,0 +1,6 @@
+version: "3.0"
+stories:
+- story: create_account_guid_story
+  steps:
+  - intent: how_create_account
+  - action: utter_fill_form

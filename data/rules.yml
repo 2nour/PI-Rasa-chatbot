@@ -12,7 +12,8 @@ rules:
   - intent: bot_challenge
   - action: utter_iamabot
 
-- rule: run action_extrait_bnk after intent extrait_bnk
+- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
   steps:
-  - intent: extrait_bnk
-  - action: action_extrait_bnk
+  - intent: nlu_fallback
+  - action: utter_please_rephrase
+

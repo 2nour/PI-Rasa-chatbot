@@ -56,6 +56,12 @@ intents:
 - submit_problem
 - submit_rib
 - check_complaint_status
+- check_agencies
+- track_location
+- nearest_agency_position
+- reciever_name
+- reciever_rib
+- amount_sent
 - extrait_bnk
 
 
@@ -85,6 +91,8 @@ entities:
 - complaint_type
 - rib
 - problem
+- track_status
+- transf_amount
 
 slots:
   salary:
@@ -189,6 +197,19 @@ slots:
     mappings:
     - type: from_entity
       entity: complaint_type
+  track_status:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: track_status
+  transf_amount:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: transf_amount
+
 
 responses:
   utter_greet:
@@ -270,14 +291,23 @@ responses:
   utter_enter_login:
   - text: please choose your login it should be a mix between words and numbers
   utter_enter_password:
-  - text: please choose your password it should be 7 characters
+  - text: please choose your password it should be 7 numbers
   utter_desired_amount:
   - text: please enter the credit amount you desire 
   utter_enter_account_number:
   - text: please enter your account number (RIB)
   utter_enter_problem:
   - text: please enter your problem
-
+  utter_enter_reciever_name:
+  - text: please enter reciever name
+  utter_enter_reciever_rib:
+  - text: please enter reciever account number (RIB)
+  utter_enter_amount_send:
+  - text: enter the amount you want to send
+  utter_fill_form:
+  - text: to create coount i'll guide you to fill the inscription form step by step , and also you need to assist me with some requuired infomations (ID number ,e-mail , phone number, address, )
+  utter_please_rephrase:
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
 actions:
 - action_account_type
 - action_ask_why
@@ -299,10 +329,12 @@ actions:
 - action_complaint_type
 - action_check_complaint_status
 - action_transactions_type
+- action_show_agencies
+- action_use_location
+- action_nearest_agency
 ########################
 - action_check_mandat_state
 - action_send_mandat
-- action_nearest_agency
 - action_cheque_request
 - action_currency_calculator
 - action_check_all_earnings

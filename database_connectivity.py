@@ -1,23 +1,21 @@
 from colorama import Cursor
 from django.db import connection
 import pymysql
-#mydatabase = pymysql.connect(
-#  host="localhost",
-#  port=3308 ,
-#  user="root",
-#  password="",
-#  database="rasadatabase"
-#)
-mydatabase =  pymysql.connect(host="127.0.0.1", port=3306, user="root", passwd="", database="rasa")
-
+mydatabase = pymysql.connect(
+  host="localhost",
+  port=3308 ,
+  user="root",
+  password="",
+  database="rasadatabase"
+)
 mycursor = mydatabase.cursor()
 
-#mycursor.execute("CREATE TABLE Customers (id int AUTO_INCREMENT PRIMARY KEY, full_name VARCHAR(255) , cin int(8) , email varchar(255)  , birthdate DATETIME , phone_number int ,address VARCHAR(255) ,login VARCHAR(255), password varchar(255) NOT NULL)")
+#mycursor.execute("CREATE TABLE Customers (id int AUTO_INCREMENT PRIMARY KEY, full_name VARCHAR(255) , cin int(8) , email varchar(255)  , birthdate DATETIME , phone_number varchar(255) ,address VARCHAR(255) ,login VARCHAR(255), password int(7) NOT NULL)")
 #mycursor.execute("CREATE TABLE Account (id int AUTO_INCREMENT PRIMARY KEY, RIB int(16) NOT NULL,  date_opened DATETIME NOT NULL , date_closed DATETIME , balance float NOT NULL , account_type varchar(255) NOT NULL , customer_id int NOT NULL , CONSTRAINT FK FOREIGN KEY (customer_id) REFERENCES Customers(id) )")
 #mycursor.execute("CREATE TABLE Credit (id int AUTO_INCREMENT PRIMARY KEY,  date DATE NOT NULL , duration int  NOT NULL , ammount float NOT NULL , credit_type varchar(255) NOT NULL  , account_id int NOT NULL , CONSTRAINT FK FOREIGN KEY (account_id) REFERENCES  Account(id))")
 #mycursor.execute("CREATE TABLE Credit_card (id int AUTO_INCREMENT PRIMARY KEY, credit_card_number int NOT NULL , date_exp date NOT NULL , cvv int NOT NULL , pin_code int NOT NULL , account_id int NOT NULL , constraint FK FOREIGN KEY  (account_id) REFERENCES Account(id))")
 #mycursor.execute("CREATE TABLE Transactions (id int AUTO_INCREMENT PRIMARY KEY, date DATETIME NOT NULL , amount_of_transaction float NOT NULL , transaction_type varchar(255) NOT NULL , account_id int NOT NULL , external_account_id int NOT NULL ,constraint FK FOREIGN KEY  (account_id) REFERENCES Account(id), constraint FK1 FOREIGN KEY  (account_id) references  Account(id))" )
-#mycursor.execute("CREATE TABLE Reclamation(id int AUTO_INCREMENT PRIMARY KEY, description varchar(255) NOT NULL , rib int(16) NOT NULL , status varchar(255) DEFAULT "In progress" , ref_code int NOT NULL)")
+#mycursor.execute("CREATE TABLE Reclamation(id int AUTO_INCREMENT PRIMARY KEY, description varchar(255) NOT NULL , rib int(16) NOT NULL , status varchar(255) DEFAULT 'In progress' , ref_code int NOT NULL)")
 
 def verif_cin(cin):
   a = mycursor.execute('SELECT cin from Customers where cin='+cin)

@@ -4,6 +4,8 @@ from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker  
 from rasa_sdk.executor import CollectingDispatcher
 from datetime import date
+import pandas as pd
+from typing import Text, List, Any, Dict
 from pdf.table_class import *
 from typing import Text, List, Any, Dict
 import smtplib
@@ -13,6 +15,9 @@ from currency.currency import *
 from rasa_sdk import Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from database_connectivity import *
+import webbrowser
+from nearest_agency import *
+
 
 
 class currency(Action):
@@ -113,7 +118,7 @@ class CreateAccountAction(Action):
         email = tracker.get_slot("email")
         birthdate = tracker.get_slot("birthdate")
         number = tracker.get_slot("number")
-        num = int(number)
+        num = (number)
         address= tracker.get_slot("address")
         login = tracker.get_slot("login")
         password = tracker.get_slot("password")
@@ -134,7 +139,7 @@ class CreateAccountAction(Action):
         elif(len(c)!=0):
             dispatcher.utter_message(text = "the login is allready used")
         else:
-            #create_account(name, cin, email, birthdate, num, address, login, password, RIB, date_open , balance, account_type) 
+            create_account(name, cin, email, birthdate, num, address, login, password, RIB, date_open , balance, account_type) 
 
             dispatcher.utter_message(text = "your account is added successfully ")
         return []
@@ -260,7 +265,7 @@ class CreateCreditAction(Action):
         if (credit<int(desired_amount)): 
             dispatcher.utter_message(text = "the desired credit amount is greater than the possible amount ")
         else:
-            create_credit(date_sub, int(duration), int(desired_amount), credit_type, account_id,0 , 1)
+            create_credit(date_sub, int(duration), float(desired_amount), credit_type, account_id,0 , 1)
             dispatcher.utter_message(text = "operation done , the credit amount was addes to your balance")
         return []
 
@@ -305,18 +310,18 @@ class TransferMOneyAction(Action):
         tracker: Tracker,
         domain: Dict[Text, Any],
     ) ->List[Dict[Text, Any]]:
-        name = tracker.get_slot("reciever_name")
+        name = tracker.get_slot("name")
         rib = tracker.get_slot("RIB")
         amount = tracker.get_slot("transf_amount")
         a = verif_transfer_info(name,rib)
-        b = verif_amount(amount,account_id)
+        b = verif_amount(float(amount),account_id)
         account_id=1
         if(len(a)==0):
             dispatcher.utter_message(text = "wrong customer name or RIB")
         elif(b==0):
             dispatcher.utter_message(text = "insufficient balance")
         else:
-            transfer_money(rib , amount, account_id)
+            transfer_money(rib , float(amount), account_id)
             dispatcher.utter_message(text = "Transaction went successfully")
 
         return []
@@ -436,4 +441,60 @@ class CheckComplaintAction(Action):
             dispatcher.utter_message(text = "Invalid RIB")
         else:
             dispatcher.utter_message(text = "Your complaint is+"+stat)
+        return []
+
+class ShowAgenciesAction(Action):
+    def name(self) -> Text:
+        return "action_show_agencies"
+
+    def run(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) ->List[Dict[Text, Any]]:
+        df = pd.read_csv(r"C:\Users\medez\Desktop\pi\agencies_locations.csv")
+        m = folium.Map(location=[36, 10], tiles='openstreetmap', zoom_start=7)
+        for idx, row in df.iterrows():
+            Marker([row['Latitude'], row['Longitude']], popup=row['Name']).add_to(m)
+        m.save("map.html")
+        webbrowser.open("map.html")
+        return []
+
+class AccceptLocationAction(Action):
+    def name(self) -> Text:
+        return "action_use_location"
+
+    def run(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) ->List[Dict[Text, Any]]:
+        buttons = []
+        buttons.append({"title": "Accept", "payload":'/track_location{"track_status":"Yes"}'})
+        buttons.append({"title": "Deny", "payload":'/track_location,{"track_status":"No"}'})
+    
+        dispatcher.utter_message(text="Do you allow me to locate your position ?", buttons = buttons)
+    
+        return []
+
+class NearestagencyAction(Action):
+    def name(self) -> Text:
+        return "action_nearest_agency"
+
+    def run(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) ->List[Dict[Text, Any]]:
+        bool = tracker.get_slot("track_status")
+        if(bool=="Yes"):
+            map = nearest_ag()
+            map.save("map.html")
+            webbrowser.open("map.html")
+        else:
+            dispatcher.utter_message(text ="As you like you wish")
+    
         return []

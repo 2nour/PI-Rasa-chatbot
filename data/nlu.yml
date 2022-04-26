@@ -271,29 +271,15 @@ nlu:
     - Balance please
 - intent: transfer_money
   examples: |
-    - I want to pay [John](PERSON)
-    - I want to transfer $100 to [Bob](PERSON)
-    - can i transfer money to [Sally](PERSON)
     - I want to transfer money
     - I want to pay someone
     - I wanna transfer money
     - I wanna  pay someone
-    - I wanna pay [John](PERSON)
-    - I wanna transfer $100 to [Bob](PERSON)
     - can I pay someone
     - I need to transfer money to a friend
-    - can I transfer money to my [mom](PERSON)
-    - I want to pay [Bert](PERSON)
     - pay my friend
     - transfer money
-    - I want to transfer $100 to [Tommy](PERSON)
-    - i want to transfer $400 to [Akela](PERSON)
-    - I want to pay [Paula Handy](PERSON)
-    - pay Katy Parrow $40 please
-    - transfer $60 to [Jason Jacob](PERSON)
-    - pay [Evan Oslo](PERSON)
-    - pay [Lisa](PERSON) please
-    - can I transfer money to [Kyle Gardner](PERSON)?
+    - can I transfer money to someone ?
     - Pay [Karen](PERSON) 60 Euros
     - pay [Mona](PERSON) $60
     - transfer $60 to [Sally](PERSON)
@@ -303,13 +289,9 @@ nlu:
     - Pay $50 to [Pat](PERSON)
     - Ok pay [Emma](PERSON)
     - pay [Emanual](PERSON)
-    - i want to transfer $100 to [Jane smith](PERSON)
-    - i want to transfer $100 to my [daughter](PERSON)
     - i want to transfer money please
     - i mean i want to transfer money
     - I need to pay a friend.
-    - transfer money to [ethan oswald](PERSON)
-    - transfer money to [sara](PERSON)
     - I need to transfer money to my grandma [Judith](PERSON).
     - i want to transfer money to [Latisha](PERSON)
     - I need to make an urgent transfer to [Bob](PERSON), can you do it?
@@ -321,11 +303,6 @@ nlu:
     - send $50 to [john jacob](PERSON)
     - I need to transfer money to my co-worker who paid for lunch
     - Hi I like to send money
-    - I'd like to send 50$ to [John](PERSON)
-    - Hi I like to send money to [John](PERSON)
-    - Please transfer 50 dollars to [Andreas](PERSON)
-    - I would like to transfer money to [Philipp](PERSON)
-    - I would like to transfer 50$ to [Joschka](PERSON)
 - intent: previous_transactions_and_earnings
   examples: |
     - Show me my list of [transactions](transactions)
@@ -538,21 +515,65 @@ nlu:
     - my name is [Hedy Ezzine](full_name)
     - [Nour Hadrich](full_name)
     - my fullname is [Amine ZArrouki](full_name)
-    - [hakim atmine rous](full_name)
+    - [hakim atrous](full_name)
     - I'm [amen tbini](full_name)
     - it's [ramzi mansour](full_name)
+    - [Najla Majdoub](full_name)
+    - [Med Hedy Sayari](full_name)
+    - Mohamed Amine Zarrouki](full_name)
+    - [Ahlem ben jdidia](full_name) 
+    - [Feriel darraji](full_name)
+    - [Achref Douiri](full_name)
+    - [Amenallah Amamou](full_name)
+    - [Mehdi Ben Dhifallah](full_name)
+    - [Harrsion Afful](full_name)
+    - [Tasnim Kallel](full_name)
+    - [Beya Mlika](full_name)
+    - [Baya ben Hmida](full_name)
+    - [Khalil Cherif](full_name)
+    - [Mohamed Anis Saighi](full_name)
+    - [Med Ali Bouchouicha](full_name)
+    - [Talel Ben Mansour](full_name) 
+    - [Hamed Aounallah](full_name)
+    - [Raya Ayari](full_name)
+    - [Patrick Kroos](full_name)
+    - [Sofien Medimagh](full_name)
+    - [Leila Ouannes](full_name)
+    - [Ritej Abdelli](full_name)
+    - [Lamia Chikhaoui](full_name)
+    - [Mary Macron](full_name)
+    - [Frank Ribery](full_name)
+    - [Raphael Varane](full_name)
+    - [Paul Pogba](full_name)
+    - [Vincent Valbuena](full_name)
+    - [Jeremy Mathieu](full_name)
+
 - intent: identity
   examples: |
     - my identity card number is [10823131](id_number)
     - my id is [10822112](id_number)
     - [09954231](id_number)
     - my id is [10815479](id_number)
+    - [10832147](id_number)
+    - [10225793](id_number)
+    - [10432679](id_number)
+    - [09947516](id_number)
+
+
 - intent: email
   examples: |
     - my email is [medezzine@gmail.com](mail)
     - my mail is [nouri@yahoo.fr](mail)
     - [naaimzarrouki@hotmail.com](mail)
     - [mrbedis@outlook.com](mail)
+    - [razimemi8@gmail.com](mail)
+    - [helmiabsi3@yahoo.com](mail)
+    - [medhedi.ezzine@esprit.tn](mail)
+    - [mohamedaziz.selmi@esprit.tn](mail)
+    - [heniamamou789@gmail.com](mail)
+    - [atayari494@yahoo.com](mail)
+    
+    
 - intent: birthdate
   examples: |
     - my birthdate is [1997-08-22](birth_date)
@@ -560,6 +581,8 @@ nlu:
     - [1997-6-13](birth_date)
     - my birth date is [2000-12-3](birth_date)
     - I was born in [1980-01-05](birth_date)
+    - [1977-6-03](birth_date)
+    - [1952-11-25](birth_date)
 - intent: number
   examples: |
     - my phone number is [27816709](phone_number)
@@ -567,12 +590,43 @@ nlu:
     - [20052651](phone_number)
     - [93124759](phone_number)
     - my number is [42137894](phone_number)
+    - [95889949](phone_number)
+    - [52331662](phone_number)
+    - [+21698908704](phone_number)
+    - [+21651347185](phone_number)
+    - [+21620435106](phone_number)
+    - [0021628167185](phone_number)
+    - [0021656784153](phone_number)
+    - [0021694854627](phone_number)
+    - [50317648](phone_number)
+    - [55124789](phone_number)
+    - [58321457](phone_number)
+    - [22314578](phone_number)
+    - [24367891](phone_number)
+    - [23124637](phone_number)
+    - [90300201](phone_number)
+    - [92457631](phone_number)
+    - [94312475](phone_number)
+
 - intent: address
   examples: |
     - my address is [zaghouan Tunisia](addresse)
     - [Earth street ariana](addresse)
     - [street of honor Tunis](addresse)
     - my home address is [32 street of ghana, Nabeul](addresse)
+    - [28 rue de la gloire, Mannouba](addresse)
+    - [Houmt essouk, Djerba](addresse)
+    - [Moknine Monastir](addresse)
+    - [Sakiet ezzit Sfax](addresse)
+    - [Rades Ben Arous](addresse)
+    - [Tbarka Jandouba](addresse)
+    - [Mjez l beb Beja](addresse)
+    - [Lac1 Tunis](addresse)
+    - [Nasr Neighborhood](addresse)
+    - [Beb Saadoun Tunis](addresse)
+    - [Bizerte Tunisia](addresse)
+    
+
 - intent: login
   examples: |
     - my login is [7hedi88](loginn)
@@ -580,38 +634,59 @@ nlu:
     - [77f4amine](loginn)
     - [127ahmed85](loginn)
     - i want as login [17dfhf88](loginn)
+    - [ahmed43](loginn)
+    - [453amir](loginn)
+    - [nouri49](loginn)
+    - [am14mon](loginn)
+    - [sam453r](loginn)
+
 - intent: password
   examples: |
-    - my password is [1245673](pass)
-    - [ahjdff88](pass)
-    - [mpoffgh](pass)
-    - [24amine](pass)
-    - my password is [cris778](pass)
+    - my password is [5478961](pass)
+    - [2345678](pass)
+    - [4157896](pass)
+    - [1246875](pass)
+    - my password is [3452167](pass)
+    - [7842165](pass)
+    - [5621478](pass)
+    - [3698751](pass)
+    - [9621473](pass)
+    - [8546210](pass)
+    - I want as password [6572148](pass)
+    - [0532146](pass)
+
+
 - intent: savings_account_ty
   examples: |
     - i want as account type [savings account](account_type)
     - [savings account](account_type)
+
 - intent: current_account_ty
   examples: |
     - i want as account type [current account](account_type)
     - [current account](account_type)
+
 - intent: salary_account_ty
   examples: |
     - i want as account type [salary account](account_type)
     - [salary account](account_type)
+
 - intent: choose_account
   examples: |
     - i want to choose my account type
     - i want select my account type
 
+
 - intent: personal_credit
   examples: |
     - i want as credit type [personal credit](credit_type)
     - [personal credit](credit_type)
+
 - intent: car_credit
   examples: |
     - i want as credit type [car credit](credit_type)
     - [car credit](credit_type)
+
 - intent: real_estate_credit
   examples: |
     - i want as credit type [real estate credit](credit_type)
@@ -665,6 +740,13 @@ nlu:
     - i wanna look at my complaint status
     - can you check my complaint request status
     - please check my complaint status    
+
+- intent: check_agencies
+  examples: |
+    - i want to check all bank agencies
+    - i want to see all agencies
+    - let me check bank agencies
+    - show me bank agencies   
   
 - intent: extrait_bnk
   examples: |
@@ -673,8 +755,45 @@ nlu:
     - bank statement please
     - bank statement
 
+- intent: track_location
+  examples: |
+    - [Yes](track_status) track my location
+    - [NO](track_status) don't track my location
+- intent: nearest_agency_position
+  examples: |
+    - Show me the nearest agency
+    - What is the most near agency to my location
+    - can I check the nearest bank agency
 
+- intent: reciever_name
+  examples: |
+    - The reciver name is [Ahmed Boukadida](full_name)
+    - [Amine Dhif](full_name)
+    - [Jamel chaari](full_name)
+    - [Hassen ben Hmida](full_name)
 
+- intent: reciever_rib
+  examples: |
+    - The reciver RIB is [1111112342](rib)
+    - [1111117428](rib)
+    - [1111115745](rib)
+    - [1111117989](rib)
+    - [1111117976](rib)
+
+- intent: amount_sent
+  examples: |
+    - I want to send [250](transf_amount)
+    - [1200](transf_amount)
+    - [587.5](transf_amount)
+    - [340.700](transf_amount)
+    
+- intent: how_create_account
+  examples: |
+    - How can I create account ?
+    - What are the steps I should follow to create an account ?
+    - What is the inscription process ?
+    - How can I be client ?
+    
 
 - synonym: transactions
   examples: |
