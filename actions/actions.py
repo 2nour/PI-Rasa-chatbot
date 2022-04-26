@@ -50,18 +50,18 @@ class extrait_bnk(Action):
         domain: Dict[Text, Any],
     ) ->List[Dict[Text, Any]]:
         extrait()
-        rep="file:///C:/Users/Amine/Desktop/PI-Rasa-chatbot/extrait.pdf"
+        rep="file:///C:/Users/medez/Desktop/pi/extrait.pdf"
         dispatcher.utter_message(rep)
 
         msg = EmailMessage()
-        msg['Subject'] = 'Check out Bronx as a puppy!'
+        msg['Subject'] = 'You got new transaction!'
         msg['From'] = 'bankingchatbot1@gmail.com'
-        msg['To'] = 'bankingchatbot1@gmail.com'
+        msg['To'] = 'medezzine777@gmail.com'
         
 
         msg.set_content('This is a plain text email')
 
-        file ="C:/Users/Amine/Desktop/PI-Rasa-chatbot/extrait.pdf"
+        file ="C:/Users/medez/Desktop/pi/extrait.pdf"
         with open(file,'rb') as f :
             file_data= f.read()
             file_type = imghdr.what(f.name)
@@ -323,6 +323,17 @@ class TransferMOneyAction(Action):
         else:
             transfer_money(rib , float(amount), account_id)
             dispatcher.utter_message(text = "Transaction went successfully")
+        msg = EmailMessage()
+        msg['Subject'] = 'New Transaction '
+        msg['From'] = 'bankingchatbot1@gmail.com'
+        msg['To'] = 'bankingchatbot1@gmail.com'
+        
+
+        msg.set_content('You got a new transaction ,amount recieved is :{}check your account balance if you want').format(amount)
+        with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
+            smtp.login("bankingchatbot1@gmail.com", "bank123bank")
+            smtp.send_message(msg)
+        dispatcher.utter_message(text="Email has been sent.")
 
         return []
 
