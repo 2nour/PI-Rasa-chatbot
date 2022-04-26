@@ -22,7 +22,7 @@ from nearest_agency import *
 
 class currency(Action):
      def name(self) -> Text:
-        return "action_extrait_bnk"
+        return "action_currency_calculator"
 
      def run(
         self,
@@ -30,9 +30,9 @@ class currency(Action):
         tracker: Tracker,
         domain: Dict[Text, Any],
     ) ->List[Dict[Text, Any]]:
-        amnt = tracker.get_slot("salary")
-        frm = tracker.get_slot("salary")
-        to = tracker.get_slot("salary")
+        amnt = tracker.get_slot("transf_amount")
+        frm = tracker.get_slot("currency_dep")
+        to = tracker.get_slot("currency_arriv")
         msg=currencyConversion (amnt,frm,to)
         dispatcher.utter_message(text=msg)
 
@@ -41,7 +41,7 @@ class currency(Action):
 
 class extrait_bnk(Action):
      def name(self) -> Text:
-        return "action_extrait_bnk ************"
+        return "action_extrait_bnk"
 
      def run(
         self,
