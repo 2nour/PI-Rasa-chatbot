@@ -9,17 +9,34 @@ from typing import Text, List, Any, Dict
 import smtplib
 import imghdr
 from email.message import EmailMessage
-
+from currency.currency import *
 from rasa_sdk import Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from database_connectivity import *
 
 
+class currency(Action):
+     def name(self) -> Text:
+        return "action_extrait_bnk"
+
+     def run(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) ->List[Dict[Text, Any]]:
+        amnt = tracker.get_slot("salary")
+        frm = tracker.get_slot("salary")
+        to = tracker.get_slot("salary")
+        msg=currencyConversion (amnt,frm,to)
+        dispatcher.utter_message(text=msg)
+
+        return []
 
 
 class extrait_bnk(Action):
      def name(self) -> Text:
-        return "action_extrait_bnk"
+        return "action_extrait_bnk ************"
 
      def run(
         self,
