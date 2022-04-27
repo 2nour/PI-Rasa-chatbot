@@ -184,3 +184,11 @@ actions:
 - utter_verifier_humain
 - validate_credit_form
 - action_credit_type
+- action_connect
+- action_possible_credit
+- action_create_credit
+- validate_credit_form
+- action_car_credit_duration
+- action_personal_credit_duration
+- action_real_estate_credit_duration
+- action_credit_type

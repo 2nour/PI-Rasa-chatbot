@@ -1,0 +1,21 @@
+version: "3.0"
+stories:
+- story: possible_personal_credit_amount_5
+  steps:
+  - intent: credit_possible
+  - action: action_credit_type
+  - intent: personal_credit
+    entities: 
+      - credit_type: "personal credit"
+  - slot_was_set:
+      - credit_type: "personal credit"
+  - action: utter_ask_salary
+  - intent: salaire
+  - action: action_personal_credit_duration
+  - intent: duree
+    entities: 
+      - duree: "5"
+  - slot_was_set:
+      - duration: "5"
+  - action: action_possible_credit
+

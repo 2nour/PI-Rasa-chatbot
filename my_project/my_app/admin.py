@@ -1,6 +1,6 @@
 from django.contrib import admin
 
 # Register your models here.
-from .models import auth
+from .models import Customers
 
-admin.site.register(auth)
+admin.site.register(Customers)

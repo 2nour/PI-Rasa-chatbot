@@ -10,6 +10,5 @@ stories:
   - action: utter_se_connceter
   - action: utter_verifier_le_solde
   
-   utter_se_connceter
 
 

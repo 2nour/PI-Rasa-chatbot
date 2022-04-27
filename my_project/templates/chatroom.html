@@ -3,6 +3,9 @@
   </head>
   <body>
     <div class="chat-container"></div>
+    {% if 'id' not in request.session %}
+    <div> your not connected</div>
+    {% endif %}
   
     <script src="https://npm-scalableminds.s3.eu-central-1.amazonaws.com/@scalableminds/chatroom@master/dist/Chatroom.js"/></script>
     <script type="text/javascript">

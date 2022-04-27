@@ -14,6 +14,7 @@ import os
 from pathlib import Path
 import datetime
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -31,6 +32,7 @@ ALLOWED_HOSTS = []
 
 CRISPY_TEMPLATE_PACK =  'bootstrap4'
 
+
 JWT_AUTH = {
  
     'JWT_VERIFY': True,
@@ -41,9 +43,7 @@ JWT_AUTH = {
 }
 
 REST_FRAMEWORK = {
-     'DEFAULT_FILTER_BACKENDS': [
-        'django_filters.rest_framework.DjangoFilterBackend'
-    ],
+   
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ],
@@ -52,9 +52,9 @@ REST_FRAMEWORK = {
 # Application definition
 
 INSTALLED_APPS = [
+    'my_app.apps.MyAppConfig',
     'bootstrap5',
     'crispy_forms',
-    'my_app',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

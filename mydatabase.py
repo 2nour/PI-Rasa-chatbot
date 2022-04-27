@@ -95,3 +95,11 @@ def complaint_status(rib):
   sql = 'SELECT status FROM Reclamations where rib='+rib
   stat = mycursor.execute(sql)
   return stat
+
+def get_userinfo(account_id):
+  sql= 'select full_name, email from Customers where id='+account_id
+  stat = mycursor.execute(sql)
+  for row in stat:
+    email=row['email']
+    name=row['full_name']
+  return email,name

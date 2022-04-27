@@ -54,5 +54,7 @@ stories:
     - password: '2000-02-02'
   - slot_was_set:
     - password: '2000-02-02'
+  - action: action_create_account
+  
   
   
