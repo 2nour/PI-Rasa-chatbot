@@ -8,6 +8,6 @@ def translate():
     translator = googletrans.Translator()
     translate = translator.translate(name[1], dest='english')
     print(translate.text)
-    return translate.text
+    return translate.text,id
 
 translate()

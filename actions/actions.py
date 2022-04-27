@@ -16,15 +16,13 @@ from rasa_sdk import Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from database_connectivity import *
 import webbrowser
-<<<<<<< HEAD
 from nearest_agency import *
 from translation_function import *
 from image_ocr.ocr_process import *
-from image_ocr.picture import *
+from image_ocr.photo import *
+import cv2
 
-=======
-#from nearest_agency import *
->>>>>>> 924f180926031a52d965e8ead0b060703ad24eb2
+
 
 
 
@@ -136,7 +134,6 @@ class CreateAccountAction(Action):
         today = date.today()
         date_open = today.strftime("%Y-%m-%d")
         balance = 0.0
-        RIB = int(get_rib())+1
         a = verif_cin(cin)
         b = verif_login(login)
         c = verif_mail(email)
@@ -155,6 +152,7 @@ class CreateAccountAction(Action):
             dispatcher.utter_message(text = "the fullname must contain only letters")
         else:
             dispatcher.utter_message(text = "your request was stored, now we proceed to the id verification ")
+            
         return []
 
 class AccountTypeAction(Action):
@@ -522,8 +520,6 @@ class NearestagencyAction(Action):
             webbrowser.open("map.html")
         else:
             dispatcher.utter_message(text ="As you like you wish")
-    
-<<<<<<< HEAD
         return []
 
 class ChequeRequestAction(Action):
@@ -540,6 +536,7 @@ class ChequeRequestAction(Action):
     
         return []
 
+
 class ValidateCreationAction(Action):
     def name(self) -> Text:
         return "action_validate_creation"
@@ -553,8 +550,6 @@ class ValidateCreationAction(Action):
         mail = tracker.get_slot("email")
         fullname = tracker.get_slot("name")
         id = tracker.get_slot("id")
-        take_pic()
-        name, idd = translate()
         name = str(name)
         idd = str(idd)
         birthdate = tracker.get_slot("birthdate")
@@ -567,23 +562,41 @@ class ValidateCreationAction(Action):
         today = date.today()
         date_open = today.strftime("%Y-%m-%d")
         balance = 0.0
-        RIB = int(get_rib())+1
+        RIB = int(get_rib()[0])+1
+        dispatcher.utter_message(text= "To Take a picture for the front id card face press on s key , then press q to quit ")
+        name, idd = translate()
         l = fullname.split(" ", 2)
         l1 = str(l[0])
         l2 = str(l[1])
-        if (similar(l1 ,name)<0.6) or (count_char(l2 ,name)<0.6):
+        if (similar(l1 ,name)<0.6) or (similar(l2 ,name)<0.6):
             c = 0
         elif (id != idd):
             c = 0
         else :
             c = 1
-        
         if (c==0):
-            dispatcher.utter_message(text = "nbadel email f blasset hedhy")
+            msg = EmailMessage()
+            msg['Subject'] = 'Account creation failure'
+            msg['From'] = 'bankingchatbot1@gmail.com'
+            msg['To'] = 'medezzine777@gmail.com'
+            msg.set_content("Your id informations didn't match the form informations")
+            with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
+                smtp.login("bankingchatbot1@gmail.com", "bank123bank")
+                smtp.send_message(msg)
+            dispatcher.utter_message(text="Email has been sent.")
+        
         else :
             create_account(name, int(id), mail, birthdate, num, address, login, password, RIB, date_open , balance, account_type) 
+            msg = EmailMessage()
+            msg['Subject'] = 'Account created'
+            msg['From'] = 'bankingchatbot1@gmail.com'
+            msg['To'] = 'medezzine777@gmail.com'
+            msg.set_content("Your account was added successfully")
 
+            with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
+                smtp.login("bankingchatbot1@gmail.com", "bank123bank")
+                smtp.send_message(msg)
+            dispatcher.utter_message(text="Email has been sent.")
         return []
-=======
-  #      return []
->>>>>>> 924f180926031a52d965e8ead0b060703ad24eb2
+
+

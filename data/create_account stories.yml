@@ -57,6 +57,7 @@ stories:
   - action: action_validate_creation
 
 
+
 - story: creation_current_account
   steps:
   - intent: create_new_account
@@ -84,6 +85,7 @@ stories:
   - intent: password
   - action: action_create_account
   - action: action_validate_creation
+
 
 - story: creation_current_account+signin
   steps:
@@ -114,6 +116,7 @@ stories:
   - action: action_validate_creation
 
 
+
 - story: creation_salary_account
   steps:
   - intent: create_new_account
@@ -141,6 +144,7 @@ stories:
   - intent: password
   - action: action_create_account
   - action: action_validate_creation
+
 
 - story: creation_salary_account+signin
   steps:

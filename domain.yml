@@ -345,6 +345,7 @@ actions:
 - action_nearest_agency
 - action_currency_calculator
 - action_validate_creation
+- action_take_pic
 ########################
 - action_check_mandat_state
 - action_send_mandat

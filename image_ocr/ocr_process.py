@@ -12,10 +12,12 @@ from imutils.object_detection import non_max_suppression
 from collections import namedtuple
 from skimage.io import imread, imshow
 from imutils.contours import sort_contours
+from image_ocr.photo import *
 
 def ocr_pross():
-    template = cv2.imread(r"C:\Users\medez\Desktop\pi\image_ocr\saved_img.jpg")
-    image = cv2.imread(r"C:\Users\medez\Desktop\pi\image_ocr\saved_img.jpg")
+    take_pic()
+    template = cv2.imread(r"C:\Users\medez\Desktop\pi\saved_img.jpg")
+    image = cv2.imread(r"C:\Users\medez\Desktop\pi\saved_img.jpg")
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     thresh = cv2.threshold(gray, 0, 255,
 	cv2.THRESH_BINARY_INV | cv2.THRESH_OTSU)[1]
@@ -68,6 +70,5 @@ def ocr_pross():
     name = text_reader.readtext(name_img, detail = 0)
     print(idn,last_name,name)  
     return idn, last_name, name
-
 
 ocr_pross()
