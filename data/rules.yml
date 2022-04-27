@@ -17,3 +17,29 @@ rules:
   - intent: nlu_fallback
   - action: utter_please_rephrase
 
+- rule: currency_convert
+  steps:
+  - intent: convert_currency
+  - action: action_currency_calculator
+
+
+- rule: action enter password after intebt login
+  steps:
+  - intent: login
+  - action: utter_enter_password
+
+- rule: action create account after intent password
+  steps:
+  - intent: password
+  - action: action_create_account
+
+- rule: action validate creation after action create account
+  steps:
+  - action: action_create_account
+  - action: action_validate_creation
+
+- rule: utter_why_our_bank after intent why_your_bank 
+  steps:
+  - intent: why_your_bank
+  - action: utter_why_our_bank
+

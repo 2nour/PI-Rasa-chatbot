@@ -416,48 +416,10 @@ nlu:
     - How can I create a new account ?
     - How may I be a new customer ?
 
-- intent: pay_cc
-  examples: |
-    - I would like to pay the [minimum balance](amount-of-money) on my [embelm](credit_card) [card](account_type)
-    - I want to pay my [credit card](account_type)
-    - I want to pay my [card](account_type)
-    - Pay my [card](account_type)
-    - I want to pay my [justice bank](credit_card) bill
-    - Pay my [discover](credit_card)
-    - I want to pay my [iron bank](credit_card) bill
-    - Pay my [visa](credit_card)
-    - I want to pay my [visa](credit_card) bill
-    - Pay my [mastercard](credit_card)
-    - I want to pay my [MasterCard](credit_card) bill
-    - I want to pay my [credit card](account_type) bill
-    - I want to pay the [current balance](amount-of-money) on my [credit card](account_type)
-    - can you help me pay the [current balance](amount-of-money) on my [credit card](account_type)
-    - I want to pay off my [credit card](account_type)
-    - i want to pay my [credit card](account_type)
-    - i want to pay off my[credit card](account_type)
-    - I want to pay my [card current balance](amount-of-money) on my [embelm](credit_card) [credit card](account_type)
-    - I want to pay $500 on my [credit card](account_type) on Sunday
-    - I want to pay my [current balance](amount-of-money) on my [emblem](credit_card) [credit card](account_type) today
-    - i need to pay off my [credit card](account_type)
-    - Please schedule  a payment towards my [credit card](account_type) for April 12th
-    - Can I schedule a payment towards my [credit card](account_type) for tomorrow?
-    - Pay off my [minimum balance](amount-of-money) please
-    - i would like to pay $1200 to my [credit card][balance](amount-of-money)
-    - I would also like to pay my [visa](credit_card) bill
-    - Pay off my [credit card][credit card][balance](amount-of-money), please
-    - I guess it is. Since it's so much, let's pay off my [credit](account_type)
-    - Let's pay that [credit card][credit card][balance](amount-of-money) bill
-    - I want to pay 100 dollars toward my [Emblem](credit_card) [card](account_type), tomorrow
-    - pay 100 towards  [card](account_type), tomorrow
-    - id like to pay my bill
-    - could I pay off my [credit card][balance](amount-of-money)
-    - pay off my [credit card][balance](amount-of-money)
-    - i wanna pay my [credit card][balance](amount-of-money)
-    - pay a bill
 - intent: sign_in
   examples: |
     - I want to sign in to my [account](account)
-    - I want to log in to my[account](account)
+    - I want to log in to my [account](account)
     - I wanna sign in
     - I wanna log in
     - I wanna access to my [account](account)
@@ -695,10 +657,10 @@ nlu:
 
 - intent: desired_amount
   examples: |
-    - i want [40000](credit_amount) as credit amount
-    - i want [50000](credit_amount) as a loan
-    - i want borrow [100000](credit_amount)
-    - i would like to get [75000](credit_amount)  
+    - i want [40000](amount-of-money) as credit amount
+    - i want [50000](amount-of-money) as a loan
+    - i want borrow [100000](amount-of-money)
+    - i would like to get [75000](amount-of-money)  
 
 - intent: last_five_trans
   examples: |
@@ -726,7 +688,7 @@ nlu:
   examples: |
     - my rib is [1234568970035467](rib)
     - [1478965230142678](rib)
-    - my account number is[1478965230654789](rib)
+    - my account number is [1478965230654789](rib)
     - [1034278596321547](rib)
 - intent: submit_problem
   examples: |
@@ -783,10 +745,10 @@ nlu:
 
 - intent: amount_sent
   examples: |
-    - I want to send [250](transf_amount)
-    - [1200](transf_amount)
-    - [587.5](transf_amount)
-    - [340.700](transf_amount)
+    - I want to send [250](amount-of-money)
+    - [1200](amount-of-money)
+    - [587.5](amount-of-money)
+    - [340.700](amount-of-money)
     
 - intent: how_create_account
   examples: |
@@ -797,11 +759,29 @@ nlu:
 
 - intent: convert_currency
   examples: |
-    - I want to convert [150](transf_amount) from [EUR](currency_dep) to [USD](currency_arriv)
-    - I wish to transform [75](transf_amount) from [EUR](currency_dep) to [USD](currency_arriv)
-    - Convert [220](transf_amount) from [EUR](currency_dep) to [USD](currency_arriv)
-    - Transform [350](transf_amount) from [EUR](currency_dep) to [USD](currency_arriv)
-    - Change [50](transf_amount) from [EUR](currency_dep) to [USD](currency_arriv)
+    - I want to convert [150](amount-of-money) from [EUR](currency_dep) to [USD](currency_arriv)
+    - I wish to transform [75](amount-of-money) from [EUR](currency_dep) to [USD](currency_arriv)
+    - Convert [220](amount-of-money) from [EUR](currency_dep) to [USD](currency_arriv)
+    - Transform [350](amount-of-money) from [EUR](currency_dep) to [USD](currency_arriv)
+    - Change [50](amount-of-money) from [EUR](currency_dep) to [USD](currency_arriv)
+    - Convert [12](amount-of-money) [EUR](currency_dep) to [USD](currency_arriv)
+    - Transform [420](amount-of-money) from [TND](currency_dep) to [USD](currency_arriv)
+    - Change [95](amount-of-money) from [EUR](currency_dep) to [TND](currency_arriv)
+    - Convert [140](amount-of-money) [TND](currency_dep) to [QAR](currency_arriv)
+
+- intent: why_your_bank
+  examples: |
+    - Why should I choose your bank ?
+    - Tell me about your bank
+    - What are the advantages of your bank ?
+    - Give me reasons to choose your banks
+
+- intent: request_cheque
+  examples: |
+    - I want a cheque book
+    - Can you apply cheque book request for me
+    - I want to renew my cheque book
+    - Cheque book please
 
 - synonym: transactions
   examples: |
@@ -819,6 +799,366 @@ nlu:
   examples: |
     - cc
     - card
+
+- lookup: salaryy
+  examples: |
+    - 1200
+    - 1500
+    - 450
+    - 575
+    - 640
+    - 725
+    - 824
+    - 959
+    - 1000
+    - 1050 
+    - 1300
+    - 1136
+    - 524
+    - 1530
+    - 1480
+    - 1705
+    - 1800
+    - 1960
+    - 2000
+    - 2160
+    - 2250
+    - 2500
+    - 2600
+    - 2750
+    - 2800 
+    - 2900
+    - 3000
+    - 3260
+    - 3400
+    - 3890
+    - 4000
+    - 4160
+    - 4520
+    - 4830
+    - 5000
+    - 7550
+    - 8200
+    - 8460
+    - 9130
+    - 9605
+    - 9360
+    - 10400
+    - 11500
+    - 12750
+    - 14000
+    - 15300
+    - 20670
+
+- lookup: full_name
+  examples: |
+    - Med Hedy Sayari
+    - Mohamed Amine Zarrouki
+    - Hakim Atrous 
+    - Feriel darraji
+    - Achref Douiri
+    - Amenallah Amamou
+    - Mehdi Ben Dhifallah
+    - Harrsion Afful
+    - Tasnim Kallel
+    - Beya Mlika
+    - Baya ben Hmida
+    - Khalil Cherif
+    - Mohamed Anis Saighi
+    - Med Ali Bouchouicha
+    - Talel Ben Mansour 
+    - Hamed Aounallah
+    - Raya Ayari
+    - Patrick Kroos
+    - Sofien Medimagh
+    - Leila Ouannes
+    - ritej Abdelli
+    - Lamia Chikhaoui
+    - Mary Macron
+    - Frank Ribery
+    - Raphael Varane
+    - Paul Pogba
+    - Vincent Valbuena
+    - Jeremy Mathieu
+
+
+- lookup: pass
+  examples: |
+    - lkjhaze AK45az_çà'
+    - lkjA564 20
+    - 4'kjh_çà)
+    - NFqXO^OEtAeA
+    - 6Wjqg2U2
+    - d4c38NzL
+    - T8fd39Bf
+    - Heu79Vf9
+    - 4e6AeM4w
+    - 8v9JvcF4
+    - scpYN842
+    - prW83Pp4
+    - P2f7y8Xv
+    - x92The9S
+    - 359DuduJ
+    - g63Gv fY5
+    - F7N7yjv6
+    - 75BFpg7r
+    - caX8v7W6
+    - 3mD7zQ7y
+    - QE63p4wg
+    - 7p98MruG
+    - 6vXL5e8v
+    - vv2NbWs53
+    - j299wWCw
+    - v4U 43dBxi
+    - c3r35wYNazeazeztyeyehdfg
+    - h85S8zxH
+    - Pxq485Rrfgdfg
+    - vB2 n5E2xw
+    - c747vZEp
+    - Aei574mE
+    - mY63Ez9a
+    - Z23kbCw5sdfdfsdf
+    - h7eT!3H/
+    - OW4;a@r6hbfghjghk 84ghj56ghjgf
+    - a-D?3P3r
+    - @xK 8gK0^
+    - ,c76KNc.dfgd
+    - 6NqOv2#{
+    - 06Ac^p!F dfgsdfs
+    - QtAe/85<
+    - ?$hEu7L1
+    - (Mk5h~K38978
+    - 1dPU0#x;
+    - lnL6$ I7
+    - 81rkNP].
+    - )EC3l0e;
+    - LkD8(0/r
+    - #f3c3P_D
+    - pSQ}g@50
+    - W/v+2M3y
+    - ]$VCe5c3
+    - 2}hiX!M5dfg
+    - {6vq[T8D45645677
+    - a9B!,jK9
+    - z8y1)S:M
+    - k:I7Io9~
+    - a75@SDt{
+    - 51Jo ^It*
+    - 5@{WYg7pdf
+    - 9UP6g_a(df
+    - _VO{cb16
+    - wK@^6Yx0 
+    - O3m~@7Xdds
+    - p/#3xC9N
+    - 8}1&XCfy
+    - Zk/.7jT0az
+    - (gtC96G;
+    - 3d@V3i*O
+    - &3qQ%Ux2
+    - e[94e}LSsdf
+    - WN*+6ld7
+    - +eA86Le@
+    - p;8mA5$F
+    - &c8,XYa6
+    - R#x5q/J2
+    - G~d(u73W
+    - 52^&cKRz
+    - .3yE9&Dvdsf
+    - 5:kLh?D7
+    - Rx[[J18i
+    - 5tw5}<WZ
+    - q3f4D?L.
+    - 26eWxE![
+    - fs>Y:40Y
+    - &1^waM4C456
+    - 5-zp7V>P
+    - pPB99!~d
+    - wE6gE0^?
+    - u4V6nR_;
+    - Lr8N4,s=
+    - Tz.%J5t9fs
+    - 4-@jF5Ur
+    - 6N*9jUr_86nL]
+    - 16wtx4X=A]7/T
+    - 9Q@7=O1bR8q-f
+    - lbX:&5*2Ni64S
+    - 7,JLx~]22f4Pe
+    - +o60Gce<84UZ$
+    - 88x7.Q,^WxmY9
+    - k)2b%2X8u4/GR
+    - :v6Cy3n]6NB1,
+    - o*4PGYu4m-5+8
+    - <*9nHY8E[27bb
+    - z%W5r53r*E6C_
+    - Pk5N^Jp9/64&u
+    - Bor6N6I<0b1+:
+    - OvQ4i)(>636Az
+    - j-50t/T9J5S[z
+    - Pc:iY85?C63+d
+    - #%PI4I{xl52z7
+    - }x67lH~Y7m6[W
+    - 7#Y26OX(1g~dv
+    - bR65ys#7A&)G7
+    - 5,zXe223Sj~{A
+    - bVG?a31)!3H4o
+    - 3R45A+kYiv+9.
+    - O3:Y2f3,Nza0~
+    - ^m)TZj9m0*C96
+    - hd1$O.7[9Ts5Y
+    - .5Bg{68VP4u=g
+    - NmAz,v&539[Y5
+    - 1Is3JG8>.r5^f
+    - z7@]w18yZJ
+    - 06Zqt.5iZ@
+    - _b1j?2Ns1J
+    - w6#.8Pb5Uv
+    - 1S95yQe%b)
+    - D238q^fZ)r
+    - v.Af.Bh5y26
+    - sGx}77}2Bn
+    - Z?zO34n)i5
+    - 78ir)IYy_6
+    - 5yL7+j8j.N
+    - wqO89.rP?3
+    - - 3I3H=g_wd1
+    - 8Q0uzs.Y1[
+    - T55!3s~uKm
+    - Xc}%2a14Zs
+    - 4!pm9ZP3#e
+    - MWk&l105v~
+    - 4wt9s/]KJ5
+    - k7;^GLk22l
+    - Z9$Dtae?41
+    - aL{xH0q77]
+    - }7mJ8k6<Iq
+    - 9L{jFw82t}
+    - $a47qJEa9_
+    - =AjU9?26ro
+    - l8wbSR=7-4
+    - 7w~2iyS]G8
+    - {lV736=kyX
+    - y262]KeTa,
+    - 8a6hS@
+    - =uB73d
+    - 1Wsl(4
+    - p_7a8J
+    - #j1Ma8
+    - b.K94p
+    - pv3+Y4
+    - 4[wd2J
+    - [Qw5h3
+    - T[k01a
+    - jb65O/
+    - h53O:o
+    - uv8P5!
+    - {3Xk0l
+    - %3nIc7
+    - 8at2O,
+    - K7_gr5
+    - 9Li6h<
+    - 9{7hPh
+    - ;x56nY
+    - q1>kO5
+    - 4Qwp1/
+    - +t6Vl9
+    - E91*fc
+    - _65Nxj
+    - M74i>p
+    - c8lV0?
+    - 8Q&a7r
+    - .k33wI
+    - c&Fw35
+
+
+- lookup: loginn
+  examples: |
+    - amine28
+    - dfs645
+    - sdfmlk,
+    - Amldf23
+    - klmjsd654654
+    - sqdlmù321
+    - fpoijt65
+    - emtlrt
+    - gmlk,fdg35
+    - dfgljg456d
+    - fdgdlmkjdfg86
+    - ipoi54665
+    - paze11
+    - azvbn,007
+    - vbnsqd01
+    - ieryrpoid
+    - amine009
+    - heoiu281
+    - lkd741
+    - qs3221
+    - lfdk999999
+    - hjkhkjshazueyaze
+    - mlpouie0933321285
+    - gfa07415
+    - hdjdyetriuao
+    - ABCD1234
+    - abcdd222
+    - KJDQH2456
+    - JUAZNE554
+    - AZYUHAZ99
+    - Akjh21
+    - asqdjkh987
+    - bcvwxffff
+    - Biuoyrez435
+    - cjkQHSDGFL654
+    - Cuoip88888
+    - dbdfgfdAze000
+    - Dkjluiy654
+    - eknbd754
+    - Elkjbq111231
+    - fwxcvb
+    - Fazea525
+    - g78
+    - G3215745
+    - h635458
+    - HAaAAaa5456
+    - ipoiutyioutrt2
+    - Inbvb
+    - jmpo
+    - Jughbr5007
+    - k00000
+    - Kjrnd
+    - lmolp
+    - Lnope6465
+    - m9975
+    - Mlkjnza
+    - n01fsdfs
+    - Nklj0
+    - okfj5e222
+    - Omlkaz24
+    - pkljhaz548
+    - Pa^mlnbey
+    - qjhkdga74532
+    - Qhauiz09
+    - rbbvnvb2485
+    - Ramoineyz979
+    - skhjhbe214
+    - Samlkuiyohf978798879
+    - Tjuiifh
+    - tdfj
+    - ub
+    - U222
+    - vlakz87
+    - VVVVV007777
+    - xlkj
+    - Xa52
+    - yiazz54466
+    - Ydkdqsdqsdqsd
+    - zfgytyty
+    - Zrtyrtyrtysdfs
+    - wqsdfgkjlmk
+    - Wmlmoi
+    - klmk563lm
+    - lm6h6dg
+    - ghh5
+    - ksdjldaei657
+    - kljfse5
 
 - lookup: currency_dep
   examples: |
@@ -1164,8 +1504,7 @@ nlu:
     - ZAR
     - ZMW
     - ZWL
-
-- lookup: transf_amount
+- lookup: amount-of-money
   examples: |
     - 1
     - 1.5
@@ -1211,34 +1550,1192 @@ nlu:
     - 78
     - 9
     - 128
-
-- lookup: full_name
+- lookup: mail
   examples: |
-    - Med Hedy Sayari
-    - Mohamed Amine Zarrouki
-    - Hakim Atrous 
-    - Feriel darraji
-    - Achref Douiri
-    - Amenallah Amamou
-    - Mehdi Ben Dhifallah
-    - Harrsion Afful
-    - Tasnim Kallel
-    - Beya Mlika
-    - Baya ben Hmida
-    - Khalil Cherif
-    - Mohamed Anis Saighi
-    - Med Ali Bouchouicha
-    - Talel Ben Mansour 
-    - Hamed Aounallah
-    - Raya Ayari
-    - Patrick Kroos
-    - Sofien Medimagh
-    - Leila Ouannes
-    - ritej Abdelli
-    - Lamia Chikhaoui
-    - Mary Macron
-    - Frank Ribery
-    - Raphael Varane
-    - Paul Pogba
-    - Vincent Valbuena
-    - Jeremy Mathieu
+    - amine2@gmail.com
+    - mldfks@hotmail.com
+    - amleka.sdm@yahoo.fr
+    - mlkdf22@outlook.fr
+    - fghfghf44@hotmail.fr
+    - mlkklm_5@esprit.tn
+    - bridge22@gmail.com
+    - hkjghfd@hotmail.com
+    - ghjyui5@yahoo.fr
+    - mohamed888@outlook.fr
+    - med7965@hotmail.fr
+    - daliio007@esprit.tn
+    - dzana@imaginet.fr
+    - hanko@hol.fr
+    - yosr.chebbi@esprit.tn
+    - sarra.benhaddada@esprit.tn
+    - zeineb.haffar@esprit.tn
+    - anis.moalla@esprit.tn	
+    - nourchene.riahi@esprit.tn
+    - hakim.atrous@esprit.tn	
+    - mouheb.benabdallah@esprit.tn
+    - medhedi.ezzine@esprit.tn
+    - abdallah.ouaili@esprit.tn
+    - mohamedamine.saighi@esprit.tn
+    - wassim.mkadmi@esprit.tn
+    - mohamedamine.chelly1@esprit.tn
+    - yasmin.hachicha@esprit.tn
+    - nada.benbrahim@esprit.tn	
+    - feriel.mabrouk@esprit.tn
+    - hanko@wanadoo.fr
+    - dzovinar@francenet.fr
+    - soquet@haddock.inria.fr
+    - epochat@worldnet.fr
+    - sorc@wanadoo.fr
+    - murdoc@wanadoo.fr
+    - joewhite@wanadoo.fr
+    - lms@wanadoo.fr
+    - sorel@wanadoo.fr
+    - mure@wanadoo.fr
+    - murea@grenet.fr
+    - soriano@wanadoo.fr
+    - soriel@wanadoo.fr
+    - muriel@wanadoo.fr
+    - sorrow@wanadoo.fr
+    - hanne@wanadoo.fr
+    - sorry@wanadoo.fr
+    - murlock@wanadoo.fr
+    - hanner@wanadoo.fr
+    - lmw@escp.ccip.fr
+    - sorsha@wanadoo.fr
+    - sortega@wanadoo.fr
+    - hannes@wanadoo.fr
+    - sortiz@wanadoo.fr
+    - sory@wanadoo.fr
+    - hanni@wanadoo.fr
+    - hannibal1@wanadoo.fr
+    - sos@wanadoo.fr
+    - sosa@wanadoo.fr
+    - murph@wanadoo.fr
+    - ln@wanadoo.fr
+    - lna@hol.fr
+    - lna@wanadoo.fr
+    - joeyh@wanadoo.fr
+    - hanny@wanadoo.fr
+    - hanoi@wanadoo.fr
+    - hanon@wanadoo.fr
+    - naco@wanadoo.fr
+    - soso@wanadoo.fr
+    - lnaud@teleriviera.fr
+    - lnb@wanadoo.fr
+    - hans.erhart@wanadoo.fr
+    - nad_thi@magic.fr
+    - lnc@wanadoo.fr
+    - nada@hol.fr
+    - nada@physique.ens.fr
+    - lncsa@francenet.fr
+    - sota@wanadoo.fr
+    - hans3@wanadoo.fr
+    - nadal@physique.ens.fr
+    - sotec@wanadoo.fr
+    - nadal@wanadoo.fr
+    - nadam@irisa.fr
+    - soter@wanadoo.fr
+    - nadam@wanadoo.fr
+    - hans@cnam.fr
+    - soteria@wanadoo.fr
+    - nadan@wanadoo.fr
+    - sotero@wanadoo.fr
+    - soth@wanadoo.fr
+    - joeys@wanadoo.fr
+    - hans@libertysurf.fr
+    - sothis@wanadoo.fr
+    - nadas@wanadoo.fr
+    - hans@wanadoo.fr
+    - nadav@wanadoo.fr
+    - nadben@club-internet.fr
+    - lnegrier@grolier.fr
+    - nade@wanadoo.fr
+    - nadeau@wanadoo.fr
+    - sottil@wanadoo.fr
+    - lnet@wanadoo.fr
+    - sottile@wanadoo.fr
+    - sotto@wanadoo.fr
+    - nadege@unimedia.fr
+    - sou2@wanadoo.fr
+    - sou@wanadoo.fr
+    - jof@wanadoo.fr
+    - soubrane@wanadoo.fr
+    - jofe@wanadoo.fr
+    - soudan@wanadoo.fr
+    - nader@hol.fr
+    - nader@wanadoo.fr
+    - nader_m@esme.fr
+    - soufflet@wanadoo.fr
+    - joff@wanadoo.fr
+    - joffre@poly.polytechnique.fr
+    - joffrin@liberation.fr
+    - lng@wanadoo.fr
+    - e950007@escp.ccip.fr
+    - e960063@escp.ccip.fr
+    - soul@wanadoo.fr
+    - hansen@hol.fr
+    - hansen@smtp1.insead.fr
+    - nadia@enya.cad.cea.fr
+    - hansen@wanadoo.fr
+    - joga@wanadoo.fr
+    - lnguyen@ens-lyon.fr
+    - souledge@wanadoo.fr
+    - lnh@wanadoo.fr
+    - soulfinger@wanadoo.fr
+    - lni@wanadoo.fr
+    - joghems@srmp14.saclay.cea.fr
+    - soulie@wanadoo.fr
+    - lnicolas@pasteur.fr
+    - lnicol@irisa.fr
+    - nadine.adam@industrie.gouv.fr
+    - nadine.lemaire@hol.fr
+    - nadine.rouillon@icare.fr
+    - e_voirin@micronet.fr
+    - nadine@hol.fr
+    - nadine@wanadoo.fr
+    - lnl@hol.fr
+    - eaa.bmsi@wanadoo.fr
+    - jogy@wanadoo.fr
+    - cly@imaginet.fr
+    - srousseau@wanadoo.fr
+    - joh@wanadoo.fr
+    - eab@metra.fr
+    - lnm@wanadoo.fr
+    - joha@wanadoo.fr
+    - nadineg@wanadoo.fr
+    - sroy@wanadoo.fr
+    - johan.andersson@wanadoo.fr
+    - srp@wanadoo.fr
+    - hanso@wanadoo.fr
+    - johan.nilsson@wanadoo.fr
+    - johan.montagnat@sophia.inria.fr
+    - hansolo@wanadoo.fr
+    - nadir@wanadoo.fr
+    - eacparis@pratique.fr
+    - eadam@infini.fr
+    - lnoyelle@ifhamy.insa-lyon.fr
+    - johan@hol.fr
+    - nadja@wanadoo.fr
+    - lnp@wanadoo.fr
+    - johan@wanadoo.fr
+    - nadler@insead.fr
+    - srs@wanadoo.fr
+    - nado@wanadoo.fr
+    - lns@wanadoo.fr
+    - nadon@wanadoo.fr
+    - johanj@worldnet.fr
+    - srsr@wanadoo.fr
+    - johann.boulet@wanadoo.fr
+    - johann.cottaign@hol.fr
+    - nadya@wanadoo.fr
+    - srt@wanadoo.fr
+    - nae@wanadoo.fr
+    - lnx@wanadoo.fr
+    - hanss@wanadoo.fr
+    - srudy@wanadoo.fr
+    - nael@wanadoo.fr
+    - sruiz@wanadoo.fr
+    - lo@santorin.int-evry.fr
+    - lo@wanadoo.fr
+    - naepel@micronet.fr
+    - naepels@micronet.fr
+    - hanuman@wanadoo.fr
+    - loa@wanadoo.fr
+    - naf@wanadoo.fr
+    - naf@imaginet.fr
+    - load@wanadoo.fr
+    - hanz@wanadoo.fr
+    - srv@hol.fr
+    - nafia@carolus.cma.fr
+    - hanzel@wanadoo.fr
+    - srv@wanadoo.fr
+    - johanne@wanadoo.fr
+    - johannes.bluemink@hol.fr
+    - johannes.profijt@wanadoo.fr
+    - loaf@wanadoo.fr
+    - loafer@wanadoo.fr
+    - johannes@techlink.fr
+    - johannes@wanadoo.fr
+    - nafta@wanadoo.fr
+    - haos@wanadoo.fr
+    - loan@wanadoo.fr
+    - srx@wanadoo.fr
+    - sry@wanadoo.fr
+    - srz@wanadoo.fr
+    - johansson@wanadoo.fr
+    - hapi@wanadoo.fr
+    - hapiness@wanadoo.fr
+    - nagash@wanadoo.fr
+    - johb@wanadoo.fr
+    - loba@wanadoo.fr
+    - haplo@hol.fr
+    - haplo@wanadoo.fr
+    - ss6250@wanadoo.fr
+    - eai@nordnet.fr
+    - johel@wanadoo.fr
+    - nagel@wanadoo.fr
+    - lobel@wanadoo.fr
+    - ss@wanadoo.fr
+    - nagi@wanadoo.fr
+    - lobjois@cert.fr
+    - ssa@wanadoo.fr
+    - happiness@wanadoo.fr
+    - john-k@wanadoo.fr
+    - lobo2@wanadoo.fr
+    - nagle@wanadoo.fr
+    - nagler@wanadoo.fr
+    - nago@hol.fr
+    - john.adams@wanadoo.fr
+    - nago@wanadoo.fr
+    - john.allen@wanadoo.fr
+    - ssahin@wanadoo.fr
+    - ssaid@wanadoo.fr
+    - nagpal@magic.fr
+    - john.b@wanadoo.fr
+    - john.bailey@wanadoo.fr
+    - john.baldwin@wanadoo.fr
+    - nagra@wanadoo.fr
+    - john.bingham@art.alcatel.fr
+    - eam@quaternet.fr
+    - happy2@wanadoo.fr
+    - lovergin@ens.lifl.fr
+    - nagu@wanadoo.fr
+    - eamblard@pratique.fr
+    - nagumo@wanadoo.fr
+    - john.cagnol@sophia.inria.fr
+    - loverl@netinfo.fr
+    - nagy@wanadoo.fr
+    - john.carter@wanadoo.fr
+    - john.collins@wanadoo.fr
+    - nah@wanadoo.fr
+    - nahanni@world-net.sct.fr
+    - nahanni@worldnet.sct.fr
+    - john.d@wanadoo.fr
+    - ssanchez@wanadoo.fr
+    - ssanchez@hol.fr
+    - happy@wanadoo.fr
+    - john.davis@wanadoo.fr
+    - eandrieux@inext.fr
+    - ssandra@wanadoo.fr
+    - nahitfol@bocal.cs.univ-paris8.fr
+    - eantoni@messel.emse.fr
+    - nahoko@wanadoo.fr
+    - nahond@ccr.jussieu.fr
+    - ssarah@wanadoo.fr
+    - john.green@wanadoo.fr
+    - john.griffin@wanadoo.fr
+    - john.harding@wanadoo.fr
+    - eapm@andcp.fr
+    - ssassi@wanadoo.fr
+    - john.henderson@wanadoo.fr
+    - john.hill@wanadoo.fr
+    - nai@wanadoo.fr
+    - naia@wanadoo.fr
+    - happydh@asi.fr
+    - ssavage@wanadoo.fr
+    - naidoo@wanadoo.fr
+    - john.k@wanadoo.fr
+    - ssb@wanadoo.fr
+    - naik@wanadoo.fr
+    - earl1623@eurobretagne.fr
+    - john.lark@club-internet.fr
+    - nail@wanadoo.fr
+    - john.lee@wanadoo.fr
+    - john.lewis@wanadoo.fr
+    - john.macdonald@wanadoo.fr
+    - john.martin@wanadoo.fr
+    - john.may@wanadoo.fr
+    - ssc@wanadoo.fr
+    - loviatar@wanadoo.fr
+    - john.monahan@wanadoo.fr
+    - earliner@pratique.fr
+    - naim@wanadoo.fr
+    - john.norton@wanadoo.fr
+    - earlotti@ris.fr
+    - naina@wanadoo.fr
+    - john.phillips@wanadoo.fr
+    - lovisa@etca.fr
+    - sschmitt@wanadoo.fr
+    - clyonai@world-net.sct.fr
+    - sschneider@wanadoo.fr
+    - clyonai@worldnet.sct.fr
+    - nairi@wanadoo.fr
+    - nais@wanadoo.fr
+    - sschram@wanadoo.fr
+    - lovmoney@club-internet.fr
+    - regan@wanadoo.fr
+    - haps@wanadoo.fr
+    - john.stephens@wanadoo.fr
+    - reganm.regan@ibmx400-us.ibmmail.circe.fr
+    - hapy@wanadoo.fr
+    - earsel@meteo.fr
+    - sschwartz@wanadoo.fr
+    - naj@wanadoo.fr
+    - regard@wanadoo.fr
+    - regards@wanadoo.fr
+    - ssci@wanadoo.fr
+    - john.thompson@wanadoo.fr
+    - regatta@wanadoo.fr
+    - john.townsend@wanadoo.fr
+    - john.unger@wanadoo.fr
+    - sscm@wanadoo.fr
+    - john.van_den_elst@sophia.inria.fr
+    - lovy@wanadoo.fr
+    - regchar@wanadoo.fr
+    - john.wells@wanadoo.fr
+    - john.williams@hol.fr
+    - john.williams@wanadoo.fr
+    - john.wilson@wanadoo.fr
+    - najer@imag.imag.fr
+    - najera@imag.imag.fr
+    - low@wanadoo.fr
+    - naji@wanadoo.fr
+    - har@wanadoo.fr
+    - najid@club-internet.fr
+    - regent@club-internet.fr
+    - hara@wanadoo.fr
+    - regent@wanadoo.fr
+    - reger@wanadoo.fr
+    - najman@thomson-lcr.fr
+    - regg@wanadoo.fr
+- lookup: id_number
+  examples: |
+    - 07233585
+    - 07233895
+    - 07083095
+    - 07599999
+    - 02045963
+    - 10745688
+    - 10126846
+    - 10746893
+    - 05321586
+    - 01230079
+    - 07412359
+    - 09635583
+    - 07320863
+    - 02232863
+    - 03211586
+    - 07109563
+    - 07032156
+    - 10265486
+    - 10113220
+    - 10006153
+    - 07956233
+    - 07030089
+    - 10896321
+    - 09636363
+    - 09865122
+    - 07460556
+    - 07321556
+    - 07320303
+    - 07202008
+    - 07255634
+    - 04020321
+    - 07411123
+    - 09958525
+    - 07765632
+    - 02323254
+    - 10964421
+    - 10012324
+    - 07963232
+    - 07632652
+    - 05032952
+    - 07244896
+    - 07132863
+    - 10745239
+    - 10745212
+    - 10452323
+    - 10104120
+    - 10220523
+    - 07966223
+    - 02452633
+    - 07415623
+    - 03963522
+    - 07525326
+    - 10752396
+    - 10852522
+    - 10752396
+    - 10354362
+    - 10262488
+    - 10242582
+    - 10987951
+    - 10011458
+    - 10141123
+    - 07096520
+    - 07309632
+    - 07280965
+    - 07244366
+    - 07969633
+    - 07332222
+    - 07250091
+    - 07412222
+    - 02303555
+    - 07266666
+    - 09636532
+    - 07995232
+    - 05023008
+    - 02096363
+    - 07451233
+    - 07468556
+    - 07456542
+    - 07423165
+    - 07423132
+    - 07221332
+    - 07221623
+    - 07251051
+    - 07230362
+    - 07002856
+    - 07005458
+    - 07089595
+    - 07098632
+    - 07145463
+    - 07123215
+    - 07113546
+    - 07198456
+    - 07198456
+    - 10023198
+    - 10021668
+    - 10048954
+    - 10098465
+    - 10089652
+    - 10098465
+    - 10089456
+    - 10189456
+    - 10184009
+    - 10184568
+    - 10189486
+    - 10245666
+    - 10242413
+    - 10223235
+    - 10248684
+    - 10584450
+    - 10989547
+    - 10589792
+    - 02087514
+    - 02098763
+    - 02044961
+    - 10867400
+    - 10814774
+    - 10871283
+    - 10861018
+    - 10830272
+    - 10812397
+    - 10814502
+    - 10861345
+    - 10806077
+    - 10813468
+    - 10830536
+    - 10805580
+    - 10816894
+    - 10886196
+    - 10867321
+    - 10835916
+    - 10890176
+    - 10812457
+    - 10871630
+    - 10858861
+    - 10848801
+    - 10893648
+    - 10800586
+    - 10756370
+    - 10711926
+    - 10741255
+    - 10748486
+    - 10739970
+    - 10701289
+    - 10722667
+    - 10727294
+    - 10777509
+    - 10744382
+    - 10769215
+    - 10785435
+    - 10782309
+    - 10745857
+    - 10762063
+    - 10746047
+    - 10735424
+    - 10738483
+    - 10700599
+    - 10797904
+    - 10776809
+    - 10772564
+    - 10653256
+    - 10682348
+    - 10610061
+    - 10651818
+    - 10631300
+    - 10619644
+    - 10629305
+    - 10613215
+    - 10639997
+    - 10640690
+    - 10659405
+    - 10624803
+    - 10622149
+    - 10667332
+    - 10653614
+    - 10609503
+    - 10673213
+    - 10676256
+    - 10650598
+    - 10644317
+    - 10651012
+    - 10683655
+    - 10696998
+    - 10621503
+    - 10611183
+    - 10681203
+    - 10666283
+    - 10572742
+    - 10589855
+    - 10582441
+    - 10535354
+    - 10582467
+    - 10562058
+    - 10598987
+    - 10556811
+    - 10551489
+    - 10552749
+    - 10596512
+    - 10582284
+    - 10552930
+    - 10598856
+    - 10575570
+    - 10575857
+    - 10578424
+    - 10510190
+    - 10529054
+    - 10544705
+    - 10598601
+    - 10502682
+    - 10568226
+    - 10571040
+    - 10554006
+    - 10597900
+    - 10521412
+    - 10292203
+    - 10254696
+    - 10269323
+    - 10269743
+    - 10203176
+    - 10222438
+    - 10265197
+    - 10251806
+    - 10244681
+    - 10292056
+    - 10266834
+    - 10224431
+    - 10247173
+    - 10292332
+    - 10216259
+    - 10271013
+    - 10225717
+    - 10260633
+    - 10265376
+    - 10244871
+    - 10274250
+    - 10232405
+    - 10208449
+    - 10271221
+    - 10295348
+    - 10257327
+    - 10233884
+    - 10268842
+    - 10240431
+    - 10115633
+    - 10126978
+    - 10111380
+    - 10105271
+    - 10175168
+    - 10170789
+    - 10115055
+    - 10128980
+    - 10102297
+    - 10126778
+    - 10169984
+    - 10174725
+    - 10102272
+    - 10106554
+    - 10171917
+    - 10108452
+    - 10187914
+    - 10137193
+    - 10154224
+    - 10188209
+    - 10156233
+    - 10156987
+    - 10189427
+    - 10151617
+    - 10175065
+    - 10187630
+    - 10153410
+    - 10136012
+    - 10136445
+    - 10167101
+    - 10176584
+    - 10148539
+    - 10122223
+    - 10191251
+    - 10126514
+    - 10136311
+    - 10159831
+    - 10172115
+    - 10194042
+    - 10189095
+    - 10133296
+    - 10175883
+    - 10009190
+    - 10007802
+    - 10042909
+    - 10044451
+    - 10013908
+    - 10009486
+    - 10035950
+    - 10083494
+    - 10068752
+    - 10093286
+    - 10096201
+    - 10086191
+    - 10069732
+    - 10037238
+    - 10003348
+    - 10035709
+    - 10012099
+    - 10066179
+    - 10060129
+    - 10072748
+    - 10093417
+    - 10047501
+    - 10019662
+    - 10017046
+    - 10060599
+    - 10016505
+    - 10030493
+    - 10072402
+    - 10007946
+    - 10462144
+    - 10480290
+    - 10427130
+    - 10414600
+    - 10453304
+    - 10421902
+    - 10490203
+    - 10430737
+    - 10401762
+    - 10424034
+    - 10476352
+    - 10442311
+    - 10404758
+    - 10466089
+    - 10487383
+    - 10410772
+    - 10489519
+    - 10401826
+    - 10439044
+    - 10481700
+    - 10467610
+    - 10424283
+    - 10458644
+    - 10482409
+    - 10427218
+    - 10466970
+    - 10465148
+    - 10490135
+    - 10427909
+    - 10405828
+    - 10456077
+    - 10403764
+    - 10468369
+    - 10992970
+    - 10915622
+    - 10939798
+    - 10913571
+    - 10941261
+    - 10911158
+    - 10954035
+    - 10923354
+    - 10979074
+    - 10996841
+    - 10997781
+    - 10955636
+    - 10916731
+    - 10935574
+    - 10992658
+    - 10940605
+    - 10922204
+    - 10952170
+    - 10903565
+    - 10969194
+    - 10963300
+    - 10979633
+    - 10973917
+    - 10975883
+    - 10973143
+    - 10965077
+    - 10999044
+    - 10998928
+    - 10913121
+    - 10912218
+    - 10919144
+    - 10948109
+    - 10920682
+    - 10972705
+    - 10964969
+    - 10936271
+    - 10901788
+    - 10994886
+    - 10972634
+    - 10945838
+    - 10939955
+    - 10960117
+    - 10901195
+    - 10966771
+- lookup: phone_number
+  examples: |
+    - 29457368
+    - 20198533
+    - 21679151
+    - 20371570
+    - 21228196
+    - 27347982
+    - 29815317
+    - 25328570
+    - 26384530
+    - 20782557
+    - 24422553
+    - 26441551
+    - 21046004
+    - 23761018
+    - 26371145
+    - 21413494
+    - 24577069
+    - 22808829
+    - 24567120
+    - 23865086
+    - 27552111
+    - 28904010
+    - 28569129
+    - 23682880
+    - 24370722
+    - 20698044
+    - 21147190
+    - 29167540
+    - 26479142
+    - 23780537
+    - 24344967
+    - 29354951
+    - 28894522
+    - 26356410
+    - 27901217
+    - 24323227
+    - 20900557
+    - 28658284
+    - 29760645
+    - 29004873
+    - 24119641
+    - 29388503
+    - 20925820
+    - 24587425
+    - 24384445
+    - 28071313
+    - 29276718
+    - 27583734
+    - 26116649
+    - 20443458
+    - 24109892
+    - 28277060
+    - 50246539
+    - 54664922
+    - 53462661
+    - 51458822
+    - 52826842
+    - 51948212
+    - 56882451
+    - 59055379
+    - 57061991
+    - 53459666
+    - 57556430
+    - 51089492
+    - 50317250
+    - 50888274
+    - 58331800
+    - 52452127
+    - 51399786
+    - 52619305
+    - 52871660
+    - 55176235
+    - 55298168
+    - 56913003
+    - 59395548
+    - 58271719
+    - 50815356
+    - 58734332
+    - 51246986
+    - 57782149
+    - 52138428
+    - 56591501
+    - 57026714
+    - 59568017
+    - 58637323
+    - 53421994
+    - 59570250
+    - 58442610
+    - 50921390
+    - 59990730
+    - 58824609
+    - 51213813
+    - 51812783
+    - 59371597
+    - 57629990
+    - 54846326
+    - 59558412
+    - 50878895
+    - 53811954
+    - 59329066
+    - 55879382
+    - 58368816
+    - 57739000
+    - 50675239
+    - 51595082
+    - 55502267
+    - 57965174
+    - 55006489
+    - 54122885
+    - 57385929
+    - 55242178
+    - 53322709
+    - 57127579
+    - 51877106
+    - 90961101
+    - 92348747
+    - 95123578
+    - 97827043
+    - 95754769
+    - 94773825
+    - 91095980
+    - 97390008
+    - 94152340
+    - 94271653
+    - 91446659
+    - 91905331
+    - 91868767
+    - 93279829
+    - 90711141
+    - 92061022
+    - 94601316
+    - 93518191
+    - 91495239
+    - 92027737
+    - 96554301
+    - 91305539
+    - 96700248
+    - 99889294
+    - 99861835
+    - 90551234
+    - 92999034
+    - 97690760
+    - 92447586
+    - 92092862
+    - 90257313
+    - 93577702
+    - 92158889
+    - 97740855
+    - 95816949
+    - 90746507
+    - 96513582
+    - 92318608
+    - 96333949
+    - 92561327
+    - 96544282
+    - 93402023
+    - 91516229
+    - 90575345
+    - 99253228
+    - 94649325
+    - 90303623
+    - 97530679
+    - 97312127
+    - 97126880
+    - 99037219
+    - 94681532
+    - 91158827
+    - 99715290
+    - 97685196
+    - 92277438
+    - 95544475
+    - 98985283
+    - 99116282
+    - 92180256
+    - 97895629
+    - 90424660
+    - 98469986
+    - 93568806
+    - 99428803
+    - 95217690
+    - 99618032
+    - 92173870
+    - 93074149
+    - 97154063
+    - 98237148
+    - 99901201
+    - 95985916
+    - 99559189
+    - 97917281
+    - 94125436
+    - 93510658
+    - 93467687
+    - 97842328
+    - 99557933
+    - 90369684
+    - 94452512
+    - 95886398
+    - 92783926
+    - 96858599
+    - 96842755
+    - 90263011
+    - 92833783
+    - 93574667
+    - 95862455
+    - 92042795
+    - 90620065
+    - 99566128
+    - 91389922
+    - 90763776
+    - 95453560
+    - 94017000
+    - 92039338
+    - 94491206
+    - 97223804
+    - 90926686
+    - 22388459
+    - 22464559
+    - 26469802
+    - 24116758
+    - 20347497
+    - 21148923
+    - 23061559
+    - 22583659
+    - 22509465
+    - 29914598
+    - 24896629
+    - 22111254
+    - 29347113
+    - 23481753
+    - 25878720
+    - 22216449
+    - 26803472
+    - 25233041
+    - 28241683
+    - 26719809
+    - 27633025
+    - 25295791
+    - 26534783
+    - 29340635
+    - 26986192
+    - 24104065
+    - 21240655
+    - 25580881
+    - 27073799
+    - 24503340
+    - 24733236
+    - 20685618
+    - 24007864
+    - 22928864
+    - 24410780
+    - 24146934
+    - 21191703
+    - 26332830
+    - 25936851
+    - 29209034
+    - 28406058
+    - 29481755
+    - 24457937
+    - 24328176
+    - 26822495
+    - 24899753
+    - 23552593
+    - 23635577
+    - 28757076
+    - 28855759
+    - 27319467
+    - 50148177
+    - 54157179
+    - 53517509
+    - 58000953
+    - 54145289
+    - 57532337
+    - 51323574
+    - 51440520
+    - 56517017
+    - 58685500
+    - 53027753
+    - 57555712
+    - 57542349
+    - 54146084
+    - 57982248
+    - 50808159
+    - 57768069
+    - 59975857
+    - 57519579
+    - 57901618
+    - 52936213
+    - 53291918
+    - 52838242
+    - 55523268
+    - 51685825
+    - 55974427
+    - 53824749
+    - 54918747
+    - 55934151
+    - 55843526
+    - 50144623
+    - 55414398
+    - 59344334
+    - 50548231
+    - 54654408
+    - 55009184
+    - 57805245
+    - 58496751
+    - 51212746
+    - 53992296
+    - 50269249
+    - 54753647
+    - 56812702
+    - 53388846
+    - 56040735
+    - 52021670
+    - 50712736
+    - 59056688
+    - 50509293
+    - 50138986
+    - 51943397
+    - 56219419
+    - 52218368
+    - 50702821
+    - 51760551
+    - 52235841
+- lookup: rib
+  examples: |
+    - 1111119023
+    - 1111116923
+    - 1111110197
+    - 1111112469
+    - 1111119155
+    - 1111117385
+    - 1111113126
+    - 1111113316
+    - 1111111689
+    - 1111117286
+    - 1111115743
+    - 1111117220
+    - 1111113212
+    - 1111114636
+    - 1111118793
+    - 1111114159
+    - 1111110601
+    - 1111110394
+    - 1111111904
+    - 1111117280
+    - 1111112092
+    - 1111112060
+    - 1111115911
+    - 1111113002
+    - 1111112683
+    - 1111118520
+    - 1111113084
+    - 1111111759
+    - 1111111192
+    - 1111111292
+    - 1111114810
+    - 1111118715
+    - 1111115118
+    - 1111112664
+    - 1111114721
+    - 1111111706
+    - 1111112306
+    - 1111111253
+    - 1111115101
+    - 1111111858
+    - 1111118710
+    - 1111119637
+    - 1111110597
+    - 1111118541
+    - 1111111693
+    - 1111115557
+    - 1111119853
+    - 1111117815
+    - 1111111755
+    - 1111118551
+    - 1111113513
+    - 1111115425
+    - 1111114917
+    - 1111111851
+    - 1111112094
+    - 1111117598
+    - 1111112673
+    - 1111119019
+    - 1111118532
+    - 1111112294
+    - 1111112930
+    - 1111118736
+    - 1111117980
+    - 1111115258
+    - 1111118827
+    - 1111119861
+    - 1111116887
+    - 1111111735
+    - 1111119144
+    - 1111112416
+    - 1111111482
+    - 1111112038
+    - 1111115198
+    - 1111117502
+    - 1111116687
+    - 1111118153
+    - 1111110117
+    - 1111110972
+    - 1111110053
+    - 1111110887
+    - 1111110968
+    - 1111110466
+    - 1111110429
+    - 1111110670
+    - 1111110582
+    - 1111110991
+    - 1111110581
+    - 1111110562
+    - 1111110923
+    - 1111110927
+    - 1111110737
+    - 1111110605
+    - 1111110976
+    - 1111110813
+    - 1111110963
+    - 1111110153
+    - 1111110039
+    - 1111110774
+    - 1111110449
+    - 1111110542
+    - 1111110533
+    - 1111110926
+    - 1111110845
+    - 1111110209
+    - 1111110003
+    - 1111110212
+    - 1111110188
+    - 1111111498
+    - 1111111616
+    - 1111111536
+    - 1111111990
+    - 1111111306
+    - 1111111002
+    - 1111111413
+    - 1111111151
+    - 1111111722
+    - 1111111265
+    - 1111111558
+    - 1111111179
+
+
+
+

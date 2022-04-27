@@ -17,6 +17,10 @@ from rasa_sdk.executor import CollectingDispatcher
 from database_connectivity import *
 import webbrowser
 from nearest_agency import *
+from translation_function import *
+from image_ocr.ocr_process import *
+from image_ocr.picture import *
+
 
 
 
@@ -30,10 +34,10 @@ class currency(Action):
         tracker: Tracker,
         domain: Dict[Text, Any],
     ) ->List[Dict[Text, Any]]:
-        amnt = tracker.get_slot("transf_amount")
+        amnt = tracker.get_slot("amount-of-money")
         frm = tracker.get_slot("currency_dep")
         to = tracker.get_slot("currency_arriv")
-        msg=currencyConversion (amnt,frm,to)
+        msg=currencyConversion (int(amnt),frm,to)
         dispatcher.utter_message(text=msg)
 
         return []
@@ -92,7 +96,9 @@ class PossibleCreditAction(Action):
         salary = tracker.get_slot("salary")
         duration = tracker.get_slot("duration")
         credit_type = tracker.get_slot("credit_type")
-        if (credit_type =="personal credit"):
+        if(int(salary)< 450): 
+            dispatcher.utter_message(text = "your salary is less than the minimum threshhold")
+        elif(credit_type =="personal credit"):
             credit = int(salary) * int(duration) * 12 * 0.25 * 0.9
         elif (credit_type == "car credit"):
             credit = int(salary) * int(duration) * 12 * 0.30 * 0.9
@@ -118,7 +124,7 @@ class CreateAccountAction(Action):
         email = tracker.get_slot("email")
         birthdate = tracker.get_slot("birthdate")
         number = tracker.get_slot("number")
-        num = (number)
+        num = int(number)
         address= tracker.get_slot("address")
         login = tracker.get_slot("login")
         password = tracker.get_slot("password")
@@ -126,22 +132,25 @@ class CreateAccountAction(Action):
         today = date.today()
         date_open = today.strftime("%Y-%m-%d")
         balance = 0.0
-        RIB = get_rib()+1
+        RIB = int(get_rib())+1
         a = verif_cin(cin)
         b = verif_login(login)
         c = verif_mail(email)
+        fullname = name.replace(" ", "")
         if(len(idd)!=8):
             dispatcher.utter_message(text = "your id number is invalid ")
+        elif(idd.isalnum()==False):
+            dispatcher.utter_message(text = "your id number must conttain only numbers ")
         elif(len(a)!=0):
             dispatcher.utter_message(text = "the id is allready used")
         elif(len(b)!=0):
             dispatcher.utter_message(text = "the login is allready used")
         elif(len(c)!=0):
             dispatcher.utter_message(text = "the login is allready used")
+        elif(fullname.isalpha()==False):
+            dispatcher.utter_message(text = "the fullname must contain only letters")
         else:
-            create_account(name, cin, email, birthdate, num, address, login, password, RIB, date_open , balance, account_type) 
-
-            dispatcher.utter_message(text = "your account is added successfully ")
+            dispatcher.utter_message(text = "your request was stored, you will recieve an email soon ")
         return []
 
 class AccountTypeAction(Action):
@@ -252,10 +261,12 @@ class CreateCreditAction(Action):
         salary = tracker.get_slot("salary")
         duration = tracker.get_slot("duration")
         credit_type = tracker.get_slot("credit_type")
-        desired_amount = tracker.get_slot("credit_amount")
+        desired_amount = tracker.get_slot("amount-of-money")
         today = date.today()
         date_sub = today.strftime("%Y-%m-%d")
-        if (credit_type =="personal credit"):
+        if(int(salary)<450):
+            dispatcher.utter_message(text = "your salary is less than the minimum threshhold")
+        elif (credit_type =="personal credit"):
             credit = int(salary) * int(duration) * 12 * 0.25 * 0.9
         elif (credit_type == "car credit"):
             credit = int(salary) * int(duration) * 12 * 0.30 * 0.9
@@ -312,7 +323,7 @@ class TransferMOneyAction(Action):
     ) ->List[Dict[Text, Any]]:
         name = tracker.get_slot("name")
         rib = tracker.get_slot("RIB")
-        amount = tracker.get_slot("transf_amount")
+        amount = tracker.get_slot("amount-of-money")
         a = verif_transfer_info(name,rib)
         b = verif_amount(float(amount),account_id)
         account_id=1
@@ -508,4 +519,63 @@ class NearestagencyAction(Action):
         else:
             dispatcher.utter_message(text ="As you like you wish")
     
+        return []
+
+class ChequeRequestAction(Action):
+    def name(self) -> Text:
+        return "action_cheque_request"
+
+    def run(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) ->List[Dict[Text, Any]]:
+        account_id = 1
+    
+        return []
+
+class ValidateCreationAction(Action):
+    def name(self) -> Text:
+        return "action_validate_creation"
+
+    def run(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) ->List[Dict[Text, Any]]:
+        mail = tracker.get_slot("email")
+        fullname = tracker.get_slot("name")
+        id = tracker.get_slot("id")
+        take_pic()
+        name, idd = translate()
+        name = str(name)
+        idd = str(idd)
+        birthdate = tracker.get_slot("birthdate")
+        number = tracker.get_slot("number")
+        num = int(number)
+        address= tracker.get_slot("address")
+        login = tracker.get_slot("login")
+        password = tracker.get_slot("password")
+        account_type = tracker.get_slot("account_type")
+        today = date.today()
+        date_open = today.strftime("%Y-%m-%d")
+        balance = 0.0
+        RIB = int(get_rib())+1
+        l = fullname.split(" ", 1)
+        l1 = str(l[0])
+        l2 = str(l[1])
+        if (count_char(l1 ,name)!= len(name)-2) or (count_char(l2 ,name)!= len(name)-2):
+            c = 0
+        elif (id!= idd):
+            c = 0
+        else :
+            c = 1
+        
+        if (c==0):
+            dispatcher.utter_message(text = "nbadel email f blasset hedhy")
+        else :
+            create_account(name, int(id), mail, birthdate, num, address, login, password, RIB, date_open , balance, account_type) 
+
         return []

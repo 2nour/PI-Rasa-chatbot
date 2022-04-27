@@ -1,99 +1,177 @@
 [
   {
-    "text": "i want to pay off mycredit card",
+    "text": "5000",
     "entities": [
       {
-        "start": 20,
-        "end": 31,
-        "value": "credit card",
-        "entity": "account_type"
+        "start": 0,
+        "end": 4,
+        "value": "5000",
+        "entity": "salaryy"
       }
     ],
-    "predicted_entities": []
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.40929150581359863,
+        "value": "5000",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "salaryy",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.8334108308178033,
+        "value": "5000",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
   },
   {
-    "text": "i would like to pay $1200 to my [credit card]balance",
+    "text": "4000",
     "entities": [
       {
-        "start": 45,
-        "end": 52,
-        "value": "balance",
-        "entity": "amount-of-money"
+        "start": 0,
+        "end": 4,
+        "value": "4000",
+        "entity": "salaryy"
       }
     ],
-    "predicted_entities": []
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.40929150581359863,
+        "value": "4000",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "salaryy",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9553946108959454,
+        "value": "4000",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
   },
   {
-    "text": "Pay off my [credit card][credit card]balance, please",
+    "text": "2500",
     "entities": [
       {
-        "start": 37,
-        "end": 44,
-        "value": "balance",
-        "entity": "amount-of-money"
+        "start": 0,
+        "end": 4,
+        "value": "2500",
+        "entity": "salaryy"
       }
     ],
-    "predicted_entities": []
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.40929150581359863,
+        "value": "2500",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "salaryy",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9181415654392864,
+        "value": "2500",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
   },
   {
-    "text": "Let's pay that [credit card][credit card]balance bill",
+    "text": "1500",
     "entities": [
       {
-        "start": 41,
-        "end": 48,
-        "value": "balance",
-        "entity": "amount-of-money"
+        "start": 0,
+        "end": 4,
+        "value": "1500",
+        "entity": "salaryy"
       }
     ],
-    "predicted_entities": []
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.40929150581359863,
+        "value": "1500",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "salaryy",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.8657898693921435,
+        "value": "1500",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
   },
   {
-    "text": "could I pay off my [credit card]balance",
+    "text": "750",
     "entities": [
       {
-        "start": 32,
-        "end": 39,
-        "value": "balance",
-        "entity": "amount-of-money"
+        "start": 0,
+        "end": 3,
+        "value": "750",
+        "entity": "salaryy"
       }
     ],
-    "predicted_entities": []
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.40929150581359863,
+        "value": "750",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "salaryy",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.7656082852614504,
+        "value": "750",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
   },
   {
-    "text": "pay off my [credit card]balance",
+    "text": "1250",
     "entities": [
       {
-        "start": 24,
-        "end": 31,
-        "value": "balance",
-        "entity": "amount-of-money"
+        "start": 0,
+        "end": 4,
+        "value": "1250",
+        "entity": "salaryy"
       }
     ],
-    "predicted_entities": []
-  },
-  {
-    "text": "i wanna pay my [credit card]balance",
-    "entities": [
+    "predicted_entities": [
       {
-        "start": 28,
-        "end": 35,
-        "value": "balance",
-        "entity": "amount-of-money"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "I want to log in to myaccount",
-    "entities": [
+        "entity": "phone_number",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.40929150581359863,
+        "value": "1250",
+        "extractor": "DIETClassifier"
+      },
       {
-        "start": 22,
-        "end": 29,
-        "value": "account",
-        "entity": "account"
+        "entity": "salaryy",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.7465940583387086,
+        "value": "1250",
+        "extractor": "CRFEntityExtractor"
       }
-    ],
-    "predicted_entities": []
+    ]
   },
   {
     "text": "09954231",
@@ -107,75 +185,629 @@
     ],
     "predicted_entities": [
       {
-        "entity": "salaryy",
+        "entity": "phone_number",
         "start": 0,
         "end": 8,
-        "confidence_entity": 0.5908235311508179,
+        "confidence_entity": 0.40929150581359863,
         "value": "09954231",
         "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "id_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.7989653883433542,
+        "value": "09954231",
+        "extractor": "CRFEntityExtractor"
       }
     ]
   },
   {
-    "text": "54312678",
+    "text": "10832147",
     "entities": [
       {
         "start": 0,
         "end": 8,
-        "value": "54312678",
-        "entity": "phone_number"
+        "value": "10832147",
+        "entity": "id_number"
       }
     ],
     "predicted_entities": [
       {
-        "entity": "salaryy",
+        "entity": "phone_number",
         "start": 0,
         "end": 8,
-        "confidence_entity": 0.5908235311508179,
-        "value": "54312678",
+        "confidence_entity": 0.40929150581359863,
+        "value": "10832147",
         "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "id_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.8080145182536123,
+        "value": "10832147",
+        "extractor": "CRFEntityExtractor"
       }
     ]
   },
   {
-    "text": "20052651",
+    "text": "10225793",
     "entities": [
       {
         "start": 0,
         "end": 8,
-        "value": "20052651",
-        "entity": "phone_number"
+        "value": "10225793",
+        "entity": "id_number"
       }
     ],
     "predicted_entities": [
       {
-        "entity": "salaryy",
+        "entity": "phone_number",
         "start": 0,
         "end": 8,
-        "confidence_entity": 0.5908235311508179,
-        "value": "20052651",
+        "confidence_entity": 0.40929150581359863,
+        "value": "10225793",
         "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "id_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.8262816774500029,
+        "value": "10225793",
+        "extractor": "CRFEntityExtractor"
       }
     ]
   },
   {
-    "text": "93124759",
+    "text": "10432679",
     "entities": [
       {
         "start": 0,
         "end": 8,
-        "value": "93124759",
-        "entity": "phone_number"
+        "value": "10432679",
+        "entity": "id_number"
       }
     ],
     "predicted_entities": [
       {
-        "entity": "salaryy",
+        "entity": "phone_number",
         "start": 0,
         "end": 8,
-        "confidence_entity": 0.5908235311508179,
-        "value": "93124759",
+        "confidence_entity": 0.40929150581359863,
+        "value": "10432679",
         "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "id_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.8445501415400469,
+        "value": "10432679",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "09947516",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "09947516",
+        "entity": "id_number"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.40929150581359863,
+        "value": "09947516",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "id_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.7865715879019881,
+        "value": "09947516",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "2345678",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "2345678",
+        "entity": "pass"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.40929150581359863,
+        "value": "2345678",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pass",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.7638054804571354,
+        "value": "2345678",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "4157896",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "4157896",
+        "entity": "pass"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.40929150581359863,
+        "value": "4157896",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pass",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.7972385703361584,
+        "value": "4157896",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "1246875",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "1246875",
+        "entity": "pass"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.40929150581359863,
+        "value": "1246875",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pass",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.7704065777289615,
+        "value": "1246875",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "7842165",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "7842165",
+        "entity": "pass"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.40929150581359863,
+        "value": "7842165",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pass",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.7972385703361584,
+        "value": "7842165",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "5621478",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "5621478",
+        "entity": "pass"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.40929150581359863,
+        "value": "5621478",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pass",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.7977994651794821,
+        "value": "5621478",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "3698751",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "3698751",
+        "entity": "pass"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.40929150581359863,
+        "value": "3698751",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pass",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.7882733430781965,
+        "value": "3698751",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "9621473",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "9621473",
+        "entity": "pass"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.40929150581359863,
+        "value": "9621473",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pass",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.7972385703361584,
+        "value": "9621473",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "8546210",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "8546210",
+        "entity": "pass"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.40929150581359863,
+        "value": "8546210",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pass",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.796244930022773,
+        "value": "8546210",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "0532146",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "0532146",
+        "entity": "pass"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.40929150581359863,
+        "value": "0532146",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pass",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.7972385703361584,
+        "value": "0532146",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "1478965230142678",
+    "entities": [
+      {
+        "start": 0,
+        "end": 16,
+        "value": "1478965230142678",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 16,
+        "confidence_entity": 0.40929150581359863,
+        "value": "1478965230142678",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 0,
+        "end": 16,
+        "confidence_entity": 0.739963153003338,
+        "value": "1478965230142678",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "my account number is 1478965230654789",
+    "entities": [
+      {
+        "start": 21,
+        "end": 37,
+        "value": "1478965230654789",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 21,
+        "end": 37,
+        "confidence_entity": 0.969894289970398,
+        "value": "1478965230654789",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 21,
+        "end": 37,
+        "confidence_entity": 0.28123626817713065,
+        "value": "1478965230654789",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "1034278596321547",
+    "entities": [
+      {
+        "start": 0,
+        "end": 16,
+        "value": "1034278596321547",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 16,
+        "confidence_entity": 0.40929150581359863,
+        "value": "1034278596321547",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 0,
+        "end": 16,
+        "confidence_entity": 0.7341263261454093,
+        "value": "1034278596321547",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "1111117428",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "1111117428",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.40929150581359863,
+        "value": "1111117428",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.8825826970416191,
+        "value": "1111117428",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "1111115745",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "1111115745",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.40929150581359863,
+        "value": "1111115745",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.8837101198383945,
+        "value": "1111115745",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "1111117989",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "1111117989",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.40929150581359863,
+        "value": "1111117989",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.8775841009755625,
+        "value": "1111117989",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "1111117976",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "1111117976",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.40929150581359863,
+        "value": "1111117976",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.8837101198383945,
+        "value": "1111117976",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "1200",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "1200",
+        "entity": "amount-of-money"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.40929150581359863,
+        "value": "1200",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "amount-of-money",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.7551434065162691,
+        "value": "1200",
+        "extractor": "CRFEntityExtractor"
       }
     ]
   }

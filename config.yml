@@ -3,8 +3,8 @@ language: en
 pipeline:
   - name: WhitespaceTokenizer
   - name: RegexFeaturizer
-  - name: RegexEntityExtractor
-    use_regexes: true
+    case_sensitive: True
+    use_word_boundaries: True
   - name: LexicalSyntacticFeaturizer
   - name: CountVectorsFeaturizer
   - name: CountVectorsFeaturizer
@@ -18,16 +18,32 @@ pipeline:
     threshold: 0.5
     ambiguity_threshold: 0.1
   - name: EntitySynonymMapper
-    epochs: 300
+    epochs: 100
     random_seed: 2
   - name: ResponseSelector
     epochs: 250
     constrain_similarities: True
+  - name: RegexEntityExtractor
+    epochs: 200
+    use_lookup_tables: true
+    use_regex: true
+  - name: CRFEntityExtractor
+    epochs: 200
+  ##- name: "DucklingEntityExtractor"
+    ##url: "http://localhost:8000"
+    ##dimensions: ["amount-of-money"]
+    ##timeout : 5
+
 policies:
   - name: AugmentedMemoizationPolicy
+    max_history: 4
+    epochs: 200
   - name: TEDPolicy
-    max_history: 5
+    max_history: 10
     epochs: 250
+    batch_size:
+      - 32
+      - 64
   - name: RulePolicy
-    core_fallback_threshold: 0.4
+    core_fallback_threshold: 0.3
     enable_fallback_prediction: True

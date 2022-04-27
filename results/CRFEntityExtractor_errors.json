@@ -1,0 +1,151 @@
+[
+  {
+    "text": "How much money is on my account?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "account",
+        "start": 24,
+        "end": 31,
+        "confidence_entity": 0.5649465347087497,
+        "value": "account",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "How much money do I owe on my account",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "account",
+        "start": 30,
+        "end": 37,
+        "confidence_entity": 0.56472036707084,
+        "value": "account",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Show me my account balance",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "balancee",
+        "start": 19,
+        "end": 26,
+        "confidence_entity": 0.83712749081918,
+        "value": "balance",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Whats the balance on my credit account",
+    "entities": [
+      {
+        "start": 10,
+        "end": 17,
+        "value": "balance",
+        "entity": "amount-of-money"
+      },
+      {
+        "start": 24,
+        "end": 30,
+        "value": "credit",
+        "entity": "account_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount-of-money",
+        "start": 10,
+        "end": 17,
+        "confidence_entity": 0.9975787997245789,
+        "value": "balance",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "account_type",
+        "start": 24,
+        "end": 30,
+        "confidence_entity": 0.9933581948280334,
+        "value": "credit",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "balancee",
+        "start": 10,
+        "end": 17,
+        "confidence_entity": 0.41515825967389,
+        "value": "balance",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "account_type",
+        "start": 24,
+        "end": 30,
+        "confidence_entity": 0.7288160521102064,
+        "value": "credit",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "How much money i got in my balance",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "balancee",
+        "start": 27,
+        "end": 34,
+        "confidence_entity": 0.7252999719716228,
+        "value": "balance",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Hello, I would like to know how much money is in much money is in my account",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "account",
+        "start": 69,
+        "end": 76,
+        "confidence_entity": 0.5659514165589753,
+        "value": "account",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Hi, I need to know how much money is in my account",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "account",
+        "start": 43,
+        "end": 50,
+        "confidence_entity": 0.565950958949579,
+        "value": "account",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "I want a bank statement of my account",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "account",
+        "start": 30,
+        "end": 37,
+        "confidence_entity": 0.5658420183035366,
+        "value": "account",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  }
+]

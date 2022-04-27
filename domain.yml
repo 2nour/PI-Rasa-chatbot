@@ -56,16 +56,16 @@ intents:
 - submit_problem
 - submit_rib
 - check_complaint_status
-- check_agencies
 - track_location
 - nearest_agency_position
 - reciever_name
 - reciever_rib
 - amount_sent
-- extrait_bnk
 - convert_currency
-
-
+- extrait_bnk
+- check_agencies
+- how_create_account
+- request_cheque
 
 entities:
 - Person
@@ -87,13 +87,11 @@ entities:
 - transactions
 - amount-of-money
 - credit_type
-- credit_amount
 - transactions_type
 - complaint_type
 - rib
 - problem
 - track_status
-- transf_amount
 - currency_dep
 - currency_arriv
 
@@ -170,12 +168,6 @@ slots:
     mappings:
     - type: from_entity
       entity: credit_type
-  credit_amount:
-    type: any
-    influence_conversation: false
-    mappings:
-    - type: from_entity
-      entity: credit_amount
   transactions_type:
     type: any
     influence_conversation: false
@@ -206,12 +198,12 @@ slots:
     mappings:
     - type: from_entity
       entity: track_status
-  transf_amount:
+  amount-of-money:
     type: any
     influence_conversation: false
     mappings:
     - type: from_entity
-      entity: transf_amount
+      entity: amount-of-money
   currency_dep:
     type: any
     influence_conversation: false
@@ -306,7 +298,7 @@ responses:
   utter_enter_login:
   - text: please choose your login it should be a mix between words and numbers
   utter_enter_password:
-  - text: please choose your password it should be 7 numbers
+  - text: please choose your password 
   utter_desired_amount:
   - text: please enter the credit amount you desire 
   utter_enter_account_number:
@@ -320,9 +312,12 @@ responses:
   utter_enter_amount_send:
   - text: enter the amount you want to send
   utter_fill_form:
-  - text: to create coount i'll guide you to fill the inscription form step by step , and also you need to assist me with some requuired infomations (ID number ,e-mail , phone number, address, )
+  - text: to create coount i'll guide you to fill the inscription form step by step , and also you need to assist me with some requuired infomations (ID number ,e-mail , phone number, address, Id picture) . If all informations are suitable you'll recieve a confirmation email.
   utter_please_rephrase:
   - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+  utter_why_our_bank:
+  - text: Our bank is a trust company that affords professional service and previleges to customers. Here we offer several credit types with less interest charges and variety of account types in order to fit clients necessities
+
 actions:
 - action_account_type
 - action_ask_why
@@ -348,11 +343,11 @@ actions:
 - action_use_location
 - action_nearest_agency
 - action_currency_calculator
+- action_validate_creation
 ########################
 - action_check_mandat_state
 - action_send_mandat
 - action_cheque_request
-- action_currency_calculator
 - action_check_all_earnings
 - action_activate_cc
 - action_extrait_bnk

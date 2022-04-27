@@ -26,6 +26,7 @@ stories:
   - action: utter_enter_password
   - intent: password
   - action: action_create_account
+  - action: action_validate_creation
 
 - story: creation_savings_account+signin
   steps:
@@ -53,13 +54,8 @@ stories:
   - action: utter_enter_password
   - intent: password
   - action: action_create_account
-  - action: utter_need_more_assist
-  - intent: sign_in
-  - action: action_sign_in
-  - action: utter_need_more_assist
-  - intent: deny
-  - action: utter_as_you_like
-  - action: utter_goodbye
+  - action: action_validate_creation
+
 
 - story: creation_current_account
   steps:
@@ -87,6 +83,7 @@ stories:
   - action: utter_enter_password
   - intent: password
   - action: action_create_account
+  - action: action_validate_creation
 
 - story: creation_current_account+signin
   steps:
@@ -114,13 +111,8 @@ stories:
   - action: utter_enter_password
   - intent: password
   - action: action_create_account
-  - action: utter_need_more_assist
-  - intent: sign_in
-  - action: action_sign_in
-  - action: utter_need_more_assist
-  - intent: deny
-  - action: utter_as_you_like
-  - action: utter_goodbye
+  - action: action_validate_creation
+
 
 - story: creation_salary_account
   steps:
@@ -148,6 +140,7 @@ stories:
   - action: utter_enter_password
   - intent: password
   - action: action_create_account
+  - action: action_validate_creation
 
 - story: creation_salary_account+signin
   steps:
@@ -175,10 +168,4 @@ stories:
   - action: utter_enter_password
   - intent: password
   - action: action_create_account
-  - action: utter_need_more_assist
-  - intent: sign_in
-  - action: action_sign_in
-  - action: utter_need_more_assist
-  - intent: deny
-  - action: utter_as_you_like
-  - action: utter_goodbye
+  - action: action_validate_creation
