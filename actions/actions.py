@@ -505,23 +505,23 @@ class AccceptLocationAction(Action):
     
         return []
 
-#class NearestagencyAction(Action):
-#    def name(self) -> Text:
-#        return "action_nearest_agency"
+class NearestagencyAction(Action):
+    def name(self) -> Text:
+        return "action_nearest_agency"
 
- #   def run(
-  #      self,
-   #     dispatcher: CollectingDispatcher,
-    #    tracker: Tracker,
-     #   domain: Dict[Text, Any],
-    #) ->List[Dict[Text, Any]]:
-     #   bool = tracker.get_slot("track_status")
-      #  if(bool=="Yes"):
-       #     map = nearest_ag()
-        #    map.save("map.html")
-         #   webbrowser.open("map.html")
-        #else:
-         #   dispatcher.utter_message(text ="As you like you wish")
+    def run(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) ->List[Dict[Text, Any]]:
+        bool = tracker.get_slot("track_status")
+        if(bool=="Yes"):
+            map = nearest_ag()
+            map.save("map.html")
+            webbrowser.open("map.html")
+        else:
+            dispatcher.utter_message(text ="As you like you wish")
     
 <<<<<<< HEAD
         return []
@@ -568,12 +568,12 @@ class ValidateCreationAction(Action):
         date_open = today.strftime("%Y-%m-%d")
         balance = 0.0
         RIB = int(get_rib())+1
-        l = fullname.split(" ", 1)
+        l = fullname.split(" ", 2)
         l1 = str(l[0])
         l2 = str(l[1])
-        if (count_char(l1 ,name)!= len(name)-2) or (count_char(l2 ,name)!= len(name)-2):
+        if (similar(l1 ,name)<0.6) or (count_char(l2 ,name)<0.6):
             c = 0
-        elif (id!= idd):
+        elif (id != idd):
             c = 0
         else :
             c = 1

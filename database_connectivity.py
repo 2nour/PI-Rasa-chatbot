@@ -1,6 +1,7 @@
 from colorama import Cursor
 from django.db import connection
 import pymysql
+from difflib import SequenceMatcher
 #mydatabase = pymysql.connect(
 #  host="localhost",
 #  port=3308 ,
@@ -115,8 +116,6 @@ def cheque_request(num_demande, account_id):
   mycursor.execute(sql)
   sql = 'SELECT e'
 
-def count_char(str1 ,str2) :
-    set_string1 = set(str1)
-    set_string2 = set(str2)
-    matched_characters = set_string1 & set_string2
-    return len(matched_characters)
+
+def similar(a, b):
+    return SequenceMatcher(None, a, b).ratio()
