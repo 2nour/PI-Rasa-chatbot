@@ -66,6 +66,7 @@ intents:
 - check_agencies
 - how_create_account
 - request_cheque
+- why_your_bank
 
 entities:
 - Person

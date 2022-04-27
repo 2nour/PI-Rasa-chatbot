@@ -16,11 +16,15 @@ from rasa_sdk import Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from database_connectivity import *
 import webbrowser
+<<<<<<< HEAD
 from nearest_agency import *
 from translation_function import *
 from image_ocr.ocr_process import *
 from image_ocr.picture import *
 
+=======
+#from nearest_agency import *
+>>>>>>> 924f180926031a52d965e8ead0b060703ad24eb2
 
 
 
@@ -150,7 +154,7 @@ class CreateAccountAction(Action):
         elif(fullname.isalpha()==False):
             dispatcher.utter_message(text = "the fullname must contain only letters")
         else:
-            dispatcher.utter_message(text = "your request was stored, you will recieve an email soon ")
+            dispatcher.utter_message(text = "your request was stored, now we proceed to the id verification ")
         return []
 
 class AccountTypeAction(Action):
@@ -501,24 +505,25 @@ class AccceptLocationAction(Action):
     
         return []
 
-class NearestagencyAction(Action):
-    def name(self) -> Text:
-        return "action_nearest_agency"
+#class NearestagencyAction(Action):
+#    def name(self) -> Text:
+#        return "action_nearest_agency"
 
-    def run(
-        self,
-        dispatcher: CollectingDispatcher,
-        tracker: Tracker,
-        domain: Dict[Text, Any],
-    ) ->List[Dict[Text, Any]]:
-        bool = tracker.get_slot("track_status")
-        if(bool=="Yes"):
-            map = nearest_ag()
-            map.save("map.html")
-            webbrowser.open("map.html")
-        else:
-            dispatcher.utter_message(text ="As you like you wish")
+ #   def run(
+  #      self,
+   #     dispatcher: CollectingDispatcher,
+    #    tracker: Tracker,
+     #   domain: Dict[Text, Any],
+    #) ->List[Dict[Text, Any]]:
+     #   bool = tracker.get_slot("track_status")
+      #  if(bool=="Yes"):
+       #     map = nearest_ag()
+        #    map.save("map.html")
+         #   webbrowser.open("map.html")
+        #else:
+         #   dispatcher.utter_message(text ="As you like you wish")
     
+<<<<<<< HEAD
         return []
 
 class ChequeRequestAction(Action):
@@ -579,3 +584,6 @@ class ValidateCreationAction(Action):
             create_account(name, int(id), mail, birthdate, num, address, login, password, RIB, date_open , balance, account_type) 
 
         return []
+=======
+  #      return []
+>>>>>>> 924f180926031a52d965e8ead0b060703ad24eb2

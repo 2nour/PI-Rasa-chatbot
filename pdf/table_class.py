@@ -3,7 +3,8 @@ from pdf.create_table_fpdf2 import PDF
 import pymysql
 
 def extrait():
-    mydatabase =  pymysql.connect(host="localhost", port=3308, user="root", passwd="", database="rasadatabase")
+    #mydatabase =  pymysql.connect(host="localhost", port=3308, user="root", passwd="", database="rasadatabase")
+    mydatabase =  pymysql.connect(host="localhost", port=3308, user="root", passwd="", database="rasa")
 
 
     mycursor = mydatabase.cursor()
