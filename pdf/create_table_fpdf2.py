@@ -1,5 +1,7 @@
 from fpdf import FPDF
 from datetime import date
+import pymysql
+
 
 class PDF(FPDF):
     def header(self):
@@ -48,9 +50,17 @@ class PDF(FPDF):
 
     def account_data(self):
         self.set_font('helvetica','B', 10)
-        fullname='Amine Zarrouki'
+        mydatabase =  pymysql.connect(host="127.0.0.1", port=3306, user="root", passwd="", database="rasadatabase")
+        mycursor = mydatabase.cursor()
+        mycursor.execute('SELECT C.full_name , A.rib from account A, Customers C where A.customer_id=C.id and A.id = 1')
+        output1 = mycursor.fetchall()
+
+        for x in output1:
+            fullname= str(x[0])
+            rib =x[1]
+
         t1 = 'RELATION : ' + fullname
-        rib = 645842484
+        print("rib = " + str(rib))
         t1 += '\nRIB : ' + str(rib)
         self.set_line_width(1)
         self.ln()

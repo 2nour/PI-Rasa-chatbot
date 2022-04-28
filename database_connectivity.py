@@ -2,14 +2,14 @@ from colorama import Cursor
 from django.db import connection
 import pymysql
 from difflib import SequenceMatcher
-mydatabase = pymysql.connect(
-  host="localhost",
-  port=3308 ,
-  user="root",
-  password="",
-  database="rasadatabase"
-)
-#mydatabase =  pymysql.connect(host="127.0.0.1", port=3306, user="root", passwd="", database="rasa")
+#mydatabase = pymysql.connect(
+ # host="localhost",
+  #port=3308 ,
+  #user="root",
+  #password="",
+  #database="rasadatabase"
+#)
+mydatabase =  pymysql.connect(host="127.0.0.1", port=3306, user="root", passwd="", database="rasadatabase")
 
 mycursor = mydatabase.cursor()
 
@@ -30,8 +30,8 @@ def verif_mail(mail):
   a = mycursor.execute('SELECT email from Customers where email='+mail)
   return a
 def get_rib():
-  a = mycursor.execute('SELECT RIB from Account ORDER BY id DESC LIMIT 1')
-  return a.fetch(all)
+  mycursor.execute('SELECT RIB from Account ORDER BY id DESC LIMIT 1')
+  return mycursor.fetchall()
 
 def create_account(fullname, cin, email, birthdate, number, address, login, password ,RIB, date_open, balance, account_type):
   sql = 'INSERT INTO Customers(full_name, cin, email, birthdate, phone_number, address, login ,password) VALUES ("{0}","{1}", "{2}", "{3}", "{4}", "{5}" , "{6}" )'.format(fullname, cin, email, birthdate, number,  address, login, password)
