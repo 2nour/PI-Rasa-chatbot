@@ -783,6 +783,41 @@ nlu:
     - I want to renew my cheque book
     - Cheque book please
 
+- intent: tunisian
+  examples: |
+    - [tunisian](residency)
+
+- intent: resident
+  examples: |
+    - [resident](residency)
+
+- intent: cheque_request_status
+  examples: |
+    - I want to check my cheque book request status
+    - check cheque book request status
+    - verify cheque book request status
+    - show me my cheque book request status
+
+- intent: cheque_request_number
+  examples: |
+    - My check request number is [101](request_num)
+    - My request number is [204](request_num)
+    - [235](request_num)
+    - [367](request_num)
+    - [425](request_num)
+    - [579](request_num)
+    - [634](request_num)
+    - [715](request_num)
+    - [864](request_num)
+    - [925](request_num)
+    - [175](request_num)
+    - [356](request_num)
+    - [489](request_num)
+    - My chaque application [534](request_num)
+    - My cheque book application [628](request_num)
+    - My cheque book request [534](request_num)
+
+
 - synonym: transactions
   examples: |
     - Recipients

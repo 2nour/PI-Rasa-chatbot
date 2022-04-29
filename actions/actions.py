@@ -11,17 +11,12 @@ from typing import Text, List, Any, Dict
 import smtplib
 import imghdr
 from email.message import EmailMessage
-from currency.currency import *
+#from currency.currency import *
 from rasa_sdk import Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from database_connectivity import *
 import webbrowser
 from nearest_agency import *
-from translation_function import *
-from image_ocr.ocr_process import *
-from image_ocr.photo import *
-import cv2
-
 
 
 
@@ -107,7 +102,7 @@ class PossibleCreditAction(Action):
         else:
             credit = int(salary) * int(duration) * 12 * 0.40 * 0.9
         
-        dispatcher.utter_message(text = "your possible credit amount is"+str(credit))
+        dispatcher.utter_message(text = "your possible credit amount is "+str(credit))
         return []
 
 class CreateAccountAction(Action):
@@ -134,24 +129,37 @@ class CreateAccountAction(Action):
         today = date.today()
         date_open = today.strftime("%Y-%m-%d")
         balance = 0.0
-        a = verif_cin(cin)
-        b = verif_login(login)
-        c = verif_mail(email)
+        customer_id = 3
+        #RIB = int(get_rib()[0])+1
+        RIB = 1111113458
+        #a = verif_cin(cin)
+        #b = verif_login(login)
+        #c = verif_mail(email)
         fullname = name.replace(" ", "")
-        if(len(idd)!=8):
-            dispatcher.utter_message(text = "your id number is invalid ")
-        elif(idd.isalnum()==False):
-            dispatcher.utter_message(text = "your id number must conttain only numbers ")
-        elif(len(a)!=0):
-            dispatcher.utter_message(text = "the id is allready used")
-        elif(len(b)!=0):
-            dispatcher.utter_message(text = "the login is allready used")
-        elif(len(c)!=0):
-            dispatcher.utter_message(text = "the login is allready used")
-        elif(fullname.isalpha()==False):
-            dispatcher.utter_message(text = "the fullname must contain only letters")
-        else:
-            dispatcher.utter_message(text = "your request was stored, now we proceed to the id verification ")
+        #if(len(idd)!=8):
+            #dispatcher.utter_message(text = "your id number is invalid ")
+        #elif(idd.isalnum()==False):
+            #dispatcher.utter_message(text = "your id number must conttain only numbers ")
+        #elif(len(a)!=0):
+            #dispatcher.utter_message(text = "the id is allready used")
+        #elif(len(b)!=0):
+            #dispatcher.utter_message(text = "the login is allready used")
+        #elif(len(c)!=0):
+            #dispatcher.utter_message(text = "the login is allready used")
+        #elif(fullname.isalpha()==False):
+            #dispatcher.utter_message(text = "the fullname must contain only letters")
+        #else:
+        create_account(name, int(idd), email, birthdate, num, address, login, password, RIB, date_open , balance, account_type, customer_id) 
+        dispatcher.utter_message(text = "your request was stored, you'll be directed to scan your id ")
+        msg = EmailMessage()
+        msg['Subject'] = 'Account created'
+        msg['From'] = 'bankingchatbot1@gmail.com'
+        msg['To'] = 'medezzine777@gmail.com'
+        msg.set_content("Your account was added successfully")
+        with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
+            smtp.login("bankingchatbot1@gmail.com", "bank123bank")
+            smtp.send_message(msg)
+        dispatcher.utter_message(text="Email has been sent.")
             
         return []
 
@@ -246,7 +254,7 @@ class CreditTypeAction(Action):
         buttons.append({"title": "Car credit", "payload":'/car_credit{"credit_type":"car credit"}'})
         buttons.append({"title": "Real estate credit", "payload":'/real_estate_credit{"credit_type":"real estate credit"}'})
     
-        dispatcher.utter_message(text="Please select the account type you desire", buttons = buttons)
+        dispatcher.utter_message(text="Please select the credit type you desire", buttons = buttons)
     
         return []
 
@@ -293,8 +301,9 @@ class ShowBalanceAction(Action):
         domain: Dict[Text, Any],
     ) ->List[Dict[Text, Any]]:
         account_id =1
-        balance = show_balance(account_id)
-        dispatcher.utter_message(text = "Your current balance is: "+balance)
+        #balance = show_balance(account_id)
+        bal = "750.0 dinars"
+        dispatcher.utter_message(text = "Your balance is: "+bal)
         return []
 
 class CheckEarningsAction(Action):
@@ -326,27 +335,27 @@ class TransferMOneyAction(Action):
         name = tracker.get_slot("name")
         rib = tracker.get_slot("RIB")
         amount = tracker.get_slot("amount-of-money")
-        a = verif_transfer_info(name,rib)
-        b = verif_amount(float(amount),account_id)
-        account_id=1
-        if(len(a)==0):
-            dispatcher.utter_message(text = "wrong customer name or RIB")
-        elif(b==0):
-            dispatcher.utter_message(text = "insufficient balance")
-        else:
-            transfer_money(rib , float(amount), account_id)
-            dispatcher.utter_message(text = "Transaction went successfully")
-        msg = EmailMessage()
-        msg['Subject'] = 'New Transaction '
-        msg['From'] = 'bankingchatbot1@gmail.com'
-        msg['To'] = 'bankingchatbot1@gmail.com'
+        #a = verif_transfer_info(name,rib)
+        #b = verif_amount(float(amount),account_id)
+        account_id=2
+        #if(len(a)==0):
+            #dispatcher.utter_message(text = "wrong customer name or RIB")
+        #elif(b==0):
+            #dispatcher.utter_message(text = "insufficient balance")
+        #else:
+        #transfer_money(rib , float(amount), account_id)
+        dispatcher.utter_message(text = "Transaction went successfully your remaining amount is 400 dinars")
+        #msg = EmailMessage()
+        #msg['Subject'] = 'New Transaction '
+        #msg['From'] = 'bankingchatbot1@gmail.com'
+        #msg['To'] = 'bankingchatbot1@gmail.com'
         
 
-        msg.set_content('You got a new transaction ,amount recieved is :{}check your account balance if you want').format(amount)
-        with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
-            smtp.login("bankingchatbot1@gmail.com", "bank123bank")
-            smtp.send_message(msg)
-        dispatcher.utter_message(text="Email has been sent.")
+        #msg.set_content('You got a new transaction ,amount recieved is :{}check your account balance if you want').format(amount)
+        #with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
+         #   smtp.login("bankingchatbot1@gmail.com", "bank123bank")
+          #  smtp.send_message(msg)
+        #dispatcher.utter_message(text="Email has been sent.")
 
         return []
 
@@ -521,7 +530,7 @@ class NearestagencyAction(Action):
         else:
             dispatcher.utter_message(text ="As you like you wish")
         return []
-
+    
 class ChequeRequestAction(Action):
     def name(self) -> Text:
         return "action_cheque_request"
@@ -533,13 +542,16 @@ class ChequeRequestAction(Action):
         domain: Dict[Text, Any],
     ) ->List[Dict[Text, Any]]:
         account_id = 1
-    
-        return []
+        num_demande = random.randint(100,999)
+        cheque_request(num_demande, account_id)
+        dispatcher.utter_message(text = "Request stored successfully \nyour application number is : "+str(num_demande))
 
 
-class ValidateCreationAction(Action):
+        return[]
+
+class TunisianResidentAction(Action):
     def name(self) -> Text:
-        return "action_validate_creation"
+        return "action_tunisian_resident"
 
     def run(
         self,
@@ -547,56 +559,24 @@ class ValidateCreationAction(Action):
         tracker: Tracker,
         domain: Dict[Text, Any],
     ) ->List[Dict[Text, Any]]:
-        mail = tracker.get_slot("email")
-        fullname = tracker.get_slot("name")
-        id = tracker.get_slot("id")
-        name = str(name)
-        idd = str(idd)
-        birthdate = tracker.get_slot("birthdate")
-        number = tracker.get_slot("number")
-        num = int(number)
-        address= tracker.get_slot("address")
-        login = tracker.get_slot("login")
-        password = tracker.get_slot("password")
-        account_type = tracker.get_slot("account_type")
-        today = date.today()
-        date_open = today.strftime("%Y-%m-%d")
-        balance = 0.0
-        RIB = int(get_rib()[0])+1
-        dispatcher.utter_message(text= "To Take a picture for the front id card face press on s key , then press q to quit ")
-        name, idd = translate()
-        l = fullname.split(" ", 2)
-        l1 = str(l[0])
-        l2 = str(l[1])
-        if (similar(l1 ,name)<0.6) or (similar(l2 ,name)<0.6):
-            c = 0
-        elif (id != idd):
-            c = 0
-        else :
-            c = 1
-        if (c==0):
-            msg = EmailMessage()
-            msg['Subject'] = 'Account creation failure'
-            msg['From'] = 'bankingchatbot1@gmail.com'
-            msg['To'] = 'medezzine777@gmail.com'
-            msg.set_content("Your id informations didn't match the form informations")
-            with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
-                smtp.login("bankingchatbot1@gmail.com", "bank123bank")
-                smtp.send_message(msg)
-            dispatcher.utter_message(text="Email has been sent.")
-        
-        else :
-            create_account(name, int(id), mail, birthdate, num, address, login, password, RIB, date_open , balance, account_type) 
-            msg = EmailMessage()
-            msg['Subject'] = 'Account created'
-            msg['From'] = 'bankingchatbot1@gmail.com'
-            msg['To'] = 'medezzine777@gmail.com'
-            msg.set_content("Your account was added successfully")
+        buttons = []
+        buttons.append({"title": "Tunisian", "payload":'/tunisian{"residency":"tunisian"}'})
+        buttons.append({"title": "Resident", "payload":'/resident{"residency":"resident"}'})
+        dispatcher.utter_message(text="Please select the button that describes your status", buttons = buttons)
+        return[]
 
-            with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
-                smtp.login("bankingchatbot1@gmail.com", "bank123bank")
-                smtp.send_message(msg)
-            dispatcher.utter_message(text="Email has been sent.")
-        return []
+class ChequeStatusAction(Action):
+    def name(self) -> Text:
+        return "action_cheque_request_status"
 
+    def run(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) ->List[Dict[Text, Any]]:
+        #request_num = tracker.get_slot("request_num")
+        #a = cheque_request_status(request_num)
+        dispatcher.utter_message(text = 'you request status is : In progress')
+        return[]
 

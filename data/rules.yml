@@ -27,3 +27,97 @@ rules:
   - intent: why_your_bank
   - action: utter_why_our_bank
 
+- rule: fullname after utter enter you name
+  steps:
+  - action: utter_enter_your_name
+  - intent: fullname
+
+- rule: utter_enter_cin after fullname
+  steps:
+  - intent: fullname
+  - action: utter_enter_cin
+  
+- rule: identity after utter_enter_cin 
+  steps:
+  - action: utter_enter_cin
+  - intent: identity
+
+- rule: utter_enter email after identity 
+  steps:
+  - intent: identity
+  - action: utter_enter_email
+
+- rule: email after utter_enter email 
+  steps:
+  - action: utter_enter_email
+  - intent: email  
+  
+- rule: utter_enter_birthdate after email 
+  steps:
+  - intent: email  
+  - action: utter_enter_birthdate
+
+- rule: birthdate after utter_enter_birthdate 
+  steps:
+  - action: utter_enter_birthdate
+  - intent: birthdate
+
+- rule: utter_enter_number after birthdate 
+  steps:
+  - intent: birthdate
+  - action: utter_enter_number
+
+- rule: number after utter_enter_number 
+  steps:
+  - action: utter_enter_number
+  - intent: number 
+
+- rule: utter_enter_adress after number 
+  steps:
+  - intent: number 
+  - action: utter_enter_adress
+
+- rule:  adress after utter_enter_adress
+  steps:
+  - action: utter_enter_adress
+  - intent: address
+
+- rule:  utter_enter_login after adress 
+  steps:
+    - intent: address
+    - action: utter_enter_login
+
+- rule:  login after utter_enter_login 
+  steps:
+    - action: utter_enter_login
+    - intent: login
+
+- rule:  utter_enter_password after login 
+  steps:
+    - intent: login
+    - action: utter_enter_password
+
+- rule:  password after utter_enter_password 
+  steps:
+    - action: utter_enter_password
+    - intent: password
+
+- rule:  action_create_account after password 
+  steps:
+    - intent: password
+    - action: action_create_account
+
+- rule: utter_request_number after cheque_request_status
+  steps:
+    - intent: cheque_request_status
+    - action: utter_request_number
+  
+- rule: cheque_request_number after utter_request_number 
+  steps:
+    - action: utter_request_number
+    - intent: cheque_request_number
+
+- rule: action_cheque_request_status after cheque_request_number 
+  steps:
+    - intent: cheque_request_number
+    - action: action_cheque_request_status

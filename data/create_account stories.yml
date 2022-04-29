@@ -10,23 +10,7 @@ stories:
   - slot_was_set:
       - account_type: "savings account"
   - action: utter_enter_your_name
-  - intent: fullname
-  - action: utter_enter_cin
-  - intent: identity
-  - action: utter_enter_email
-  - intent: email
-  - action: utter_enter_birthdate
-  - intent: birthdate
-  - action: utter_enter_number
-  - intent: number 
-  - action: utter_enter_adress
-  - intent: address
-  - action: utter_enter_login
-  - intent: login
-  - action: utter_enter_password
-  - intent: password
-  - action: action_create_account
-  - action: action_validate_creation
+
 
 - story: creation_savings_account+signin
   steps:
@@ -38,23 +22,6 @@ stories:
   - slot_was_set:
       - account_type: "savings account"
   - action: utter_enter_your_name
-  - intent: fullname
-  - action: utter_enter_cin
-  - intent: identity
-  - action: utter_enter_email
-  - intent: email
-  - action: utter_enter_birthdate
-  - intent: birthdate
-  - action: utter_enter_number
-  - intent: number 
-  - action: utter_enter_adress
-  - intent: address
-  - action: utter_enter_login
-  - intent: login
-  - action: utter_enter_password
-  - intent: password
-  - action: action_create_account
-  - action: action_validate_creation
 
 
 
@@ -68,24 +35,6 @@ stories:
   - slot_was_set:
       - account_type: "current account"
   - action: utter_enter_your_name
-  - intent: fullname
-  - action: utter_enter_cin
-  - intent: identity
-  - action: utter_enter_email
-  - intent: email
-  - action: utter_enter_birthdate
-  - intent: birthdate
-  - action: utter_enter_number
-  - intent: number 
-  - action: utter_enter_adress
-  - intent: address
-  - action: utter_enter_login
-  - intent: login
-  - action: utter_enter_password
-  - intent: password
-  - action: action_create_account
-  - action: action_validate_creation
-
 
 - story: creation_current_account+signin
   steps:
@@ -97,23 +46,6 @@ stories:
   - slot_was_set:
       - account_type: "current account"
   - action: utter_enter_your_name
-  - intent: fullname
-  - action: utter_enter_cin
-  - intent: identity
-  - action: utter_enter_email
-  - intent: email
-  - action: utter_enter_birthdate
-  - intent: birthdate
-  - action: utter_enter_number
-  - intent: number 
-  - action: utter_enter_adress
-  - intent: address
-  - action: utter_enter_login
-  - intent: login
-  - action: utter_enter_password
-  - intent: password
-  - action: action_create_account
-  - action: action_validate_creation
 
 
 
@@ -127,23 +59,6 @@ stories:
   - slot_was_set:
       - account_type: "salary account"
   - action: utter_enter_your_name
-  - intent: fullname
-  - action: utter_enter_cin
-  - intent: identity
-  - action: utter_enter_email
-  - intent: email
-  - action: utter_enter_birthdate
-  - intent: birthdate
-  - action: utter_enter_number
-  - intent: number
-  - action: utter_enter_adress
-  - intent: address
-  - action: utter_enter_login
-  - intent: login
-  - action: utter_enter_password
-  - intent: password
-  - action: action_create_account
-  - action: action_validate_creation
 
 
 - story: creation_salary_account+signin
@@ -156,20 +71,3 @@ stories:
   - slot_was_set:
       - account_type: "salary account"
   - action: utter_enter_your_name
-  - intent: fullname
-  - action: utter_enter_cin
-  - intent: identity
-  - action: utter_enter_email
-  - intent: email
-  - action: utter_enter_birthdate
-  - intent: birthdate
-  - action: utter_enter_number
-  - intent: number 
-  - action: utter_enter_adress
-  - intent: address
-  - action: utter_enter_login
-  - intent: login
-  - action: utter_enter_password
-  - intent: password
-  - action: action_create_account
-  - action: action_validate_creation

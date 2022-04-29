@@ -67,7 +67,10 @@ intents:
 - how_create_account
 - request_cheque
 - why_your_bank
-
+- tunisian
+- resident
+- cheque_request_status
+- cheque_request_number
 entities:
 - Person
 - account
@@ -95,7 +98,8 @@ entities:
 - track_status
 - currency_dep
 - currency_arriv
-
+- residency
+- request_num
 slots:
   salary:
     type: any
@@ -217,6 +221,18 @@ slots:
     mappings:
     - type: from_entity
       entity: currency_arriv
+  residency:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: residency
+  request_num:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: request_num 
 
 
 responses:
@@ -311,13 +327,17 @@ responses:
   utter_enter_reciever_rib:
   - text: please enter reciever account number (RIB)
   utter_enter_amount_send:
-  - text: enter the amount you want to send
+  - text: Please enter the amount you want to send
   utter_fill_form:
-  - text: to create coount i'll guide you to fill the inscription form step by step , and also you need to assist me with some requuired infomations (ID number ,e-mail , phone number, address, Id picture) . If all informations are suitable you'll recieve a confirmation email.
+  - text: To create an account i'll guide you to fill the inscription form step by step , and also you need to assist me with some requuired infomations (ID number ,e-mail , phone number, address, Id picture) . If all informations are suitable you'll recieve a confirmation email.
   utter_please_rephrase:
   - text: I'm sorry, I didn't quite understand that. Could you rephrase?
   utter_why_our_bank:
   - text: Our bank is a trust company that affords professional service and previleges to customers. Here we offer several credit types with less interest charges and variety of account types in order to fit clients necessities
+  utter_fill_form_resident:
+  - text: To be a client you should have a valid residence permit or work permit.
+  utter_request_number:
+  - text: Please enter your request number
 
 actions:
 - action_account_type
@@ -346,10 +366,12 @@ actions:
 - action_currency_calculator
 - action_validate_creation
 - action_take_pic
+- action_tunisian_resident
+- action_cheque_request_status
+- action_cheque_request
 ########################
 - action_check_mandat_state
 - action_send_mandat
-- action_cheque_request
 - action_check_all_earnings
 - action_activate_cc
 - action_extrait_bnk

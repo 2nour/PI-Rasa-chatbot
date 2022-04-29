@@ -30,14 +30,14 @@ def verif_mail(mail):
   a = mycursor.execute('SELECT email from Customers where email='+mail)
   return a
 def get_rib():
-  a = mycursor.execute('SELECT RIB from Account ORDER BY id DESC LIMIT 1')
-  return a.fetch(all)
+  mycursor.execute('SELECT RIB from Account ORDER BY id DESC LIMIT 1')
+  return mycursor.fetchall()
 
-def create_account(fullname, cin, email, birthdate, number, address, login, password ,RIB, date_open, balance, account_type):
+def create_account(fullname, cin, email, birthdate, number, address, login, password ,RIB, date_open, balance, account_type,customer_id):
   sql = 'INSERT INTO Customers(full_name, cin, email, birthdate, phone_number, address, login ,password) VALUES ("{0}","{1}", "{2}", "{3}", "{4}", "{5}" , "{6}" )'.format(fullname, cin, email, birthdate, number,  address, login, password)
   mycursor.execute(sql)
   sql= 'SELECT id FROM Customers ORDER BY id DESC LIMIT 1'
-  customer_id = mycursor.execute(sql)
+  #customer_id = mycursor.execute(sql)
   sql = 'INSERT INTO Account(RIB, date_opened, balance, account_type, customer_id ) VALUES ("{7}", "{8}", "{9}", "{10}","{11}" )'.format(RIB,date_open, balance, account_type, customer_id)
   mycursor.execute(sql)
 
@@ -103,9 +103,14 @@ def complaint_status(rib):
   return stat
 
 def cheque_request(num_demande, account_id):
-  sql = 'INSERT INTO Cheque(demande, account_id) VALUES ("{0}","{1}", "{2}")'.format(num_demande, account_id)
+  sql = 'INSERT INTO Cheque(demande, account_id) VALUES ("{0}","{1}")'.format(num_demande, account_id)
   mycursor.execute(sql)
-  sql = 'SELECT e'
+
+def cheque_request_status(request_num):
+  sql = 'SELECT etat FROM Cheque where demande='+request_num
+  a = mycursor.execute(sql)
+  return a.fetchall()
+
 
 
 def similar(a, b):
