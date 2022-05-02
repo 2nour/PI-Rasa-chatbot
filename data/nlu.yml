@@ -269,6 +269,7 @@ nlu:
     - Wait, I'll have to check my balance first. Can you do that please?
     - Hi, I need to know how much money is in my account
     - Balance please
+    - How me my bank statement
 - intent: transfer_money
   examples: |
     - I want to transfer money
@@ -482,7 +483,7 @@ nlu:
     - it's [ramzi mansour](full_name)
     - [Najla Majdoub](full_name)
     - [Med Hedy Sayari](full_name)
-    - Mohamed Amine Zarrouki](full_name)
+    - [Mohamed Amine Zarrouki](full_name)
     - [Ahlem ben jdidia](full_name) 
     - [Feriel darraji](full_name)
     - [Achref Douiri](full_name)
@@ -509,6 +510,8 @@ nlu:
     - [Paul Pogba](full_name)
     - [Vincent Valbuena](full_name)
     - [Jeremy Mathieu](full_name)
+    - [Ines Channoufi](full_name)
+    - [Dorra Trabelsi](full_name)
 
 - intent: identity
   examples: |
@@ -830,11 +833,30 @@ nlu:
   examples: |
     - customer_account
     - bank_account
-- synonym: credit_card
+- synonym: balance
   examples: |
-    - cc
-    - card
+    - statement
 
+- lookup: birth_date
+  examples: |
+    - 1994-05-03
+    - 2000-11-07
+    - 2001-10-13
+    - 1999-08-21
+    - 1998-02-18
+    - 1996-04-01
+    - 1994-01-30
+    - 1993-06-31
+    - 1992-02-28
+    - 1991-09-17
+    - 1990-02-29
+    - 1989-12-15
+    - 1985-07-03
+    - 1980-10-19
+    - 1979-05-14
+    - 1974-08-07
+    - 1970-01-24
+    - 1969-07-26 
 - lookup: salaryy
   examples: |
     - 1200

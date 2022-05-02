@@ -1,0 +1,9 @@
+{
+  "recipients": "transactions",
+  "money-sending": "transactions",
+  "earnings": "transactions",
+  "loan": "credit",
+  "customer_account": "account",
+  "bank_account": "account",
+  "statement": "balance"
+}

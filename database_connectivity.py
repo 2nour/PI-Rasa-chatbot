@@ -2,14 +2,14 @@ from colorama import Cursor
 from django.db import connection
 import pymysql
 from difflib import SequenceMatcher
-#mydatabase = pymysql.connect(
- # host="localhost",
-  #port=3308 ,
-  #user="root",
-  #password="",
-  #database="rasadatabase"
-#)
-mydatabase =  pymysql.connect(host="127.0.0.1", port=3306, user="root", passwd="", database="rasadatabase")
+mydatabase = pymysql.connect(
+  host="localhost",
+  port=3308 ,
+  user="root",
+  password="",
+  database="rasadatabase"
+)
+#mydatabase =  pymysql.connect(host="127.0.0.1", port=3306, user="root", passwd="", database="rasadatabase")
 
 mycursor = mydatabase.cursor()
 
