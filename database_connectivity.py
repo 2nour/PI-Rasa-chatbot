@@ -20,65 +20,102 @@ mycursor = mydatabase.cursor()
 #mycursor.execute("CREATE TABLE Transactions (id int AUTO_INCREMENT PRIMARY KEY, date DATETIME NOT NULL , amount_of_transaction float NOT NULL , transaction_type varchar(255) NOT NULL , account_id int NOT NULL , external_account_id int NOT NULL ,constraint FK FOREIGN KEY  (account_id) REFERENCES Account(id), constraint FK1 FOREIGN KEY  (account_id) references  Account(id))" )
 #mycursor.execute("CREATE TABLE Reclamation(id int AUTO_INCREMENT PRIMARY KEY, description varchar(255) NOT NULL , rib int(16) NOT NULL , status varchar(255) DEFAULT 'In progress' , ref_code int NOT NULL)")
 #mycursor.execute("CREATE TABLE Cheque(id int AUTO_INCREMENT PRIMARY KEY, demande int NOT NULL , etat varchar(255) DEFAULT 'In progress' , account_id int NOT NULL, constraint FK FOREIGN KEY (account_id) REFERENCES Account(id))")
-def verif_cin(cin):
-  a = mycursor.execute('SELECT cin from Customers where cin='+cin)
-  return a
-def verif_login(login):
-  a = mycursor.execute('SELECT login from Customers where login='+login)
-  return a
-def verif_mail(mail):
-  a = mycursor.execute('SELECT email from Customers where email='+mail)
-  return a
-def get_rib():
-  mycursor.execute('SELECT RIB from Account ORDER BY id DESC LIMIT 1')
-  return mycursor.fetchall()
 
-def create_account(fullname, cin, email, birthdate, number, address, login, password ,RIB, date_open, balance, account_type,customer_id):
-  sql = 'INSERT INTO Customers(full_name, cin, email, birthdate, phone_number, address, login ,password) VALUES ("{0}","{1}", "{2}", "{3}", "{4}", "{5}" , "{6}" )'.format(fullname, cin, email, birthdate, number,  address, login, password)
+
+
+def verif_cin(cin):
+  a= mycursor.execute('SELECT cin from Customers where cin='+str(cin))
+  return a
+
+def verif_login(login):
+  mycursor.execute("SELECT login from Customers where login = '"+login+"'")
+  return len(list(mycursor))
+
+def verif_mail(mail):
+  a = mycursor.execute("SELECT email from Customers where email = '"+mail+"'")
+  return a
+
+def get_rib():
+  mycursor.execute('SELECT RIB from Account   ORDER BY id DESC LIMIT 1')
+  return mycursor.fetchall()[0][0]
+
+def create_account(fullname, cin, email, birthdate, phone_number, address, login, password ,RIB, date_open, balance, account_type):
+  
+  sql = "INSERT INTO Customers(full_name, cin, email, birthdate, phone_number, address, login ,password) VALUES ('"+fullname+"',"+"'"+cin+"',"+"'"+email+"',"+"'"+birthdate+"',"+str(phone_number)+","+"'"+address+"',"+"'"+login+"',"+"'"+password+"')"
   mycursor.execute(sql)
-  sql= 'SELECT id FROM Customers ORDER BY id DESC LIMIT 1'
-  #customer_id = mycursor.execute(sql)
-  sql = 'INSERT INTO Account(RIB, date_opened, balance, account_type, customer_id ) VALUES ("{7}", "{8}", "{9}", "{10}","{11}" )'.format(RIB,date_open, balance, account_type, customer_id)
+  sql= 'SELECT id FROM Customers  ORDER BY id DESC LIMIT 1'
   mycursor.execute(sql)
+  customer_id=mycursor.fetchall()[0][0]
+  sql= 'SELECT id FROM Account   ORDER BY id DESC LIMIT 1'
+  mycursor.execute(sql)
+  id=mycursor.fetchall()[0][0]+1
+  sql = "INSERT INTO Account VALUES ("+str(id)+","+str(RIB)+","+"'"+date_open+"',NULL,"+str(balance)+",'" +account_type+"','"+str(customer_id)+"')"
+  mycursor.execute(sql)
+
+create_account('amine amine' , '01234567' , 'email@email.com','1999-10-10' , 20123123, 'TN TN ' , 'az123','123123',1231231,'2022-04-30',0.0,'current')
 
 def create_credit(date, duration, amount, credit_type,  account_id , external_account_id, transacion_type):
-  sql = 'INSERT INTO Customers(date, duration, amount, credit_type, account_id) VALUES ("{0}","{1}", "{2}", "{3}", "{4}")'.format(date, duration, amount, credit_type, account_id)
+  sql = 'INSERT INTO Credit(date, duration, ammount, credit_type, account_id) VALUES ("{0}","{1}", "{2}", "{3}", "{4}")'.format(date, duration, amount, credit_type, account_id)
   mycursor.execute(sql)
   sql = 'INSERT INTO Transactions(date, amount_of_transaction, transaction_type, account_id, external_account_id) VALUES ("{0}","{1}", "{2}", "{3}", "{4}")'.format(date, amount, transacion_type, account_id, external_account_id)
   mycursor.execute(sql)
-  sql = 'SELECT balance from Account where id='+account_id
-  bal = mycursor.execute(sql)+amount
-  sql = 'UPDATE Account set balance='+bal+' where id='+account_id
+  sql = 'SELECT balance from Account where id='+str(account_id)
   mycursor.execute(sql)
+  bal = int(mycursor.fetchall()[0][0])+amount
+  sql = 'UPDATE Account set balance='+str(bal)+' where id='+str(account_id)
+  mycursor.execute(sql)
+  return 'Credit Transaction sent successfully'
+
+#print(create_credit('2022-04-12', 5, 20000.0, 'car credit',  1 , 99999, 'debit'))
+
 
 def show_balance(account_id):
-  sql = 'SELECT balance from Account where id='+account_id
-  bal = mycursor.execute(sql)
-  return bal
+  sql = 'SELECT balance from Account where id='+str(account_id)
+  mycursor.execute(sql)
+  return mycursor.fetchall()[0][0]
+
 
 def check_earnings(account_id):
   sql = 'SELECT date , amount_of_transaction , transaction_type , full_name from Transactions T , Customer C , Account A where T.account_id='+account_id+'and A.id=T.external_account_id and C.id = A.customer_id LIMIt 5'
   tran = mycursor.execute(sql)
   return tran
 
-def verif_transfer_info(fullname,rib):
-  sql = 'SELECT full_name , RIB from Customers C , Account A where C.fullname='+fullname+' and A.RIB='+rib+' and C.id=A.customer_id'
-  a = mycursor.execute(sql)
-  return a
+#def verif_transfer_info(fullname,rib):
+ # sql = 'SELECT full_name , RIB from Customers C , Account A where C.fullname='+fullname+' and A.RIB='+rib+' and C.id=A.customer_id'
+  #a = mycursor.execute(sql)
+  #return a
 
-def transfer_money(rib , amount, account_id):
-  sql = 'SELECT balance from Account where id='+account_id
-  bal = mycursor.execute(sql)-amount
-  sql = 'UPDATE Account set balance='+bal+' where id='+account_id
-  mycursor.execute(sql)
-  sql = 'SELECT balance from Account where RIB='+rib
-  bal = mycursor.execute(sql)+amount
-  sql = 'UPDATE Account set balance='+bal+' where RIB='+rib
-  mycursor.execute(sql)
+def transfer_money(full_name ,rib , amount, account_id):
+  sql = 'SELECT full_name  from Account A , Customers C where RIB='+str(rib) +' and C.id = A.customer_id'
+  mycursor.execute(sql) 
+  if(full_name ==mycursor.fetchall()[0][0] ):
+    sql = 'SELECT balance from Account where id='+str(account_id)
+    mycursor.execute(sql)
+    bal = int(mycursor.fetchall()[0][0])-amount
+    if(bal>0):
+        sql = 'UPDATE Account set balance='+str(bal)+' where id='+str(account_id)
+        mycursor.execute(sql)
+        sql = 'SELECT balance from Account where RIB='+str(rib)
+        mycursor.execute(sql)
+        bal2 = int(mycursor.fetchall()[0][0])+amount
+        sql = 'UPDATE Account set balance='+str(bal2)+' where RIB='+str(rib)
+        mycursor.execute(sql)
+        print(bal,bal2)
+        return 'money sent successfully'
+    else :
+        return 'Your balance is insufficient'  
+  else : 
+        return 'there is an error in entering the full name and/or the RIB'
+
+#print(transfer_money('hedy ezine',888555660,50,1))
+
+
 
 def close_account(date_close, account_id):
-  sql = 'Update Account set date_closed='+date_close+' where id='+account_id
+  sql = 'Update Account set date_closed='+str(date_close)+' where id='+str(account_id)
   mycursor.execute(sql)
+
+
 
 def verif_amount(amount,account_id):
   sql= 'SELECT balance from account where id='+account_id
@@ -99,8 +136,8 @@ def verif_rib(rib):
 
 def complaint_status(rib):
   sql = 'SELECT status FROM Reclamations where rib='+rib
-  stat = mycursor.execute(sql)
-  return stat
+  mycursor.execute(sql)
+  return mycursor.fetchall()[0]
 
 def cheque_request(num_demande, account_id):
   sql = 'INSERT INTO Cheque(demande, account_id) VALUES ("{0}","{1}")'.format(num_demande, account_id)
@@ -114,4 +151,4 @@ def cheque_request_status(request_num):
 
 
 def similar(a, b):
-    return SequenceMatcher(None, a, b).ratio()
+    return SequenceMatcher(None, a, b).rat
