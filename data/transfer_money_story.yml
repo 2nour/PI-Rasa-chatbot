@@ -5,6 +5,8 @@ stories:
   - intent: transfer_money
   - action: utter_enter_reciever_name
   - intent: reciever_name
+  - action: utter_enter_reciever_last_name
+  - intent: reciever_last_name
   - action: utter_enter_reciever_rib
   - intent: reciever_rib
   - action: utter_enter_amount_send

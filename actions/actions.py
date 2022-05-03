@@ -115,7 +115,9 @@ class CreateAccountAction(Action):
         tracker: Tracker,
         domain: Dict[Text, Any],
     ) ->List[Dict[Text, Any]]:
-        name = tracker.get_slot("name")
+        f_name = tracker.get_slot("name")
+        l_name = tracker.get_slot("last_name")
+        name = f_name+" "+l_name 
         idd = tracker.get_slot("id")
         cin= int(idd)
         email = tracker.get_slot("email")
@@ -332,7 +334,9 @@ class TransferMOneyAction(Action):
         tracker: Tracker,
         domain: Dict[Text, Any],
     ) ->List[Dict[Text, Any]]:
-        name = tracker.get_slot("name")
+        f_name = tracker.get_slot("name")
+        l_name = tracker.get_slot("last_name")
+        name = f_name+" "+l_name
         rib = tracker.get_slot("RIB")
         amount = tracker.get_slot("amount-of-money")
         #a = verif_transfer_info(name,rib)

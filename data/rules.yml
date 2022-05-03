@@ -27,14 +27,24 @@ rules:
   - intent: why_your_bank
   - action: utter_why_our_bank
 
-- rule: fullname after utter enter you name
+- rule: Name after utter enter you name
   steps:
   - action: utter_enter_your_name
-  - intent: fullname
+  - intent: Name
 
-- rule: utter_enter_cin after fullname
+- rule: utter enter lastName after Name
   steps:
-  - intent: fullname
+  - intent: Name
+  - action: utter_enter_your_last_name
+
+- rule: last_Name after utter enter lastName 
+  steps:
+  - action: utter_enter_your_last_name
+  - intent: last_Name
+
+- rule: utter_enter_cin after Name
+  steps:
+  - intent: last_Name
   - action: utter_enter_cin
   
 - rule: identity after utter_enter_cin 
@@ -82,29 +92,9 @@ rules:
   - action: utter_enter_adress
   - intent: address
 
-- rule:  utter_enter_login after adress 
+- rule:  action_create_account after adress 
   steps:
     - intent: address
-    - action: utter_enter_login
-
-- rule:  login after utter_enter_login 
-  steps:
-    - action: utter_enter_login
-    - intent: login
-
-- rule:  utter_enter_password after login 
-  steps:
-    - intent: login
-    - action: utter_enter_password
-
-- rule:  password after utter_enter_password 
-  steps:
-    - action: utter_enter_password
-    - intent: password
-
-- rule:  action_create_account after password 
-  steps:
-    - intent: password
     - action: action_create_account
 
 - rule: utter_request_number after cheque_request_status

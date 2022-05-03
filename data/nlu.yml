@@ -315,20 +315,20 @@ nlu:
     - show me my [transactions](transactions) list
 - intent: possible_credit
   examples: |
-    - How much [credit](credit) can the bank afford me ?
-    - What amount of [credit](credit) can i get ?
-    - I wanna check possible [credit](credit) amount
-    - let me see possible [credit](credit) amount
+    - How much credit can the bank afford me ?
+    - What amount of credit can i get ?
+    - I wanna check possible credit amount
+    - let me see possible credit amount
     - How much money can the bank afford me as a [credit](credit) ?
-    - Can I check possible [credit](credit) i can get ?
+    - Can I check possible credit i can get ?
     - What is the possible amount of money i can borrow ?
-    - what is my possible [credit](credit) amount
-    - what is my potential [credit](credit) amouint
+    - what is my possible credit amount
+    - what is my potential credit amount
 - intent: get_credit
   examples: |
-    - i want a [credit](credit)
-    - i want to purchase a [credit](credit)
-    - i would like to get a [credit](credit)
+    - i want a credit
+    - i want to purchase a credit
+    - i would like to get a   credit
     - i want to borrow money
 
 - intent: get_salary
@@ -419,21 +419,21 @@ nlu:
 
 - intent: sign_in
   examples: |
-    - I want to sign in to my [account](account)
-    - I want to log in to my [account](account)
+    - I want to sign in to my account
+    - I want to log in to my account
     - I wanna sign in
     - I wanna log in
-    - I wanna access to my [account](account)
+    - I wanna access to my account
 - intent: delete_account
   examples: |
-    - I want to close my [account](account)
-    - I want to remove my [account](account)
-    - I wanna to delete my [account](account)
-    - I wanna to remove my [account](account)
-    - I want to delete my [account](account)
-    - I wish to close my [account](account)
-    - I wish to remove my [account](account)
-    - I wanna close my [account](account)
+    - I want to close my account
+    - I want to remove my account
+    - I wanna to delete my account
+    - I wanna to remove my account
+    - I want to delete my account
+    - I wish to close my account
+    - I wish to remove my account
+    - I wanna close my account
 
 - intent: mood_great
   examples: |
@@ -473,45 +473,36 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
-- intent: fullname
+- intent: Name
   examples: |
-    - my name is [Hedy Ezzine](full_name)
-    - [Nour Hadrich](full_name)
-    - my fullname is [Amine ZArrouki](full_name)
-    - [hakim atrous](full_name)
-    - I'm [amen tbini](full_name)
-    - it's [ramzi mansour](full_name)
-    - [Najla Majdoub](full_name)
-    - [Med Hedy Sayari](full_name)
-    - [Mohamed Amine Zarrouki](full_name)
-    - [Ahlem ben jdidia](full_name) 
-    - [Feriel darraji](full_name)
-    - [Achref Douiri](full_name)
-    - [Amenallah Amamou](full_name)
-    - [Mehdi Ben Dhifallah](full_name)
-    - [Harrsion Afful](full_name)
-    - [Tasnim Kallel](full_name)
-    - [Beya Mlika](full_name)
-    - [Baya ben Hmida](full_name)
-    - [Khalil Cherif](full_name)
-    - [Mohamed Anis Saighi](full_name)
-    - [Med Ali Bouchouicha](full_name)
-    - [Talel Ben Mansour](full_name) 
-    - [Hamed Aounallah](full_name)
-    - [Raya Ayari](full_name)
-    - [Patrick Kroos](full_name)
-    - [Sofien Medimagh](full_name)
-    - [Leila Ouannes](full_name)
-    - [Ritej Abdelli](full_name)
-    - [Lamia Chikhaoui](full_name)
-    - [Mary Macron](full_name)
-    - [Frank Ribery](full_name)
-    - [Raphael Varane](full_name)
-    - [Paul Pogba](full_name)
-    - [Vincent Valbuena](full_name)
-    - [Jeremy Mathieu](full_name)
-    - [Ines Channoufi](full_name)
-    - [Dorra Trabelsi](full_name)
+    - my name is [Hedy](name)
+    - [Nour ](name)
+    - my fullname is [Amine](name)
+    - I'm [Amen](name)
+    - it's [Ramzi](name)
+    - [Najla](name)
+    - [Ahlem](name) 
+    - [Feriel](name)
+    - [Talel](name) 
+    - [Hamed](name)
+    - [Raya](name)
+    - [Ines](name)
+    - [Dorra](name)
+- intent: last_Name
+  examples: |
+    - my  last name is [Ben ABid](last_name)
+    - [Boukeri](last_name)
+    - [Ben Jmiaa](last_name)
+    - [Kahleoui](last_name)
+    - it's [Amamou](last_name)
+    - [Kanzari](last_name)
+    - [Dhieb](last_name) 
+    - [Souei](last_name)
+    - [Khalledi](last_name) 
+    - [Mbarki](last_name)
+    - [Ghezaiel](name)
+    - [Ksouri](name)
+    - [Chelly](name)
 
 - intent: identity
   examples: |
@@ -576,7 +567,7 @@ nlu:
 
 - intent: address
   examples: |
-    - my address is [zaghouan Tunisia](addresse)
+    - my address is [Zaghouan](addresse)
     - [Earth street ariana](addresse)
     - [street of honor Tunis](addresse)
     - my home address is [32 street of ghana, Nabeul](addresse)
@@ -591,36 +582,43 @@ nlu:
     - [Nasr Neighborhood](addresse)
     - [Beb Saadoun Tunis](addresse)
     - [Bizerte Tunisia](addresse)
-    
-
-- intent: login
-  examples: |
-    - my login is [7hedi88](loginn)
-    - [nour49](loginn)
-    - [77f4amine](loginn)
-    - [127ahmed85](loginn)
-    - i want as login [17dfhf88](loginn)
-    - [ahmed43](loginn)
-    - [453amir](loginn)
-    - [nouri49](loginn)
-    - [am14mon](loginn)
-    - [sam453r](loginn)
-
-- intent: password
-  examples: |
-    - my password is [5478961](pass)
-    - [2345678](pass)
-    - [4157896](pass)
-    - [1246875](pass)
-    - my password is [3452167](pass)
-    - [7842165](pass)
-    - [5621478](pass)
-    - [3698751](pass)
-    - [9621473](pass)
-    - [8546210](pass)
-    - I want as password [6572148](pass)
-    - [0532146](pass)
-
+    - [Bizerte](addresse)
+    - [Benzart](addresse)
+    - [Tunis](addresse)
+    - [Ariana](addresse)
+    - [Ben Arous](addresse)
+    - [Mannouba](addresse)
+    - [Nabeul](addresse)
+    - [Hammamet](addresse)   
+    - [Beja](addresse) 
+    - [Jandouba](addresse)
+    - [Kef](addresse)
+    - [Kasserine](addresse)
+    - [Kebili](addresse)
+    - [Gafsa](addresse)
+    - [Tozeur](addresse)
+    - I live in [Tataouine](addresse)
+    - [Medenine](addresse)
+    - [Gabes](addresse)
+    - [Sfax](addresse)
+    - [Sidi Bouzid](addresse)
+    - [Kairouan](addresse)
+    - [Siliana](addresse)
+    - [Mahdia](addresse)
+    - [Monastir](addresse)
+    - [Sousse](addresse)
+    - [Djerba](addresse)
+    - [Hammam lif](addresse)
+    - [Mourouj](addresse)
+    - [Nasr](addresse)
+    - [Rades](addresse)
+    - [Megrine](addresse)
+    - [Boumhal](addresse)
+    - [Kerkneah](addresse)
+    - [Kelibia](addresse)
+    - [Korba](addresse)
+    - [Fouchana](addresse)
+    - [Mohamedia](addresse)
 
 - intent: savings_account_ty
   examples: |
@@ -733,10 +731,17 @@ nlu:
 
 - intent: reciever_name
   examples: |
-    - The reciver name is [Ahmed Boukadida](full_name)
-    - [Amine Dhif](full_name)
-    - [Jamel chaari](full_name)
-    - [Hassen ben Hmida](full_name)
+    - The reciver name is [Ahmed](name)
+    - [Amine](name)
+    - [Jamel](name)
+    - [Hassen](name)
+- intent: reciever_last_name
+  examples: |
+    - The reciver name is [Zarrad](last_name)
+    - [Ghribi](last_name)
+    - [Sliti](last_name)
+    - [Khazri](last_name)
+    - [Msekni](last_name)
 
 - intent: reciever_rib
   examples: |
@@ -857,6 +862,15 @@ nlu:
     - 1974-08-07
     - 1970-01-24
     - 1969-07-26 
+    - 1963-05-07
+    - 1960-02-18
+    - 1959-09-14
+    - 1954-04-10
+    - 1950-11-12
+    - 1949-06-08
+    - 1946-07-03
+    - 1942-01-15
+    - 1940-09-07
 - lookup: salaryy
   examples: |
     - 1200
@@ -907,315 +921,607 @@ nlu:
     - 15300
     - 20670
 
-- lookup: full_name
+- lookup: name
   examples: |
-    - Med Hedy Sayari
-    - Mohamed Amine Zarrouki
-    - Hakim Atrous 
-    - Feriel darraji
-    - Achref Douiri
-    - Amenallah Amamou
-    - Mehdi Ben Dhifallah
-    - Harrsion Afful
-    - Tasnim Kallel
-    - Beya Mlika
-    - Baya ben Hmida
-    - Khalil Cherif
-    - Mohamed Anis Saighi
-    - Med Ali Bouchouicha
-    - Talel Ben Mansour 
-    - Hamed Aounallah
-    - Raya Ayari
-    - Patrick Kroos
-    - Sofien Medimagh
-    - Leila Ouannes
-    - ritej Abdelli
-    - Lamia Chikhaoui
-    - Mary Macron
-    - Frank Ribery
-    - Raphael Varane
-    - Paul Pogba
-    - Vincent Valbuena
-    - Jeremy Mathieu
+    - Med
+    - Mohamed
+    - Mouhamed
+    - Hedi
+    - Hedy
+    - Amine
+    - Wala
+    - Jamila
+    - Mounir
+    - Chrifa
+    - Mahrez
+    - Said
+    - Saida
+    - Jamel
+    - Jalel
+    - Lazher
+    - Med Hedy
+    - Mohamed Amine 
+    - Hakim
+    - Feriel
+    - Achref 
+    - Amenallah
+    - Mehdi 
+    - Harrsion 
+    - Tasnim 
+    - Beya 
+    - Baya 
+    - Khalil 
+    - Anis 
+    - Med Ali 
+    - Talel 
+    - Hamed 
+    - Raya 
+    - Patrick
+    - Sofien 
+    - Leila 
+    - Ritej 
+    - Lamia 
+    - Mary 
+    - Frank 
+    - Raphael 
+    - Paul 
+    - Vincent 
+    - Jeremy 
+    - Oussama  
+    - Oussema 
+    - Laith 
+    - Lassaad 
+    - Chedli  
+    - Amal 
+    - Azer 
+    - Marouene
+    - Jihed
+    - Farouk
+    - Sami 
+    - Med Ali 
+    - Mohamed Ali
+    - Abdallah 
+    - Kamel 
+    - Anis 
+    - Khaled 
+    - Zayneb 
+    - Zeyned 
+    - Cyrine 
+    - Sirine 
+    - Koussay 
+    - Louay 
+    - Maha 
+    - Oumayma 
+    - Aymen 
+    - Rahma 
+    - Najla  
+    - Elhem 
+    - Samia  
+    - Lamia 
+    - Med Amine 
+    - Nourchene 
+    - Salma  
+    - Ridha 
+    - Omar 
+    - Bilel 
+    - Slim 
+    - Salim 
+    - Atef  
+    - Skander  
+    - Elyess 
+    - Walid 
+    - Sonia  
+    - Samira 
+    - Maram 
+    - Nourhene  
+    - Wejden 
+    - Salah 
+    - Atef 
+    - Mootaz 
+    - Abdessattar  
+    - Hmida 
+    - Bechir  
+    - Ahmed  
+    - Yassine 
+    - Aziz  
+    - Mariem 
+    - Tayssir 
+    - Ammar 
+    - Nabil
+    - Nebil
+    - Chaima
+    - Souad
+    - Ramla 
+    - Samia
+    - Mourad
+    - Raouf
+    - Abdelbeki
+    - Abdessalem
+    - Habiba
+    - Driss
+    - Moncef
+    - Moncof
+    - Rabii
+    - Arbi
+    - Delila
+    - Dalila
+    - Dalel
+    - Nawel
+    - Abir
+    - Insaf
+    - Dorsaf
+    - Hajer
+    - Malika
+    - Taha
+    - Tarek
+    - Hamza
+    - Aissa
+    - Yahiya
+    - Faycel
+    - Bassem
+    - Chiheb
+    - Samir
+    - Fatma
+    - Naima
+    - Sondes
+    - Tahani
+    - Lotfi
+    - Monia
+    - Hassen
+    - Ibtissem
+    - Farah
+    - Chiraz
+    - Narjess
+    - Maryem
+    - Zahra
+    - Mahdi
+    - Wissem
+    - Houssem
+    - Sarra
+    - Sarah
+    - Emna
+    - Mohamed Aziz
+    - Abdelhamid
+    - Zouhaier
+    - Adel
+    - Wajdi
+    - Souad 
+    - Selma
+    - Taher
+    - Hamed
+    - Hamdi
+    - Mahmoud
+    - Bayrem
+    - Assia
+    - Mongia
+    - Ghaith
+    - Rayen
+    - Rined
+    - Wael
+    - Abdelmejid
+    - Montassar
+    - Ferjani 
+    - Yasser
+    - Chamseddine
+    - Chams
+    - Nidhal
+    - Zied
+    - Wassim
+    - Malek
+    - Manel
+    - Nizar
+    - Ibrahim
+    - Ghada
+    - Yosr
+    - Yosser
+    - Eya
+    - Aya
+    - Walid
+    - Youssef
+    - Jawher
+    - Saif Eddine
+    - Taieb
+    - Hatem
+    - Mokhtar
+    - Abdessatar
+    - Salem
+    - Rachida
+    - Safa
+    - Ameni
+    - Douaa
+    - Samar
+    - Roudayna
+    - Donya
+    - Donia
+    - Raja
+    - Nawress
+    - Hedil
+    - Hadil
+    - Hadir
+    - Sabrine
+    - Hiba
+    - Rihab
+    - Islem
+    - Ilhem
+    - Nouha
+    - Sahar
+    - Siwar
+    - Sana
+    - Chadha
+    - Chahd
+    - Molka
+    - Nour
+    - Nahla
+    - Arij
+    - Lamis
+    - Ons
+    - Hela
+    - Mayssa
+    - Imen
+    - Rania
+    - Ranya
+    - Arbia
+    - Ghofrane
+    - Chahnez
+    - Ichrak
+    - Ranim
+    - Hana
+    - Nourane
+    - Wissal
+    - Amira
+    - Roua
+    - Manar
+    - Haifa
+    - Bouthaina
+    - Yasmine
+    - Hana
+    - Afef
+    - Zouhour 
+    - Feiza
+    - Houyem
+    - Sinda
+    - Roukaya
+    - Darine
+    - Dhouha 
+    - Basma 
+    - Samira
+    - Samia
+    - Mohamed Nour
+    - Firas 
+    - Souhir
+    - Iheb
+    - Ameni
+    - Amani
+    - Houda
+    - Faten
+    - Wafa
+    - Mongi
+    - Houda
+    - Hassan
+    - Hussein
+    - Hsin
+    - Jelila
+    - Souhir
+    - Mouna
+    - Neji
+    - Maher
+    - Hosni
+    - Mouhaimen
+    - Bayrem
 
-
-- lookup: pass
+- lookup: last_name
   examples: |
-    - lkjhaze AK45az_çà'
-    - lkjA564 20
-    - 4'kjh_çà)
-    - NFqXO^OEtAeA
-    - 6Wjqg2U2
-    - d4c38NzL
-    - T8fd39Bf
-    - Heu79Vf9
-    - 4e6AeM4w
-    - 8v9JvcF4
-    - scpYN842
-    - prW83Pp4
-    - P2f7y8Xv
-    - x92The9S
-    - 359DuduJ
-    - g63Gv fY5
-    - F7N7yjv6
-    - 75BFpg7r
-    - caX8v7W6
-    - 3mD7zQ7y
-    - QE63p4wg
-    - 7p98MruG
-    - 6vXL5e8v
-    - vv2NbWs53
-    - j299wWCw
-    - v4U 43dBxi
-    - c3r35wYNazeazeztyeyehdfg
-    - h85S8zxH
-    - Pxq485Rrfgdfg
-    - vB2 n5E2xw
-    - c747vZEp
-    - Aei574mE
-    - mY63Ez9a
-    - Z23kbCw5sdfdfsdf
-    - h7eT!3H/
-    - OW4;a@r6hbfghjghk 84ghj56ghjgf
-    - a-D?3P3r
-    - @xK 8gK0^
-    - ,c76KNc.dfgd
-    - 6NqOv2#{
-    - 06Ac^p!F dfgsdfs
-    - QtAe/85<
-    - ?$hEu7L1
-    - (Mk5h~K38978
-    - 1dPU0#x;
-    - lnL6$ I7
-    - 81rkNP].
-    - )EC3l0e;
-    - LkD8(0/r
-    - #f3c3P_D
-    - pSQ}g@50
-    - W/v+2M3y
-    - ]$VCe5c3
-    - 2}hiX!M5dfg
-    - {6vq[T8D45645677
-    - a9B!,jK9
-    - z8y1)S:M
-    - k:I7Io9~
-    - a75@SDt{
-    - 51Jo ^It*
-    - 5@{WYg7pdf
-    - 9UP6g_a(df
-    - _VO{cb16
-    - wK@^6Yx0 
-    - O3m~@7Xdds
-    - p/#3xC9N
-    - 8}1&XCfy
-    - Zk/.7jT0az
-    - (gtC96G;
-    - 3d@V3i*O
-    - &3qQ%Ux2
-    - e[94e}LSsdf
-    - WN*+6ld7
-    - +eA86Le@
-    - p;8mA5$F
-    - &c8,XYa6
-    - R#x5q/J2
-    - G~d(u73W
-    - 52^&cKRz
-    - .3yE9&Dvdsf
-    - 5:kLh?D7
-    - Rx[[J18i
-    - 5tw5}<WZ
-    - q3f4D?L.
-    - 26eWxE![
-    - fs>Y:40Y
-    - &1^waM4C456
-    - 5-zp7V>P
-    - pPB99!~d
-    - wE6gE0^?
-    - u4V6nR_;
-    - Lr8N4,s=
-    - Tz.%J5t9fs
-    - 4-@jF5Ur
-    - 6N*9jUr_86nL]
-    - 16wtx4X=A]7/T
-    - 9Q@7=O1bR8q-f
-    - lbX:&5*2Ni64S
-    - 7,JLx~]22f4Pe
-    - +o60Gce<84UZ$
-    - 88x7.Q,^WxmY9
-    - k)2b%2X8u4/GR
-    - :v6Cy3n]6NB1,
-    - o*4PGYu4m-5+8
-    - <*9nHY8E[27bb
-    - z%W5r53r*E6C_
-    - Pk5N^Jp9/64&u
-    - Bor6N6I<0b1+:
-    - OvQ4i)(>636Az
-    - j-50t/T9J5S[z
-    - Pc:iY85?C63+d
-    - #%PI4I{xl52z7
-    - }x67lH~Y7m6[W
-    - 7#Y26OX(1g~dv
-    - bR65ys#7A&)G7
-    - 5,zXe223Sj~{A
-    - bVG?a31)!3H4o
-    - 3R45A+kYiv+9.
-    - O3:Y2f3,Nza0~
-    - ^m)TZj9m0*C96
-    - hd1$O.7[9Ts5Y
-    - .5Bg{68VP4u=g
-    - NmAz,v&539[Y5
-    - 1Is3JG8>.r5^f
-    - z7@]w18yZJ
-    - 06Zqt.5iZ@
-    - _b1j?2Ns1J
-    - w6#.8Pb5Uv
-    - 1S95yQe%b)
-    - D238q^fZ)r
-    - v.Af.Bh5y26
-    - sGx}77}2Bn
-    - Z?zO34n)i5
-    - 78ir)IYy_6
-    - 5yL7+j8j.N
-    - wqO89.rP?3
-    - - 3I3H=g_wd1
-    - 8Q0uzs.Y1[
-    - T55!3s~uKm
-    - Xc}%2a14Zs
-    - 4!pm9ZP3#e
-    - MWk&l105v~
-    - 4wt9s/]KJ5
-    - k7;^GLk22l
-    - Z9$Dtae?41
-    - aL{xH0q77]
-    - }7mJ8k6<Iq
-    - 9L{jFw82t}
-    - $a47qJEa9_
-    - =AjU9?26ro
-    - l8wbSR=7-4
-    - 7w~2iyS]G8
-    - {lV736=kyX
-    - y262]KeTa,
-    - 8a6hS@
-    - =uB73d
-    - 1Wsl(4
-    - p_7a8J
-    - #j1Ma8
-    - b.K94p
-    - pv3+Y4
-    - 4[wd2J
-    - [Qw5h3
-    - T[k01a
-    - jb65O/
-    - h53O:o
-    - uv8P5!
-    - {3Xk0l
-    - %3nIc7
-    - 8at2O,
-    - K7_gr5
-    - 9Li6h<
-    - 9{7hPh
-    - ;x56nY
-    - q1>kO5
-    - 4Qwp1/
-    - +t6Vl9
-    - E91*fc
-    - _65Nxj
-    - M74i>p
-    - c8lV0?
-    - 8Q&a7r
-    - .k33wI
-    - c&Fw35
-
-
-- lookup: loginn
-  examples: |
-    - amine28
-    - dfs645
-    - sdfmlk,
-    - Amldf23
-    - klmjsd654654
-    - sqdlmù321
-    - fpoijt65
-    - emtlrt
-    - gmlk,fdg35
-    - dfgljg456d
-    - fdgdlmkjdfg86
-    - ipoi54665
-    - paze11
-    - azvbn,007
-    - vbnsqd01
-    - ieryrpoid
-    - amine009
-    - heoiu281
-    - lkd741
-    - qs3221
-    - lfdk999999
-    - hjkhkjshazueyaze
-    - mlpouie0933321285
-    - gfa07415
-    - hdjdyetriuao
-    - ABCD1234
-    - abcdd222
-    - KJDQH2456
-    - JUAZNE554
-    - AZYUHAZ99
-    - Akjh21
-    - asqdjkh987
-    - bcvwxffff
-    - Biuoyrez435
-    - cjkQHSDGFL654
-    - Cuoip88888
-    - dbdfgfdAze000
-    - Dkjluiy654
-    - eknbd754
-    - Elkjbq111231
-    - fwxcvb
-    - Fazea525
-    - g78
-    - G3215745
-    - h635458
-    - HAaAAaa5456
-    - ipoiutyioutrt2
-    - Inbvb
-    - jmpo
-    - Jughbr5007
-    - k00000
-    - Kjrnd
-    - lmolp
-    - Lnope6465
-    - m9975
-    - Mlkjnza
-    - n01fsdfs
-    - Nklj0
-    - okfj5e222
-    - Omlkaz24
-    - pkljhaz548
-    - Pa^mlnbey
-    - qjhkdga74532
-    - Qhauiz09
-    - rbbvnvb2485
-    - Ramoineyz979
-    - skhjhbe214
-    - Samlkuiyohf978798879
-    - Tjuiifh
-    - tdfj
-    - ub
-    - U222
-    - vlakz87
-    - VVVVV007777
-    - xlkj
-    - Xa52
-    - yiazz54466
-    - Ydkdqsdqsdqsd
-    - zfgytyty
-    - Zrtyrtyrtysdfs
-    - wqsdfgkjlmk
-    - Wmlmoi
-    - klmk563lm
-    - lm6h6dg
-    - ghh5
-    - ksdjldaei657
-    - kljfse5
+    - Sayari
+    - Zarrouki
+    - Chaari
+    - Atrous 
+    - Darraji
+    - Douiri
+    - Amamou
+    - Dhifallah
+    - Afful
+    - Mlika
+    - Cherif
+    - Saighi
+    - Bouchouicha
+    - Ben Mansour 
+    - Aounallah
+    - Ayari
+    - Kroos
+    - Medimagh
+    - Ouannes
+    - Abdelli
+    - Chikhaoui
+    - Macron
+    - Ribery
+    - Varane
+    - Pogba
+    - Valbuena
+    - Mathieu
+    - Mrayah
+    - Hdhili 
+    - Ben Turkiya
+    - Hammemi
+    - Tbini
+    - Ben Zayed
+    - Jaballah
+    - Kallel
+    - Taboubi
+    - Dakhleoui
+    - Ferchichi
+    - Abid
+    - Hadhriya
+    - Boucetta
+    - Ouailli
+    - Kharrat 
+    - Moalla
+    - Mnasser
+    - Ben Turkiya
+    - Haffar
+    - Khezami
+    - Abbes
+    - Fadhel
+    - Kacem
+    - Hergli
+    - Jrayed
+    - Maalej
+    - Jandoubi
+    - Aouini 
+    - Driss
+    - Ben Mostpha
+    - Ncib
+    - Fourati
+    - Riahi
+    - Essoufi 
+    - Dhouib
+    - Jelassi
+    - Massoud
+    - Mahjoub
+    - Bayou
+    - Rayes 
+    - Ghribi 
+    - Tounsi
+    - Jdidi
+    - Laaroussi 
+    - Abidi
+    - Hmili
+    - Mbarek
+    - Mzati
+    - Mzali
+    - Bayou
+    - Miled
+    - Mlika 
+    - Chaaben
+    - Dalleji 
+    - Ben Alaya
+    - Elj
+    - Zeribi 
+    - Mathlouthi
+    - Ammar
+    - Kanzari
+    - Ghrissi
+    - Jrayed
+    - Ben Hamed
+    - Sliti
+    - Jdidi
+    - Jbeli
+    - Jbali
+    - Derouiche
+    - Darouiche
+    - Jaziri
+    - Chammakhi
+    - Chammem
+    - Turki
+    - Dridi
+    - Gassem
+    - Guesmi
+    - Boudhina
+    - Abassi
+    - Mannai
+    - Neji
+    - Dalleji
+    - Ouerhani
+    - Tlili
+    - Dridi
+    - Rahmouni
+    - Sefi
+    - Boughanmi
+    - Maalej
+    - Ferchichi
+    - Ayari
+    - Fatnassi
+    - Trabelsi
+    - Romdhani
+    - Sassi
+    - Kouki
+    - Riahi
+    - Chebbi
+    - Brahmi
+    - Maaroufi
+    - Channoudi
+    - Jaballah
+    - Ayedi
+    - Nasraoui
+    - Yahyaoui
+    - Khedhira
+    - Khaldi
+    - Khrayef
+    - Dziri
+    - Kerkeni
+    - Chourabi
+    - Omami
+    - Makeoui
+    - Jlassi
+    - Jlassy
+    - Mahwechi
+    - Dhaouadi
+    - Mimouni
+    - Jouini
+    - Ben Khaled
+    - Mzoughi
+    - Jendoubi
+    - Kssentini
+    - Driss
+    - Abedllaoui
+    - Ameri
+    - Aloui
+    - Swayah
+    - Gharbi
+    - Ben Romdhane
+    - Chaaleli
+    - Bahri
+    - Badri
+    - Tahri
+    - Ben Younnes
+    - Mosheb
+    - Talbi
+    - Ben Salah
+    - Ben Hammouda
+    - Khalifa
+    - Cherni
+    - Bejaoui
+    - Fadhlaoui
+    - Yakoubi
+    - Sehli
+    - Mahjoub
+    - Ben Amara
+    - Amara
+    - Belhadj
+    - Marweni
+    - Allani
+    - Bougatef
+    - Chihi
+    - Aloui
+    - Saidi
+    - Kraoua
+    - Benfraj
+    - Ncibi
+    - Lafi
+    - Rihani
+    - Hidri
+    - Slama
+    - Mejri
+    - Dorai
+    - Melki
+    - Mansour
+    - Ben Mansour
+    - Younssi
+    - Touhami
+    - Dkhlili
+    - Zemzemi
+    - Charrabi
+    - Ayadi
+    - Amdouni
+    - Essid
+    - Aouini
+    - Aouinti
+    - Hamzaoui
+    - Daghfous
+    - Wali
+    - Ouali
+    - Hannechi
+    - Ben Rjab
+    - Hammemi
+    - Ghalleb
+    - Talbi
+    - Ben Taleb
+    - Ounifi
+    - Morjene
+    - Zahaf
+    - Ben Ammar
+    - Ben Hassine
+    - Mhalla
+    - Magroun
+    - Ben Ayed
+    - Graiet
+    - Chiboub
+    - Meddeb
+    - Bennour
+    - Saidi
+    - Ben Othmen
+    - Harzi
+    - Maaloul
+    - Maalaoui
+    - Slimi
+    - Sallemi 
+    - Derbali
+    - Hichri 
+    - Yaken
+    - Hammi
+    - Khlass
+    - Dridi
+    - Saadallah
+    - Aounallah
+    - Ben Slimen
+    - Mallouli
+    - Hasnaoui
+    - Zghal 
+    - Ghannem
+    - Rouached 
+    - Hassine
+    - Gmati
+    - Chniti
+    - Smaoui
+    - Maaoui
+    - Alouia
+    - Ben Ghorbal
+    - Sghaier
+    - Bouazizi
+    - Kefi
+    - Lakhdhar
+    - Medini
+    - Nasri
+    - Bouraoui
+    - Khedher
+    - Bezzine
+    - Mathlouthi
+    - Ben Hamed 
+    - Temani
+    - Ayed
+    - Zammeli
+    - Bouchrit
+    - Ben Ali
+    - Mrad
+    - Adala
+    - Haddad 
+    - Maayouf
+    - Boukhari
+    - Bouasker
+    - Akrout
+    - Zrelli
+    - Khiari
+    - Ghannouchi 
+    - Elkamel
+    - Sfar
+    - Marzouki
+    - Soltani
+    - Abbes
+    - Mefteh
+    - Zouabi
+    - Kawech
+    - Snoussi
+    - Ben Abid
+    - Abidi
+    - Abid
+    - Missaoui
+    - Benzarti
+    - Mestiri
+    - Haloui
+    - Ben saad 
+    - Ben Brahim
+    - Labiedh
+    - Tiouiri
+    - Yahyaoui
+    - Hamrouni
+    - Rdifi
+    - Balti
+    - Chihi
+    - Boujneh
+    - Toumi
+    - Kadri
+    - Darmoul
+    - Bakhti
+    - Baraketi
 
 - lookup: currency_dep
   examples: |
@@ -1955,6 +2261,10 @@ nlu:
     - reger@wanadoo.fr
     - najman@thomson-lcr.fr
     - regg@wanadoo.fr
+    - medezzine777@gmail.com
+    - amir.tayari@gmail.com
+    - amen.mrayah@esprit.tn
+    - mariemouinissi4@gmail.com
 - lookup: id_number
   examples: |
     - 07233585
@@ -2347,6 +2657,14 @@ nlu:
     - 10960117
     - 10901195
     - 10966771
+    - 10814578
+    - 10832465
+    - 10897654
+    - 10875214
+    - 00967512
+    - 00934578
+    - 06932145
+    - 06974123
 - lookup: phone_number
   examples: |
     - 29457368
@@ -2673,125 +2991,39 @@ nlu:
     - 52235841
 - lookup: rib
   examples: |
-    - 1111119023
-    - 1111116923
-    - 1111110197
-    - 1111112469
-    - 1111119155
-    - 1111117385
-    - 1111113126
-    - 1111113316
-    - 1111111689
-    - 1111117286
-    - 1111115743
-    - 1111117220
-    - 1111113212
-    - 1111114636
-    - 1111118793
-    - 1111114159
-    - 1111110601
-    - 1111110394
-    - 1111111904
-    - 1111117280
-    - 1111112092
-    - 1111112060
-    - 1111115911
-    - 1111113002
-    - 1111112683
-    - 1111118520
-    - 1111113084
-    - 1111111759
-    - 1111111192
-    - 1111111292
-    - 1111114810
-    - 1111118715
-    - 1111115118
-    - 1111112664
-    - 1111114721
-    - 1111111706
-    - 1111112306
-    - 1111111253
-    - 1111115101
-    - 1111111858
-    - 1111118710
-    - 1111119637
-    - 1111110597
-    - 1111118541
-    - 1111111693
-    - 1111115557
-    - 1111119853
-    - 1111117815
-    - 1111111755
-    - 1111118551
-    - 1111113513
-    - 1111115425
-    - 1111114917
-    - 1111111851
-    - 1111112094
-    - 1111117598
-    - 1111112673
-    - 1111119019
-    - 1111118532
-    - 1111112294
-    - 1111112930
-    - 1111118736
-    - 1111117980
-    - 1111115258
-    - 1111118827
-    - 1111119861
-    - 1111116887
-    - 1111111735
-    - 1111119144
-    - 1111112416
-    - 1111111482
-    - 1111112038
-    - 1111115198
-    - 1111117502
-    - 1111116687
-    - 1111118153
-    - 1111110117
-    - 1111110972
-    - 1111110053
-    - 1111110887
-    - 1111110968
-    - 1111110466
-    - 1111110429
-    - 1111110670
-    - 1111110582
-    - 1111110991
-    - 1111110581
-    - 1111110562
-    - 1111110923
-    - 1111110927
-    - 1111110737
-    - 1111110605
-    - 1111110976
-    - 1111110813
-    - 1111110963
-    - 1111110153
-    - 1111110039
-    - 1111110774
-    - 1111110449
-    - 1111110542
-    - 1111110533
-    - 1111110926
-    - 1111110845
-    - 1111110209
-    - 1111110003
-    - 1111110212
-    - 1111110188
-    - 1111111498
-    - 1111111616
-    - 1111111536
-    - 1111111990
-    - 1111111306
-    - 1111111002
-    - 1111111413
-    - 1111111151
-    - 1111111722
-    - 1111111265
-    - 1111111558
-    - 1111111179
+    - 1111111110
+    - 1111111111
+    - 1111111112
+    - 1111111113
+    - 1111111114
+    - 1111111115
+    - 1111111116
+    - 1111111117
+    - 1111111118
+    - 1111111119
+    - 1111111120
+    - 1111111121
+    - 1111111122
+    - 1111111123
+    - 1111111124
+    - 1111111125
+    - 1111111126
+    - 1111111127
+    - 1111111128
+    - 1111111129
+    - 1111111130
+    - 1111111131
+    - 1111111132
+    - 1111111133
+    - 1111111134
+    - 1111111135
+    - 1111111136
+    - 1111111137
+    - 1111111138
+    - 1111111139
+    - 1111111140
+
+
 
 
 

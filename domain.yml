@@ -34,7 +34,7 @@ intents:
 - mood_great
 - mood_unhappy
 - bot_challenge
-- fullname
+- Name
 - email
 - birthdate
 - number
@@ -59,6 +59,7 @@ intents:
 - track_location
 - nearest_agency_position
 - reciever_name
+- reciever_last_name
 - reciever_rib
 - amount_sent
 - convert_currency
@@ -71,6 +72,7 @@ intents:
 - resident
 - cheque_request_status
 - cheque_request_number
+- last_Name
 entities:
 - Person
 - account
@@ -81,7 +83,7 @@ entities:
 - choose_account
 - credit
 - duration
-- full_name
+- name
 - id_number
 - loginn
 - mail
@@ -100,6 +102,7 @@ entities:
 - currency_arriv
 - residency
 - request_num
+- last_name
 slots:
   salary:
     type: any
@@ -118,7 +121,7 @@ slots:
     influence_conversation: false
     mappings:
     - type: from_entity
-      entity: full_name
+      entity: name
   id:
     type: any
     influence_conversation: false
@@ -149,18 +152,6 @@ slots:
     mappings:
     - type: from_entity
       entity: addresse
-  login:
-    type: any
-    influence_conversation: false
-    mappings:
-    - type: from_entity
-      entity: loginn
-  password:
-    type: any
-    influence_conversation: false
-    mappings:
-    - type: from_entity
-      entity: pass
   account_type:
     type: any
     influence_conversation: false
@@ -233,6 +224,12 @@ slots:
     mappings:
     - type: from_entity
       entity: request_num 
+  last_name:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: last_name
 
 
 responses:
@@ -301,7 +298,9 @@ responses:
   utter_happy:
   - text: Great, carry on!
   utter_enter_your_name:
-  - text: please enter your fullname
+  - text: please enter your first name
+  utter_enter_your_last_name:
+  - text: please enter your last name
   utter_enter_cin:
   - text: please enter your identity card number
   utter_enter_email:
@@ -311,11 +310,7 @@ responses:
   utter_enter_number:
   - text: please enter your phone number
   utter_enter_adress:
-  - text: please enter your full address
-  utter_enter_login:
-  - text: please choose your login it should be a mix between words and numbers
-  utter_enter_password:
-  - text: please choose your password 
+  - text: please enter the city where you live
   utter_desired_amount:
   - text: please enter the credit amount you desire 
   utter_enter_account_number:
@@ -323,7 +318,9 @@ responses:
   utter_enter_problem:
   - text: please enter your problem
   utter_enter_reciever_name:
-  - text: please enter reciever name
+  - text: please enter reciever first name
+  utter_enter_reciever_last_name:
+  - text: please enter reciever last name
   utter_enter_reciever_rib:
   - text: please enter reciever account number (RIB)
   utter_enter_amount_send:
