@@ -31,6 +31,7 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
 - story: deny path
   steps:
   - intent: deny
@@ -38,12 +39,14 @@ stories:
   - action: utter_goodbye
 
 - story: deny path 2
+  steps:
   - action: utter_need_more_assist
   - intent: deny
   - action: utter_as_you_like
   - action: utter_goodbye
 
 - story : assit
+  steps:
   - intent: greet
   - action: utter_greet
   - action: utter_assist

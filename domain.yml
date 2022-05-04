@@ -28,7 +28,6 @@ intents:
 - check_type_of_accounts
 - create_new_account
 - pay_cc
-- sign_in
 - delete_account
 - mood_great
 - mood_unhappy
@@ -360,7 +359,10 @@ responses:
   - text: Please enter your request number
   utter_check_rib:
   - text: Please check the RIB and retry again
-
+  utter_enter_login:
+  - text: Please enter your login , if the model failed to parse it try to help him by adding "my login is"
+  utter_enter_password:
+  - text: Please enter your password , if the model failed to parse it try to help him by adding "my password is"
 actions:
 - action_account_type
 - action_ask_why

@@ -19,7 +19,7 @@ pipeline:
     L2_c: 0.2
     featurizers: []
   - name: DIETClassifier
-    epochs: 300
+    epochs: 250
     constrain_similarities: True
   - name: FallbackClassifier
     threshold: 0.4

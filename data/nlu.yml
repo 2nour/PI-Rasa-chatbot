@@ -417,13 +417,6 @@ nlu:
     - I want to register as new customer
     - I want to be a customer 
 
-- intent: sign_in
-  examples: |
-    - I want to sign in to my account
-    - I want to log in to my account
-    - I wanna sign in
-    - I wanna log in
-    - I wanna access to my account
 - intent: delete_account
   examples: |
     - I want to close my account
@@ -852,7 +845,12 @@ nlu:
     - sign me please
     - i want to sign in
     - I want to login 
+    - i want to access to my account 
     - i want to log into my account
+    - I want to sign into my account
+    - I wanna sign in
+    - I wanna log in
+    - I wanna access to my account
 
 
 - synonym: transactions
