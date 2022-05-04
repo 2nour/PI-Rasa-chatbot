@@ -13,7 +13,7 @@ mydatabase = pymysql.connect(
 
 mycursor = mydatabase.cursor()
 
-#mycursor.execute("CREATE TABLE Customers (id int AUTO_INCREMENT PRIMARY KEY, full_name VARCHAR(255) , cin int(8) , email varchar(255)  , birthdate DATETIME , phone_number varchar(255) ,address VARCHAR(255) ,login VARCHAR(255) NOT NULL, password varchar(255) NOT NULL)")
+#mycursor.execute("CREATE TABLE Customers (id int AUTO_INCREMENT PRIMARY KEY, full_name VARCHAR(255) , cin VARCHAR(255) , email varchar(255)  , birthdate DATETIME , phone_number varchar(255) ,address VARCHAR(255) ,login VARCHAR(255) NOT NULL, password varchar(255) NOT NULL)")
 #mycursor.execute("CREATE TABLE Account (id int AUTO_INCREMENT PRIMARY KEY, RIB int(16) NOT NULL,  date_opened DATETIME NOT NULL , date_closed DATETIME , balance float NOT NULL , account_type varchar(255) NOT NULL , customer_id int NOT NULL , CONSTRAINT FK FOREIGN KEY (customer_id) REFERENCES Customers(id) )")
 #mycursor.execute("CREATE TABLE Credit (id int AUTO_INCREMENT PRIMARY KEY,  date DATE NOT NULL , duration int  NOT NULL , ammount float NOT NULL , credit_type varchar(255) NOT NULL  , account_id int NOT NULL , CONSTRAINT FK FOREIGN KEY (account_id) REFERENCES  Account(id))")
 #mycursor.execute("CREATE TABLE Credit_card (id int AUTO_INCREMENT PRIMARY KEY, credit_card_number int NOT NULL , date_exp date NOT NULL , cvv int NOT NULL , pin_code int NOT NULL , account_id int NOT NULL , constraint FK FOREIGN KEY  (account_id) REFERENCES Account(id))")
@@ -30,6 +30,11 @@ def verif_cin(cin):
 def verif_login(login):
   mycursor.execute("SELECT login from Customers where login = '"+login+"'")
   return len(list(mycursor))
+
+def verif_rib_name(rib):
+  mycursor.execute("Select full_name From Customers C , Account A where C.id = A.customer_id and A.rib = "+str(rib))
+  return mycursor.fetchall()[0][0]
+
 
 def verif_mail(mail):
   a = mycursor.execute("SELECT email from Customers where email = '"+mail+"'")
@@ -85,27 +90,21 @@ def check_earnings(account_id):
   #a = mycursor.execute(sql)
   #return a
 
-def transfer_money(full_name ,rib , amount, account_id):
-  sql = 'SELECT full_name  from Account A , Customers C where RIB='+str(rib) +' and C.id = A.customer_id'
-  mycursor.execute(sql) 
-  if(full_name ==mycursor.fetchall()[0][0] ):
+def transfer_money(rib , amount, account_id):
     sql = 'SELECT balance from Account where id='+str(account_id)
     mycursor.execute(sql)
     bal = int(mycursor.fetchall()[0][0])-amount
-    if(bal>0):
-        sql = 'UPDATE Account set balance='+str(bal)+' where id='+str(account_id)
-        mycursor.execute(sql)
-        sql = 'SELECT balance from Account where RIB='+str(rib)
-        mycursor.execute(sql)
-        bal2 = int(mycursor.fetchall()[0][0])+amount
-        sql = 'UPDATE Account set balance='+str(bal2)+' where RIB='+str(rib)
-        mycursor.execute(sql)
-        print(bal,bal2)
-        return 'money sent successfully'
-    else :
-        return 'Your balance is insufficient'  
-  else : 
-        return 'there is an error in entering the full name and/or the RIB'
+    sql = 'UPDATE Account set balance='+str(bal)+' where id='+str(account_id)
+    mycursor.execute(sql)
+    sql = 'SELECT balance from Account where RIB='+str(rib)
+    mycursor.execute(sql)
+    bal2 = int(mycursor.fetchall()[0][0])+amount
+    sql = 'UPDATE Account set balance='+str(bal2)+' where RIB='+str(rib)
+    mycursor.execute(sql)
+    print(bal,bal2)
+    return 'money sent successfully'
+
+
 
 #print(transfer_money('hedy ezine',888555660,50,1))
 
@@ -151,4 +150,30 @@ def cheque_request_status(request_num):
 
 
 def similar(a, b):
-    return SequenceMatcher(None, a, b).rat
+    return SequenceMatcher(None, a, b).rat()
+
+def sign_in(login , password):
+   a = mycursor.execute("Select login from Customers where login ='"+login+"'")
+   b = False
+   if (a != 0):
+      mycursor.execute("Select password from Customers where login ='"+login+"'")
+      c = mycursor.fetchall()[0][0]
+      if (c == password ):
+         b = True
+   return b
+
+def get_account_id(login, password):
+   if (sign_in(login, password) == 1):
+      a= mycursor.execute("Select A.id from Account A, Customers C where A.customer_id=C.id and login ='"+login+"'")
+      if(a):
+        return mycursor.fetchall()[0][0]    
+      else :
+        return "None"
+
+def getMailBy_RIB(rib):
+  mycursor.execute("Select email from Account A, Customers C where A.customer_id=C.id and rib ="+str(rib))
+  return mycursor.fetchall()[0][0]
+def getmailby_login(login):
+  mycursor.execute("SELECT email from Customers where login='"+login+"'")
+  return mycursor.fetchall()[0][0]
+

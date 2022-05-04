@@ -104,27 +104,6 @@ stories:
   - action: utter_desired_amount 
   - intent: desired_amount
   - action: action_create_credit
-
-- story: get_real_estate_credit_7
-  steps:
-  - intent: get_credit
-  - action: action_credit_type
-  - intent: real_estate_credit
-    entities: 
-      - credit_type: "real estate credit"
-  - slot_was_set:
-      - credit_type: "real estate credit"
-  - action: utter_enter_salary
-  - intent: get_salary
-  - action: action_real_estate_credit_duration
-  - intent: get_duration7
-    entities: 
-      - duration: "7"
-  - slot_was_set:
-      - duration: "7"
-  - action: utter_desired_amount 
-  - intent: desired_amount
-  - action: action_create_credit
  
 - story: get_real_estate_credit_10
   steps:

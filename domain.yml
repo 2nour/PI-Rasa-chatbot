@@ -13,7 +13,6 @@ intents:
 - get_duration20
 - create_new_id
 - identity
-- password
 - greet
 - goodbye
 - affirm
@@ -58,8 +57,6 @@ intents:
 - check_complaint_status
 - track_location
 - nearest_agency_position
-- reciever_name
-- reciever_last_name
 - reciever_rib
 - amount_sent
 - convert_currency
@@ -73,6 +70,11 @@ intents:
 - cheque_request_status
 - cheque_request_number
 - last_Name
+- submit_n
+- sign_in
+- user_login
+- user_password
+
 entities:
 - Person
 - account
@@ -84,10 +86,8 @@ entities:
 - credit
 - duration
 - name
-- id_number
-- loginn
+- identity_number
 - mail
-- pass
 - phone_number
 - salaryy
 - transactions
@@ -103,6 +103,10 @@ entities:
 - residency
 - request_num
 - last_name
+- sub_type
+- login
+- password
+
 slots:
   salary:
     type: any
@@ -127,7 +131,7 @@ slots:
     influence_conversation: false
     mappings:
     - type: from_entity
-      entity: id_number
+      entity: identity_number
   email:
     type: any
     influence_conversation: false
@@ -230,6 +234,25 @@ slots:
     mappings:
     - type: from_entity
       entity: last_name
+  sub_type:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: sub_type
+  login:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: login
+  password:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: password
+
 
 
 responses:
@@ -335,6 +358,8 @@ responses:
   - text: To be a client you should have a valid residence permit or work permit.
   utter_request_number:
   - text: Please enter your request number
+  utter_check_rib:
+  - text: Please check the RIB and retry again
 
 actions:
 - action_account_type
@@ -366,6 +391,9 @@ actions:
 - action_tunisian_resident
 - action_cheque_request_status
 - action_cheque_request
+- action_create_account1
+- action_create_complaint_without_signin
+- action_verif_rib_name
 ########################
 - action_check_mandat_state
 - action_send_mandat

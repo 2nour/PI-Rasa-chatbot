@@ -37,3 +37,13 @@ stories:
   - action: utter_as_you_like
   - action: utter_goodbye
 
+- story: deny path 2
+  - action: utter_need_more_assist
+  - intent: deny
+  - action: utter_as_you_like
+  - action: utter_goodbye
+
+- story : assit
+  - intent: greet
+  - action: utter_greet
+  - action: utter_assist

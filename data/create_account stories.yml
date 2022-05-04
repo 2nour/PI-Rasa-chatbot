@@ -1,6 +1,6 @@
 version: "3.0"
 stories:
-- story: creation_savings_account
+- story: creation_savings_account+yes
   steps:
   - intent: create_new_account
   - action: action_account_type
@@ -10,9 +10,28 @@ stories:
   - slot_was_set:
       - account_type: "savings account"
   - action: utter_enter_your_name
+  - intent: Name
+  - action: utter_enter_your_last_name
+  - intent: last_Name
+  - action: utter_enter_cin
+  - intent: identity
+  - action: utter_enter_email
+  - intent: email 
+  - action: utter_enter_birthdate
+  - intent: birthdate
+  - action: utter_enter_number
+  - intent: number 
+  - action: utter_enter_adress
+  - intent: address
+  - action: action_create_account
+  - intent: submit_n
+    entities: 
+      - sub_type: "yes"
+  - slot_was_set:
+      - sub_type: "yes"
+  - action: action_create_account1
 
-
-- story: creation_savings_account+signin
+- story: creation_savings_account+no
   steps:
   - intent: create_new_account
   - action: action_account_type
@@ -22,10 +41,28 @@ stories:
   - slot_was_set:
       - account_type: "savings account"
   - action: utter_enter_your_name
+  - intent: Name
+  - action: utter_enter_your_last_name
+  - intent: last_Name
+  - action: utter_enter_cin
+  - intent: identity
+  - action: utter_enter_email
+  - intent: email 
+  - action: utter_enter_birthdate
+  - intent: birthdate
+  - action: utter_enter_number
+  - intent: number 
+  - action: utter_enter_adress
+  - intent: address
+  - action: action_create_account
+  - intent: submit_n
+    entities: 
+      - sub_type: "no"
+  - slot_was_set:
+      - sub_type: "no"
+  - action: action_create_account1
 
-
-
-- story: creation_current_account
+- story: creation_current_account+yes
   steps:
   - intent: create_new_account
   - action: action_account_type
@@ -35,8 +72,28 @@ stories:
   - slot_was_set:
       - account_type: "current account"
   - action: utter_enter_your_name
+  - intent: Name
+  - action: utter_enter_your_last_name
+  - intent: last_Name
+  - action: utter_enter_cin
+  - intent: identity
+  - action: utter_enter_email
+  - intent: email 
+  - action: utter_enter_birthdate
+  - intent: birthdate
+  - action: utter_enter_number
+  - intent: number 
+  - action: utter_enter_adress
+  - intent: address
+  - action: action_create_account
+  - intent: submit_n
+    entities: 
+      - sub_type: "yes"
+  - slot_was_set:
+      - sub_type: "yes"
+  - action: action_create_account1
 
-- story: creation_current_account+signin
+- story: creation_current_account+no
   steps:
   - intent: create_new_account
   - action: action_account_type
@@ -46,10 +103,28 @@ stories:
   - slot_was_set:
       - account_type: "current account"
   - action: utter_enter_your_name
+  - intent: Name
+  - action: utter_enter_your_last_name
+  - intent: last_Name
+  - action: utter_enter_cin
+  - intent: identity
+  - action: utter_enter_email
+  - intent: email 
+  - action: utter_enter_birthdate
+  - intent: birthdate
+  - action: utter_enter_number
+  - intent: number 
+  - action: utter_enter_adress
+  - intent: address
+  - action: action_create_account
+  - intent: submit_n
+    entities: 
+      - sub_type: "no"
+  - slot_was_set:
+      - sub_type: "no"
+  - action: action_create_account1
 
-
-
-- story: creation_salary_account
+- story: creation_salary_account+yes
   steps:
   - intent: create_new_account
   - action: action_account_type
@@ -59,9 +134,28 @@ stories:
   - slot_was_set:
       - account_type: "salary account"
   - action: utter_enter_your_name
+  - intent: Name
+  - action: utter_enter_your_last_name
+  - intent: last_Name
+  - action: utter_enter_cin
+  - intent: identity
+  - action: utter_enter_email
+  - intent: email 
+  - action: utter_enter_birthdate
+  - intent: birthdate
+  - action: utter_enter_number
+  - intent: number 
+  - action: utter_enter_adress
+  - intent: address
+  - action: action_create_account
+  - intent: submit_n
+    entities: 
+      - sub_type: "yes"
+  - slot_was_set:
+      - sub_type: "yes"
+  - action: action_create_account1
 
-
-- story: creation_salary_account+signin
+- story: creation_salary_account+no
   steps:
   - intent: create_new_account
   - action: action_account_type
@@ -71,3 +165,23 @@ stories:
   - slot_was_set:
       - account_type: "salary account"
   - action: utter_enter_your_name
+  - intent: Name
+  - action: utter_enter_your_last_name
+  - intent: last_Name
+  - action: utter_enter_cin
+  - intent: identity
+  - action: utter_enter_email
+  - intent: email 
+  - action: utter_enter_birthdate
+  - intent: birthdate
+  - action: utter_enter_number
+  - intent: number 
+  - action: utter_enter_adress
+  - intent: address
+  - action: action_create_account
+  - intent: submit_n
+    entities: 
+      - sub_type: "no"
+  - slot_was_set:
+      - sub_type: "no"
+  - action: action_create_account1

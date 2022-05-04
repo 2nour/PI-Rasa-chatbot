@@ -3,7 +3,6 @@ stories:
 - story: check_transactions_only_and_earnings
   steps:
   - intent: previous_transactions_and_earnings
-  - action: action_sign_in
   - action: action_transactions_type
   - intent: last_five_trans
     entities: 
@@ -16,7 +15,6 @@ stories:
 - story: check_transactions_all_and_earnings
   steps:
   - intent: previous_transactions_and_earnings
-  - action: action_sign_in
   - action: action_transactions_type
   - intent: all_trans
     entities: 

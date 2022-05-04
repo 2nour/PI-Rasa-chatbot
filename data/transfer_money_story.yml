@@ -1,14 +1,29 @@
 version: "3.0"
 stories:
-- story: transfer_money_story
+- story: transfer_money_story with submit
   steps:
   - intent: transfer_money
-  - action: utter_enter_reciever_name
-  - intent: reciever_name
-  - action: utter_enter_reciever_last_name
-  - intent: reciever_last_name
   - action: utter_enter_reciever_rib
   - intent: reciever_rib
+  - action: action_verif_rib_name
+  - intent: submit_n
+    entities: 
+      - sub_type: "yes"
+  - slot_was_set:
+      - sub_type: "yes"
   - action: utter_enter_amount_send
   - intent: amount_sent
   - action: action_transfer_money
+
+- story: transfer_money_story with no submit
+  steps:
+  - intent: transfer_money
+  - action: utter_enter_reciever_rib
+  - intent: reciever_rib
+  - action: action_verif_rib_name
+  - intent: submit_n
+    entities: 
+      - sub_type: "no"
+  - slot_was_set:
+      - sub_type: "no"
+  - action: utter_check_rib

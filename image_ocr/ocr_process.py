@@ -1,3 +1,4 @@
+from sqlalchemy import true
 import pytesseract
 import keras_ocr
 import easyocr
@@ -14,10 +15,13 @@ from skimage.io import imread, imshow
 from imutils.contours import sort_contours
 from image_ocr.photo import *
 
-def ocr_pross():
-    take_pic()
-    template = cv2.imread(r"C:\Users\medez\Desktop\pi\saved_img.jpg")
-    image = cv2.imread(r"C:\Users\medez\Desktop\pi\saved_img.jpg")
+def ocr_pross(rib):
+
+    take_pic(rib)
+    cv2.waitKey(0)
+    #template = cv2.imread(r"C:\Users\Amine\Desktop\IdCardFront\IdCardFront\front (4).jpg")
+    template = cv2.imread(r"C:\Users\medez\Desktop\id cards\IdCardFront\front (4).jpg")
+    image = cv2.imread(r"saved_img.jpg")
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     thresh = cv2.threshold(gray, 0, 255,
 	cv2.THRESH_BINARY_INV | cv2.THRESH_OTSU)[1]
@@ -68,7 +72,7 @@ def ocr_pross():
     idn= text_reader.readtext(id_img, detail = 0)
     last_name = text_reader.readtext(last_name_img, detail = 0)
     name = text_reader.readtext(name_img, detail = 0)
-    print(idn,last_name,name)  
+    #print(idn,last_name,name)  
     return idn, last_name, name
 
-ocr_pross()
+#ocr_pross(12)
