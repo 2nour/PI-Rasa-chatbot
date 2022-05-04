@@ -55,15 +55,14 @@ class extrait_bnk(Action):
         tracker: Tracker,
         domain: Dict[Text, Any],
     ) ->List[Dict[Text, Any]]:
-        login = tracker.get_slot("login")
-        password = tracker.get_slot("password")
-        if(sign_in(login,password) == False):
+        account_id = getConnectionid()
+        if( not account_id):
             dispatcher.utter_message(text = "You need to sign in")
         else:
             extrait()
             rep="file:///C:/Users/medez/Desktop/pi/extrait.pdf"
             dispatcher.utter_message(rep)
-            email = getmailby_login(login)
+            email = getMail_by_AccountId(account_id)
             msg = EmailMessage()
             msg['Subject'] = 'You got new transaction!'
             msg['From'] = 'bankingchatbot1@gmail.com'
@@ -339,9 +338,8 @@ class CreateCreditAction(Action):
         tracker: Tracker,
         domain: Dict[Text, Any],
     ) ->List[Dict[Text, Any]]:
-        login = tracker.get_slot("login")
-        password = tracker.get_slot("password")
-        if(sign_in(login,password) == False):
+        account_id = getConnectionid()
+        if( not account_id):
             dispatcher.utter_message(text = "You need to sign in")
         else:
             salary = tracker.get_slot("salary")
@@ -376,15 +374,12 @@ class ShowBalanceAction(Action):
         tracker: Tracker,
         domain: Dict[Text, Any],
     ) ->List[Dict[Text, Any]]:
-        login = tracker.get_slot("login")
-        password = tracker.get_slot("password")
-        if(sign_in(login,password) == False):
+        account_id = getConnectionid()
+        if( not account_id):
             dispatcher.utter_message(text = "You need to sign in")
         else:
-            account_id = get_account_id(login, password)
             balance = show_balance(account_id)
-            bal = "750.0 dinars"
-            dispatcher.utter_message(text = "Your balance is: "+bal)
+            dispatcher.utter_message(text = "Your balance is: "+balance)
         return []
 
 class CheckEarningsAction(Action):
@@ -397,12 +392,10 @@ class CheckEarningsAction(Action):
         tracker: Tracker,
         domain: Dict[Text, Any],
     ) ->List[Dict[Text, Any]]:
-        login = tracker.get_slot("login")
-        password = tracker.get_slot("password")
-        if(sign_in(login,password) == False):
+        account_id = getConnectionid()
+        if( not account_id):
             dispatcher.utter_message(text = "You need to sign in")
-        else:
-            account_id = get_account_id(login, password)                               
+        else:                             
             cur = check_earnings(account_id)
             for i in cur :
                 dispatcher.utter_message(text = i)
@@ -418,14 +411,12 @@ class TransferMOneyAction(Action):
         tracker: Tracker,
         domain: Dict[Text, Any],
     ) ->List[Dict[Text, Any]]:
-        login = tracker.get_slot("login")
-        password = tracker.get_slot("password")
-        if(sign_in(login,password) == False):
+        account_id = getConnectionid()
+        if( not account_id):
             dispatcher.utter_message(text = "You need to sign in")
         else:
             rib = tracker.get_slot("RIB")
             amount = tracker.get_slot("amount-of-money")
-            account_id = get_account_id(login, password)
             b = verif_amount(float(amount),account_id)
             if(b==0):
                 dispatcher.utter_message(text = "insufficient balance")
@@ -448,21 +439,18 @@ class TransferMOneyAction(Action):
 class CloseAccountAction(Action):
     def name(self) -> Text:
         return "action_delete"
-
     def run(
         self,
         dispatcher: CollectingDispatcher,
         tracker: Tracker,
         domain: Dict[Text, Any],
     ) ->List[Dict[Text, Any]]:
-        login = tracker.get_slot("login")
-        password = tracker.get_slot("password")
-        if(sign_in(login,password) == False):
+        account_id = getConnectionid()
+        if( not account_id):
             dispatcher.utter_message(text = "You need to sign in")
         else:
             today = date.today()
             date_closed = today.strftime("%Y-%m-%d")
-            account_id=get_account_id(login, password)
             close_account(date_closed, account_id)
             dispatcher.utter_message(text = "Your account was closed successfully")
         return []
@@ -535,6 +523,7 @@ class CreateComplaintAction(Action):
         tracker: Tracker,
         domain: Dict[Text, Any],
     ) ->List[Dict[Text, Any]]:
+
         desc = tracker.get_slot("complaint_type")
         rib = tracker.get_slot("rib")
         problem = tracker.get_slot("problem")
@@ -632,17 +621,13 @@ class ChequeRequestAction(Action):
         tracker: Tracker,
         domain: Dict[Text, Any],
     ) ->List[Dict[Text, Any]]:
-        login = tracker.get_slot("login")
-        password = tracker.get_slot("password")
-        if(sign_in(login,password) == False):
+        account_id = getConnectionid()
+        if( not account_id):
             dispatcher.utter_message(text = "You need to sign in")
         else:
-            account_id = get_account_id(login, password)
             num_demande = random.randint(100,999)
             cheque_request(num_demande, account_id)
             dispatcher.utter_message(text = "Request stored successfully \nyour application number is : "+str(num_demande))
-
-
         return[]
 
 class TunisianResidentAction(Action):
@@ -671,9 +656,9 @@ class ChequeStatusAction(Action):
         tracker: Tracker,
         domain: Dict[Text, Any],
     ) ->List[Dict[Text, Any]]:
-        #request_num = tracker.get_slot("request_num")
-        #a = cheque_request_status(request_num)
-        dispatcher.utter_message(text = 'you request status is : In progress')
+        request_num = tracker.get_slot("request_num")
+        status = cheque_request_status(request_num)
+        dispatcher.utter_message(text = 'you request status is : '+status)
         return[]
 
 class VerifRibNameAction(Action):
@@ -706,11 +691,40 @@ class Sign_inAction(Action):
         tracker: Tracker,
         domain: Dict[Text, Any],
     ) ->List[Dict[Text, Any]]:
-        login = tracker.get_slot("login")
-        password = tracker.get_slot("password")
-        verif = sign_in(login, password)
-        if (verif == True):
-           dispatcher.utter_message(text ="You're signed in now")
-        else :
-           dispatcher.utter_message(text ="Authentification error , please check your informations")
+        
+        dispatcher.utter_message(text = "please connect via this link http://127.0.0.1:8000/login/")
         return []
+class LogOutAction(Action):
+     def name(self) -> Text:
+        return "action_logout"
+
+     def run(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) ->List[Dict[Text, Any]]:
+        account_id = getConnectionid()
+        if( not account_id):
+            dispatcher.utter_message(text = "You're not signed in")
+        else:
+            logout()
+            dispatcher.utter_message(text = "You're logged out")
+
+        return []
+
+class LogoutVerifAction(Action):
+    def name(self) -> Text:
+        return "action_logout_verif"
+
+    def run(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) ->List[Dict[Text, Any]]:
+        buttons = []
+        buttons.append({"title": "Logout", "payload":'/submit_n{"sub_type":"yes"}'})
+        buttons.append({"title": "Stay", "payload":'/submit_n{"sub_type":"no"}'})
+        dispatcher.utter_message(text="Are you sure you want logout ", buttons = buttons)
+        return[]

@@ -71,8 +71,7 @@ intents:
 - last_Name
 - submit_n
 - sign_in
-- user_login
-- user_password
+- log_me_out
 
 entities:
 - Person
@@ -103,8 +102,6 @@ entities:
 - request_num
 - last_name
 - sub_type
-- login
-- password
 
 slots:
   salary:
@@ -396,6 +393,8 @@ actions:
 - action_create_account1
 - action_create_complaint_without_signin
 - action_verif_rib_name
+- action_logout
+- action_logout_verif
 ########################
 - action_check_mandat_state
 - action_send_mandat

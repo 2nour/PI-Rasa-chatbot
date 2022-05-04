@@ -1,0 +1,23 @@
+version: "3.0"
+stories:
+- story: logout story and confirmation
+  steps:
+  - intent: log_me_out
+  - action: action_logout_verif
+  - intent: submit_n
+    entities: 
+      - sub_type: "yes"
+  - slot_was_set:
+      - sub_type: "yes"
+  - action: action_logout
+
+- story: logout story and deny
+  steps:
+  - intent: log_me_out
+  - action: action_logout_verif
+  - intent: submit_n
+    entities: 
+      - sub_type: "no"
+  - slot_was_set:
+      - sub_type: "no"
+  - action: utter_as_you_like

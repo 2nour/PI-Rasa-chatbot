@@ -41,7 +41,7 @@ policies:
     epochs: 200
   - name: TEDPolicy
     max_history: 20
-    epochs: 200
+    epochs: 150
     batch_size:
       - 32
       - 64

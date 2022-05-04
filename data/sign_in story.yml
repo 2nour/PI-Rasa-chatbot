@@ -3,8 +3,4 @@ stories:
 - story: sign_in story
   steps:
   - intent: sign_in
-  - action: utter_enter_login
-  - intent: user_login
-  - action: utter_enter_password
-  - intent: user_password
   - action: action_sign_in

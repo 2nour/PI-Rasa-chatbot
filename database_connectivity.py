@@ -20,6 +20,7 @@ mycursor = mydatabase.cursor()
 #mycursor.execute("CREATE TABLE Transactions (id int AUTO_INCREMENT PRIMARY KEY, date DATETIME NOT NULL , amount_of_transaction float NOT NULL , transaction_type varchar(255) NOT NULL , account_id int NOT NULL , external_account_id int NOT NULL ,constraint FK FOREIGN KEY  (account_id) REFERENCES Account(id), constraint FK1 FOREIGN KEY  (account_id) references  Account(id))" )
 #mycursor.execute("CREATE TABLE Reclamation(id int AUTO_INCREMENT PRIMARY KEY, description varchar(255) NOT NULL , rib int(16) NOT NULL , status varchar(255) DEFAULT 'In progress' , ref_code int NOT NULL)")
 #mycursor.execute("CREATE TABLE Cheque(id int AUTO_INCREMENT PRIMARY KEY, demande int NOT NULL , etat varchar(255) DEFAULT 'In progress' , account_id int NOT NULL, constraint FK FOREIGN KEY (account_id) REFERENCES Account(id))")
+#mycursor.execute("CREATE TABLE Connexion(id int AUTO_INCREMENT PRIMARY KEY, id_account int NOT NULL )")
 
 
 
@@ -153,14 +154,15 @@ def similar(a, b):
     return SequenceMatcher(None, a, b).rat()
 
 def sign_in(login , password):
-   a = mycursor.execute("Select login from Customers where login ='"+login+"'")
-   b = False
-   if (a != 0):
-      mycursor.execute("Select password from Customers where login ='"+login+"'")
-      c = mycursor.fetchall()[0][0]
-      if (c == password ):
-         b = True
-   return b
+  b = False
+  if (login):
+    a = mycursor.execute("Select login from Customers where login ='"+login+"'")
+    if (a != 0):
+        mycursor.execute("Select password from Customers where login ='"+login+"'")
+        c = mycursor.fetchall()[0][0]
+        if (c == password ):
+          b = True
+  return b
 
 def get_account_id(login, password):
    if (sign_in(login, password) == 1):
@@ -173,7 +175,19 @@ def get_account_id(login, password):
 def getMailBy_RIB(rib):
   mycursor.execute("Select email from Account A, Customers C where A.customer_id=C.id and rib ="+str(rib))
   return mycursor.fetchall()[0][0]
-def getmailby_login(login):
-  mycursor.execute("SELECT email from Customers where login='"+login+"'")
-  return mycursor.fetchall()[0][0]
+def getMail_by_AccountId(account_id):
+    mycursor.execute("Select email from Account A, Customers C where A.customer_id=C.id and A.id ="+str(account_id))
+    return mycursor.fetchall()[0][0] 
 
+def logout():
+    mycursor.execute("TRUNCATE TABLE Connexion")
+
+
+def getConnectionid():
+    a= mycursor.execute("SELECT account_id from Connexion ")
+    if(a>0) :
+      return mycursor.fetchall()[0][0]
+    else :
+      return None
+
+mycursor.execute("TRUNCATE TABLE Connexion")

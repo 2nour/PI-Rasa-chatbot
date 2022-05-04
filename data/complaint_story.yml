@@ -37,7 +37,7 @@ stories:
       - complaint_type: "sign_in problem"
   - action: utter_enter_account_number
   - intent: submit_rib
-  - action: action_create_complaint_without_signin
+  - action: action_create_complaint
   - action: utter_need_more_assist
 
 - story: other_complaint_script1
