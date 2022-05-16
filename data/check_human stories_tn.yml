@@ -1,0 +1,25 @@
+version: "3.0"
+stories:
+- story: check_is_human1_tn
+  steps:
+  - intent: check_human_tn
+  - action: utter_iamabot_tn
+  - action: utter_assist_tn
+  - intent: deny_tn
+  - action: utter_as_you_like_tn
+  - action: utter_goodbye_tn
+
+- story: check_is_human2_tn
+  steps:
+  - intent: check_human_tn
+  - action: utter_iamabot_tn
+  - action: utter_assist_tn
+
+- story: check_is_human_tn
+  steps:
+  - intent: check_human_tn
+  - action: utter_iamabot_tn
+  - action: utter_assist_tn
+  - intent: consult_human_tn
+  - action: utter_your_welcome_tn
+  - action: utter_pass_to_human_tn

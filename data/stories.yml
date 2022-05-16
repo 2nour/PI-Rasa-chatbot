@@ -1,0 +1,101 @@
+version: "3.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_assist
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_assist
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_assist
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: deny path
+  steps:
+  - intent: deny
+  - action: utter_as_you_like
+  - action: utter_goodbye
+
+- story: deny path 2
+  steps:
+  - action: utter_need_more_assist
+  - intent: deny
+  - action: utter_as_you_like
+  - action: utter_goodbye
+
+- story : assit
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_assist
+
+- story: happy path_tn
+  steps:
+  - intent: greet_tn
+  - action: utter_greet_tn
+  - action: utter_assist_tn
+  - intent: mood_great_tn
+  - action: utter_happy_tn
+
+- story: sad path 1_tn
+  steps:
+  - intent: greet_tn
+  - action: utter_greet_tn
+  - action: utter_assist_tn
+  - intent: mood_unhappy_tn
+  - action: utter_cheer_up_tn
+  - action: utter_did_that_help_tn
+  - intent: affirm_tn
+  - action: utter_happy_tn
+
+- story: sad path 2_tn
+  steps:
+  - intent: greet_tn
+  - action: utter_greet_tn
+  - action: utter_assist_tn
+  - intent: mood_unhappy_tn
+  - action: utter_cheer_up_tn
+  - action: utter_did_that_help_tn
+  - intent: deny_tn
+  - action: utter_goodbye_tn
+
+- story: deny path_tn
+  steps:
+  - intent: deny_tn
+  - action: utter_as_you_like_tn
+  - action: utter_goodbye_tn
+
+- story: deny path 2_tn
+  steps:
+  - action: utter_need_more_assist_tn
+  - intent: deny_tn
+  - action: utter_as_you_like_tn
+  - action: utter_goodbye_tn
+
+- story : assit_tn
+  steps:
+  - intent: greet_tn
+  - action: utter_greet_tn
+  - action: utter_assist_tn

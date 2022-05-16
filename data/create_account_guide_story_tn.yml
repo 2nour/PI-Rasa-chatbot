@@ -1,0 +1,25 @@
+version: "3.0"
+stories:
+- story: create_account_guid_story_tunisian_tn
+  steps:
+  - intent: how_create_account_tn
+  - action: action_tunisian_resident_tn
+  - intent: tunisian_tn
+    entities: 
+      - residency: "tounsi"
+  - slot_was_set:
+      - residency: "tounsi"
+  - action: utter_fill_form_tn
+
+- story: create_account_guid_story_resident_tn
+  steps:
+  - intent: how_create_account_tn
+  - action: action_tunisian_resident_tn
+  - intent: resident_tn
+    entities: 
+      - residency: "resident"
+  - slot_was_set:
+      - residency: "resident"
+  - action: utter_fill_form_resident_tn
+  - action: utter_fill_form_tn
+

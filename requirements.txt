@@ -1,0 +1,6 @@
+ sanic-plugins-framework==0.8.2
+ folium
+ pandas
+ geopandas
+
+colorama~=0.4.4

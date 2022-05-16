@@ -1,0 +1,7 @@
+version: "3.0"
+stories:
+- story: check_bank_offers1
+  steps:
+  - intent: check_bank_offers_and_services
+  - action: utter_show_offers_and_services
+  - action: utter_need_more_assist

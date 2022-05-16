@@ -1,0 +1,6 @@
+version: "3.0"
+stories:
+- story: currency_convert_story_tn
+  steps:
+  - intent: convert_currency_tn
+  - action: action_currency_calculator_tn

@@ -1,0 +1,29 @@
+version: "3.0"
+stories:
+- story: check_transactions_only_and_earnings
+  steps:
+  - intent: previous_transactions_and_earnings
+  - action: action_transactions_type
+  - intent: last_five_trans
+    entities: 
+      - transactions_type: "last five"
+  - slot_was_set:
+      - transactions_type: "last five"
+  - action: action_check_earnings
+  - action: utter_need_more_assist
+
+- story: check_transactions_all_and_earnings
+  steps:
+  - intent: previous_transactions_and_earnings
+  - action: action_transactions_type
+  - intent: all_trans
+    entities: 
+      - transactions_type: "All"
+  - slot_was_set:
+      - transactions_type: "All"
+  - action: action_check_all_earnings
+  - action: utter_need_more_assist
+
+
+
+

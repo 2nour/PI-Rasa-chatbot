@@ -1,0 +1,8 @@
+version: "3.0"
+stories:
+- story: check_complaint_status_script
+  steps:
+  - intent: check_complaint_status
+  - action: utter_enter_account_number
+  - intent: submit_rib
+  - action: action_check_complaint_status

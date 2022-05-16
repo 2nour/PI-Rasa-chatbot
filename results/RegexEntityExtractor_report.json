@@ -1,0 +1,216 @@
+{
+  "transactions_type": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3,
+    "confused_with": {
+      "currency_dep": 1
+    }
+  },
+  "amount-of-money": {
+    "precision": 0.09090909090909091,
+    "recall": 0.2222222222222222,
+    "f1-score": 0.1290322580645161,
+    "support": 9,
+    "confused_with": {}
+  },
+  "complaint_type": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 9,
+    "confused_with": {}
+  },
+  "account": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 11,
+    "confused_with": {}
+  },
+  "transactions": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 7,
+    "confused_with": {}
+  },
+  "duration": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 25,
+    "confused_with": {
+      "amount-of-money": 10
+    }
+  },
+  "id_number": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 9,
+    "confused_with": {}
+  },
+  "rib": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 9,
+    "confused_with": {}
+  },
+  "pass": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 12,
+    "confused_with": {}
+  },
+  "addresse": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 46,
+    "confused_with": {}
+  },
+  "PERSON": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 15,
+    "confused_with": {
+      "currency_dep": 2
+    }
+  },
+  "mail": {
+    "precision": 1.0,
+    "recall": 0.1,
+    "f1-score": 0.18181818181818182,
+    "support": 10,
+    "confused_with": {}
+  },
+  "problem": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 23,
+    "confused_with": {}
+  },
+  "salaryy": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 11,
+    "confused_with": {
+      "amount-of-money": 1
+    }
+  },
+  "phone_number": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 22,
+    "confused_with": {}
+  },
+  "birth_date": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 7,
+    "confused_with": {
+      "amount-of-money": 3
+    }
+  },
+  "credit": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 11,
+    "confused_with": {}
+  },
+  "loginn": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 10,
+    "confused_with": {}
+  },
+  "track_status": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "account_type": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 13,
+    "confused_with": {}
+  },
+  "full_name": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 84,
+    "confused_with": {}
+  },
+  "currency_dep": {
+    "precision": 0.3157894736842105,
+    "recall": 1.0,
+    "f1-score": 0.4799999999999999,
+    "support": 6,
+    "confused_with": {}
+  },
+  "currency_arriv": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 6,
+    "confused_with": {
+      "currency_dep": 6
+    }
+  },
+  "credit_type": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 14,
+    "confused_with": {}
+  },
+  "balancee": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 16,
+    "confused_with": {}
+  },
+  "transf_amount": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 6,
+    "confused_with": {
+      "amount-of-money": 3
+    }
+  },
+  "micro avg": {
+    "precision": 0.21428571428571427,
+    "recall": 0.022727272727272728,
+    "f1-score": 0.0410958904109589,
+    "support": 396
+  },
+  "macro avg": {
+    "precision": 0.05410379094589621,
+    "recall": 0.050854700854700854,
+    "f1-score": 0.030417324610872994,
+    "support": 396
+  },
+  "weighted avg": {
+    "precision": 0.0321033299502199,
+    "recall": 0.022727272727272728,
+    "f1-score": 0.01479664682010723,
+    "support": 396
+  }
+}

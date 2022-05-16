@@ -1,0 +1,169 @@
+version: "3.0"
+stories:
+- story: get_personal_credit_5
+  steps:
+  - intent: get_credit
+  - action: action_credit_type
+  - intent: personal_credit
+    entities: 
+      - credit_type: "personal credit"
+  - slot_was_set:
+      - credit_type: "personal credit"
+  - action: utter_enter_salary
+  - intent: get_salary
+  - action: action_personal_credit_duration
+  - intent: get_duration5
+    entities: 
+      - duration: "5"
+  - slot_was_set:
+      - duration: "5"
+  - action: utter_desired_amount 
+  - intent: desired_amount
+  - action: action_create_credit 
+
+- story: get_personal_credit_7
+  steps:
+  - intent: get_credit
+  - action: action_credit_type
+  - intent: personal_credit
+    entities: 
+      - credit_type: "personal credit"
+  - slot_was_set:
+      - credit_type: "personal credit"
+  - action: utter_enter_salary
+  - intent: get_salary
+  - action: action_personal_credit_duration
+  - intent: get_duration7
+    entities: 
+      - duration: "7"
+  - slot_was_set:
+      - duration: "7"
+  - action: utter_desired_amount 
+  - intent: desired_amount
+  - action: action_create_credit 
+
+- story: get_car_credit_5
+  steps:
+  - intent: get_credit
+  - action: action_credit_type
+  - intent: car_credit
+    entities: 
+      - credit_type: "car credit"
+  - slot_was_set:
+      - credit_type: "car credit"
+  - action: utter_enter_salary
+  - intent: get_salary
+  - action: action_car_credit_duration
+  - intent: get_duration5
+    entities: 
+      - duration: "5"
+  - slot_was_set:
+      - duration: "5"
+  - action: utter_desired_amount 
+  - intent: desired_amount
+  - action: action_create_credit
+
+- story: get_car_credit_7
+  steps:
+  - intent: get_credit
+  - action: action_credit_type
+  - intent: car_credit
+    entities: 
+      - credit_type: "car credit"
+  - slot_was_set:
+      - credit_type: "car credit"
+  - action: utter_enter_salary
+  - intent: get_salary
+  - action: action_car_credit_duration
+  - intent: get_duration7
+    entities: 
+      - duration: "7"
+  - slot_was_set:
+      - duration: "7"
+  - action: utter_desired_amount 
+  - intent: desired_amount
+  - action: action_create_credit
+
+- story: get_car_credit_10
+  steps:
+  - intent: get_credit
+  - action: action_credit_type
+  - intent: car_credit
+    entities: 
+      - credit_type: "car credit"
+  - slot_was_set:
+      - credit_type: "car credit"
+  - action: utter_enter_salary
+  - intent: get_salary
+  - action: action_car_credit_duration
+  - intent: get_duration10
+    entities: 
+      - duration: "10"
+  - slot_was_set:
+      - duration: "10"
+  - action: utter_desired_amount 
+  - intent: desired_amount
+  - action: action_create_credit
+ 
+- story: get_real_estate_credit_10
+  steps:
+  - intent: get_credit
+  - action: action_credit_type
+  - intent: real_estate_credit
+    entities: 
+      - credit_type: "real estate credit"
+  - slot_was_set:
+      - credit_type: "real estate credit"
+  - action: utter_enter_salary
+  - intent: get_salary
+  - action: action_real_estate_credit_duration
+  - intent: get_duration10
+    entities: 
+      - duration: "10"
+  - slot_was_set:
+      - duration: "10"
+  - action: utter_desired_amount 
+  - intent: desired_amount
+  - action: action_create_credit
+
+- story: get_real_estate_credit_15
+  steps:
+  - intent: get_credit
+  - action: action_credit_type
+  - intent: real_estate_credit
+    entities: 
+      - credit_type: "real estate credit"
+  - slot_was_set:
+      - credit_type: "real estate credit"
+  - action: utter_enter_salary
+  - intent: get_salary
+  - action: action_real_estate_credit_duration
+  - intent: get_duration15
+    entities: 
+      - duration: "15"
+  - slot_was_set:
+      - duration: "15"
+  - action: utter_desired_amount 
+  - intent: desired_amount
+  - action: action_create_credit
+
+- story: get_real_estate_credit_20
+  steps:
+  - intent: get_credit
+  - action: action_credit_type
+  - intent: real_estate_credit
+    entities: 
+      - credit_type: "real estate credit"
+  - slot_was_set:
+      - credit_type: "real estate credit"
+  - action: utter_enter_salary
+  - intent: get_salary
+  - action: action_real_estate_credit_duration
+  - intent: get_duration20
+    entities: 
+      - duration: "20"
+  - slot_was_set:
+      - duration: "20"
+  - action: utter_desired_amount 
+  - intent: desired_amount
+  - action: action_create_credit

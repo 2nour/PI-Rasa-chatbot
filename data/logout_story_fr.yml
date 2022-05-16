@@ -1,0 +1,23 @@
+version: "3.0"
+stories:
+- story: logout story and confirmation_fr
+  steps:
+  - intent: log_me_out_fr
+  - action: action_logout_verif_fr
+  - intent: submit_n
+    entities: 
+      - sub_type: "oui"
+  - slot_was_set:
+      - sub_type: "oui"
+  - action: action_logout_fr
+
+- story: logout story and deny_fr
+  steps:
+  - intent: log_me_out_fr
+  - action: action_logout_verif_fr
+  - intent: submit_n
+    entities: 
+      - sub_type: "non"
+  - slot_was_set:
+      - sub_type: "non"
+  - action: utter_comme_vous_voulez

@@ -1,0 +1,35 @@
+version: "3.0"
+stories:
+- story: creation_savings_account
+  steps:
+  - intent: create_new_account
+  - action: action_account_type
+  - intent: savings_account_ty
+    entities: 
+      - account_type: "savings account"
+  - slot_was_set:
+      - account_type: "savings account"
+  - action: utter_enter_your_name
+
+- story: creation_current_account
+  steps:
+  - intent: create_new_account
+  - action: action_account_type
+  - intent: savings_account_ty
+    entities: 
+      - account_type: "current account"
+  - slot_was_set:
+      - account_type: "current account"
+  - action: utter_enter_your_name
+
+- story: creation_salary_account
+  steps:
+  - intent: create_new_account
+  - action: action_account_type
+  - intent: savings_account_ty
+    entities: 
+      - account_type: "salary account"
+  - slot_was_set:
+      - account_type: "salary account"
+
+  - action: utter_enter_your_name

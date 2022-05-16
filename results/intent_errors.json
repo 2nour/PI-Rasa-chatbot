@@ -1,0 +1,362 @@
+[
+  {
+    "text": "5000",
+    "intent": "get_salary",
+    "intent_prediction": {
+      "name": "number",
+      "confidence": 0.39794427156448364
+    }
+  },
+  {
+    "text": "4000",
+    "intent": "get_salary",
+    "intent_prediction": {
+      "name": "number",
+      "confidence": 0.39794427156448364
+    }
+  },
+  {
+    "text": "2500",
+    "intent": "get_salary",
+    "intent_prediction": {
+      "name": "number",
+      "confidence": 0.39794427156448364
+    }
+  },
+  {
+    "text": "1500",
+    "intent": "get_salary",
+    "intent_prediction": {
+      "name": "number",
+      "confidence": 0.39794427156448364
+    }
+  },
+  {
+    "text": "750",
+    "intent": "get_salary",
+    "intent_prediction": {
+      "name": "number",
+      "confidence": 0.39794427156448364
+    }
+  },
+  {
+    "text": "1250",
+    "intent": "get_salary",
+    "intent_prediction": {
+      "name": "number",
+      "confidence": 0.39794427156448364
+    }
+  },
+  {
+    "text": "my credit time length is 7 years",
+    "intent": "get_duration7",
+    "intent_prediction": {
+      "name": "get_duration15",
+      "confidence": 0.37665775418281555
+    }
+  },
+  {
+    "text": "the credit duration is 7 years",
+    "intent": "get_duration7",
+    "intent_prediction": {
+      "name": "get_duration15",
+      "confidence": 0.3410811126232147
+    }
+  },
+  {
+    "text": "the duration is 7 years",
+    "intent": "get_duration7",
+    "intent_prediction": {
+      "name": "get_duration15",
+      "confidence": 0.34799185395240784
+    }
+  },
+  {
+    "text": "duration is 7 years",
+    "intent": "get_duration7",
+    "intent_prediction": {
+      "name": "get_duration15",
+      "confidence": 0.33836570382118225
+    }
+  },
+  {
+    "text": "7 years",
+    "intent": "get_duration7",
+    "intent_prediction": {
+      "name": "get_duration15",
+      "confidence": 0.3663678765296936
+    }
+  },
+  {
+    "text": "my credit time length is 10 years",
+    "intent": "get_duration10",
+    "intent_prediction": {
+      "name": "get_duration5",
+      "confidence": 0.49570432305336
+    }
+  },
+  {
+    "text": "the credit duration is 10 years",
+    "intent": "get_duration10",
+    "intent_prediction": {
+      "name": "get_duration5",
+      "confidence": 0.4877149760723114
+    }
+  },
+  {
+    "text": "the duration is 10 years",
+    "intent": "get_duration10",
+    "intent_prediction": {
+      "name": "get_duration5",
+      "confidence": 0.49756303429603577
+    }
+  },
+  {
+    "text": "duration is 10 years",
+    "intent": "get_duration10",
+    "intent_prediction": {
+      "name": "get_duration5",
+      "confidence": 0.4985778331756592
+    }
+  },
+  {
+    "text": "10 years",
+    "intent": "get_duration10",
+    "intent_prediction": {
+      "name": "get_duration5",
+      "confidence": 0.5092208385467529
+    }
+  },
+  {
+    "text": "my credit time length is 20 years",
+    "intent": "get_duration20",
+    "intent_prediction": {
+      "name": "get_duration15",
+      "confidence": 0.37665775418281555
+    }
+  },
+  {
+    "text": "the credit duration is 20 years",
+    "intent": "get_duration20",
+    "intent_prediction": {
+      "name": "get_duration15",
+      "confidence": 0.3410811126232147
+    }
+  },
+  {
+    "text": "the duration is 20 years",
+    "intent": "get_duration20",
+    "intent_prediction": {
+      "name": "get_duration15",
+      "confidence": 0.34799185395240784
+    }
+  },
+  {
+    "text": "duration is 20 years",
+    "intent": "get_duration20",
+    "intent_prediction": {
+      "name": "get_duration15",
+      "confidence": 0.33836570382118225
+    }
+  },
+  {
+    "text": "20 years",
+    "intent": "get_duration20",
+    "intent_prediction": {
+      "name": "get_duration15",
+      "confidence": 0.3663678765296936
+    }
+  },
+  {
+    "text": "great",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "thanking",
+      "confidence": 0.6828282475471497
+    }
+  },
+  {
+    "text": "are you a bot?",
+    "intent": "bot_challenge",
+    "intent_prediction": {
+      "name": "check_human",
+      "confidence": 0.731010913848877
+    }
+  },
+  {
+    "text": "09954231",
+    "intent": "identity",
+    "intent_prediction": {
+      "name": "number",
+      "confidence": 0.39794427156448364
+    }
+  },
+  {
+    "text": "10832147",
+    "intent": "identity",
+    "intent_prediction": {
+      "name": "number",
+      "confidence": 0.39794427156448364
+    }
+  },
+  {
+    "text": "10225793",
+    "intent": "identity",
+    "intent_prediction": {
+      "name": "number",
+      "confidence": 0.39794427156448364
+    }
+  },
+  {
+    "text": "10432679",
+    "intent": "identity",
+    "intent_prediction": {
+      "name": "number",
+      "confidence": 0.39794427156448364
+    }
+  },
+  {
+    "text": "09947516",
+    "intent": "identity",
+    "intent_prediction": {
+      "name": "number",
+      "confidence": 0.39794427156448364
+    }
+  },
+  {
+    "text": "2345678",
+    "intent": "password",
+    "intent_prediction": {
+      "name": "number",
+      "confidence": 0.39794427156448364
+    }
+  },
+  {
+    "text": "4157896",
+    "intent": "password",
+    "intent_prediction": {
+      "name": "number",
+      "confidence": 0.39794427156448364
+    }
+  },
+  {
+    "text": "1246875",
+    "intent": "password",
+    "intent_prediction": {
+      "name": "number",
+      "confidence": 0.39794427156448364
+    }
+  },
+  {
+    "text": "7842165",
+    "intent": "password",
+    "intent_prediction": {
+      "name": "number",
+      "confidence": 0.39794427156448364
+    }
+  },
+  {
+    "text": "5621478",
+    "intent": "password",
+    "intent_prediction": {
+      "name": "number",
+      "confidence": 0.39794427156448364
+    }
+  },
+  {
+    "text": "3698751",
+    "intent": "password",
+    "intent_prediction": {
+      "name": "number",
+      "confidence": 0.39794427156448364
+    }
+  },
+  {
+    "text": "9621473",
+    "intent": "password",
+    "intent_prediction": {
+      "name": "number",
+      "confidence": 0.39794427156448364
+    }
+  },
+  {
+    "text": "8546210",
+    "intent": "password",
+    "intent_prediction": {
+      "name": "number",
+      "confidence": 0.39794427156448364
+    }
+  },
+  {
+    "text": "0532146",
+    "intent": "password",
+    "intent_prediction": {
+      "name": "number",
+      "confidence": 0.39794427156448364
+    }
+  },
+  {
+    "text": "1478965230142678",
+    "intent": "submit_rib",
+    "intent_prediction": {
+      "name": "number",
+      "confidence": 0.39794427156448364
+    }
+  },
+  {
+    "text": "my account number is 1478965230654789",
+    "intent": "submit_rib",
+    "intent_prediction": {
+      "name": "number",
+      "confidence": 0.7793641686439514
+    }
+  },
+  {
+    "text": "1034278596321547",
+    "intent": "submit_rib",
+    "intent_prediction": {
+      "name": "number",
+      "confidence": 0.39794427156448364
+    }
+  },
+  {
+    "text": "1111117428",
+    "intent": "reciever_rib",
+    "intent_prediction": {
+      "name": "number",
+      "confidence": 0.39794427156448364
+    }
+  },
+  {
+    "text": "1111115745",
+    "intent": "reciever_rib",
+    "intent_prediction": {
+      "name": "number",
+      "confidence": 0.39794427156448364
+    }
+  },
+  {
+    "text": "1111117989",
+    "intent": "reciever_rib",
+    "intent_prediction": {
+      "name": "number",
+      "confidence": 0.39794427156448364
+    }
+  },
+  {
+    "text": "1111117976",
+    "intent": "reciever_rib",
+    "intent_prediction": {
+      "name": "number",
+      "confidence": 0.39794427156448364
+    }
+  },
+  {
+    "text": "1200",
+    "intent": "amount_sent",
+    "intent_prediction": {
+      "name": "number",
+      "confidence": 0.39794427156448364
+    }
+  }
+]

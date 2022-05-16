@@ -1,0 +1,3208 @@
+version: "3.0"
+nlu:
+- intent: greet
+  examples: |
+    - hi
+    - hey
+    - hello
+    - how are you
+    - hola
+    - good evening
+    - whats up
+    - wassup
+    - yo
+    - good morning
+    - hey there
+    - HEY
+    - hello are you still there
+    - hallo
+    - HI
+    - Hey
+    - Hi
+    - hi!
+    - hello there
+    - hi there
+    - Hello
+    - hello its ella
+    - Hola.
+    - welcome
+    - howdy
+    - good day
+- intent: goodbye
+  examples: |
+    - see you later
+    - goodbye
+    - i'm done
+    - quit
+    - stop
+    - bye
+    - Adios
+    - BYEE
+    - GOODBYE
+    - Thanks a lot. See ya later
+    - have a good day. time to go, bye
+    - bye bye
+    - ok i gtg
+    - bye bye bot
+    - bye for now
+    - bye udo
+    - bye was nice talking to you
+    - bye!
+    - byee
+    - catch you later
+    - ciao
+    - cya
+    - farewell
+    - good bye
+    - good bye rasa bot!
+    - good night
+    - goodnight
+    - gotta go
+- intent: affirm
+  examples: |
+    - indeed
+    - correct
+    - that sounds good
+    - yess please
+    - of course
+    - yup
+    - yeah
+    - yes please
+    - yes plz
+    - Sure
+    - Ok
+    - sweet
+    - cool,
+    - yes...
+    - ok
+    - ye
+    - okay
+    - That would be great
+    - YUP
+    - Yea
+    - Yeah
+    - Yeah sure
+    - Yep
+    - Yep that's fine
+    - Yep!
+    - Yepp
+    - Yes I do
+    - Yes please
+    - Yes please!
+    - Yes, I accept
+    - yes
+    - Yes
+- intent: deny
+  examples: |
+    - not really
+    - no
+    - I don't think so
+    - never
+    - no way
+    - nope
+    - no thanks
+    - I dunno
+    - Nothing!
+    - nevermind
+    - n
+    - i decline
+    - i don not like this
+    - i don't think so
+    - i don't want either of those
+    - i don't want to
+    - i don't want to give you my email
+    - i dont want to
+    - i dont want to accept :P lol
+    - i guess it means - no
+    - i'm afraid not
+    - i'm not sure
+    - Thank you , i'm done
+    - Thank you but i need to move on
+    - Maybe next time
+    - I'm Grateful , but it's all right
+    - Gratitude , next time
+    - Thank you so much , maybe another time
+    - It's fine
+- intent: ask_for_help
+  examples: |
+    - can you help me ?
+    - can you help me please ?
+    - can you help me plz ?
+    - i need some help
+    - can you assist me ?
+    - can you assist me please ?
+    - can you assist me plz ?
+    - help
+    - what can you do?
+    - what can I ask you?
+    - what do you do?
+    - what can you help me with?
+    - help me
+    - help, what do you do
+    - how do I use this
+    - how can you help me
+    - What are the things that you can do?
+    - What else can you help me with?
+    - can you do anything else?
+    - can you help me?
+    - come back
+    - cool! can I do something else here?
+    - hello what can you do for me
+    - help please
+    - help pls
+    - help?
+    - hep me
+- intent: check_human
+  examples: |
+    - are you a bot?
+    - am i speaking to an ai?
+    - are you a human or a bot?
+    - are you real?
+    - are you virtual?
+    - are you an ai?
+    - aren't you a bot
+    - are you a chatbot
+    - are you a rasa bot?
+    - are you a real bot?
+    - are you a robot
+    - are you ai
+    - are you artificial
+    - are you artificial intelligence
+    - are you real
+    - are you really a bot
+    - are you robot
+    - are you sure that you're a bot?
+    - bot?
+- intent: consult_human
+  examples: |
+    - handoff
+    - operator
+    - I want a human
+    - can I speak to an agent
+    - real agent please
+    - real human
+    - chat with a live agent
+    - give me a person please
+    - i want to talk to a human
+    - transfer to a human
+    - Please give me to a human
+    - can I talk to human?
+    - can I talk to human
+    - talk to human
+    - i want human :(
+    - can i talk to human
+    - i want to speak to human
+    - can i talk to a real person?
+    - connect me to a real person
+    - I need a real person
+    - can i took with a real person
+    - let me speak to a real person
+    - let me speak to a real person please
+    - i want to talk to a real person
+- intent: thanking
+  examples: |
+    - thank you goodbye
+    - okay thank you goodbye
+    - thank you bye
+    - um okay thank you good bye
+    - thank you
+    - and thats all thank you and good bye
+    - okay thank you
+    - thanks
+    - thanks goodbye
+    - thank you and good bye
+    - Thanks!
+    - Awesome, you are a good bot!
+    - great!
+    - I see, thanks
+    - Oh thats good!
+    - it's good :-)
+    - thnaks
+    - good job bot
+    - great
+    - thanks for the help
+    - thanks you
+    - thanks!
+    - thankyou
+    - thnks
+    - thx
+    - thanks for your information
+    - thanks f
+    - Gratitude
+    - I'm grateful
+- intent: check_balance
+  examples: |
+    - How much money is on my account ?
+    - show me my balance
+    - balance please
+    - show me my account balance
+    - i want check my balance 
+    - i wanna check my balance 
+    - show me my account statement
+
+- intent: transfer_money
+  examples: |
+    - I want to transfer money
+    - I want to pay someone
+    - I wanna transfer money
+    - I wanna  pay someone
+    - can I pay someone
+    - I need to transfer money to a friend
+    - pay my friend
+    - transfer money
+    - can I transfer money to someone ?
+    - I desire send money
+- intent: previous_transactions_and_earnings
+  examples: |
+    - show my transactions
+    - Show me my list of transactions
+    - Show me my previous transactions
+    - can I access to my list of transactions?
+    - can I see the list of transactions ?
+    - what's my transactions list
+    - can I see my transactions ?
+    
+- intent: possible_credit
+  examples: |
+    - How much credit can the bank afford me ?
+    - What amount of credit can i get ?
+    - I wanna check possible credit amount
+    - let me see possible credit amount
+    - How much money can the bank afford me as credit ?
+    - Can I check possible credit i can get ?
+    - What is the possible amount of money i can borrow ?
+    - what is my possible credit amount
+    - what is my potential credit amount
+- intent: get_credit
+  examples: |
+    - i want a credit
+    - i want to purchase a credit
+    - i would like to get a   credit
+    - i want to borrow money
+
+- intent: get_salary
+  examples: |
+    - [460](salaryy)
+    - [975](salaryy)
+    - my salary is [2500](salaryy)
+    - my earnings are [4000](salaryy)
+    - the monthly amount is [3000](salaryy)
+    - I get paid [4000](salaryy) a month
+    - [5000](salaryy)
+    - [4000](salaryy)
+    - [2500](salaryy)
+    - [500](salaryy)
+    - [1500](salaryy)
+    - [750](salaryy)
+    - [1250](salaryy)
+- intent: get_duration5
+  examples: |
+    - my credit time length is [5](duration) years
+    - the credit duration is [5](duration) years
+    - the duration is [5](duration) years
+    - duration is [5](duration) years
+    - [5](duration) years
+
+- intent: get_duration7
+  examples: |
+    - my credit time length is [7](duration) years
+    - the credit duration is [7](duration) years
+    - the duration is [7](duration) years
+    - duration is [7](duration) years
+    - [7](duration) years
+- intent: get_duration10
+  examples: |
+    - my credit time length is [10](duration) years
+    - the credit duration is [10](duration) years
+    - the duration is [10](duration) years
+    - duration is [10](duration) years
+    - [10](duration) years
+- intent: get_duration15
+  examples: |
+    - my credit time length is [15](duration) years
+    - the credit duration is [15](duration) years
+    - the duration is [15](duration) years
+    - duration is [15](duration) years
+    - [15](duration) years
+
+- intent: get_duration20
+  examples: |
+    - my credit time length is [20](duration) years
+    - the credit duration is [20](duration) years
+    - the duration is [20](duration) years
+    - duration is [20](duration) years
+    - [20](duration) years
+    
+- intent: check_bank_offers_and_services
+  examples: |
+    - Can you inform me about bank offers
+    - Can you show me your bank privileges
+    - I want to see your banking-services
+    - I wanna see your offers
+    - I wanna dicover your services and offers
+    - I want check your special offers
+    - show me what bring this bank as advantages
+    - Tell me about your services and offers
+- intent: check_type_of_accounts
+  examples: |
+    - Can you show me different types of accounts available please
+    - I wanna be a new customer , show me the potential accounts
+    - Show me the tye of accounts this bank afford
+    - Can i check the banking accounts list
+    - I want to register as new customer , show me the type af accounts
+- intent: create_new_account
+  examples: |
+    - I wanna create a new account
+    - I want create an account
+    - I want create a new account
+    - I desire to create an account
+    - I want to register
+    - Can you create a new account
+    - I desire to be a customer
+    - I desire to be a client 
+    - I desire to register please 
+    - I want to create an account ,can you help me please ?
+    - May you help me to register ?
+    - I want to register as new customer
+    - I want to be a customer 
+
+- intent: delete_account
+  examples: |
+    - I want to close my account
+    - I want to remove my account
+    - I wanna to delete my account
+    - I wanna to remove my account
+    - I want to delete my account
+    - I wish to close my account
+    - I wish to remove my account
+    - I wanna close my account
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: Name
+  examples: |
+    - [Hedy](first_name)
+    - my first name is [Amine](first_name)
+    - [Dorra](first_name)
+    - [Ines](first_name)
+    - [Abderrahmen](first_name)
+    - [Nour](first_name)
+    - [Amine](first_name)
+    - I'm [Amen](first_name)
+    - it's [Ramzi](first_name)
+    - [Najla](first_name)
+    - [Ahlem](first_name)
+    - [Feriel](first_name)
+    - [Talel](first_name)
+    - [Hamed](first_name)
+    - [Raya](first_name)
+
+- intent: last_Name
+  examples: |
+    - [Ezzine](last_name)
+    - my last name is [Zarrouki](last_name)
+    - [Trabelsi](last_name)
+    - [Channoufi](last_name)
+    - [Ben Arous](last_name)
+    - [Boukeri](last_name)
+    - [Ben Jmiaa](last_name)
+    - [Kahleoui](last_name)
+    - it's [Amamou](last_name)
+    - [Kanzari](last_name)
+    - [Dhieb](last_name) 
+    - [Souei](last_name)
+    - [Khalledi](last_name) 
+    - [Mbarki](last_name)
+    - [Ghezaiel](last_name)
+    - [Ksouri](last_name)
+    - [Chelly](last_name)
+
+- intent: email
+  examples: |
+    - [dorratrabelsi8@gmail.com](mail)
+    - my email is [medezzine@gmail.com](mail)
+    - my email [nouri@yahoo.fr](mail)
+    - [naaimzarrouki@hotmail.com](mail)
+    - [mrbedis@outlook.com](mail)
+    - mail [razimemi8@gmail.com](mail)
+    - [helmiabsi3@yahoo.com](mail)
+    - [medhedi.ezzine@esprit.tn](mail)
+    - [mohamedaziz.selmi@esprit.tn](mail)
+    - [heniamamou789@gmail.com](mail)
+    - [atayari494@yahoo.com](mail)
+    - my mail [ramzimajdoub57@gmail.com](mail)
+    
+    
+- intent: birthdate
+  examples: |
+    - [1973-05-10](birth_date)
+    - my birthdate is [1997-08-22](birth_date)
+    - my birthdate [1989-06-14](birth_date)
+    - [1997-6-13](birth_date)
+    - birthdate [2000-12-04](birth_date)
+    - my birthdate [2001-11-16](birth_date)
+    - I was born in [1980-01-05](birth_date)
+    - [1977-6-03](birth_date)
+    - [1952-11-25](birth_date)
+- intent: number
+  examples: |
+    - my number is [92137894](phone_number)
+    - [54312678](phone_number)
+    - my phone number is [27816709](phone_number)
+    - my phone number [98331662](phone_number)
+    - [20052651](phone_number)
+    - [93124759](phone_number)
+    - phone number [94602316](phone_number)
+    - number [55201348](phone_number)
+    - [95889949](phone_number)
+    - [52331662](phone_number)
+    - [+21698908704](phone_number)
+    - [+21651347185](phone_number)
+    - [+21620435106](phone_number)
+    - [0021628167185](phone_number)
+    - [0021656784153](phone_number)
+    - [0021694854627](phone_number)
+    - [50317648](phone_number)
+    - [55124789](phone_number)
+    - [58321457](phone_number)
+    - [22314578](phone_number)
+    - [24367891](phone_number)
+    - [23124637](phone_number)
+    - [90300201](phone_number)
+    - [92457631](phone_number)
+    - [94312475](phone_number)
+
+- intent: address
+  examples: |
+    - [Tunis](addresse)
+    - my address is [Zaghouan](addresse)
+    - [Earth street ariana](addresse)
+    - [street of honor Tunis](addresse)
+    - my home address is [32 street of ghana, Nabeul](addresse)
+    - [28 rue de la gloire, Mannouba](addresse)
+    - [Houmt essouk, Djerba](addresse)
+    - [Moknine Monastir](addresse)
+    - [Sakiet ezzit Sfax](addresse)
+    - [Rades Ben Arous](addresse)
+    - [Tbarka Jandouba](addresse)
+    - [Mjez l beb Beja](addresse)
+    - [Lac1 Tunis](addresse)
+    - [Nasr Neighborhood](addresse)
+    - [Beb Saadoun Tunis](addresse)
+    - [Bizerte Tunisia](addresse)
+    - [Bizerte](addresse)
+    - [Benzart](addresse)
+    - [Ariana](addresse)
+    - [Ben Arous](addresse)
+    - [Mannouba](addresse)
+    - [Nabeul](addresse)
+    - [Hammamet](addresse)   
+    - [Beja](addresse) 
+    - [Jandouba](addresse)
+    - [Kef](addresse)
+    - [Kasserine](addresse)
+    - [Kebili](addresse)
+    - [Gafsa](addresse)
+    - [Tozeur](addresse)
+    - I live in [Tataouine](addresse)
+    - [Medenine](addresse)
+    - [Gabes](addresse)
+    - [Sfax](addresse)
+    - [Sidi Bouzid](addresse)
+    - [Kairouan](addresse)
+    - [Siliana](addresse)
+    - [Mahdia](addresse)
+    - [Monastir](addresse)
+    - [Sousse](addresse)
+    - [Djerba](addresse)
+    - [Hammam lif](addresse)
+    - [Mourouj](addresse)
+    - [Nasr](addresse)
+    - [Rades](addresse)
+    - [Megrine](addresse)
+    - [Boumhal](addresse)
+    - [Kerkneah](addresse)
+    - [Kelibia](addresse)
+    - [Korba](addresse)
+    - [Fouchana](addresse)
+    - [Mohamedia](addresse)
+
+- intent: savings_account_ty
+  examples: |
+    - i want as account type [savings account](account_type)
+    - [savings account](account_type)
+
+- intent: current_account_ty
+  examples: |
+    - i want as account type [current account](account_type)
+    - [current account](account_type)
+
+- intent: salary_account_ty
+  examples: |
+    - i want as account type [salary account](account_type)
+    - [salary account](account_type)
+
+- intent: choose_account
+  examples: |
+    - i want to choose my account type
+    - i want select my account type
+
+
+- intent: personal_credit
+  examples: |
+    - i want as credit type [personal credit](credit_type)
+    - [personal credit](credit_type)
+
+- intent: car_credit
+  examples: |
+    - i want as credit type [car credit](credit_type)
+    - [car credit](credit_type)
+
+- intent: real_estate_credit
+  examples: |
+    - i want as credit type [real estate credit](credit_type)
+    - [real estate credit](credit_type)
+
+- intent: desired_amount
+  examples: |
+    - [20000](amount-of-money)
+    - i want [40000](amount-of-money) as credit amount
+    - i want [50000](amount-of-money) as a loan
+    - i want borrow [100000](amount-of-money)
+    - i would like to get [75000](amount-of-money) 
+    - i want [120000](amount-of-money) as a credit 
+
+- intent: last_five_trans
+  examples: |
+    - i want only [last five](transactions_type)
+
+- intent: all_trans
+  examples: |
+    - i want [All](transactions_type)
+
+- intent: complaint_request
+  examples: |
+    - i have a problem i want to send a complaint request
+    - i have an issue i want to send a complaint request
+    - i want to complain about something
+    - i want to complain about a bug
+    - i have a frequent problem i want to complain about
+- intent: complaint_typee
+  examples: |
+    - [server crash problem](complaint_type)
+    - [transactions problem](complaint_type)
+    - [sign_in problem](complaint_type)
+    - [other problem](complaint_type)
+
+- intent: submit_rib
+  examples: |
+    - [1111111145](rib)
+    - my rib is [1111111141](rib)
+    - [1111111142(rib)
+    - my account is [1111111143](rib)
+    - [1111111144](rib)
+- intent: submit_problem
+  examples: |
+    - [I have an issue with my credit card](problem)
+    - [I have an email issue with transactions](problem)
+    - [I cant't get the desired credit amount](problem)
+
+- intent: check_complaint_status
+  examples: |
+    - i want to check my complaint status
+    - i want to check my complaint request
+    - i wanna look at my complaint status
+    - can you check my complaint request status
+    - please check my complaint status    
+
+- intent: check_agencies
+  examples: |
+    - i want to check all bank agencies
+    - i want to see all agencies
+    - let me check bank agencies
+    - show me bank agencies 
+    - show me your agencies  
+  
+- intent: extrait_bnk
+  examples: |
+    - I want a bank statement of my account
+    - I wanna bank statement
+    - bank statement please
+    - bank statement
+
+- intent: track_location
+  examples: |
+    - [Yes](track_status) track my location
+    - [NO](track_status) don't track my location
+- intent: nearest_agency_position
+  examples: |
+    - Show me the nearest agency
+    - What is the most near agency to my location
+    - can I check the nearest bank agency
+
+- intent: reciever_rib
+  examples: |
+    - [1111111147](rib)
+    - The reciver RIB is [1111111148](rib)
+    - [1111111149](rib)
+    - [1111111150](rib)
+    - [1111111151](rib)
+    - rib [1111111152](rib)
+    - reciever rib [1111111146](rib)
+
+- intent: amount_sent
+  examples: |
+    - transfer [780.750](amount-of-money) tnd
+    - I want to send [250](amount-of-money) tnd 
+    - [1200](amount-of-money) tnd
+    - [587.5](amount-of-money) tnd
+    - [340.700](amount-of-money) tnd
+    
+- intent: how_create_account
+  examples: |
+    - How can I create account ?
+    - What are the steps I should follow to create an account ?
+    - What is the inscription process ?
+    - How can I be client ?
+
+- intent: convert_currency
+  examples: |
+    - I want to convert [150](amount-of-money) from [EUR](currency_dep) to [USD](currency_arriv)
+    - I wish to transform [75](amount-of-money) from [EUR](currency_dep) to [USD](currency_arriv)
+    - Convert [220](amount-of-money) from [EUR](currency_dep) to [USD](currency_arriv)
+    - Transform [350](amount-of-money) from [EUR](currency_dep) to [USD](currency_arriv)
+    - Change [50](amount-of-money) from [EUR](currency_dep) to [USD](currency_arriv)
+    - Convert [12](amount-of-money) [EUR](currency_dep) to [USD](currency_arriv)
+    - Transform [420](amount-of-money) from [TND](currency_dep) to [USD](currency_arriv)
+    - Change [95](amount-of-money) from [EUR](currency_dep) to [TND](currency_arriv)
+    - Convert [140](amount-of-money) [TND](currency_dep) to [QAR](currency_arriv)
+
+- intent: why_your_bank
+  examples: |
+    - Why should I choose your bank ?
+    - Tell me about your bank
+    - What are the advantages of your bank ?
+    - Give me reasons to choose your banks
+
+- intent: request_cheque
+  examples: |
+    - I want a cheque book
+    - Can you apply cheque book request for me
+    - I want to renew my cheque book
+    - Cheque book please
+
+- intent: tunisian
+  examples: |
+    - [tunisian](residency)
+
+- intent: resident
+  examples: |
+    - [resident](residency)
+
+- intent: cheque_request_status
+  examples: |
+    - I want to check my cheque book request status
+    - check cheque book request status
+    - verify cheque book request status
+    - show me my cheque book request status
+
+- intent: cheque_request_number
+  examples: |
+    - My check request number is [101](request_num)
+    - My request number is [204](request_num)
+    - [235](request_num)
+    - [367](request_num)
+    - [425](request_num)
+    - [579](request_num)
+    - [634](request_num)
+    - [715](request_num)
+    - [864](request_num)
+    - [925](request_num)
+    - [175](request_num)
+    - [356](request_num)
+    - [489](request_num)
+    - My chaque application [534](request_num)
+    - My cheque book application [628](request_num)
+    - My cheque book request [534](request_num)
+
+- intent: submit_n
+  examples: |
+    - [yes](sub_type)
+    - [no](sub_type)
+
+- intent: sign_in
+  examples: |
+    - sign me
+    - sign me please
+    - i want to sign in
+    - I want to login 
+    - i want to access to my account 
+    - i want to log into my account
+    - I want to sign into my account
+    - I wanna sign in
+    - I wanna log in
+    - I wanna access to my account
+- intent: log_me_out
+  examples: |
+    - I want to logout
+    - Log me out
+    - Close my session
+
+- intent: greet_tn
+  examples: |
+    - Aslema
+    - Aaslema
+    - Salut
+    - Ahla 
+    - slm
+    - slt
+    - salem
+    - 3aslema
+    - Marahbe
+    - Marahbé
+    - Mara7be
+    - Bonjour
+    - 3asslama
+    - 3asslema
+    - waaa bot
+
+
+- intent: goodbye_tn
+  examples: |
+    - Bye 
+    - Bye bye
+    - A plus
+    - Besslema
+    - Ala khyr
+    - Ala 5yr
+    - Aya salem
+    - Ciao
+    - Molta9ana
+  
+
+- intent: affirm_tn
+  examples: |
+    - ey
+    - oui
+    - shyh
+    - s7y7
+    - eyh
+
+- intent: deny
+  examples: |
+    - no
+    - le
+    - nnn
+    - non 
+
+
+- intent: mood_great_tn
+  examples: |
+    - cava aalekher
+    - cava hamdoullah
+    - ca va hamdoullah
+    - jawwi behy
+    - ca va
+    - ça va
+    - jawi behi
+    - jawwi mriguel
+    - 7amdoullah 
+
+- intent: mood_unhappy_tn
+  examples: |
+    - mouch fel mood
+    - mnarvez
+    - feded
+    - 9ala9
+    - Gueleg
+
+
+- intent: bot_challenge_tn
+  examples: |
+    - enti bot ?
+    - enty bot ?
+    - enty chatbot ?
+    - enty bachar ?
+    - enty 2ensen ?
+
+- intent: ask_for_help_tn
+  examples: |
+    - tnajam t3awenni ?
+    - tnajem taaawenni ?
+    - 3awenni
+    - aweni
+    - nlawej aala 7aja
+    - nlawej 3la 7aja
+
+- intent: check_human_tn
+  examples: |
+    - enty bot?
+    - nty bot?
+    - enty 3abed wala bot?
+    - enti chatbot?
+    - enty chatbot
+    - ye5i enty bot 
+
+- intent: consult_human_tn
+  examples: |
+    - hajti b 3abed
+    - agent
+    - nheb nahki maa agent
+    - n7eb na7ki m3a agent
+
+- intent: thanking_tn
+  examples: |
+    - merci 
+    - aychek
+    - 3aychek
+    - 3aychou
+    - aychou bot
+    - merci 3lik
+    - yaatik essa7a
+    - ya3tik essa7a
+    - yaatik saha
+    - ya3tik sa7a
+- intent: greet
+  examples: |
+    - Hi
+    - Hello
+    - Hola
+    - Good morning
+- intent: check_balance_tn
+  examples: |
+    - 9adeh 3andi flous fil compte ?
+    - 9adeh solde mte3i
+    - 9adech fama flous fil compte
+    - qadeh solde
+    - n7eb nconsulti solde 
+    - nheb nchouf flousi
+    - n7eb nchouf solde
+
+- intent: transfer_money_tn
+  examples: |
+    - nheb nab3eth flous
+    - n7eb nabeath flous 
+    - n7eb na3ml transaction
+    - ab3eth flous
+    - ab3eth money
+    - ennajem nabe3th flous ?
+    - ab3eth flous l chkoun
+
+- intent: previous_transactions_and_earnings_tn
+  examples: |
+    - warini les  transactions mte3i
+    - warini transactions
+    - chneya les transactions eli 3malthom
+    - inajem nchouf liste des transactions ?
+    - chneya transactionet te3i
+
+- intent: possible_credit_tn
+  examples: |
+    - 9adeh najem ne5ou 9aredh
+    - 9adeh l banka tnajem ta3tini 9aredh
+    - n7eb nchouf 9adeh najem ne5ou 9aredh
+    - qadeh najem nekhou karedh
+    - 9adeh l monatnt ta3 l9aredh eli inajem ne5dhou
+  
+- intent: get_credit
+  examples: |
+    - n7eb ne5ou 9aredh
+    - nheb nekhou 9aredh
+    - ne5ou 9aredh
+    - nheb netsallef flous
+    - n7eb netsalef flous
+    - ne5ou 9aredh
+
+- intent: salaire_tn
+  examples: |
+    - salaire mte3i [1600](salaryy)
+    - nekhou [1300](salaryy)
+    - [975](salaryy) 
+    - nokhlos [2500](salaryy) 
+    - no5les [1780](salary) 
+    - nokhles [4000](salaryy) 
+    - chahriti [3000](salaryy) 
+    - ndakhel fi [4000](salary
+    - [5000](salaryy) 
+    - [4000](salaryy) 
+    - [2500](salaryy) 
+    - [500](salaryy) 
+    - [1500](salaryy) 
+    - [750](salaryy) 
+    - [1250](salaryy)
+  
+- intent: get_duration5_tn
+  examples: |
+    - [5](duration) snin
+
+- intent: get_duration7_tn
+  examples: |
+    - [7](duration) snin
+
+- intent: get_duration10_tn
+  examples: |
+    - [10](duration) snin
+
+- intent: get_duration15_tn
+  examples: |
+    - [15](duration) snin
+
+- intent: get_duration20_tn
+  examples: |
+    - [20](duration) snin
+
+- intent: check_bank_offers_and_services_tn
+  examples: |
+    - 9oli chneya les offres ta3 l banka
+    - chneya les offres
+    - chneya les offres te3kom
+    - 9oli les offres 
+    - n7eb na3ref les srevices w les offres
+
+- intent: check_type_of_accounts_tn
+  examples: |
+    - cheneya les types des comptes eli 3andkom
+    - chneya les types des compte mawjoudin
+    - types des comptes eli andkom
+
+- intent: create_new_account_tn
+  examples: |
+    - n7eb n7el compte
+    - nheb nhel compte
+    - n7eb n7el compte jdid
+    - n7eb nhel compte 3andkom
+    - belehy n7eb nhel compte lenna
+    - nheb nwali client
+    - nwali client
+    - nheb nwali client
+
+- intent: delete_account_tn
+  examples: |
+    - sakerli l compte
+    - saker l compte te3i
+    - nheb nsaker l compte mte3i
+
+- intent: Name_tn
+  examples: |
+    - [Dorra](name)
+    - [Ines](name)
+    - [Abderrahmen](name)
+    - esmi [Hedy](name)
+    - [Nour](name)
+    - [Amine](name)
+    - ena : [Amen](name)
+    - 2esmi [Ramzi](name)
+
+- intent: last_Name_tn
+  examples: |
+    - [Trabelsi](last_name)
+    - [Channoufi](last_name)
+    - [Ben Arous](last_name)
+    - [Boukeri](last_name)
+    - ela9ab mte3i [Ben ABid](last_name)
+    - [Ben Jmiaa](last_name)
+    - [Kahleoui](last_name)
+    - la9ab [Amamou](last_name)
+    - la9abi [Amamou](last_name)
+    - [Kanzari](last_name)
+    - [Dhieb](last_name) 
+    - [Souei](last_name)
+    - [Khalledi](last_name) 
+    - [Mbarki](last_name)
+    - [Ghezaiel](name)
+    - [Ksouri](name)
+    - [Chelly](name)
+
+- intent: identity_tn
+  examples: |
+    - [09947516](identity_number)
+    - noumrou [09854239](identity_number)
+    - bita9et ta3rif [10823131](identity_number)
+    - bitaket taarif [10822112](identity_number)
+    - [09954231](identity_number)
+    - noumrou bita9etta3rif [10815479](identity_number)
+    - [10832147](identity_number)
+    - [10225793](identity_number)
+    - [10432679](identity_number)
+    - cin [07815469](identity_number)
+
+
+- intent: email_tn
+  examples: |
+    - [dorratrabelsi8@gmail.com](mail)
+    - email mte3i [medezzine@gmail.com](mail)
+    - email  te3i [nouri@yahoo.fr](mail)
+    - [naaimzarrouki@hotmail.com](mail)
+    - [mrbedis@outlook.com](mail)
+    - email howa [razimemi8@gmail.com](mail)
+    - [helmiabsi3@yahoo.com](mail)
+    - [medhedi.ezzine@esprit.tn](mail)
+    - [mohamedaziz.selmi@esprit.tn](mail)
+    - [heniamamou789@gmail.com](mail)
+    - [atayari494@yahoo.com](mail)
+    
+    
+- intent: birthdate_tn
+  examples: |
+    - [1973-05-10](birth_date)
+    - mawloud fi [1997-08-22](birth_date)
+    - date de naissance [1989-06-14](birth_date)
+    - [1997-6-13](birth_date)
+    - [1977-6-03](birth_date)
+    - [1952-11-25](birth_date)
+
+- intent: number_tn
+  examples: |
+    - [54312678](phone_number)
+    - noumrouya [27816709](phone_number)
+    - talifouni [98331662](phone_number)
+    - [20052651](phone_number)
+    - [93124759](phone_number)
+    - mnoumrou taliphouni [42137894](phone_number)
+    - noumrou [94602316](phone_number)
+    - [95889949](phone_number)
+
+- intent: address_tn
+  examples: |
+    - [Tunis](addresse)
+    - nosken fi  [Zaghouan](addresse)
+    - nosken [Earth street ariana](addresse)
+    - [street of honor Tunis](addresse)
+    - min [32 street of ghana, Nabeul](addresse)
+    - [28 rue de la gloire, Mannouba](addresse)
+    - darna fi [Houmt essouk, Djerba](addresse)
+    - [Moknine Monastir](addresse)
+    - [Sakiet ezzit Sfax](addresse)
+    - [Rades Ben Arous](addresse)
+    - [Tbarka Jandouba](addresse)
+    - [Mjez l beb Beja](addresse)
+    - [Lac1 Tunis](addresse)
+
+- intent: savings_account_ty_tn
+  examples: |
+    - n7eb  [compte épargne](account_type)
+    - [compte épargne](account_type)
+
+- intent: current_account_ty_tn
+  examples: |
+    - n7eb [compte courant](account_type)
+    - [compte courant](account_type)
+
+- intent: salary_account_ty
+  examples: |
+    - neheb [compte salaire](account_type)
+    - [compte salaire](account_type)
+
+- intent: choose_account_tn
+  examples: |
+    - nheb na5tar type ta3 compte
+    - n7eb na5tar type de compte
+    - nheb nakhtar nawe3 compte
+
+- intent: personal_credit_tn
+  examples: |
+    - n7eb  [credit personnel](credit_type)
+    - 7ajeti  b [credit personnel](credit_type)
+    - [credit personnel](credit_type)
+
+- intent: car_credit_tn
+  examples: |
+    - nheb [credit voiture](credit_type)
+    - 7ajeti  b [credit voiture](credit_type)
+    - [credit voiture](credit_type)
+
+- intent: real_estate_credit_tn
+  examples: |
+    - n7eb [credit immobilier](credit_type)
+    - hajeti b [credit immobilier](credit_type) 
+    - [credit immobilier](credit_type)
+
+- intent: desired_amount
+  examples: |
+    - [20000](amount-of-money)
+    - n7eb [40000](amount-of-money) credit 
+    - n7eb 9aredh b [40000](amount-of-money) 
+    - nheb 3la 9aredh b [50000](amount-of-money)
+    - hajeti b   [100000](amount-of-money) 9aredh
+    - 7ajeti [75000](amount-of-money) 
+
+- intent: last_five_trans_tn
+  examples: |
+    - nheb [dernier 5](transactions_type)
+
+- intent: all_trans_tn
+  examples: |
+    - nheb [tous](transactions_type)
+
+- intent: complaint_request_tn
+  examples: |
+    - nheb n3adi reclamation
+    - naadi reclamation
+    - 3andi mochkol 
+    - nal9a probleme
+    - 3andi reclamation
+
+- intent: complaint_typee_tn
+  examples: |
+    - [probleme serveur](complaint_type)
+    - [problem transactions](complaint_type)
+    - [problem connexion](complaint_type)
+    - [autres](complaint_type)
+
+- intent: submit_rib_tn
+  examples: |
+    - [1111111145](rib)
+    - rib mte3i [1111111141](rib)
+    - [1111111142(rib)
+    - rib :  [1111111143](rib)
+    - [1111111144](rib)
+#####################################################################
+- intent: submit_problem_tn
+  examples: |
+    - [I have an issue with my credit card](problem)
+    - [I have an email issue with transactions](problem)
+    - [I cant't get the desired credit amount](problem)
+#####################################################################
+
+- intent: check_complaint_status_tn
+  examples: |
+    - l reclamation win woslot
+    - nheb nchouf satut ta3 reclamation 
+    - reclamation ch3amlet
+
+- intent: check_agencies_tn
+  examples: |
+    - warini les agences mte3kom
+    - n7eb na3ref les agences mte3kom
+    - enehom les agences 
+    - warini les agences
+
+- intent: extrait_bnk_tn
+  examples: |
+    - extrait bancaire
+    - n7eb 3la extrait bancaire
+    - nheb 3la extrait
+    - 7ajeti b extrait
+    - hajeti b extrait bancaire
+
+- intent: track_location_tn
+  examples: |
+    - [oui](track_status) track my location
+    - [non](track_status) don't track my location
+
+- intent: nearest_agency_position_tn
+  examples: |
+    - enehy a9reb agence
+    - anahy aqreb agence leyya
+    - 9oli enehy a9reb agence
+    - tnajem t9oli a9reb agence
+    - warrini a9reb agence
+
+- intent: reciever_rib_tn
+  examples: |
+    - [1111111147](rib)
+    - RIB mte3 eli bech nab3athlou [1111111148](rib)
+    - [1111111149](rib)
+    - [1111111150](rib)
+    - [1111111151](rib)
+    - rib [1111111152](rib)
+    - eli be3ethlou  rib mte3ou :  [1111111146](rib)
+
+- intent: amount_sent_tn
+  examples: |
+    - ab3eth [780.750](amount-of-money) tnd
+    - nheb nab3eth [250](amount-of-money) tnd 
+    - neheb nabeath [1200](amount-of-money) tnd
+    - nab3eth [587.5](amount-of-money) tnd
+    - [587.5](amount-of-money) tnd
+    - [340.700](amount-of-money) tnd
+    
+- intent: how_create_account_tn
+  examples: |
+    - kifeh enajem nhel compte ?
+    - chneya les étapes bech nhel compte  ?
+    - chneya l procedure bech n7ek compte ?
+    - kifeh nwali client ?
+
+- intent: convert_currency_tn
+  examples: |
+    - Baddel [2](amount-of-money) [BTC](currency_dep) lel [TND](currency_arriv)
+    - Baddel [75](amount-of-money) [BTC](currency_dep) lel [TND](currency_arriv)
+    - 7awel [150](amount-of-money) [EUR](currency_dep) lel [USD](currency_arriv)
+    - converti [75](amount-of-money) [USD](currency_dep) l [TND](currency_arriv)
+    - badeli [220](amount-of-money) [EUR](currency_dep) li [TND](currency_arriv)
+    - hawell [350](amount-of-money) [EUR](currency_dep) li [BTC](currency_arriv)
+
+- intent: why_your_bank_tn
+  examples: |
+    - 3leh lezem na5tar banka mte3kom ?
+    - 3lech  na5tar banka mte3kom ?
+    - a7kili 3al banka mte3kom
+    - chneya les avantages mte3kom
+    - chneya les avantages mte3 banka hedhy
+    - chniya les previleges mte3 l banka mte3kom
+
+- intent: request_cheque_tn
+  examples: |
+    - 7ajti b carnet des cheques
+    - hajti b chiquet
+    - n7eb 3la carnet des cheques
+    - nheb n3adi demande f carnet des cheques
+    - bellehy carnet des cheques
+    - sadiki bras omk carnet des cheques 
+
+- intent: tunisian
+  examples: |
+    - [tunisien](residency)
+
+- intent: resident
+  examples: |
+    - [resident](residency)
+
+- intent: cheque_request_status_tn
+  examples: |
+    - bellehy 7dhar aka carnet ?
+    - 7dharchi aka carnet des cheques
+    - thabetli f carnet des cheque
+    - demande ta3 carnet win woslet
+
+- intent: cheque_request_number_tn
+  examples: |
+    - noumrou demande  [101](request_num)
+    - noumrou demande  [121](request_num)
+    - numero ta3 demande [204](request_num)
+    - noumrou demande ta3 carnet des cheques [235](request_num)
+    - [367](request_num)
+    - [425](request_num)
+    - [579](request_num)
+    - [634](request_num)
+    - [715](request_num)
+    - [864](request_num)
+    - [925](request_num)
+    - [175](request_num)
+    - [356](request_num)
+    - [489](request_num)
+
+- intent: submit_n_tn
+  examples: |
+    - [oui](sub_type)
+    - [non](sub_type)
+
+- intent: sign_in_tn
+  examples: |
+    - n7eb nconnecti
+    - n7eb nkonnekti
+    - nheb nconnecti
+    - connectili bellehy
+    - bellehy 7elli l compte mte3i
+    - n7eb nod5ol lil compte
+- intent: log_me_out_tn
+  examples: |
+    - n7eb ndeconnecti
+    - nheb ndeconnecti
+    - deconnecti
+
+- intent: log_me_out_fr
+  examples: |
+    - je veux deconnecter
+    - ferme ma session
+    - deconnecter
+- intent: extrait_bnk_fr
+  examples: |
+    - extrait bancaire
+    - extrait bancaire svp
+    - je veux un extrait bancaire
+- intent: request_cheque_fr
+  examples: |
+    - je veux un carnet de chéques
+    - un carnet de chéques svp 
+    - je voulais faire une demande d'un carnet de chéques
+
+- intent: reciever_rib_tn
+  examples: |
+    - [1111111147](rib)
+    - RIB mte3 eli bech nab3athlou : [1111111148](rib)
+    - [1111111149](rib)
+    - n7eb nab3eth l rib hedha [1111111132](rib)
+    - [1111111151](rib)
+    - rib [1111111152](rib)
+    - eli be3ethlou  rib mte3ou : [1111111146](rib)
+
+- intent: amount_sent_tn
+  examples: |
+    - ab3eth [200](money) tnd
+    - nheb nab3eth [400](money) tnd 
+    - nheb nabaath [1200](money) tnd
+    - [350](money) tnd
+    - [150](money) tnd
+
+- intent: submit_bool
+  examples: |
+    - [oui](sub_b)
+    - [non](sub_b)
+- intent: request_cheque_fr
+  examples: |
+    - je veux un carnet de chéques
+    - un carnet de chéques svp 
+    - je voulais faire une demande d'un carnet de chéques
+
+
+- synonym: 9aredh
+  examples: |
+    - 9aridhe
+    - karedhe
+    - karidh
+- synonym: compte
+  examples: |
+    - comte
+    - conte
+    - comt
+    - kont
+    - kompte
+    - kontt
+- synonym: solde
+  examples: |
+    - sold
+    - soldee
+    - soulde
+- synonym: cheque
+  examples: |
+    - chéque
+    - cheq
+    - sheque
+
+
+- synonym: transactions
+  examples: |
+    - Recipients
+    - money-sending
+    - earnings
+- synonym: credit
+  examples: |
+    - loan
+- synonym: account
+  examples: |
+    - customer_account
+    - bank_account
+- synonym: balance
+  examples: |
+    - statement
+
+- lookup: birth_date
+  examples: |
+    - 1994-05-03
+    - 2000-11-07
+    - 2001-10-13
+    - 1999-08-21
+    - 1998-02-18
+    - 1996-04-01
+    - 1994-01-30
+    - 1993-06-31
+    - 1992-02-28
+    - 1991-09-17
+    - 1990-02-29
+    - 1989-12-15
+    - 1985-07-03
+    - 1980-10-19
+    - 1979-05-14
+    - 1974-08-07
+    - 1970-01-24
+    - 1969-07-26 
+    - 1963-05-07
+    - 1960-02-18
+    - 1959-09-14
+    - 1954-04-10
+    - 1950-11-12
+    - 1949-06-08
+    - 1946-07-03
+    - 1942-01-15
+    - 1940-09-07
+
+- lookup: salaryy
+  examples: |
+    - 1200
+    - 1500
+    - 450
+    - 575
+    - 640
+    - 725
+    - 824
+    - 959
+    - 1000
+    - 1050 
+    - 1300
+    - 1136
+    - 524
+    - 1530
+    - 1480
+    - 1705
+    - 1800
+    - 1960
+    - 2000
+    - 2160
+    - 2250
+    - 2500
+    - 2600
+    - 2750
+    - 2800 
+    - 2900
+    - 3000
+    - 3260
+    - 3400
+    - 3890
+    - 4000
+    - 4160
+    - 4520
+    - 4830
+    - 5000
+    - 7550
+    - 8200
+    - 8460
+    - 9130
+    - 9605
+    - 9360
+
+- lookup: first_name
+  examples: |
+    - Med
+    - Mohamed
+    - Mouhamed
+    - Hedi
+    - Amine
+    - Wala
+    - Jamila
+    - Mounir
+    - Chrifa
+    - Mahrez
+    - Said
+    - Saida
+    - Jamel
+    - Jalel
+    - Lazher
+    - Med Hedy
+    - Mohamed Amine 
+    - Hakim
+    - Feriel
+    - Achref 
+    - Amenallah
+    - Mehdi 
+    - Harrsion 
+    - Tasnim 
+    - Beya 
+    - Baya 
+    - Khalil 
+    - Anis 
+    - Med Ali 
+    - Talel 
+    - Hamed 
+    - Raya 
+    - Patrick
+    - Sofien 
+    - Leila 
+    - Ritej 
+    - Lamia 
+    - Mary 
+    - Frank 
+    - Raphael 
+    - Paul 
+    - Vincent 
+    - Jeremy 
+    - Oussama  
+    - Oussema 
+    - Laith 
+    - Lassaad 
+    - Chedli  
+    - Amal 
+    - Azer 
+    - Marouene
+    - Jihed
+    - Farouk
+    - Sami 
+    - Med Ali 
+    - Mohamed Ali
+    - Abdallah 
+    - Kamel 
+    - Anis 
+    - Khaled 
+    - Zayneb 
+    - Zeyned 
+    - Cyrine 
+    - Sirine 
+    - Koussay 
+    - Louay 
+    - Maha 
+    - Oumayma 
+    - Aymen 
+    - Rahma 
+    - Najla  
+    - Elhem 
+    - Samia  
+    - Lamia 
+    - Med Amine 
+    - Nourchene 
+    - Salma  
+    - Ridha 
+    - Omar 
+    - Bilel 
+    - Slim 
+    - Salim 
+    - Atef  
+    - Skander  
+    - Elyess 
+    - Walid 
+    - Sonia  
+    - Samira 
+    - Maram 
+    - Nourhene  
+    - Wejden 
+    - Salah 
+    - Atef 
+    - Mootaz 
+    - Abdessattar  
+    - Hmida 
+    - Bechir  
+    - Ahmed  
+    - Yassine 
+    - Aziz  
+    - Mariem 
+    - Tayssir 
+    - Ammar 
+    - Nabil
+    - Nebil
+    - Chaima
+    - Souad
+    - Ramla 
+    - Samia
+    - Mourad
+    - Raouf
+    - Abdelbeki
+    - Abdessalem
+    - Habiba
+    - Driss
+    - Moncef
+    - Moncof
+    - Rabii
+    - Arbi
+    - Delila
+    - Dalila
+    - Dalel
+    - Nawel
+    - Abir
+    - Insaf
+    - Dorsaf
+    - Hajer
+    - Malika
+    - Taha
+    - Tarek
+    - Hamza
+    - Aissa
+    - Yahiya
+    - Faycel
+    - Bassem
+    - Chiheb
+    - Samir
+    - Fatma
+    - Naima
+    - Sondes
+    - Tahani
+    - Lotfi
+    - Monia
+    - Hassen
+    - Ibtissem
+    - Farah
+    - Chiraz
+    - Narjess
+    - Maryem
+    - Zahra
+    - Mahdi
+    - Wissem
+    - Houssem
+    - Sarra
+    - Sarah
+    - Emna
+    - Mohamed Aziz
+    - Abdelhamid
+    - Zouhaier
+    - Adel
+    - Wajdi
+    - Souad 
+    - Selma
+    - Taher
+    - Hamed
+    - Hamdi
+    - Mahmoud
+    - Bayrem
+    - Assia
+    - Mongia
+    - Ghaith
+    - Rayen
+    - Rined
+    - Wael
+    - Abdelmejid
+    - Montassar
+    - Ferjani 
+    - Yasser
+    - Chamseddine
+    - Chams
+    - Nidhal
+    - Zied
+    - Wassim
+    - Malek
+    - Manel
+    - Nizar
+    - Ibrahim
+    - Ghada
+    - Yosr
+    - Yosser
+    - Eya
+    - Aya
+    - Walid
+    - Youssef
+    - Jawher
+    - Saif Eddine
+    - Taieb
+    - Hatem
+    - Mokhtar
+    - Abdessatar
+    - Salem
+    - Rachida
+    - Safa
+    - Ameni
+    - Douaa
+    - Samar
+    - Roudayna
+    - Donya
+    - Donia
+    - Raja
+    - Nawress
+    - Hedil
+    - Hadil
+    - Hadir
+    - Sabrine
+    - Hiba
+    - Rihab
+    - Islem
+    - Ilhem
+    - Nouha
+    - Sahar
+    - Siwar
+    - Sana
+    - Chadha
+    - Chahd
+    - Molka
+    - Nour
+    - Nahla
+    - Arij
+    - Lamis
+    - Ons
+    - Hela
+    - Mayssa
+    - Imen
+    - Rania
+    - Ranya
+    - Arbia
+    - Ghofrane
+    - Chahnez
+    - Ichrak
+    - Ranim
+    - Hana
+    - Nourane
+    - Wissal
+    - Amira
+    - Roua
+    - Manar
+    - Haifa
+    - Bouthaina
+    - Yasmine
+    - Hana
+    - Afef
+    - Zouhour 
+    - Feiza
+    - Houyem
+    - Sinda
+    - Roukaya
+    - Darine
+    - Dhouha 
+    - Basma 
+    - Samira
+    - Samia
+    - Mohamed Nour
+    - Firas 
+    - Souhir
+    - Iheb
+    - Ameni
+    - Amani
+    - Houda
+    - Faten
+    - Wafa
+    - Mongi
+    - Houda
+    - Hassan
+    - Hussein
+    - Hsin
+    - Jelila
+    - Souhir
+    - Mouna
+    - Neji
+    - Maher
+    - Hosni
+    - Mouhaimen
+    - Bayrem
+- lookup: last_name
+  examples: |
+    - Sayari
+    - Zarrouki
+    - Chaari
+    - Atrous 
+    - Darraji
+    - Douiri
+    - Amamou
+    - Dhifallah
+    - Afful
+    - Mlika
+    - Cherif
+    - Saighi
+    - Bouchouicha
+    - Ben Mansour 
+    - Aounallah
+    - Ayari
+    - Kroos
+    - Medimagh
+    - Ouannes
+    - Abdelli
+    - Chikhaoui
+    - Macron
+    - Ribery
+    - Varane
+    - Pogba
+    - Valbuena
+    - Mathieu
+    - Mrayah
+    - Hdhili 
+    - Ben Turkiya
+    - Hammemi
+    - Tbini
+    - Ben Zayed
+    - Jaballah
+    - Kallel
+    - Taboubi
+    - Dakhleoui
+    - Ferchichi
+    - Abid
+    - Hadhriya
+    - Boucetta
+    - Ouailli
+    - Kharrat 
+    - Moalla
+    - Mnasser
+    - Ben Turkiya
+    - Haffar
+    - Khezami
+    - Abbes
+    - Fadhel
+    - Kacem
+    - Hergli
+    - Jrayed
+    - Maalej
+    - Jandoubi
+    - Aouini 
+    - Driss
+    - Ben Mostpha
+    - Ncib
+    - Fourati
+    - Riahi
+    - Essoufi 
+    - Dhouib
+    - Jelassi
+    - Massoud
+    - Mahjoub
+    - Bayou
+    - Rayes 
+    - Ghribi 
+    - Tounsi
+    - Jdidi
+    - Laaroussi 
+    - Abidi
+    - Hmili
+    - Mbarek
+    - Mzati
+    - Mzali
+    - Bayou
+    - Miled
+    - Mlika 
+    - Chaaben
+    - Dalleji 
+    - Ben Alaya
+    - Elj
+    - Zeribi 
+    - Mathlouthi
+    - Ammar
+    - Kanzari
+    - Ghrissi
+    - Jrayed
+    - Ben Hamed
+    - Sliti
+    - Jdidi
+    - Jbeli
+    - Jbali
+    - Derouiche
+    - Darouiche
+    - Jaziri
+    - Chammakhi
+    - Chammem
+    - Turki
+    - Dridi
+    - Gassem
+    - Guesmi
+    - Boudhina
+    - Abassi
+    - Mannai
+    - Neji
+    - Dalleji
+    - Ouerhani
+    - Tlili
+    - Dridi
+    - Rahmouni
+    - Sefi
+    - Boughanmi
+    - Maalej
+    - Ferchichi
+    - Ayari
+    - Fatnassi
+    - Trabelsi
+    - Romdhani
+    - Sassi
+    - Kouki
+    - Riahi
+    - Chebbi
+    - Brahmi
+    - Maaroufi
+    - Channoudi
+    - Jaballah
+    - Ayedi
+    - Nasraoui
+    - Yahyaoui
+    - Khedhira
+    - Khaldi
+    - Khrayef
+    - Dziri
+    - Kerkeni
+    - Chourabi
+    - Omami
+    - Makeoui
+    - Jlassi
+    - Jlassy
+    - Mahwechi
+    - Dhaouadi
+    - Mimouni
+    - Jouini
+    - Ben Khaled
+    - Mzoughi
+    - Jendoubi
+    - Kssentini
+    - Driss
+    - Abedllaoui
+    - Ameri
+    - Aloui
+    - Swayah
+    - Gharbi
+    - Ben Romdhane
+    - Chaaleli
+    - Bahri
+    - Badri
+    - Tahri
+    - Ben Younnes
+    - Mosheb
+    - Talbi
+    - Ben Salah
+    - Ben Hammouda
+    - Khalifa
+    - Cherni
+    - Bejaoui
+    - Fadhlaoui
+    - Yakoubi
+    - Sehli
+    - Mahjoub
+    - Ben Amara
+    - Amara
+    - Belhadj
+    - Marweni
+    - Allani
+    - Bougatef
+    - Chihi
+    - Aloui
+    - Saidi
+    - Kraoua
+    - Benfraj
+    - Ncibi
+    - Lafi
+    - Rihani
+    - Hidri
+    - Slama
+    - Mejri
+    - Dorai
+    - Melki
+    - Mansour
+    - Ben Mansour
+    - Younssi
+    - Touhami
+    - Dkhlili
+    - Zemzemi
+    - Charrabi
+    - Ayadi
+    - Amdouni
+    - Essid
+    - Aouini
+    - Aouinti
+    - Hamzaoui
+    - Daghfous
+    - Wali
+    - Ouali
+    - Hannechi
+    - Ben Rjab
+    - Hammemi
+    - Ghalleb
+    - Talbi
+    - Ben Taleb
+    - Ounifi
+    - Morjene
+    - Zahaf
+    - Ben Ammar
+    - Ben Hassine
+    - Mhalla
+    - Magroun
+    - Ben Ayed
+    - Graiet
+    - Chiboub
+    - Meddeb
+    - Bennour
+    - Saidi
+    - Ben Othmen
+    - Harzi
+    - Maaloul
+    - Maalaoui
+    - Slimi
+    - Sallemi 
+    - Derbali
+    - Hichri 
+    - Yaken
+    - Hammi
+    - Khlass
+    - Dridi
+    - Saadallah
+    - Aounallah
+    - Ben Slimen
+    - Mallouli
+    - Hasnaoui
+    - Zghal 
+    - Ghannem
+    - Rouached 
+    - Hassine
+    - Gmati
+    - Chniti
+    - Smaoui
+    - Maaoui
+    - Alouia
+    - Ben Ghorbal
+    - Sghaier
+    - Bouazizi
+    - Kefi
+    - Lakhdhar
+    - Medini
+    - Nasri
+    - Bouraoui
+    - Khedher
+    - Bezzine
+    - Mathlouthi
+    - Ben Hamed 
+    - Temani
+    - Ayed
+    - Zammeli
+    - Bouchrit
+    - Ben Ali
+    - Mrad
+    - Adala
+    - Haddad 
+    - Maayouf
+    - Boukhari
+    - Bouasker
+    - Akrout
+    - Zrelli
+    - Khiari
+    - Ghannouchi 
+    - Elkamel
+    - Sfar
+    - Marzouki
+    - Soltani
+    - Abbes
+    - Mefteh
+    - Zouabi
+    - Kawech
+    - Snoussi
+    - Ben Abid
+    - Abidi
+    - Abid
+    - Missaoui
+    - Benzarti
+    - Mestiri
+    - Haloui
+    - Ben saad 
+    - Ben Brahim
+    - Labiedh
+    - Tiouiri
+    - Yahyaoui
+    - Hamrouni
+    - Rdifi
+    - Balti
+    - Chihi
+    - Boujneh
+    - Toumi
+    - Kadri
+    - Darmoul
+    - Bakhti
+    - Baraketi
+
+- lookup: currency_dep
+  examples: |
+    - AED
+    - AFN
+    - ALL
+    - AMD
+    - ANG
+    - AOA
+    - ARS
+    - AUD
+    - AWG
+    - AZN
+    - BAM
+    - BBD
+    - BDT
+    - BGN
+    - BHD
+    - BIF
+    - BMD
+    - BND
+    - BOB
+    - BRL
+    - BSD
+    - BTC
+    - BTN
+    - BWP
+    - BYN
+    - BZD
+    - CAD
+    - CDF
+    - CHF
+    - CLF
+    - CLP
+    - CNH
+    - CNY
+    - COP
+    - CRC
+    - CUC
+    - CUP
+    - CVE
+    - CZK
+    - DJF
+    - DKK
+    - DOP
+    - DZD
+    - EGP
+    - ERN
+    - ETB
+    - EUR
+    - FJD
+    - FKP
+    - GBP
+    - GEL
+    - GGP
+    - GHS
+    - GIP
+    - GMD
+    - GNF
+    - GTQ
+    - GYD
+    - HKD
+    - HNL
+    - HRK
+    - HTG
+    - HUF
+    - IDR
+    - ILS
+    - IMP
+    - INR
+    - IQD
+    - IRR
+    - ISK
+    - JEP
+    - JMD
+    - JOD
+    - JPY
+    - KES
+    - KGS
+    - KHR
+    - KMF
+    - KPW
+    - KRW
+    - KWD
+    - KYD
+    - KZT
+    - LAK
+    - LBP
+    - LKR
+    - LRD
+    - LSL
+    - LYD
+    - MAD
+    - MDL
+    - MGA
+    - MKD
+    - MMK
+    - MNT
+    - MOP
+    - MRU
+    - MUR
+    - MVR
+    - MWK
+    - MXN
+    - MYR
+    - MZN
+    - NAD
+    - NGN
+    - NIO
+    - NOK
+    - NPR
+    - NZD
+    - OMR
+    - PAB
+    - PEN
+    - PGK
+    - PHP
+    - PKR
+    - PLN
+    - PYG
+    - QAR
+    - RON
+    - RSD
+    - RUB
+    - RWF
+    - SAR
+    - SBD
+    - SCR
+    - SDG
+    - SEK
+    - SGD
+    - SHP
+    - SLL
+    - SOS
+    - SRD
+    - SSP
+    - STD
+    - STN
+    - SVC
+    - SYP
+    - SZL
+    - THB
+    - TJS
+    - TMT
+    - TND
+    - TOP
+    - TRY
+    - TTD
+    - TWD
+    - TZS
+    - UAH
+    - UGX
+    - USD
+    - UYU
+    - UZS
+    - VEF
+    - VES
+    - VND
+    - VUV
+    - WST
+    - XAF
+    - XAG
+    - XAU
+    - XCD
+    - XDR
+    - XOF
+    - XPD
+    - XPF
+    - XPT
+    - YER
+    - ZAR
+    - ZMW
+    - ZWL
+- lookup: currency_arriv
+  examples: |
+    - AED
+    - AFN
+    - ALL
+    - AMD
+    - ANG
+    - AOA
+    - ARS
+    - AUD
+    - AWG
+    - AZN
+    - BAM
+    - BBD
+    - BDT
+    - BGN
+    - BHD
+    - BIF
+    - BMD
+    - BND
+    - BOB
+    - BRL
+    - BSD
+    - BTC
+    - BTN
+    - BWP
+    - BYN
+    - BZD
+    - CAD
+    - CDF
+    - CHF
+    - CLF
+    - CLP
+    - CNH
+    - CNY
+    - COP
+    - CRC
+    - CUC
+    - CUP
+    - CVE
+    - CZK
+    - DJF
+    - DKK
+    - DOP
+    - DZD
+    - EGP
+    - ERN
+    - ETB
+    - EUR
+    - FJD
+    - FKP
+    - GBP
+    - GEL
+    - GGP
+    - GHS
+    - GIP
+    - GMD
+    - GNF
+    - GTQ
+    - GYD
+    - HKD
+    - HNL
+    - HRK
+    - HTG
+    - HUF
+    - IDR
+    - ILS
+    - IMP
+    - INR
+    - IQD
+    - IRR
+    - ISK
+    - JEP
+    - JMD
+    - JOD
+    - JPY
+    - KES
+    - KGS
+    - KHR
+    - KMF
+    - KPW
+    - KRW
+    - KWD
+    - KYD
+    - KZT
+    - LAK
+    - LBP
+    - LKR
+    - LRD
+    - LSL
+    - LYD
+    - MAD
+    - MDL
+    - MGA
+    - MKD
+    - MMK
+    - MNT
+    - MOP
+    - MRU
+    - MUR
+    - MVR
+    - MWK
+    - MXN
+    - MYR
+    - MZN
+    - NAD
+    - NGN
+    - NIO
+    - NOK
+    - NPR
+    - NZD
+    - OMR
+    - PAB
+    - PEN
+    - PGK
+    - PHP
+    - PKR
+    - PLN
+    - PYG
+    - QAR
+    - RON
+    - RSD
+    - RUB
+    - RWF
+    - SAR
+    - SBD
+    - SCR
+    - SDG
+    - SEK
+    - SGD
+    - SHP
+    - SLL
+    - SOS
+    - SRD
+    - SSP
+    - STD
+    - STN
+    - SVC
+    - SYP
+    - SZL
+    - THB
+    - TJS
+    - TMT
+    - TND
+    - TOP
+    - TRY
+    - TTD
+    - TWD
+    - TZS
+    - UAH
+    - UGX
+    - USD
+    - UYU
+    - UZS
+    - VEF
+    - VES
+    - VND
+    - VUV
+    - WST
+    - XAF
+    - XAG
+    - XAU
+    - XCD
+    - XDR
+    - XOF
+    - XPD
+    - XPF
+    - XPT
+    - YER
+    - ZAR
+    - ZMW
+    - ZWL
+- lookup: amount-of-money
+  examples: |
+    - 1
+    - 1.5
+    - 0.5
+    - 5
+    - 5.5
+    - 10
+    - 11
+    - 32.5
+    - 10.75
+    - 13.564
+    - 18.268945
+    - 50
+    - 150
+    - 56.2
+    - 123
+    - 6123
+    - 65456.550
+    - 10000
+    - 100
+    - 1
+    - 0
+    - 2.3
+    - 965
+    - 3.22
+    - 74
+    - 12
+    - 564.741
+    - 89798
+    - 99999999
+    - 8952132165
+    - 999999
+    - 1000000000
+    - 100000
+    - 1000000
+    - 500000
+    - 500
+    - 5000000
+    - 663
+    - 632.005
+    - 5447.963
+    - 6897
+    - 78
+    - 9
+    - 128
+- lookup: mail
+  examples: |
+    - amine2@gmail.com
+    - mldfks@hotmail.com
+    - amleka.sdm@yahoo.fr
+    - mlkdf22@outlook.fr
+    - fghfghf44@hotmail.fr
+    - mlkklm_5@esprit.tn
+    - bridge22@gmail.com
+    - hkjghfd@hotmail.com
+    - ghjyui5@yahoo.fr
+    - mohamed888@outlook.fr
+    - med7965@hotmail.fr
+    - daliio007@esprit.tn
+    - dzana@imaginet.fr
+    - hanko@hol.fr
+    - yosr.chebbi@esprit.tn
+    - sarra.benhaddada@esprit.tn
+    - zeineb.haffar@esprit.tn
+    - anis.moalla@esprit.tn	
+    - nourchene.riahi@esprit.tn
+    - hakim.atrous@esprit.tn	
+    - mouheb.benabdallah@esprit.tn
+    - medhedi.ezzine@esprit.tn
+    - abdallah.ouaili@esprit.tn
+    - mohamedamine.saighi@esprit.tn
+    - wassim.mkadmi@esprit.tn
+    - mohamedamine.chelly1@esprit.tn
+    - yasmin.hachicha@esprit.tn
+    - nada.benbrahim@esprit.tn	
+    - feriel.mabrouk@esprit.tn
+    - hanko@wanadoo.fr
+    - dzovinar@francenet.fr
+    - soquet@haddock.inria.fr
+    - epochat@worldnet.fr
+    - sorc@wanadoo.fr
+    - murdoc@wanadoo.fr
+    - joewhite@wanadoo.fr
+    - lms@wanadoo.fr
+    - sorel@wanadoo.fr
+    - mure@wanadoo.fr
+    - murea@grenet.fr
+    - soriano@wanadoo.fr
+    - soriel@wanadoo.fr
+    - muriel@wanadoo.fr
+    - sorrow@wanadoo.fr
+    - hanne@wanadoo.fr
+    - sorry@wanadoo.fr
+    - murlock@wanadoo.fr
+    - hanner@wanadoo.fr
+    - lmw@escp.ccip.fr
+    - sorsha@wanadoo.fr
+    - sortega@wanadoo.fr
+    - hannes@wanadoo.fr
+    - sortiz@wanadoo.fr
+    - sory@wanadoo.fr
+    - hanni@wanadoo.fr
+    - hannibal1@wanadoo.fr
+    - sos@wanadoo.fr
+    - sosa@wanadoo.fr
+    - murph@wanadoo.fr
+    - ln@wanadoo.fr
+    - lna@hol.fr
+    - lna@wanadoo.fr
+    - joeyh@wanadoo.fr
+    - hanny@wanadoo.fr
+    - hanoi@wanadoo.fr
+    - hanon@wanadoo.fr
+    - naco@wanadoo.fr
+    - soso@wanadoo.fr
+    - lnaud@teleriviera.fr
+    - lnb@wanadoo.fr
+    - hans.erhart@wanadoo.fr
+    - nad_thi@magic.fr
+    - lnc@wanadoo.fr
+    - nada@hol.fr
+    - nada@physique.ens.fr
+    - lncsa@francenet.fr
+    - sota@wanadoo.fr
+    - hans3@wanadoo.fr
+    - nadal@physique.ens.fr
+    - sotec@wanadoo.fr
+    - nadal@wanadoo.fr
+    - nadam@irisa.fr
+    - soter@wanadoo.fr
+    - nadam@wanadoo.fr
+    - hans@cnam.fr
+    - soteria@wanadoo.fr
+    - nadan@wanadoo.fr
+    - sotero@wanadoo.fr
+    - soth@wanadoo.fr
+    - joeys@wanadoo.fr
+    - hans@libertysurf.fr
+    - sothis@wanadoo.fr
+    - nadas@wanadoo.fr
+    - hans@wanadoo.fr
+    - nadav@wanadoo.fr
+    - nadben@club-internet.fr
+    - lnegrier@grolier.fr
+    - nade@wanadoo.fr
+    - nadeau@wanadoo.fr
+    - sottil@wanadoo.fr
+    - lnet@wanadoo.fr
+    - sottile@wanadoo.fr
+    - sotto@wanadoo.fr
+    - nadege@unimedia.fr
+    - sou2@wanadoo.fr
+    - sou@wanadoo.fr
+    - jof@wanadoo.fr
+    - soubrane@wanadoo.fr
+    - jofe@wanadoo.fr
+    - soudan@wanadoo.fr
+    - nader@hol.fr
+    - nader@wanadoo.fr
+    - nader_m@esme.fr
+    - soufflet@wanadoo.fr
+    - joff@wanadoo.fr
+    - joffre@poly.polytechnique.fr
+    - joffrin@liberation.fr
+    - lng@wanadoo.fr
+    - e950007@escp.ccip.fr
+    - e960063@escp.ccip.fr
+    - soul@wanadoo.fr
+    - hansen@hol.fr
+    - hansen@smtp1.insead.fr
+    - nadia@enya.cad.cea.fr
+    - hansen@wanadoo.fr
+    - joga@wanadoo.fr
+    - lnguyen@ens-lyon.fr
+    - souledge@wanadoo.fr
+    - lnh@wanadoo.fr
+    - soulfinger@wanadoo.fr
+    - lni@wanadoo.fr
+    - joghems@srmp14.saclay.cea.fr
+    - soulie@wanadoo.fr
+    - lnicolas@pasteur.fr
+    - lnicol@irisa.fr
+    - nadine.adam@industrie.gouv.fr
+    - nadine.lemaire@hol.fr
+    - nadine.rouillon@icare.fr
+    - e_voirin@micronet.fr
+    - nadine@hol.fr
+    - nadine@wanadoo.fr
+    - lnl@hol.fr
+    - eaa.bmsi@wanadoo.fr
+    - jogy@wanadoo.fr
+    - cly@imaginet.fr
+    - srousseau@wanadoo.fr
+    - joh@wanadoo.fr
+    - eab@metra.fr
+    - lnm@wanadoo.fr
+    - joha@wanadoo.fr
+    - nadineg@wanadoo.fr
+    - sroy@wanadoo.fr
+    - johan.andersson@wanadoo.fr
+    - srp@wanadoo.fr
+    - hanso@wanadoo.fr
+    - johan.nilsson@wanadoo.fr
+    - johan.montagnat@sophia.inria.fr
+    - hansolo@wanadoo.fr
+    - nadir@wanadoo.fr
+    - eacparis@pratique.fr
+    - eadam@infini.fr
+    - lnoyelle@ifhamy.insa-lyon.fr
+    - johan@hol.fr
+    - nadja@wanadoo.fr
+    - lnp@wanadoo.fr
+    - johan@wanadoo.fr
+    - nadler@insead.fr
+    - srs@wanadoo.fr
+    - nado@wanadoo.fr
+    - lns@wanadoo.fr
+    - nadon@wanadoo.fr
+    - johanj@worldnet.fr
+    - srsr@wanadoo.fr
+    - johann.boulet@wanadoo.fr
+    - johann.cottaign@hol.fr
+    - nadya@wanadoo.fr
+    - srt@wanadoo.fr
+    - nae@wanadoo.fr
+    - lnx@wanadoo.fr
+    - hanss@wanadoo.fr
+    - srudy@wanadoo.fr
+    - nael@wanadoo.fr
+    - sruiz@wanadoo.fr
+    - lo@santorin.int-evry.fr
+    - lo@wanadoo.fr
+    - naepel@micronet.fr
+    - naepels@micronet.fr
+    - hanuman@wanadoo.fr
+    - loa@wanadoo.fr
+    - naf@wanadoo.fr
+    - naf@imaginet.fr
+    - load@wanadoo.fr
+    - hanz@wanadoo.fr
+    - srv@hol.fr
+    - nafia@carolus.cma.fr
+    - hanzel@wanadoo.fr
+    - srv@wanadoo.fr
+    - johanne@wanadoo.fr
+    - johannes.bluemink@hol.fr
+    - johannes.profijt@wanadoo.fr
+    - loaf@wanadoo.fr
+    - loafer@wanadoo.fr
+    - johannes@techlink.fr
+    - johannes@wanadoo.fr
+    - nafta@wanadoo.fr
+    - haos@wanadoo.fr
+    - loan@wanadoo.fr
+    - srx@wanadoo.fr
+    - sry@wanadoo.fr
+    - srz@wanadoo.fr
+    - johansson@wanadoo.fr
+    - hapi@wanadoo.fr
+    - hapiness@wanadoo.fr
+    - nagash@wanadoo.fr
+    - johb@wanadoo.fr
+    - loba@wanadoo.fr
+    - haplo@hol.fr
+    - haplo@wanadoo.fr
+    - ss6250@wanadoo.fr
+    - eai@nordnet.fr
+    - johel@wanadoo.fr
+    - nagel@wanadoo.fr
+    - lobel@wanadoo.fr
+    - ss@wanadoo.fr
+    - nagi@wanadoo.fr
+    - lobjois@cert.fr
+    - ssa@wanadoo.fr
+    - happiness@wanadoo.fr
+    - john-k@wanadoo.fr
+    - lobo2@wanadoo.fr
+    - nagle@wanadoo.fr
+    - nagler@wanadoo.fr
+    - nago@hol.fr
+    - john.adams@wanadoo.fr
+    - nago@wanadoo.fr
+    - john.allen@wanadoo.fr
+    - ssahin@wanadoo.fr
+    - ssaid@wanadoo.fr
+    - nagpal@magic.fr
+    - john.b@wanadoo.fr
+    - john.bailey@wanadoo.fr
+    - john.baldwin@wanadoo.fr
+    - nagra@wanadoo.fr
+    - john.bingham@art.alcatel.fr
+    - eam@quaternet.fr
+    - happy2@wanadoo.fr
+    - lovergin@ens.lifl.fr
+    - nagu@wanadoo.fr
+    - eamblard@pratique.fr
+    - nagumo@wanadoo.fr
+    - john.cagnol@sophia.inria.fr
+    - loverl@netinfo.fr
+    - nagy@wanadoo.fr
+    - john.carter@wanadoo.fr
+    - john.collins@wanadoo.fr
+    - nah@wanadoo.fr
+    - nahanni@world-net.sct.fr
+    - nahanni@worldnet.sct.fr
+    - john.d@wanadoo.fr
+    - ssanchez@wanadoo.fr
+    - ssanchez@hol.fr
+    - happy@wanadoo.fr
+    - john.davis@wanadoo.fr
+    - eandrieux@inext.fr
+    - ssandra@wanadoo.fr
+    - nahitfol@bocal.cs.univ-paris8.fr
+    - eantoni@messel.emse.fr
+    - nahoko@wanadoo.fr
+    - nahond@ccr.jussieu.fr
+    - ssarah@wanadoo.fr
+    - john.green@wanadoo.fr
+    - john.griffin@wanadoo.fr
+    - john.harding@wanadoo.fr
+    - eapm@andcp.fr
+    - ssassi@wanadoo.fr
+    - john.henderson@wanadoo.fr
+    - john.hill@wanadoo.fr
+    - nai@wanadoo.fr
+    - naia@wanadoo.fr
+    - happydh@asi.fr
+    - ssavage@wanadoo.fr
+    - naidoo@wanadoo.fr
+    - john.k@wanadoo.fr
+    - ssb@wanadoo.fr
+    - naik@wanadoo.fr
+    - earl1623@eurobretagne.fr
+    - john.lark@club-internet.fr
+    - nail@wanadoo.fr
+    - john.lee@wanadoo.fr
+    - john.lewis@wanadoo.fr
+    - john.macdonald@wanadoo.fr
+    - john.martin@wanadoo.fr
+    - john.may@wanadoo.fr
+    - ssc@wanadoo.fr
+    - loviatar@wanadoo.fr
+    - john.monahan@wanadoo.fr
+    - earliner@pratique.fr
+    - naim@wanadoo.fr
+    - john.norton@wanadoo.fr
+    - earlotti@ris.fr
+    - naina@wanadoo.fr
+    - john.phillips@wanadoo.fr
+    - lovisa@etca.fr
+    - sschmitt@wanadoo.fr
+    - clyonai@world-net.sct.fr
+    - sschneider@wanadoo.fr
+    - clyonai@worldnet.sct.fr
+    - nairi@wanadoo.fr
+    - nais@wanadoo.fr
+    - sschram@wanadoo.fr
+    - lovmoney@club-internet.fr
+    - regan@wanadoo.fr
+    - haps@wanadoo.fr
+    - john.stephens@wanadoo.fr
+    - reganm.regan@ibmx400-us.ibmmail.circe.fr
+    - hapy@wanadoo.fr
+    - earsel@meteo.fr
+    - sschwartz@wanadoo.fr
+    - naj@wanadoo.fr
+    - regard@wanadoo.fr
+    - regards@wanadoo.fr
+    - ssci@wanadoo.fr
+    - john.thompson@wanadoo.fr
+    - regatta@wanadoo.fr
+    - john.townsend@wanadoo.fr
+    - john.unger@wanadoo.fr
+    - sscm@wanadoo.fr
+    - john.van_den_elst@sophia.inria.fr
+    - lovy@wanadoo.fr
+    - regchar@wanadoo.fr
+    - john.wells@wanadoo.fr
+    - john.williams@hol.fr
+    - john.williams@wanadoo.fr
+    - john.wilson@wanadoo.fr
+    - najer@imag.imag.fr
+    - najera@imag.imag.fr
+    - low@wanadoo.fr
+    - naji@wanadoo.fr
+    - har@wanadoo.fr
+    - najid@club-internet.fr
+    - regent@club-internet.fr
+    - hara@wanadoo.fr
+    - regent@wanadoo.fr
+    - reger@wanadoo.fr
+    - najman@thomson-lcr.fr
+    - regg@wanadoo.fr
+    - medezzine777@gmail.com
+    - amir.tayari@gmail.com
+    - amen.mrayah@esprit.tn
+    - mariemouinissi4@gmail.com
+
+- lookup: phone_number
+  examples: |
+    - 29457368
+    - 20198533
+    - 21679151
+    - 20371570
+    - 21228196
+    - 27347982
+    - 29815317
+    - 25328570
+    - 26384530
+    - 20782557
+    - 24422553
+    - 26441551
+    - 21046004
+    - 23761018
+    - 26371145
+    - 21413494
+    - 24577069
+    - 22808829
+    - 24567120
+    - 23865086
+    - 27552111
+    - 28904010
+    - 28569129
+    - 23682880
+    - 24370722
+    - 20698044
+    - 21147190
+    - 29167540
+    - 26479142
+    - 23780537
+    - 24344967
+    - 29354951
+    - 28894522
+    - 26356410
+    - 27901217
+    - 24323227
+    - 20900557
+    - 28658284
+    - 29760645
+    - 29004873
+    - 24119641
+    - 29388503
+    - 20925820
+    - 24587425
+    - 24384445
+    - 28071313
+    - 29276718
+    - 27583734
+    - 26116649
+    - 20443458
+    - 24109892
+    - 28277060
+    - 50246539
+    - 54664922
+    - 53462661
+    - 51458822
+    - 52826842
+    - 51948212
+    - 56882451
+    - 59055379
+    - 57061991
+    - 53459666
+    - 57556430
+    - 51089492
+    - 50317250
+    - 50888274
+    - 58331800
+    - 52452127
+    - 51399786
+    - 52619305
+    - 52871660
+    - 55176235
+    - 55298168
+    - 56913003
+    - 59395548
+    - 58271719
+    - 50815356
+    - 58734332
+    - 51246986
+    - 57782149
+    - 52138428
+    - 56591501
+    - 57026714
+    - 59568017
+    - 58637323
+    - 53421994
+    - 59570250
+    - 58442610
+    - 50921390
+    - 59990730
+    - 58824609
+    - 51213813
+    - 51812783
+    - 59371597
+    - 57629990
+    - 54846326
+    - 59558412
+    - 50878895
+    - 53811954
+    - 59329066
+    - 55879382
+    - 58368816
+    - 57739000
+    - 50675239
+    - 51595082
+    - 55502267
+    - 57965174
+    - 55006489
+    - 54122885
+    - 57385929
+    - 55242178
+    - 53322709
+    - 57127579
+    - 51877106
+    - 90961101
+    - 92348747
+    - 95123578
+    - 97827043
+    - 95754769
+    - 94773825
+    - 91095980
+    - 97390008
+    - 94152340
+    - 94271653
+    - 91446659
+    - 91905331
+    - 91868767
+    - 93279829
+    - 90711141
+    - 92061022
+    - 94601316
+    - 93518191
+    - 91495239
+    - 92027737
+    - 96554301
+    - 91305539
+    - 96700248
+    - 99889294
+    - 99861835
+    - 90551234
+    - 92999034
+    - 97690760
+    - 92447586
+    - 92092862
+    - 90257313
+    - 93577702
+    - 92158889
+    - 97740855
+    - 95816949
+    - 90746507
+    - 96513582
+    - 92318608
+    - 96333949
+    - 92561327
+    - 96544282
+    - 93402023
+    - 91516229
+    - 90575345
+    - 99253228
+    - 94649325
+    - 90303623
+    - 97530679
+    - 97312127
+    - 97126880
+    - 99037219
+    - 94681532
+    - 91158827
+    - 99715290
+    - 97685196
+    - 92277438
+    - 95544475
+    - 98985283
+    - 99116282
+    - 92180256
+    - 97895629
+    - 90424660
+    - 98469986
+    - 93568806
+    - 99428803
+    - 95217690
+    - 99618032
+    - 92173870
+    - 93074149
+    - 97154063
+    - 98237148
+    - 99901201
+    - 95985916
+    - 99559189
+    - 97917281
+    - 94125436
+    - 93510658
+    - 93467687
+    - 97842328
+    - 99557933
+    - 90369684
+    - 94452512
+    - 95886398
+    - 92783926
+    - 96858599
+    - 96842755
+    - 90263011
+    - 92833783
+    - 93574667
+    - 95862455
+    - 92042795
+    - 90620065
+    - 99566128
+    - 91389922
+    - 90763776
+    - 95453560
+    - 94017000
+    - 92039338
+    - 94491206
+    - 97223804
+    - 90926686
+    - 22388459
+    - 22464559
+    - 26469802
+    - 24116758
+    - 20347497
+    - 21148923
+    - 23061559
+    - 22583659
+    - 22509465
+    - 29914598
+    - 24896629
+    - 22111254
+    - 29347113
+    - 23481753
+    - 25878720
+    - 22216449
+    - 26803472
+    - 25233041
+    - 28241683
+    - 26719809
+    - 27633025
+    - 25295791
+    - 26534783
+    - 29340635
+    - 26986192
+    - 24104065
+    - 21240655
+    - 25580881
+    - 27073799
+    - 24503340
+    - 24733236
+    - 20685618
+    - 24007864
+    - 22928864
+    - 24410780
+    - 24146934
+    - 21191703
+    - 26332830
+    - 25936851
+    - 29209034
+    - 28406058
+    - 29481755
+    - 24457937
+    - 24328176
+    - 26822495
+    - 24899753
+    - 23552593
+    - 23635577
+    - 28757076
+    - 28855759
+    - 27319467
+    - 50148177
+    - 54157179
+    - 53517509
+    - 58000953
+    - 54145289
+    - 57532337
+    - 51323574
+    - 51440520
+    - 56517017
+    - 58685500
+    - 53027753
+    - 57555712
+    - 57542349
+    - 54146084
+    - 57982248
+    - 50808159
+    - 57768069
+    - 59975857
+    - 57519579
+    - 57901618
+    - 52936213
+    - 53291918
+    - 52838242
+    - 55523268
+    - 51685825
+    - 55974427
+    - 53824749
+    - 54918747
+    - 55934151
+    - 55843526
+    - 50144623
+    - 55414398
+    - 59344334
+    - 50548231
+    - 54654408
+    - 55009184
+    - 57805245
+    - 58496751
+    - 51212746
+    - 53992296
+    - 50269249
+    - 54753647
+    - 56812702
+    - 53388846
+    - 56040735
+    - 52021670
+    - 50712736
+    - 59056688
+    - 50509293
+    - 50138986
+    - 51943397
+    - 56219419
+    - 52218368
+    - 50702821
+    - 51760551
+    - 52235841
+
+
+- lookup: rib
+  examples: |
+    - 1111111110
+    - 1111111111
+    - 1111111112
+    - 1111111113
+    - 1111111114
+    - 1111111115
+    - 1111111116
+    - 1111111117
+    - 1111111118
+    - 1111111119
+    - 1111111120
+    - 1111111121
+    - 1111111122
+    - 1111111123
+    - 1111111124
+    - 1111111125
+    - 1111111126
+    - 1111111127
+    - 1111111128
+    - 1111111129
+    - 1111111130
+    - 1111111131
+    - 1111111132
+    - 1111111133
+    - 1111111134
+    - 1111111135
+    - 1111111136
+    - 1111111137
+    - 1111111138
+    - 1111111139
+    - 1111111140
+
+
+
+
+
+

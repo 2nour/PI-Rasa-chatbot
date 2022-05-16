@@ -1,0 +1,6 @@
+version: "3.0"
+stories:
+- story: cheque_book_request_fr
+  steps:
+  - intent: request_cheque_fr
+  - action: action_cheque_request_fr

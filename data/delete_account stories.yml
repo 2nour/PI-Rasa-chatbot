@@ -1,0 +1,7 @@
+version: "3.0"
+- story: account_delete1
+  steps:
+  - intent: delete_account
+  - action: action_ask why
+  - action: action_check_balance_null
+  - action: action_delete

@@ -1,0 +1,23 @@
+version: "3.0"
+stories:
+- story: allow_position_tracking_story
+  steps:
+  - intent: nearest_agency_position
+  - action: action_use_location
+  - intent: track_location
+    entities: 
+      - track_status: "Yes"
+  - slot_was_set:
+      - track_status: "Yes"
+  - action: action_nearest_agency
+
+- story: deny_position_tracking_story
+  steps:
+  - intent: nearest_agency_position
+  - action: action_use_location
+  - intent: track_location
+    entities: 
+      - track_status: "No"
+  - slot_was_set:
+      - track_status: "No"
+  - action: action_nearest_agency

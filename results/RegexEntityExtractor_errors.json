@@ -1,0 +1,8306 @@
+[
+  {
+    "text": "I'm Grateful , but it's all right",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "currency_dep",
+        "start": 24,
+        "end": 27,
+        "value": "all",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "currency_arriv",
+        "start": 24,
+        "end": 27,
+        "value": "all",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "and thats all thank you and good bye",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "currency_dep",
+        "start": 10,
+        "end": 13,
+        "value": "all",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "currency_arriv",
+        "start": 10,
+        "end": 13,
+        "value": "all",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "what's my balance?",
+    "entities": [
+      {
+        "start": 10,
+        "end": 17,
+        "value": "balance",
+        "entity": "balancee"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "balancee",
+        "start": 10,
+        "end": 17,
+        "confidence_entity": 0.9991557598114014,
+        "value": "balance",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "balancee",
+        "start": 10,
+        "end": 17,
+        "confidence_entity": 0.725392165587502,
+        "value": "balance",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "what's my current balance?",
+    "entities": [
+      {
+        "start": 10,
+        "end": 25,
+        "value": "current balance",
+        "entity": "balancee"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "balancee",
+        "start": 10,
+        "end": 25,
+        "confidence_entity": 0.9876301884651184,
+        "value": "current balance",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "balancee",
+        "start": 10,
+        "end": 25,
+        "confidence_entity": 0.7010656974983118,
+        "value": "current balance",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "What's the balance on that account?",
+    "entities": [
+      {
+        "start": 11,
+        "end": 18,
+        "value": "balance",
+        "entity": "balancee"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "balancee",
+        "start": 11,
+        "end": 18,
+        "confidence_entity": 0.9991925358772278,
+        "value": "balance",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "balancee",
+        "start": 11,
+        "end": 18,
+        "confidence_entity": 0.4244419742842861,
+        "value": "balance",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "what is my account balance",
+    "entities": [
+      {
+        "start": 19,
+        "end": 26,
+        "value": "balance",
+        "entity": "balancee"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "balancee",
+        "start": 19,
+        "end": 26,
+        "confidence_entity": 0.9991773962974548,
+        "value": "balance",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "balancee",
+        "start": 19,
+        "end": 26,
+        "confidence_entity": 0.8365867818374033,
+        "value": "balance",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "what's my account balance?",
+    "entities": [
+      {
+        "start": 18,
+        "end": 25,
+        "value": "balance",
+        "entity": "balancee"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "balancee",
+        "start": 18,
+        "end": 25,
+        "confidence_entity": 0.9991106390953064,
+        "value": "balance",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "balancee",
+        "start": 18,
+        "end": 25,
+        "confidence_entity": 0.8371111640519739,
+        "value": "balance",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "whats my account balance",
+    "entities": [
+      {
+        "start": 17,
+        "end": 24,
+        "value": "balance",
+        "entity": "balancee"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "balancee",
+        "start": 17,
+        "end": 24,
+        "confidence_entity": 0.9990004897117615,
+        "value": "balance",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "balancee",
+        "start": 17,
+        "end": 24,
+        "confidence_entity": 0.8370823871890334,
+        "value": "balance",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "what is my bank account balance?",
+    "entities": [
+      {
+        "start": 24,
+        "end": 31,
+        "value": "balance",
+        "entity": "balancee"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "balancee",
+        "start": 24,
+        "end": 31,
+        "confidence_entity": 0.9990555644035339,
+        "value": "balance",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "balancee",
+        "start": 24,
+        "end": 31,
+        "confidence_entity": 0.8485949736303301,
+        "value": "balance",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "what's my bank account balance?",
+    "entities": [
+      {
+        "start": 23,
+        "end": 30,
+        "value": "balance",
+        "entity": "balancee"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "balancee",
+        "start": 23,
+        "end": 30,
+        "confidence_entity": 0.9990074038505554,
+        "value": "balance",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "balancee",
+        "start": 23,
+        "end": 30,
+        "confidence_entity": 0.8486496684029241,
+        "value": "balance",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "What balance do I have",
+    "entities": [
+      {
+        "start": 5,
+        "end": 12,
+        "value": "balance",
+        "entity": "balancee"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "balancee",
+        "start": 5,
+        "end": 12,
+        "confidence_entity": 0.9984385371208191,
+        "value": "balance",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "balancee",
+        "start": 5,
+        "end": 12,
+        "confidence_entity": 0.774974355002562,
+        "value": "balance",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Whats the balance on my credit account",
+    "entities": [
+      {
+        "start": 10,
+        "end": 17,
+        "value": "balance",
+        "entity": "amount-of-money"
+      },
+      {
+        "start": 24,
+        "end": 30,
+        "value": "credit",
+        "entity": "account_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount-of-money",
+        "start": 10,
+        "end": 17,
+        "confidence_entity": 0.9975787997245789,
+        "value": "balance",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "account_type",
+        "start": 24,
+        "end": 30,
+        "confidence_entity": 0.9933581948280334,
+        "value": "credit",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "balancee",
+        "start": 10,
+        "end": 17,
+        "confidence_entity": 0.41515825967389,
+        "value": "balance",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "account_type",
+        "start": 24,
+        "end": 30,
+        "confidence_entity": 0.7288160521102064,
+        "value": "credit",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "I should check my account balance",
+    "entities": [
+      {
+        "start": 26,
+        "end": 33,
+        "value": "balance",
+        "entity": "balancee"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "balancee",
+        "start": 26,
+        "end": 33,
+        "confidence_entity": 0.9991698265075684,
+        "value": "balance",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "balancee",
+        "start": 26,
+        "end": 33,
+        "confidence_entity": 0.837102470388692,
+        "value": "balance",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Can you tell me my account balance?",
+    "entities": [
+      {
+        "start": 27,
+        "end": 34,
+        "value": "balance",
+        "entity": "balancee"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "balancee",
+        "start": 27,
+        "end": 34,
+        "confidence_entity": 0.9989326596260071,
+        "value": "balance",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "balancee",
+        "start": 27,
+        "end": 34,
+        "confidence_entity": 0.837133339128518,
+        "value": "balance",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "so.... what's my balance?",
+    "entities": [
+      {
+        "start": 17,
+        "end": 24,
+        "value": "balance",
+        "entity": "balancee"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "balancee",
+        "start": 17,
+        "end": 24,
+        "confidence_entity": 0.9991974234580994,
+        "value": "balance",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "balancee",
+        "start": 17,
+        "end": 24,
+        "confidence_entity": 0.7253990250274761,
+        "value": "balance",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "whats my current balance",
+    "entities": [
+      {
+        "start": 9,
+        "end": 24,
+        "value": "current balance",
+        "entity": "balancee"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "balancee",
+        "start": 9,
+        "end": 24,
+        "confidence_entity": 0.990456759929657,
+        "value": "current balance",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "balancee",
+        "start": 9,
+        "end": 24,
+        "confidence_entity": 0.7011253901362221,
+        "value": "current balance",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "What's my balance?",
+    "entities": [
+      {
+        "start": 10,
+        "end": 17,
+        "value": "balance",
+        "entity": "balancee"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "balancee",
+        "start": 10,
+        "end": 17,
+        "confidence_entity": 0.9991395473480225,
+        "value": "balance",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "balancee",
+        "start": 10,
+        "end": 17,
+        "confidence_entity": 0.7253497868093588,
+        "value": "balance",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Pay Karen 60 Euros",
+    "entities": [
+      {
+        "start": 4,
+        "end": 9,
+        "value": "Karen",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 4,
+        "end": 9,
+        "confidence_entity": 0.9992938041687012,
+        "value": "Karen",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "PERSON",
+        "start": 4,
+        "end": 9,
+        "confidence_entity": 0.8485342023551091,
+        "value": "Karen",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "pay Mona $60",
+    "entities": [
+      {
+        "start": 4,
+        "end": 8,
+        "value": "Mona",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 4,
+        "end": 8,
+        "confidence_entity": 0.9991881251335144,
+        "value": "Mona",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "PERSON",
+        "start": 4,
+        "end": 8,
+        "confidence_entity": 0.8343506089491364,
+        "value": "Mona",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "transfer $60 to Sally",
+    "entities": [
+      {
+        "start": 16,
+        "end": 21,
+        "value": "Sally",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 16,
+        "end": 21,
+        "confidence_entity": 0.9991149306297302,
+        "value": "Sally",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "PERSON",
+        "start": 16,
+        "end": 21,
+        "confidence_entity": 0.8805233749891602,
+        "value": "Sally",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "II want to transfer to Kelly",
+    "entities": [
+      {
+        "start": 23,
+        "end": 28,
+        "value": "Kelly",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 23,
+        "end": 28,
+        "confidence_entity": 0.9989296793937683,
+        "value": "Kelly",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "PERSON",
+        "start": 23,
+        "end": 28,
+        "confidence_entity": 0.8892655078468709,
+        "value": "Kelly",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Pay Percy $50",
+    "entities": [
+      {
+        "start": 4,
+        "end": 9,
+        "value": "Percy",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 4,
+        "end": 9,
+        "confidence_entity": 0.9995317459106445,
+        "value": "Percy",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "amount-of-money",
+        "start": 11,
+        "end": 13,
+        "value": "50",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "PERSON",
+        "start": 4,
+        "end": 9,
+        "confidence_entity": 0.8322351241820243,
+        "value": "Percy",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Pay $50 to Pat",
+    "entities": [
+      {
+        "start": 11,
+        "end": 14,
+        "value": "Pat",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 11,
+        "end": 14,
+        "confidence_entity": 0.9992566704750061,
+        "value": "Pat",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "amount-of-money",
+        "start": 5,
+        "end": 7,
+        "value": "50",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "PERSON",
+        "start": 11,
+        "end": 14,
+        "confidence_entity": 0.8474748345052462,
+        "value": "Pat",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Ok pay Emma",
+    "entities": [
+      {
+        "start": 7,
+        "end": 11,
+        "value": "Emma",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 7,
+        "end": 11,
+        "confidence_entity": 0.9994039535522461,
+        "value": "Emma",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "PERSON",
+        "start": 7,
+        "end": 11,
+        "confidence_entity": 0.8553709548937081,
+        "value": "Emma",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "pay Emanual",
+    "entities": [
+      {
+        "start": 4,
+        "end": 11,
+        "value": "Emanual",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 4,
+        "end": 11,
+        "confidence_entity": 0.9994574189186096,
+        "value": "Emanual",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "PERSON",
+        "start": 4,
+        "end": 11,
+        "confidence_entity": 0.8618942273027115,
+        "value": "Emanual",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "I need to transfer money to my grandma Judith.",
+    "entities": [
+      {
+        "start": 39,
+        "end": 45,
+        "value": "Judith",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 39,
+        "end": 45,
+        "confidence_entity": 0.9992122650146484,
+        "value": "Judith",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "PERSON",
+        "start": 39,
+        "end": 45,
+        "confidence_entity": 0.7988480159103944,
+        "value": "Judith",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "i want to transfer money to Latisha",
+    "entities": [
+      {
+        "start": 28,
+        "end": 35,
+        "value": "Latisha",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 28,
+        "end": 35,
+        "confidence_entity": 0.9994300007820129,
+        "value": "Latisha",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "PERSON",
+        "start": 28,
+        "end": 35,
+        "confidence_entity": 0.8498763509657684,
+        "value": "Latisha",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "I need to make an urgent transfer to Bob, can you do it?",
+    "entities": [
+      {
+        "start": 37,
+        "end": 40,
+        "value": "Bob",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 37,
+        "end": 40,
+        "confidence_entity": 0.9986153841018677,
+        "value": "Bob",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "currency_dep",
+        "start": 37,
+        "end": 40,
+        "value": "Bob",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "currency_arriv",
+        "start": 37,
+        "end": 40,
+        "value": "Bob",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "PERSON",
+        "start": 37,
+        "end": 40,
+        "confidence_entity": 0.8965621672182718,
+        "value": "Bob",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Ahh, okay so I want to make a transfer to Bob.",
+    "entities": [
+      {
+        "start": 42,
+        "end": 45,
+        "value": "Bob",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 42,
+        "end": 45,
+        "confidence_entity": 0.9989493489265442,
+        "value": "Bob",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "currency_dep",
+        "start": 42,
+        "end": 45,
+        "value": "Bob",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "currency_arriv",
+        "start": 42,
+        "end": 45,
+        "value": "Bob",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "PERSON",
+        "start": 42,
+        "end": 45,
+        "confidence_entity": 0.9399952792844364,
+        "value": "Bob",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "I need to transfer money to Jeff, my son",
+    "entities": [
+      {
+        "start": 28,
+        "end": 32,
+        "value": "Jeff",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 28,
+        "end": 32,
+        "confidence_entity": 0.9994221925735474,
+        "value": "Jeff",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "PERSON",
+        "start": 28,
+        "end": 32,
+        "confidence_entity": 0.8078041430862776,
+        "value": "Jeff",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "send $50 to john jacob",
+    "entities": [
+      {
+        "start": 12,
+        "end": 22,
+        "value": "john jacob",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 12,
+        "end": 22,
+        "confidence_entity": 0.9789422750473022,
+        "value": "john jacob",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "amount-of-money",
+        "start": 6,
+        "end": 8,
+        "value": "50",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "PERSON",
+        "start": 12,
+        "end": 22,
+        "confidence_entity": 0.7286873328474366,
+        "value": "john jacob",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Show me my list of transactions",
+    "entities": [
+      {
+        "start": 19,
+        "end": 31,
+        "value": "transactions",
+        "entity": "transactions"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "transactions",
+        "start": 19,
+        "end": 31,
+        "confidence_entity": 0.9987241625785828,
+        "value": "transactions",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "transactions",
+        "start": 19,
+        "end": 31,
+        "confidence_entity": 0.917112611312079,
+        "value": "transactions",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Show me my previous transactions",
+    "entities": [
+      {
+        "start": 20,
+        "end": 32,
+        "value": "transactions",
+        "entity": "transactions"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "transactions",
+        "start": 20,
+        "end": 32,
+        "confidence_entity": 0.9985664486885071,
+        "value": "transactions",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "transactions",
+        "start": 20,
+        "end": 32,
+        "confidence_entity": 0.8728837384609635,
+        "value": "transactions",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "can I access to my list of transactions?",
+    "entities": [
+      {
+        "start": 27,
+        "end": 39,
+        "value": "transactions",
+        "entity": "transactions"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "transactions",
+        "start": 27,
+        "end": 39,
+        "confidence_entity": 0.9968609809875488,
+        "value": "transactions",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "transactions",
+        "start": 27,
+        "end": 39,
+        "confidence_entity": 0.9171087591247751,
+        "value": "transactions",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "can I see the list of known transactions?",
+    "entities": [
+      {
+        "start": 28,
+        "end": 40,
+        "value": "transactions",
+        "entity": "transactions"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "transactions",
+        "start": 28,
+        "end": 40,
+        "confidence_entity": 0.9974135756492615,
+        "value": "transactions",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "transactions",
+        "start": 28,
+        "end": 40,
+        "confidence_entity": 0.8731829047285118,
+        "value": "transactions",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "what's my transactions list",
+    "entities": [
+      {
+        "start": 10,
+        "end": 22,
+        "value": "transactions",
+        "entity": "transactions"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "transactions",
+        "start": 10,
+        "end": 22,
+        "confidence_entity": 0.9977662563323975,
+        "value": "transactions",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "transactions",
+        "start": 10,
+        "end": 22,
+        "confidence_entity": 0.9206953294707122,
+        "value": "transactions",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "can I see my transactions list ?",
+    "entities": [
+      {
+        "start": 13,
+        "end": 25,
+        "value": "transactions",
+        "entity": "transactions"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "transactions",
+        "start": 13,
+        "end": 25,
+        "confidence_entity": 0.9972776770591736,
+        "value": "transactions",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "transactions",
+        "start": 13,
+        "end": 25,
+        "confidence_entity": 0.9206915147007152,
+        "value": "transactions",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "show me my transactions list",
+    "entities": [
+      {
+        "start": 11,
+        "end": 23,
+        "value": "transactions",
+        "entity": "transactions"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "transactions",
+        "start": 11,
+        "end": 23,
+        "confidence_entity": 0.9983246922492981,
+        "value": "transactions",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "transactions",
+        "start": 11,
+        "end": 23,
+        "confidence_entity": 0.9206971132687803,
+        "value": "transactions",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "How much credit can the bank afford me ?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 15,
+        "value": "credit",
+        "entity": "credit"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "credit",
+        "start": 9,
+        "end": 15,
+        "confidence_entity": 0.9987081289291382,
+        "value": "credit",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "credit",
+        "start": 9,
+        "end": 15,
+        "confidence_entity": 0.7738085016227094,
+        "value": "credit",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "What amount of credit can i get ?",
+    "entities": [
+      {
+        "start": 15,
+        "end": 21,
+        "value": "credit",
+        "entity": "credit"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "credit",
+        "start": 15,
+        "end": 21,
+        "confidence_entity": 0.9988818764686584,
+        "value": "credit",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "credit",
+        "start": 15,
+        "end": 21,
+        "confidence_entity": 0.7921098540856226,
+        "value": "credit",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "I wanna check possible credit amount",
+    "entities": [
+      {
+        "start": 23,
+        "end": 29,
+        "value": "credit",
+        "entity": "credit"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "credit",
+        "start": 23,
+        "end": 29,
+        "confidence_entity": 0.9986681938171387,
+        "value": "credit",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "credit",
+        "start": 23,
+        "end": 29,
+        "confidence_entity": 0.8845513608437695,
+        "value": "credit",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "let me see possible credit amount",
+    "entities": [
+      {
+        "start": 20,
+        "end": 26,
+        "value": "credit",
+        "entity": "credit"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "credit",
+        "start": 20,
+        "end": 26,
+        "confidence_entity": 0.9988314509391785,
+        "value": "credit",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "credit",
+        "start": 20,
+        "end": 26,
+        "confidence_entity": 0.8868857201520098,
+        "value": "credit",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "How much money can the bank afford me as a credit ?",
+    "entities": [
+      {
+        "start": 43,
+        "end": 49,
+        "value": "credit",
+        "entity": "credit"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "credit",
+        "start": 43,
+        "end": 49,
+        "confidence_entity": 0.9972317814826965,
+        "value": "credit",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "credit",
+        "start": 43,
+        "end": 49,
+        "confidence_entity": 0.8143483965199787,
+        "value": "credit",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Can I check possible credit i can get ?",
+    "entities": [
+      {
+        "start": 21,
+        "end": 27,
+        "value": "credit",
+        "entity": "credit"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "credit",
+        "start": 21,
+        "end": 27,
+        "confidence_entity": 0.9987554550170898,
+        "value": "credit",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "credit",
+        "start": 21,
+        "end": 27,
+        "confidence_entity": 0.8255647052862124,
+        "value": "credit",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "what is my possible credit amount",
+    "entities": [
+      {
+        "start": 20,
+        "end": 26,
+        "value": "credit",
+        "entity": "credit"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "credit",
+        "start": 20,
+        "end": 26,
+        "confidence_entity": 0.9990140199661255,
+        "value": "credit",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "credit",
+        "start": 20,
+        "end": 26,
+        "confidence_entity": 0.8833431579978446,
+        "value": "credit",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "what is my potential credit amouint",
+    "entities": [
+      {
+        "start": 21,
+        "end": 27,
+        "value": "credit",
+        "entity": "credit"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "credit",
+        "start": 21,
+        "end": 27,
+        "confidence_entity": 0.9989383816719055,
+        "value": "credit",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "credit",
+        "start": 21,
+        "end": 27,
+        "confidence_entity": 0.6969827641025316,
+        "value": "credit",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "i want a credit",
+    "entities": [
+      {
+        "start": 9,
+        "end": 15,
+        "value": "credit",
+        "entity": "credit"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "credit",
+        "start": 9,
+        "end": 15,
+        "confidence_entity": 0.9982563853263855,
+        "value": "credit",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "credit",
+        "start": 9,
+        "end": 15,
+        "confidence_entity": 0.8108179548361654,
+        "value": "credit",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "i want to purchase a credit",
+    "entities": [
+      {
+        "start": 21,
+        "end": 27,
+        "value": "credit",
+        "entity": "credit"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "credit",
+        "start": 21,
+        "end": 27,
+        "confidence_entity": 0.998891294002533,
+        "value": "credit",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "credit",
+        "start": 21,
+        "end": 27,
+        "confidence_entity": 0.8120087890169735,
+        "value": "credit",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "i would like to get a credit",
+    "entities": [
+      {
+        "start": 22,
+        "end": 28,
+        "value": "credit",
+        "entity": "credit"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "credit",
+        "start": 22,
+        "end": 28,
+        "confidence_entity": 0.9988258481025696,
+        "value": "credit",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "credit",
+        "start": 22,
+        "end": 28,
+        "confidence_entity": 0.8110550506223815,
+        "value": "credit",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "my salary is 2500",
+    "entities": [
+      {
+        "start": 13,
+        "end": 17,
+        "value": "2500",
+        "entity": "salaryy"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "salaryy",
+        "start": 13,
+        "end": 17,
+        "confidence_entity": 0.9965565204620361,
+        "value": "2500",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "salaryy",
+        "start": 13,
+        "end": 17,
+        "confidence_entity": 0.9030486212366449,
+        "value": "2500",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "my earnings are 4000",
+    "entities": [
+      {
+        "start": 16,
+        "end": 20,
+        "value": "4000",
+        "entity": "salaryy"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "salaryy",
+        "start": 16,
+        "end": 20,
+        "confidence_entity": 0.9968557357788086,
+        "value": "4000",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "salaryy",
+        "start": 16,
+        "end": 20,
+        "confidence_entity": 0.9227807304594955,
+        "value": "4000",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "the monthly amount is 3000",
+    "entities": [
+      {
+        "start": 22,
+        "end": 26,
+        "value": "3000",
+        "entity": "salaryy"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "salaryy",
+        "start": 22,
+        "end": 26,
+        "confidence_entity": 0.9967293739318848,
+        "value": "3000",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "salaryy",
+        "start": 22,
+        "end": 26,
+        "confidence_entity": 0.811863832832281,
+        "value": "3000",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "I get paid 4000 a month",
+    "entities": [
+      {
+        "start": 11,
+        "end": 15,
+        "value": "4000",
+        "entity": "salaryy"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "salaryy",
+        "start": 11,
+        "end": 15,
+        "confidence_entity": 0.9967507123947144,
+        "value": "4000",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "salaryy",
+        "start": 11,
+        "end": 15,
+        "confidence_entity": 0.8571477153919722,
+        "value": "4000",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "5000",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "5000",
+        "entity": "salaryy"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.40929150581359863,
+        "value": "5000",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "salaryy",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.8334108308178033,
+        "value": "5000",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "4000",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "4000",
+        "entity": "salaryy"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.40929150581359863,
+        "value": "4000",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "salaryy",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9553946108959454,
+        "value": "4000",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "2500",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "2500",
+        "entity": "salaryy"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.40929150581359863,
+        "value": "2500",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "salaryy",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9181415654392864,
+        "value": "2500",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "500",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "500",
+        "entity": "salaryy"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "salaryy",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.9839786887168884,
+        "value": "500",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "amount-of-money",
+        "start": 0,
+        "end": 3,
+        "value": "500",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "salaryy",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.8725878513624888,
+        "value": "500",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "1500",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "1500",
+        "entity": "salaryy"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.40929150581359863,
+        "value": "1500",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "salaryy",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.8657898693921435,
+        "value": "1500",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "750",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "750",
+        "entity": "salaryy"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.40929150581359863,
+        "value": "750",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "salaryy",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.7656082852614504,
+        "value": "750",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "1250",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "1250",
+        "entity": "salaryy"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.40929150581359863,
+        "value": "1250",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "salaryy",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.7465940583387086,
+        "value": "1250",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "my credit time length is 5 years",
+    "entities": [
+      {
+        "start": 25,
+        "end": 26,
+        "value": "5",
+        "entity": "duration"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "duration",
+        "start": 25,
+        "end": 26,
+        "confidence_entity": 0.9992697834968567,
+        "value": "5",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "amount-of-money",
+        "start": 25,
+        "end": 26,
+        "value": "5",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "duration",
+        "start": 25,
+        "end": 26,
+        "confidence_entity": 0.9802914310042853,
+        "value": "5",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "the credit duration is 5 years",
+    "entities": [
+      {
+        "start": 23,
+        "end": 24,
+        "value": "5",
+        "entity": "duration"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "duration",
+        "start": 23,
+        "end": 24,
+        "confidence_entity": 0.9993576407432556,
+        "value": "5",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "amount-of-money",
+        "start": 23,
+        "end": 24,
+        "value": "5",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "duration",
+        "start": 23,
+        "end": 24,
+        "confidence_entity": 0.9802886132077405,
+        "value": "5",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "the duration is 5 years",
+    "entities": [
+      {
+        "start": 16,
+        "end": 17,
+        "value": "5",
+        "entity": "duration"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "duration",
+        "start": 16,
+        "end": 17,
+        "confidence_entity": 0.9993610978126526,
+        "value": "5",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "amount-of-money",
+        "start": 16,
+        "end": 17,
+        "value": "5",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "duration",
+        "start": 16,
+        "end": 17,
+        "confidence_entity": 0.9802917949460733,
+        "value": "5",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "duration is 5 years",
+    "entities": [
+      {
+        "start": 12,
+        "end": 13,
+        "value": "5",
+        "entity": "duration"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "duration",
+        "start": 12,
+        "end": 13,
+        "confidence_entity": 0.9993324875831604,
+        "value": "5",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "amount-of-money",
+        "start": 12,
+        "end": 13,
+        "value": "5",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "duration",
+        "start": 12,
+        "end": 13,
+        "confidence_entity": 0.980291855128223,
+        "value": "5",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "5 years",
+    "entities": [
+      {
+        "start": 0,
+        "end": 1,
+        "value": "5",
+        "entity": "duration"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "duration",
+        "start": 0,
+        "end": 1,
+        "confidence_entity": 0.9988090991973877,
+        "value": "5",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "amount-of-money",
+        "start": 0,
+        "end": 1,
+        "value": "5",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "duration",
+        "start": 0,
+        "end": 1,
+        "confidence_entity": 0.9408900243980818,
+        "value": "5",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "my credit time length is 7 years",
+    "entities": [
+      {
+        "start": 25,
+        "end": 26,
+        "value": "7",
+        "entity": "duration"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "duration",
+        "start": 25,
+        "end": 26,
+        "confidence_entity": 0.9995586276054382,
+        "value": "7",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "duration",
+        "start": 25,
+        "end": 26,
+        "confidence_entity": 0.9802789340958933,
+        "value": "7",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "the credit duration is 7 years",
+    "entities": [
+      {
+        "start": 23,
+        "end": 24,
+        "value": "7",
+        "entity": "duration"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "duration",
+        "start": 23,
+        "end": 24,
+        "confidence_entity": 0.9995993971824646,
+        "value": "7",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "duration",
+        "start": 23,
+        "end": 24,
+        "confidence_entity": 0.9802758024349572,
+        "value": "7",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "the duration is 7 years",
+    "entities": [
+      {
+        "start": 16,
+        "end": 17,
+        "value": "7",
+        "entity": "duration"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "duration",
+        "start": 16,
+        "end": 17,
+        "confidence_entity": 0.9996232986450195,
+        "value": "7",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "duration",
+        "start": 16,
+        "end": 17,
+        "confidence_entity": 0.980279315949975,
+        "value": "7",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "duration is 7 years",
+    "entities": [
+      {
+        "start": 12,
+        "end": 13,
+        "value": "7",
+        "entity": "duration"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "duration",
+        "start": 12,
+        "end": 13,
+        "confidence_entity": 0.9995701909065247,
+        "value": "7",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "duration",
+        "start": 12,
+        "end": 13,
+        "confidence_entity": 0.9802791855222249,
+        "value": "7",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "7 years",
+    "entities": [
+      {
+        "start": 0,
+        "end": 1,
+        "value": "7",
+        "entity": "duration"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "duration",
+        "start": 0,
+        "end": 1,
+        "confidence_entity": 0.9991961121559143,
+        "value": "7",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "duration",
+        "start": 0,
+        "end": 1,
+        "confidence_entity": 0.9229103709320443,
+        "value": "7",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "my credit time length is 10 years",
+    "entities": [
+      {
+        "start": 25,
+        "end": 27,
+        "value": "10",
+        "entity": "duration"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "duration",
+        "start": 25,
+        "end": 27,
+        "confidence_entity": 0.9992697834968567,
+        "value": "10",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "amount-of-money",
+        "start": 25,
+        "end": 27,
+        "value": "10",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "duration",
+        "start": 25,
+        "end": 27,
+        "confidence_entity": 0.9762533826449408,
+        "value": "10",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "the credit duration is 10 years",
+    "entities": [
+      {
+        "start": 23,
+        "end": 25,
+        "value": "10",
+        "entity": "duration"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "duration",
+        "start": 23,
+        "end": 25,
+        "confidence_entity": 0.9993576407432556,
+        "value": "10",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "amount-of-money",
+        "start": 23,
+        "end": 25,
+        "value": "10",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "duration",
+        "start": 23,
+        "end": 25,
+        "confidence_entity": 0.9762514652604481,
+        "value": "10",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "the duration is 10 years",
+    "entities": [
+      {
+        "start": 16,
+        "end": 18,
+        "value": "10",
+        "entity": "duration"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "duration",
+        "start": 16,
+        "end": 18,
+        "confidence_entity": 0.9993610978126526,
+        "value": "10",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "amount-of-money",
+        "start": 16,
+        "end": 18,
+        "value": "10",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "duration",
+        "start": 16,
+        "end": 18,
+        "confidence_entity": 0.9762536698088438,
+        "value": "10",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "duration is 10 years",
+    "entities": [
+      {
+        "start": 12,
+        "end": 14,
+        "value": "10",
+        "entity": "duration"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "duration",
+        "start": 12,
+        "end": 14,
+        "confidence_entity": 0.9993324875831604,
+        "value": "10",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "amount-of-money",
+        "start": 12,
+        "end": 14,
+        "value": "10",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "duration",
+        "start": 12,
+        "end": 14,
+        "confidence_entity": 0.9762540906287938,
+        "value": "10",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "10 years",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "10",
+        "entity": "duration"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "duration",
+        "start": 0,
+        "end": 2,
+        "confidence_entity": 0.9988090991973877,
+        "value": "10",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "amount-of-money",
+        "start": 0,
+        "end": 2,
+        "value": "10",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "duration",
+        "start": 0,
+        "end": 2,
+        "confidence_entity": 0.9393451501554064,
+        "value": "10",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "my credit time length is 15 years",
+    "entities": [
+      {
+        "start": 25,
+        "end": 27,
+        "value": "15",
+        "entity": "duration"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "duration",
+        "start": 25,
+        "end": 27,
+        "confidence_entity": 0.9995586276054382,
+        "value": "15",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "duration",
+        "start": 25,
+        "end": 27,
+        "confidence_entity": 0.9803684690233853,
+        "value": "15",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "the credit duration is 15 years",
+    "entities": [
+      {
+        "start": 23,
+        "end": 25,
+        "value": "15",
+        "entity": "duration"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "duration",
+        "start": 23,
+        "end": 25,
+        "confidence_entity": 0.9995993971824646,
+        "value": "15",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "duration",
+        "start": 23,
+        "end": 25,
+        "confidence_entity": 0.9803653686117882,
+        "value": "15",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "the duration is 15 years",
+    "entities": [
+      {
+        "start": 16,
+        "end": 18,
+        "value": "15",
+        "entity": "duration"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "duration",
+        "start": 16,
+        "end": 18,
+        "confidence_entity": 0.9996232986450195,
+        "value": "15",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "duration",
+        "start": 16,
+        "end": 18,
+        "confidence_entity": 0.9803688468473705,
+        "value": "15",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "duration is 15 years",
+    "entities": [
+      {
+        "start": 12,
+        "end": 14,
+        "value": "15",
+        "entity": "duration"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "duration",
+        "start": 12,
+        "end": 14,
+        "confidence_entity": 0.9995701909065247,
+        "value": "15",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "duration",
+        "start": 12,
+        "end": 14,
+        "confidence_entity": 0.9803687156310101,
+        "value": "15",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "15 years",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "15",
+        "entity": "duration"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "duration",
+        "start": 0,
+        "end": 2,
+        "confidence_entity": 0.9991961121559143,
+        "value": "15",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "duration",
+        "start": 0,
+        "end": 2,
+        "confidence_entity": 0.9232313094784037,
+        "value": "15",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "my credit time length is 20 years",
+    "entities": [
+      {
+        "start": 25,
+        "end": 27,
+        "value": "20",
+        "entity": "duration"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "duration",
+        "start": 25,
+        "end": 27,
+        "confidence_entity": 0.9995586276054382,
+        "value": "20",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "duration",
+        "start": 25,
+        "end": 27,
+        "confidence_entity": 0.9804312732515039,
+        "value": "20",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "the credit duration is 20 years",
+    "entities": [
+      {
+        "start": 23,
+        "end": 25,
+        "value": "20",
+        "entity": "duration"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "duration",
+        "start": 23,
+        "end": 25,
+        "confidence_entity": 0.9995993971824646,
+        "value": "20",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "duration",
+        "start": 23,
+        "end": 25,
+        "confidence_entity": 0.9804282174287903,
+        "value": "20",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "the duration is 20 years",
+    "entities": [
+      {
+        "start": 16,
+        "end": 18,
+        "value": "20",
+        "entity": "duration"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "duration",
+        "start": 16,
+        "end": 18,
+        "confidence_entity": 0.9996232986450195,
+        "value": "20",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "duration",
+        "start": 16,
+        "end": 18,
+        "confidence_entity": 0.9804316392173836,
+        "value": "20",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "duration is 20 years",
+    "entities": [
+      {
+        "start": 12,
+        "end": 14,
+        "value": "20",
+        "entity": "duration"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "duration",
+        "start": 12,
+        "end": 14,
+        "confidence_entity": 0.9995701909065247,
+        "value": "20",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "duration",
+        "start": 12,
+        "end": 14,
+        "confidence_entity": 0.9804314487833447,
+        "value": "20",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "20 years",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "20",
+        "entity": "duration"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "duration",
+        "start": 0,
+        "end": 2,
+        "confidence_entity": 0.9991961121559143,
+        "value": "20",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "duration",
+        "start": 0,
+        "end": 2,
+        "confidence_entity": 0.9217804718952536,
+        "value": "20",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "I want to sign in to my account",
+    "entities": [
+      {
+        "start": 24,
+        "end": 31,
+        "value": "account",
+        "entity": "account"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "account",
+        "start": 24,
+        "end": 31,
+        "confidence_entity": 0.9984001517295837,
+        "value": "account",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "account",
+        "start": 24,
+        "end": 31,
+        "confidence_entity": 0.565826100149314,
+        "value": "account",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "I want to log in to my account",
+    "entities": [
+      {
+        "start": 23,
+        "end": 30,
+        "value": "account",
+        "entity": "account"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "account",
+        "start": 23,
+        "end": 30,
+        "confidence_entity": 0.9983950257301331,
+        "value": "account",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "account",
+        "start": 23,
+        "end": 30,
+        "confidence_entity": 0.5658257003307203,
+        "value": "account",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "I wanna access to my account",
+    "entities": [
+      {
+        "start": 21,
+        "end": 28,
+        "value": "account",
+        "entity": "account"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "account",
+        "start": 21,
+        "end": 28,
+        "confidence_entity": 0.9987045526504517,
+        "value": "account",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "account",
+        "start": 21,
+        "end": 28,
+        "confidence_entity": 0.5658224730012735,
+        "value": "account",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "I want to close my account",
+    "entities": [
+      {
+        "start": 19,
+        "end": 26,
+        "value": "account",
+        "entity": "account"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "account",
+        "start": 19,
+        "end": 26,
+        "confidence_entity": 0.9990774393081665,
+        "value": "account",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "account",
+        "start": 19,
+        "end": 26,
+        "confidence_entity": 0.5648485330922877,
+        "value": "account",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "I want to remove my account",
+    "entities": [
+      {
+        "start": 20,
+        "end": 27,
+        "value": "account",
+        "entity": "account"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "account",
+        "start": 20,
+        "end": 27,
+        "confidence_entity": 0.9991125464439392,
+        "value": "account",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "account",
+        "start": 20,
+        "end": 27,
+        "confidence_entity": 0.5649368809264066,
+        "value": "account",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "I wanna to delete my account",
+    "entities": [
+      {
+        "start": 21,
+        "end": 28,
+        "value": "account",
+        "entity": "account"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "account",
+        "start": 21,
+        "end": 28,
+        "confidence_entity": 0.9991017580032349,
+        "value": "account",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "account",
+        "start": 21,
+        "end": 28,
+        "confidence_entity": 0.5650132698994583,
+        "value": "account",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "I wanna to remove my account",
+    "entities": [
+      {
+        "start": 21,
+        "end": 28,
+        "value": "account",
+        "entity": "account"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "account",
+        "start": 21,
+        "end": 28,
+        "confidence_entity": 0.9991961121559143,
+        "value": "account",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "account",
+        "start": 21,
+        "end": 28,
+        "confidence_entity": 0.5649378641967642,
+        "value": "account",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "I want to delete my account",
+    "entities": [
+      {
+        "start": 20,
+        "end": 27,
+        "value": "account",
+        "entity": "account"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "account",
+        "start": 20,
+        "end": 27,
+        "confidence_entity": 0.9990209341049194,
+        "value": "account",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "account",
+        "start": 20,
+        "end": 27,
+        "confidence_entity": 0.5650120520674679,
+        "value": "account",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "I wish to close my account",
+    "entities": [
+      {
+        "start": 19,
+        "end": 26,
+        "value": "account",
+        "entity": "account"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "account",
+        "start": 19,
+        "end": 26,
+        "confidence_entity": 0.9992724061012268,
+        "value": "account",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "account",
+        "start": 19,
+        "end": 26,
+        "confidence_entity": 0.5648493628276794,
+        "value": "account",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "I wish to remove my account",
+    "entities": [
+      {
+        "start": 20,
+        "end": 27,
+        "value": "account",
+        "entity": "account"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "account",
+        "start": 20,
+        "end": 27,
+        "confidence_entity": 0.9993335604667664,
+        "value": "account",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "account",
+        "start": 20,
+        "end": 27,
+        "confidence_entity": 0.5649389029272195,
+        "value": "account",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "I wanna close my account",
+    "entities": [
+      {
+        "start": 17,
+        "end": 24,
+        "value": "account",
+        "entity": "account"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "account",
+        "start": 17,
+        "end": 24,
+        "confidence_entity": 0.9989553689956665,
+        "value": "account",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "account",
+        "start": 17,
+        "end": 24,
+        "confidence_entity": 0.5648386163884713,
+        "value": "account",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "my name is Hedy Ezzine",
+    "entities": [
+      {
+        "start": 11,
+        "end": 22,
+        "value": "Hedy Ezzine",
+        "entity": "full_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "full_name",
+        "start": 11,
+        "end": 22,
+        "confidence_entity": 0.9994840621948242,
+        "value": "Hedy Ezzine",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "full_name",
+        "start": 11,
+        "end": 22,
+        "confidence_entity": 0.9222997849559642,
+        "value": "Hedy Ezzine",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Nour Hadrich",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "Nour Hadrich",
+        "entity": "full_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.9997826218605042,
+        "value": "Nour Hadrich",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.9298755588097015,
+        "value": "Nour Hadrich",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "my fullname is Amine ZArrouki",
+    "entities": [
+      {
+        "start": 15,
+        "end": 29,
+        "value": "Amine ZArrouki",
+        "entity": "full_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "full_name",
+        "start": 15,
+        "end": 29,
+        "confidence_entity": 0.999794065952301,
+        "value": "Amine ZArrouki",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "full_name",
+        "start": 15,
+        "end": 29,
+        "confidence_entity": 0.8659364168362932,
+        "value": "Amine ZArrouki",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "hakim atrous",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "hakim atrous",
+        "entity": "full_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.9998631477355957,
+        "value": "hakim atrous",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.8036420811055996,
+        "value": "hakim atrous",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "I'm amen tbini",
+    "entities": [
+      {
+        "start": 4,
+        "end": 14,
+        "value": "amen tbini",
+        "entity": "full_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "full_name",
+        "start": 4,
+        "end": 14,
+        "confidence_entity": 0.9996015429496765,
+        "value": "amen tbini",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "full_name",
+        "start": 4,
+        "end": 14,
+        "confidence_entity": 0.8041791793594959,
+        "value": "amen tbini",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "it's ramzi mansour",
+    "entities": [
+      {
+        "start": 5,
+        "end": 18,
+        "value": "ramzi mansour",
+        "entity": "full_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "full_name",
+        "start": 5,
+        "end": 18,
+        "confidence_entity": 0.9998095631599426,
+        "value": "ramzi mansour",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "full_name",
+        "start": 5,
+        "end": 18,
+        "confidence_entity": 0.8033988877892166,
+        "value": "ramzi mansour",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Najla Majdoub",
+    "entities": [
+      {
+        "start": 0,
+        "end": 13,
+        "value": "Najla Majdoub",
+        "entity": "full_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 13,
+        "confidence_entity": 0.9997960925102234,
+        "value": "Najla Majdoub",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 13,
+        "confidence_entity": 0.9416249943196942,
+        "value": "Najla Majdoub",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Med Hedy Sayari",
+    "entities": [
+      {
+        "start": 0,
+        "end": 15,
+        "value": "Med Hedy Sayari",
+        "entity": "full_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 15,
+        "confidence_entity": 0.9984540939331055,
+        "value": "Med Hedy Sayari",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 15,
+        "confidence_entity": 0.9439951731430053,
+        "value": "Med Hedy Sayari",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Ahlem ben jdidia",
+    "entities": [
+      {
+        "start": 0,
+        "end": 16,
+        "value": "Ahlem ben jdidia",
+        "entity": "full_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 16,
+        "confidence_entity": 0.9991779923439026,
+        "value": "Ahlem ben jdidia",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 16,
+        "confidence_entity": 0.8441543861235886,
+        "value": "Ahlem ben jdidia",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Feriel darraji",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "Feriel darraji",
+        "entity": "full_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 14,
+        "confidence_entity": 0.9998369216918945,
+        "value": "Feriel darraji",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 14,
+        "confidence_entity": 0.886422428835291,
+        "value": "Feriel darraji",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Achref Douiri",
+    "entities": [
+      {
+        "start": 0,
+        "end": 13,
+        "value": "Achref Douiri",
+        "entity": "full_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 13,
+        "confidence_entity": 0.9998679161071777,
+        "value": "Achref Douiri",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 13,
+        "confidence_entity": 0.9469176762423777,
+        "value": "Achref Douiri",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Amenallah Amamou",
+    "entities": [
+      {
+        "start": 0,
+        "end": 16,
+        "value": "Amenallah Amamou",
+        "entity": "full_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 16,
+        "confidence_entity": 0.9997265934944153,
+        "value": "Amenallah Amamou",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 16,
+        "confidence_entity": 0.9434880914262466,
+        "value": "Amenallah Amamou",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Mehdi Ben Dhifallah",
+    "entities": [
+      {
+        "start": 0,
+        "end": 19,
+        "value": "Mehdi Ben Dhifallah",
+        "entity": "full_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 19,
+        "confidence_entity": 0.9992212057113647,
+        "value": "Mehdi Ben Dhifallah",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 19,
+        "confidence_entity": 0.9309883952147681,
+        "value": "Mehdi Ben Dhifallah",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Harrsion Afful",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "Harrsion Afful",
+        "entity": "full_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 14,
+        "confidence_entity": 0.9998424053192139,
+        "value": "Harrsion Afful",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 14,
+        "confidence_entity": 0.9345991845938392,
+        "value": "Harrsion Afful",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Tasnim Kallel",
+    "entities": [
+      {
+        "start": 0,
+        "end": 13,
+        "value": "Tasnim Kallel",
+        "entity": "full_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 13,
+        "confidence_entity": 0.9998251795768738,
+        "value": "Tasnim Kallel",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 13,
+        "confidence_entity": 0.9581690774548484,
+        "value": "Tasnim Kallel",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Beya Mlika",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "Beya Mlika",
+        "entity": "full_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.9997832179069519,
+        "value": "Beya Mlika",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.9366251084737645,
+        "value": "Beya Mlika",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Baya ben Hmida",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "Baya ben Hmida",
+        "entity": "full_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 14,
+        "confidence_entity": 0.9988910555839539,
+        "value": "Baya ben Hmida",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 14,
+        "confidence_entity": 0.9016195142109472,
+        "value": "Baya ben Hmida",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Khalil Cherif",
+    "entities": [
+      {
+        "start": 0,
+        "end": 13,
+        "value": "Khalil Cherif",
+        "entity": "full_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 13,
+        "confidence_entity": 0.9998664855957031,
+        "value": "Khalil Cherif",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 13,
+        "confidence_entity": 0.926784782826713,
+        "value": "Khalil Cherif",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Mohamed Anis Saighi",
+    "entities": [
+      {
+        "start": 0,
+        "end": 19,
+        "value": "Mohamed Anis Saighi",
+        "entity": "full_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 19,
+        "confidence_entity": 0.9992884397506714,
+        "value": "Mohamed Anis Saighi",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 19,
+        "confidence_entity": 0.8663048594908611,
+        "value": "Mohamed Anis Saighi",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Med Ali Bouchouicha",
+    "entities": [
+      {
+        "start": 0,
+        "end": 19,
+        "value": "Med Ali Bouchouicha",
+        "entity": "full_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 19,
+        "confidence_entity": 0.9991125464439392,
+        "value": "Med Ali Bouchouicha",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 19,
+        "confidence_entity": 0.9081583060749036,
+        "value": "Med Ali Bouchouicha",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Talel Ben Mansour",
+    "entities": [
+      {
+        "start": 0,
+        "end": 17,
+        "value": "Talel Ben Mansour",
+        "entity": "full_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 17,
+        "confidence_entity": 0.9989983439445496,
+        "value": "Talel Ben Mansour",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 17,
+        "confidence_entity": 0.964126548706378,
+        "value": "Talel Ben Mansour",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Hamed Aounallah",
+    "entities": [
+      {
+        "start": 0,
+        "end": 15,
+        "value": "Hamed Aounallah",
+        "entity": "full_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 15,
+        "confidence_entity": 0.9998772144317627,
+        "value": "Hamed Aounallah",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 15,
+        "confidence_entity": 0.9611039539856158,
+        "value": "Hamed Aounallah",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Raya Ayari",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "Raya Ayari",
+        "entity": "full_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.9998506307601929,
+        "value": "Raya Ayari",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.97506434245605,
+        "value": "Raya Ayari",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Patrick Kroos",
+    "entities": [
+      {
+        "start": 0,
+        "end": 13,
+        "value": "Patrick Kroos",
+        "entity": "full_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 13,
+        "confidence_entity": 0.9998842477798462,
+        "value": "Patrick Kroos",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 13,
+        "confidence_entity": 0.9060624037560261,
+        "value": "Patrick Kroos",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Sofien Medimagh",
+    "entities": [
+      {
+        "start": 0,
+        "end": 15,
+        "value": "Sofien Medimagh",
+        "entity": "full_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 15,
+        "confidence_entity": 0.9998588562011719,
+        "value": "Sofien Medimagh",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 15,
+        "confidence_entity": 0.9588430455213751,
+        "value": "Sofien Medimagh",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Leila Ouannes",
+    "entities": [
+      {
+        "start": 0,
+        "end": 13,
+        "value": "Leila Ouannes",
+        "entity": "full_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 13,
+        "confidence_entity": 0.9998175501823425,
+        "value": "Leila Ouannes",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 13,
+        "confidence_entity": 0.9233965499273793,
+        "value": "Leila Ouannes",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Ritej Abdelli",
+    "entities": [
+      {
+        "start": 0,
+        "end": 13,
+        "value": "Ritej Abdelli",
+        "entity": "full_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 13,
+        "confidence_entity": 0.9998641014099121,
+        "value": "Ritej Abdelli",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 13,
+        "confidence_entity": 0.91713537572279,
+        "value": "Ritej Abdelli",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Lamia Chikhaoui",
+    "entities": [
+      {
+        "start": 0,
+        "end": 15,
+        "value": "Lamia Chikhaoui",
+        "entity": "full_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 15,
+        "confidence_entity": 0.9998536109924316,
+        "value": "Lamia Chikhaoui",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 15,
+        "confidence_entity": 0.9248938548192683,
+        "value": "Lamia Chikhaoui",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Mary Macron",
+    "entities": [
+      {
+        "start": 0,
+        "end": 11,
+        "value": "Mary Macron",
+        "entity": "full_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 11,
+        "confidence_entity": 0.9998170733451843,
+        "value": "Mary Macron",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 11,
+        "confidence_entity": 0.9490742062403414,
+        "value": "Mary Macron",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Frank Ribery",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "Frank Ribery",
+        "entity": "full_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.9997498393058777,
+        "value": "Frank Ribery",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.9171436540390785,
+        "value": "Frank Ribery",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Raphael Varane",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "Raphael Varane",
+        "entity": "full_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 14,
+        "confidence_entity": 0.9998170733451843,
+        "value": "Raphael Varane",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 14,
+        "confidence_entity": 0.9653319840030582,
+        "value": "Raphael Varane",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Paul Pogba",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "Paul Pogba",
+        "entity": "full_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.9998806715011597,
+        "value": "Paul Pogba",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.9034991032040856,
+        "value": "Paul Pogba",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Vincent Valbuena",
+    "entities": [
+      {
+        "start": 0,
+        "end": 16,
+        "value": "Vincent Valbuena",
+        "entity": "full_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 16,
+        "confidence_entity": 0.9998031258583069,
+        "value": "Vincent Valbuena",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 16,
+        "confidence_entity": 0.935067138155426,
+        "value": "Vincent Valbuena",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Jeremy Mathieu",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "Jeremy Mathieu",
+        "entity": "full_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 14,
+        "confidence_entity": 0.9998308420181274,
+        "value": "Jeremy Mathieu",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 14,
+        "confidence_entity": 0.9330385007295964,
+        "value": "Jeremy Mathieu",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "my identity card number is 10823131",
+    "entities": [
+      {
+        "start": 27,
+        "end": 35,
+        "value": "10823131",
+        "entity": "id_number"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "id_number",
+        "start": 27,
+        "end": 35,
+        "confidence_entity": 0.9944828748703003,
+        "value": "10823131",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "id_number",
+        "start": 27,
+        "end": 35,
+        "confidence_entity": 0.8880244526675519,
+        "value": "10823131",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "my id is 10822112",
+    "entities": [
+      {
+        "start": 9,
+        "end": 17,
+        "value": "10822112",
+        "entity": "id_number"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "id_number",
+        "start": 9,
+        "end": 17,
+        "confidence_entity": 0.9956833124160767,
+        "value": "10822112",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "id_number",
+        "start": 9,
+        "end": 17,
+        "confidence_entity": 0.8633923193981707,
+        "value": "10822112",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "09954231",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "09954231",
+        "entity": "id_number"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.40929150581359863,
+        "value": "09954231",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "id_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.7989653883433542,
+        "value": "09954231",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "my id is 10815479",
+    "entities": [
+      {
+        "start": 9,
+        "end": 17,
+        "value": "10815479",
+        "entity": "id_number"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "id_number",
+        "start": 9,
+        "end": 17,
+        "confidence_entity": 0.9956833124160767,
+        "value": "10815479",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "id_number",
+        "start": 9,
+        "end": 17,
+        "confidence_entity": 0.8881918672465745,
+        "value": "10815479",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "10832147",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "10832147",
+        "entity": "id_number"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.40929150581359863,
+        "value": "10832147",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "id_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.8080145182536123,
+        "value": "10832147",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "10225793",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "10225793",
+        "entity": "id_number"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.40929150581359863,
+        "value": "10225793",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "id_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.8262816774500029,
+        "value": "10225793",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "10432679",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "10432679",
+        "entity": "id_number"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.40929150581359863,
+        "value": "10432679",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "id_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.8445501415400469,
+        "value": "10432679",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "09947516",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "09947516",
+        "entity": "id_number"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.40929150581359863,
+        "value": "09947516",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "id_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.7865715879019881,
+        "value": "09947516",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "my id num is 07815469",
+    "entities": [
+      {
+        "start": 13,
+        "end": 21,
+        "value": "07815469",
+        "entity": "id_number"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "id_number",
+        "start": 13,
+        "end": 21,
+        "confidence_entity": 0.9961726069450378,
+        "value": "07815469",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "id_number",
+        "start": 13,
+        "end": 21,
+        "confidence_entity": 0.7972120692388079,
+        "value": "07815469",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "my email is medezzine@gmail.com",
+    "entities": [
+      {
+        "start": 12,
+        "end": 31,
+        "value": "medezzine@gmail.com",
+        "entity": "mail"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "mail",
+        "start": 12,
+        "end": 31,
+        "confidence_entity": 0.9995612502098083,
+        "value": "medezzine@gmail.com",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "mail",
+        "start": 12,
+        "end": 31,
+        "confidence_entity": 0.9625861300919256,
+        "value": "medezzine@gmail.com",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "my mail is nouri@yahoo.fr",
+    "entities": [
+      {
+        "start": 11,
+        "end": 25,
+        "value": "nouri@yahoo.fr",
+        "entity": "mail"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "mail",
+        "start": 11,
+        "end": 25,
+        "confidence_entity": 0.9996985197067261,
+        "value": "nouri@yahoo.fr",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "mail",
+        "start": 11,
+        "end": 25,
+        "confidence_entity": 0.728684676122574,
+        "value": "nouri@yahoo.fr",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "naaimzarrouki@hotmail.com",
+    "entities": [
+      {
+        "start": 0,
+        "end": 25,
+        "value": "naaimzarrouki@hotmail.com",
+        "entity": "mail"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "mail",
+        "start": 0,
+        "end": 25,
+        "confidence_entity": 0.9997923970222473,
+        "value": "naaimzarrouki@hotmail.com",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "mail",
+        "start": 0,
+        "end": 25,
+        "confidence_entity": 0.9013397483966906,
+        "value": "naaimzarrouki@hotmail.com",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "mrbedis@outlook.com",
+    "entities": [
+      {
+        "start": 0,
+        "end": 19,
+        "value": "mrbedis@outlook.com",
+        "entity": "mail"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "mail",
+        "start": 0,
+        "end": 19,
+        "confidence_entity": 0.9998143315315247,
+        "value": "mrbedis@outlook.com",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "mail",
+        "start": 0,
+        "end": 19,
+        "confidence_entity": 0.8664354603941432,
+        "value": "mrbedis@outlook.com",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "razimemi8@gmail.com",
+    "entities": [
+      {
+        "start": 0,
+        "end": 19,
+        "value": "razimemi8@gmail.com",
+        "entity": "mail"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "mail",
+        "start": 0,
+        "end": 19,
+        "confidence_entity": 0.9997279047966003,
+        "value": "razimemi8@gmail.com",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "mail",
+        "start": 0,
+        "end": 19,
+        "confidence_entity": 0.9273774596066103,
+        "value": "razimemi8@gmail.com",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "helmiabsi3@yahoo.com",
+    "entities": [
+      {
+        "start": 0,
+        "end": 20,
+        "value": "helmiabsi3@yahoo.com",
+        "entity": "mail"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "mail",
+        "start": 0,
+        "end": 20,
+        "confidence_entity": 0.9997618794441223,
+        "value": "helmiabsi3@yahoo.com",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "mail",
+        "start": 0,
+        "end": 20,
+        "confidence_entity": 0.8966298464196979,
+        "value": "helmiabsi3@yahoo.com",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "mohamedaziz.selmi@esprit.tn",
+    "entities": [
+      {
+        "start": 0,
+        "end": 27,
+        "value": "mohamedaziz.selmi@esprit.tn",
+        "entity": "mail"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "mail",
+        "start": 0,
+        "end": 27,
+        "confidence_entity": 0.9998218417167664,
+        "value": "mohamedaziz.selmi@esprit.tn",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "mail",
+        "start": 0,
+        "end": 27,
+        "confidence_entity": 0.7905096883423494,
+        "value": "mohamedaziz.selmi@esprit.tn",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "heniamamou789@gmail.com",
+    "entities": [
+      {
+        "start": 0,
+        "end": 23,
+        "value": "heniamamou789@gmail.com",
+        "entity": "mail"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "mail",
+        "start": 0,
+        "end": 23,
+        "confidence_entity": 0.9997652173042297,
+        "value": "heniamamou789@gmail.com",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "mail",
+        "start": 0,
+        "end": 23,
+        "confidence_entity": 0.9219990064937121,
+        "value": "heniamamou789@gmail.com",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "atayari494@yahoo.com",
+    "entities": [
+      {
+        "start": 0,
+        "end": 20,
+        "value": "atayari494@yahoo.com",
+        "entity": "mail"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "mail",
+        "start": 0,
+        "end": 20,
+        "confidence_entity": 0.9997348189353943,
+        "value": "atayari494@yahoo.com",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "mail",
+        "start": 0,
+        "end": 20,
+        "confidence_entity": 0.8997303536103304,
+        "value": "atayari494@yahoo.com",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "my birthdate is 1997-08-22",
+    "entities": [
+      {
+        "start": 16,
+        "end": 26,
+        "value": "1997-08-22",
+        "entity": "birth_date"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "birth_date",
+        "start": 16,
+        "end": 26,
+        "confidence_entity": 0.9996122717857361,
+        "value": "1997-08-22",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "birth_date",
+        "start": 16,
+        "end": 26,
+        "confidence_entity": 0.874849771275054,
+        "value": "1997-08-22",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "1973-05-10",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "1973-05-10",
+        "entity": "birth_date"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "birth_date",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.9994022846221924,
+        "value": "1973-05-10",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "amount-of-money",
+        "start": 8,
+        "end": 10,
+        "value": "10",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "birth_date",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.8630493380745509,
+        "value": "1973-05-10",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "1997-6-13",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "1997-6-13",
+        "entity": "birth_date"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "birth_date",
+        "start": 0,
+        "end": 9,
+        "confidence_entity": 0.9996211528778076,
+        "value": "1997-6-13",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "birth_date",
+        "start": 0,
+        "end": 9,
+        "confidence_entity": 0.8230736321384166,
+        "value": "1997-6-13",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "my birth date is 2000-12-3",
+    "entities": [
+      {
+        "start": 17,
+        "end": 26,
+        "value": "2000-12-3",
+        "entity": "birth_date"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "birth_date",
+        "start": 17,
+        "end": 26,
+        "confidence_entity": 0.9993723034858704,
+        "value": "2000-12-3",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "amount-of-money",
+        "start": 22,
+        "end": 24,
+        "value": "12",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "birth_date",
+        "start": 17,
+        "end": 26,
+        "confidence_entity": 0.7857296864297886,
+        "value": "2000-12-3",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "I was born in 1980-01-05",
+    "entities": [
+      {
+        "start": 14,
+        "end": 24,
+        "value": "1980-01-05",
+        "entity": "birth_date"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "birth_date",
+        "start": 14,
+        "end": 24,
+        "confidence_entity": 0.9995895028114319,
+        "value": "1980-01-05",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "birth_date",
+        "start": 14,
+        "end": 24,
+        "confidence_entity": 0.7901455650972563,
+        "value": "1980-01-05",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "1977-6-03",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "1977-6-03",
+        "entity": "birth_date"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "birth_date",
+        "start": 0,
+        "end": 9,
+        "confidence_entity": 0.9996211528778076,
+        "value": "1977-6-03",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "birth_date",
+        "start": 0,
+        "end": 9,
+        "confidence_entity": 0.8120905509914824,
+        "value": "1977-6-03",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "1952-11-25",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "1952-11-25",
+        "entity": "birth_date"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "birth_date",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.9994022846221924,
+        "value": "1952-11-25",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "amount-of-money",
+        "start": 5,
+        "end": 7,
+        "value": "11",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "birth_date",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.8678640805256445,
+        "value": "1952-11-25",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "my phone number is 27816709",
+    "entities": [
+      {
+        "start": 19,
+        "end": 27,
+        "value": "27816709",
+        "entity": "phone_number"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 19,
+        "end": 27,
+        "confidence_entity": 0.9934792518615723,
+        "value": "27816709",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_number",
+        "start": 19,
+        "end": 27,
+        "confidence_entity": 0.7937818274741271,
+        "value": "27816709",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "54312678",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "54312678",
+        "entity": "phone_number"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.40929150581359863,
+        "value": "54312678",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.791460600303378,
+        "value": "54312678",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "20052651",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "20052651",
+        "entity": "phone_number"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.40929150581359863,
+        "value": "20052651",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.8191008459644076,
+        "value": "20052651",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "93124759",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "93124759",
+        "entity": "phone_number"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.40929150581359863,
+        "value": "93124759",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.8372495078802334,
+        "value": "93124759",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "my number is 42137894",
+    "entities": [
+      {
+        "start": 13,
+        "end": 21,
+        "value": "42137894",
+        "entity": "phone_number"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 13,
+        "end": 21,
+        "confidence_entity": 0.9937359094619751,
+        "value": "42137894",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_number",
+        "start": 13,
+        "end": 21,
+        "confidence_entity": 0.7937757379178811,
+        "value": "42137894",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "95889949",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "95889949",
+        "entity": "phone_number"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.40929150581359863,
+        "value": "95889949",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.8318026778580514,
+        "value": "95889949",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "52331662",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "52331662",
+        "entity": "phone_number"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.40929150581359863,
+        "value": "52331662",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.8372495078802334,
+        "value": "52331662",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "+21698908704",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "+21698908704",
+        "entity": "phone_number"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.9962759017944336,
+        "value": "+21698908704",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.7974527717861517,
+        "value": "+21698908704",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "+21651347185",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "+21651347185",
+        "entity": "phone_number"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.9962759017944336,
+        "value": "+21651347185",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.8057152472467883,
+        "value": "+21651347185",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "+21620435106",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "+21620435106",
+        "entity": "phone_number"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.9962759017944336,
+        "value": "+21620435106",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.7974527717861517,
+        "value": "+21620435106",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "0021628167185",
+    "entities": [
+      {
+        "start": 0,
+        "end": 13,
+        "value": "0021628167185",
+        "entity": "phone_number"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 13,
+        "confidence_entity": 0.40929150581359863,
+        "value": "0021628167185",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 13,
+        "confidence_entity": 0.9526085039864295,
+        "value": "0021628167185",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "0021656784153",
+    "entities": [
+      {
+        "start": 0,
+        "end": 13,
+        "value": "0021656784153",
+        "entity": "phone_number"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 13,
+        "confidence_entity": 0.40929150581359863,
+        "value": "0021656784153",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 13,
+        "confidence_entity": 0.8780692543756271,
+        "value": "0021656784153",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "0021694854627",
+    "entities": [
+      {
+        "start": 0,
+        "end": 13,
+        "value": "0021694854627",
+        "entity": "phone_number"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 13,
+        "confidence_entity": 0.40929150581359863,
+        "value": "0021694854627",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 13,
+        "confidence_entity": 0.8780692543756271,
+        "value": "0021694854627",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "50317648",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "50317648",
+        "entity": "phone_number"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.40929150581359863,
+        "value": "50317648",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.8177188459439826,
+        "value": "50317648",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "55124789",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "55124789",
+        "entity": "phone_number"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.40929150581359863,
+        "value": "55124789",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.8286100672811326,
+        "value": "55124789",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "58321457",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "58321457",
+        "entity": "phone_number"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.40929150581359863,
+        "value": "58321457",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.8338361506522598,
+        "value": "58321457",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "22314578",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "22314578",
+        "entity": "phone_number"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.40929150581359863,
+        "value": "22314578",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.8181603246359156,
+        "value": "22314578",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "24367891",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "24367891",
+        "entity": "phone_number"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.40929150581359863,
+        "value": "24367891",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.8372495078802334,
+        "value": "24367891",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "23124637",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "23124637",
+        "entity": "phone_number"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.40929150581359863,
+        "value": "23124637",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.8207015278777058,
+        "value": "23124637",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "90300201",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "90300201",
+        "entity": "phone_number"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.40929150581359863,
+        "value": "90300201",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.8372495078802334,
+        "value": "90300201",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "92457631",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "92457631",
+        "entity": "phone_number"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.40929150581359863,
+        "value": "92457631",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.8210766557626479,
+        "value": "92457631",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "94312475",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "94312475",
+        "entity": "phone_number"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.40929150581359863,
+        "value": "94312475",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.8222043237450462,
+        "value": "94312475",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "my address is zaghouan Tunisia",
+    "entities": [
+      {
+        "start": 14,
+        "end": 30,
+        "value": "zaghouan Tunisia",
+        "entity": "addresse"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "addresse",
+        "start": 14,
+        "end": 30,
+        "confidence_entity": 0.9990549683570862,
+        "value": "zaghouan Tunisia",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "addresse",
+        "start": 14,
+        "end": 30,
+        "confidence_entity": 0.8954726557615513,
+        "value": "zaghouan Tunisia",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Earth street ariana",
+    "entities": [
+      {
+        "start": 0,
+        "end": 19,
+        "value": "Earth street ariana",
+        "entity": "addresse"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "addresse",
+        "start": 0,
+        "end": 19,
+        "confidence_entity": 0.9987459182739258,
+        "value": "Earth street ariana",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "addresse",
+        "start": 0,
+        "end": 19,
+        "confidence_entity": 0.8366115852477737,
+        "value": "Earth street ariana",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "street of honor Tunis",
+    "entities": [
+      {
+        "start": 0,
+        "end": 21,
+        "value": "street of honor Tunis",
+        "entity": "addresse"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "addresse",
+        "start": 0,
+        "end": 21,
+        "confidence_entity": 0.9991068243980408,
+        "value": "street of honor Tunis",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "addresse",
+        "start": 0,
+        "end": 21,
+        "confidence_entity": 0.8589201909991482,
+        "value": "street of honor Tunis",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "my home address is 32 street of ghana, Nabeul",
+    "entities": [
+      {
+        "start": 19,
+        "end": 45,
+        "value": "32 street of ghana, Nabeul",
+        "entity": "addresse"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "addresse",
+        "start": 19,
+        "end": 37,
+        "confidence_entity": 0.9964027404785156,
+        "value": "32 street of ghana",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "addresse",
+        "start": 39,
+        "end": 45,
+        "confidence_entity": 0.9989292025566101,
+        "value": "Nabeul",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "addresse",
+        "start": 19,
+        "end": 37,
+        "confidence_entity": 0.8550342630512289,
+        "value": "32 street of ghana",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "addresse",
+        "start": 39,
+        "end": 45,
+        "confidence_entity": 0.8823915853769464,
+        "value": "Nabeul",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "28 rue de la gloire, Mannouba",
+    "entities": [
+      {
+        "start": 0,
+        "end": 29,
+        "value": "28 rue de la gloire, Mannouba",
+        "entity": "addresse"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "addresse",
+        "start": 0,
+        "end": 19,
+        "confidence_entity": 0.998816728591919,
+        "value": "28 rue de la gloire",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "addresse",
+        "start": 21,
+        "end": 29,
+        "confidence_entity": 0.9994294047355652,
+        "value": "Mannouba",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "addresse",
+        "start": 0,
+        "end": 19,
+        "confidence_entity": 0.853969596579877,
+        "value": "28 rue de la gloire",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "addresse",
+        "start": 21,
+        "end": 29,
+        "confidence_entity": 0.9007997683177611,
+        "value": "Mannouba",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Houmt essouk, Djerba",
+    "entities": [
+      {
+        "start": 0,
+        "end": 20,
+        "value": "Houmt essouk, Djerba",
+        "entity": "addresse"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "addresse",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.9994339346885681,
+        "value": "Houmt essouk",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "addresse",
+        "start": 14,
+        "end": 20,
+        "confidence_entity": 0.9995648264884949,
+        "value": "Djerba",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "addresse",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.8579696732297621,
+        "value": "Houmt essouk",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "addresse",
+        "start": 14,
+        "end": 20,
+        "confidence_entity": 0.8826573629678527,
+        "value": "Djerba",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Moknine Monastir",
+    "entities": [
+      {
+        "start": 0,
+        "end": 16,
+        "value": "Moknine Monastir",
+        "entity": "addresse"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "addresse",
+        "start": 0,
+        "end": 16,
+        "confidence_entity": 0.9994643330574036,
+        "value": "Moknine Monastir",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "addresse",
+        "start": 0,
+        "end": 16,
+        "confidence_entity": 0.8235834273546467,
+        "value": "Moknine Monastir",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Sakiet ezzit Sfax",
+    "entities": [
+      {
+        "start": 0,
+        "end": 17,
+        "value": "Sakiet ezzit Sfax",
+        "entity": "addresse"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "addresse",
+        "start": 0,
+        "end": 17,
+        "confidence_entity": 0.99904865026474,
+        "value": "Sakiet ezzit Sfax",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "addresse",
+        "start": 0,
+        "end": 17,
+        "confidence_entity": 0.8732071111212723,
+        "value": "Sakiet ezzit Sfax",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Rades Ben Arous",
+    "entities": [
+      {
+        "start": 0,
+        "end": 15,
+        "value": "Rades Ben Arous",
+        "entity": "addresse"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "addresse",
+        "start": 0,
+        "end": 15,
+        "confidence_entity": 0.9978057742118835,
+        "value": "Rades Ben Arous",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "addresse",
+        "start": 0,
+        "end": 15,
+        "confidence_entity": 0.8283041025465808,
+        "value": "Rades Ben Arous",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Tbarka Jandouba",
+    "entities": [
+      {
+        "start": 0,
+        "end": 15,
+        "value": "Tbarka Jandouba",
+        "entity": "addresse"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "addresse",
+        "start": 0,
+        "end": 15,
+        "confidence_entity": 0.9993821382522583,
+        "value": "Tbarka Jandouba",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "addresse",
+        "start": 0,
+        "end": 15,
+        "confidence_entity": 0.8404731893021884,
+        "value": "Tbarka Jandouba",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Mjez l beb Beja",
+    "entities": [
+      {
+        "start": 0,
+        "end": 15,
+        "value": "Mjez l beb Beja",
+        "entity": "addresse"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "addresse",
+        "start": 0,
+        "end": 15,
+        "confidence_entity": 0.998647153377533,
+        "value": "Mjez l beb Beja",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "addresse",
+        "start": 0,
+        "end": 15,
+        "confidence_entity": 0.8619372024509767,
+        "value": "Mjez l beb Beja",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Lac1 Tunis",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "Lac1 Tunis",
+        "entity": "addresse"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "addresse",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.999330997467041,
+        "value": "Lac1 Tunis",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "addresse",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.8715570441780869,
+        "value": "Lac1 Tunis",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Nasr Neighborhood",
+    "entities": [
+      {
+        "start": 0,
+        "end": 17,
+        "value": "Nasr Neighborhood",
+        "entity": "addresse"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "addresse",
+        "start": 0,
+        "end": 17,
+        "confidence_entity": 0.9994854927062988,
+        "value": "Nasr Neighborhood",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "addresse",
+        "start": 0,
+        "end": 17,
+        "confidence_entity": 0.8298250378007753,
+        "value": "Nasr Neighborhood",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Beb Saadoun Tunis",
+    "entities": [
+      {
+        "start": 0,
+        "end": 17,
+        "value": "Beb Saadoun Tunis",
+        "entity": "addresse"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "addresse",
+        "start": 0,
+        "end": 17,
+        "confidence_entity": 0.9983501434326172,
+        "value": "Beb Saadoun Tunis",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "addresse",
+        "start": 0,
+        "end": 17,
+        "confidence_entity": 0.8888195224503448,
+        "value": "Beb Saadoun Tunis",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Bizerte Tunisia",
+    "entities": [
+      {
+        "start": 0,
+        "end": 15,
+        "value": "Bizerte Tunisia",
+        "entity": "addresse"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "addresse",
+        "start": 0,
+        "end": 15,
+        "confidence_entity": 0.9995189905166626,
+        "value": "Bizerte Tunisia",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "addresse",
+        "start": 0,
+        "end": 15,
+        "confidence_entity": 0.879636412650166,
+        "value": "Bizerte Tunisia",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "my login is 7hedi88",
+    "entities": [
+      {
+        "start": 12,
+        "end": 19,
+        "value": "7hedi88",
+        "entity": "loginn"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "loginn",
+        "start": 12,
+        "end": 19,
+        "confidence_entity": 0.9991157650947571,
+        "value": "7hedi88",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "loginn",
+        "start": 12,
+        "end": 19,
+        "confidence_entity": 0.7691162941477883,
+        "value": "7hedi88",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "nour49",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "nour49",
+        "entity": "loginn"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "loginn",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9993371367454529,
+        "value": "nour49",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "loginn",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.7970717570872422,
+        "value": "nour49",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "77f4amine",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "77f4amine",
+        "entity": "loginn"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "loginn",
+        "start": 0,
+        "end": 9,
+        "confidence_entity": 0.999313473701477,
+        "value": "77f4amine",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "loginn",
+        "start": 0,
+        "end": 9,
+        "confidence_entity": 0.7353462026877863,
+        "value": "77f4amine",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "127ahmed85",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "127ahmed85",
+        "entity": "loginn"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "loginn",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.9993680119514465,
+        "value": "127ahmed85",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "loginn",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.7449521354450028,
+        "value": "127ahmed85",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "i want as login 17dfhf88",
+    "entities": [
+      {
+        "start": 16,
+        "end": 24,
+        "value": "17dfhf88",
+        "entity": "loginn"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "loginn",
+        "start": 16,
+        "end": 24,
+        "confidence_entity": 0.9992176294326782,
+        "value": "17dfhf88",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "loginn",
+        "start": 16,
+        "end": 24,
+        "confidence_entity": 0.7401193665677895,
+        "value": "17dfhf88",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "ahmed43",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "ahmed43",
+        "entity": "loginn"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "loginn",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.999137282371521,
+        "value": "ahmed43",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "loginn",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.7475932282399713,
+        "value": "ahmed43",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "453amir",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "453amir",
+        "entity": "loginn"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "loginn",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.9993016719818115,
+        "value": "453amir",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "loginn",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.7475113961969159,
+        "value": "453amir",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "nouri49",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "nouri49",
+        "entity": "loginn"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "loginn",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.9992582201957703,
+        "value": "nouri49",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "loginn",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.7906020404273608,
+        "value": "nouri49",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "am14mon",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "am14mon",
+        "entity": "loginn"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "loginn",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.9990204572677612,
+        "value": "am14mon",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "loginn",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.7353547611347371,
+        "value": "am14mon",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "sam453r",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "sam453r",
+        "entity": "loginn"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "loginn",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.9987099170684814,
+        "value": "sam453r",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "loginn",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.7573555702769291,
+        "value": "sam453r",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "my password is 5478961",
+    "entities": [
+      {
+        "start": 15,
+        "end": 22,
+        "value": "5478961",
+        "entity": "pass"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pass",
+        "start": 15,
+        "end": 22,
+        "confidence_entity": 0.9924336671829224,
+        "value": "5478961",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pass",
+        "start": 15,
+        "end": 22,
+        "confidence_entity": 0.7928880611206222,
+        "value": "5478961",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "2345678",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "2345678",
+        "entity": "pass"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.40929150581359863,
+        "value": "2345678",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pass",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.7638054804571354,
+        "value": "2345678",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "4157896",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "4157896",
+        "entity": "pass"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.40929150581359863,
+        "value": "4157896",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pass",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.7972385703361584,
+        "value": "4157896",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "1246875",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "1246875",
+        "entity": "pass"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.40929150581359863,
+        "value": "1246875",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pass",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.7704065777289615,
+        "value": "1246875",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "my password is 3452167",
+    "entities": [
+      {
+        "start": 15,
+        "end": 22,
+        "value": "3452167",
+        "entity": "pass"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pass",
+        "start": 15,
+        "end": 22,
+        "confidence_entity": 0.9924336671829224,
+        "value": "3452167",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pass",
+        "start": 15,
+        "end": 22,
+        "confidence_entity": 0.7973889653283771,
+        "value": "3452167",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "7842165",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "7842165",
+        "entity": "pass"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.40929150581359863,
+        "value": "7842165",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pass",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.7972385703361584,
+        "value": "7842165",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "5621478",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "5621478",
+        "entity": "pass"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.40929150581359863,
+        "value": "5621478",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pass",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.7977994651794821,
+        "value": "5621478",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "3698751",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "3698751",
+        "entity": "pass"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.40929150581359863,
+        "value": "3698751",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pass",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.7882733430781965,
+        "value": "3698751",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "9621473",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "9621473",
+        "entity": "pass"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.40929150581359863,
+        "value": "9621473",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pass",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.7972385703361584,
+        "value": "9621473",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "8546210",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "8546210",
+        "entity": "pass"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.40929150581359863,
+        "value": "8546210",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pass",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.796244930022773,
+        "value": "8546210",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "I want as password 6572148",
+    "entities": [
+      {
+        "start": 19,
+        "end": 26,
+        "value": "6572148",
+        "entity": "pass"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pass",
+        "start": 19,
+        "end": 26,
+        "confidence_entity": 0.9903895258903503,
+        "value": "6572148",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pass",
+        "start": 19,
+        "end": 26,
+        "confidence_entity": 0.8039688450413575,
+        "value": "6572148",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "0532146",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "0532146",
+        "entity": "pass"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.40929150581359863,
+        "value": "0532146",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pass",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.7972385703361584,
+        "value": "0532146",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "i want as account type savings account",
+    "entities": [
+      {
+        "start": 23,
+        "end": 38,
+        "value": "savings account",
+        "entity": "account_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "account_type",
+        "start": 23,
+        "end": 38,
+        "confidence_entity": 0.9989050626754761,
+        "value": "savings account",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "account_type",
+        "start": 23,
+        "end": 38,
+        "confidence_entity": 0.9065063811452769,
+        "value": "savings account",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "savings account",
+    "entities": [
+      {
+        "start": 0,
+        "end": 15,
+        "value": "savings account",
+        "entity": "account_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "account_type",
+        "start": 0,
+        "end": 15,
+        "confidence_entity": 0.9989482760429382,
+        "value": "savings account",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "account_type",
+        "start": 0,
+        "end": 15,
+        "confidence_entity": 0.8635390224295317,
+        "value": "savings account",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "i want as account type current account",
+    "entities": [
+      {
+        "start": 23,
+        "end": 38,
+        "value": "current account",
+        "entity": "account_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "account_type",
+        "start": 23,
+        "end": 38,
+        "confidence_entity": 0.9980481863021851,
+        "value": "current account",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "account_type",
+        "start": 23,
+        "end": 38,
+        "confidence_entity": 0.8860212957460373,
+        "value": "current account",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "current account",
+    "entities": [
+      {
+        "start": 0,
+        "end": 15,
+        "value": "current account",
+        "entity": "account_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "account_type",
+        "start": 0,
+        "end": 15,
+        "confidence_entity": 0.9977795481681824,
+        "value": "current account",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "account_type",
+        "start": 0,
+        "end": 15,
+        "confidence_entity": 0.840690614366458,
+        "value": "current account",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "i want as account type salary account",
+    "entities": [
+      {
+        "start": 23,
+        "end": 37,
+        "value": "salary account",
+        "entity": "account_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "account_type",
+        "start": 23,
+        "end": 37,
+        "confidence_entity": 0.9991626739501953,
+        "value": "salary account",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "account_type",
+        "start": 23,
+        "end": 37,
+        "confidence_entity": 0.9072474354240417,
+        "value": "salary account",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "salary account",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "salary account",
+        "entity": "account_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "account_type",
+        "start": 0,
+        "end": 14,
+        "confidence_entity": 0.9988648891448975,
+        "value": "salary account",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "account_type",
+        "start": 0,
+        "end": 14,
+        "confidence_entity": 0.864614545736949,
+        "value": "salary account",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "i want as credit type personal credit",
+    "entities": [
+      {
+        "start": 22,
+        "end": 37,
+        "value": "personal credit",
+        "entity": "credit_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "credit_type",
+        "start": 22,
+        "end": 37,
+        "confidence_entity": 0.9983443021774292,
+        "value": "personal credit",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "credit_type",
+        "start": 22,
+        "end": 37,
+        "confidence_entity": 0.9111564363941478,
+        "value": "personal credit",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "personal credit",
+    "entities": [
+      {
+        "start": 0,
+        "end": 15,
+        "value": "personal credit",
+        "entity": "credit_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "credit_type",
+        "start": 0,
+        "end": 15,
+        "confidence_entity": 0.9973387122154236,
+        "value": "personal credit",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "credit_type",
+        "start": 0,
+        "end": 15,
+        "confidence_entity": 0.8782668010783713,
+        "value": "personal credit",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "i want as credit type car credit",
+    "entities": [
+      {
+        "start": 22,
+        "end": 32,
+        "value": "car credit",
+        "entity": "credit_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "credit_type",
+        "start": 22,
+        "end": 32,
+        "confidence_entity": 0.9981639981269836,
+        "value": "car credit",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "credit_type",
+        "start": 22,
+        "end": 32,
+        "confidence_entity": 0.911356659054152,
+        "value": "car credit",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "car credit",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "car credit",
+        "entity": "credit_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "credit_type",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.9974489808082581,
+        "value": "car credit",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "credit_type",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.8678392841342639,
+        "value": "car credit",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "i want as credit type real estate credit",
+    "entities": [
+      {
+        "start": 22,
+        "end": 40,
+        "value": "real estate credit",
+        "entity": "credit_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "credit_type",
+        "start": 22,
+        "end": 40,
+        "confidence_entity": 0.993811845779419,
+        "value": "real estate credit",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "credit_type",
+        "start": 22,
+        "end": 40,
+        "confidence_entity": 0.8791259899178777,
+        "value": "real estate credit",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "real estate credit",
+    "entities": [
+      {
+        "start": 0,
+        "end": 18,
+        "value": "real estate credit",
+        "entity": "credit_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "credit_type",
+        "start": 0,
+        "end": 18,
+        "confidence_entity": 0.9942810535430908,
+        "value": "real estate credit",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "credit_type",
+        "start": 0,
+        "end": 18,
+        "confidence_entity": 0.805792810980646,
+        "value": "real estate credit",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "i want 40000 as credit amount",
+    "entities": [
+      {
+        "start": 7,
+        "end": 12,
+        "value": "40000",
+        "entity": "amount-of-money"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount-of-money",
+        "start": 7,
+        "end": 12,
+        "confidence_entity": 0.998894989490509,
+        "value": "40000",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "amount-of-money",
+        "start": 7,
+        "end": 12,
+        "confidence_entity": 0.8571214916457924,
+        "value": "40000",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "i want 50000 as a loan",
+    "entities": [
+      {
+        "start": 7,
+        "end": 12,
+        "value": "50000",
+        "entity": "amount-of-money"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount-of-money",
+        "start": 7,
+        "end": 12,
+        "confidence_entity": 0.9991239905357361,
+        "value": "50000",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "amount-of-money",
+        "start": 7,
+        "end": 12,
+        "confidence_entity": 0.8573780576412541,
+        "value": "50000",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "i would like to get 75000",
+    "entities": [
+      {
+        "start": 20,
+        "end": 25,
+        "value": "75000",
+        "entity": "amount-of-money"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount-of-money",
+        "start": 20,
+        "end": 25,
+        "confidence_entity": 0.9983329176902771,
+        "value": "75000",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "amount-of-money",
+        "start": 20,
+        "end": 25,
+        "confidence_entity": 0.813137001149641,
+        "value": "75000",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "i want only last five",
+    "entities": [
+      {
+        "start": 12,
+        "end": 21,
+        "value": "last five",
+        "entity": "transactions_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "transactions_type",
+        "start": 12,
+        "end": 21,
+        "confidence_entity": 0.9942113757133484,
+        "value": "last five",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "transactions_type",
+        "start": 12,
+        "end": 21,
+        "confidence_entity": 0.7247828051575346,
+        "value": "last five",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "i want All",
+    "entities": [
+      {
+        "start": 7,
+        "end": 10,
+        "value": "All",
+        "entity": "transactions_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "transactions_type",
+        "start": 7,
+        "end": 10,
+        "confidence_entity": 0.9915192723274231,
+        "value": "All",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "currency_dep",
+        "start": 7,
+        "end": 10,
+        "value": "All",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "currency_arriv",
+        "start": 7,
+        "end": 10,
+        "value": "All",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "transactions_type",
+        "start": 7,
+        "end": 10,
+        "confidence_entity": 0.6819782679953741,
+        "value": "All",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "server crash problem",
+    "entities": [
+      {
+        "start": 0,
+        "end": 20,
+        "value": "server crash problem",
+        "entity": "complaint_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "complaint_type",
+        "start": 0,
+        "end": 20,
+        "confidence_entity": 0.9803861975669861,
+        "value": "server crash problem",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "complaint_type",
+        "start": 0,
+        "end": 20,
+        "confidence_entity": 0.7778189438736989,
+        "value": "server crash problem",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "transactions problem",
+    "entities": [
+      {
+        "start": 0,
+        "end": 20,
+        "value": "transactions problem",
+        "entity": "complaint_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "complaint_type",
+        "start": 0,
+        "end": 20,
+        "confidence_entity": 0.9931746125221252,
+        "value": "transactions problem",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "complaint_type",
+        "start": 0,
+        "end": 20,
+        "confidence_entity": 0.789161921737108,
+        "value": "transactions problem",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "sign_in problem",
+    "entities": [
+      {
+        "start": 0,
+        "end": 15,
+        "value": "sign_in problem",
+        "entity": "complaint_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "complaint_type",
+        "start": 0,
+        "end": 15,
+        "confidence_entity": 0.9969305396080017,
+        "value": "sign_in problem",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "complaint_type",
+        "start": 0,
+        "end": 15,
+        "confidence_entity": 0.8359344526765281,
+        "value": "sign_in problem",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "other problem",
+    "entities": [
+      {
+        "start": 0,
+        "end": 13,
+        "value": "other problem",
+        "entity": "complaint_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "complaint_type",
+        "start": 0,
+        "end": 13,
+        "confidence_entity": 0.9966031312942505,
+        "value": "other problem",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "complaint_type",
+        "start": 0,
+        "end": 13,
+        "confidence_entity": 0.8559184599133378,
+        "value": "other problem",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "my rib is 1234568970035467",
+    "entities": [
+      {
+        "start": 10,
+        "end": 26,
+        "value": "1234568970035467",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "rib",
+        "start": 10,
+        "end": 26,
+        "confidence_entity": 0.9913124442100525,
+        "value": "1234568970035467",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 10,
+        "end": 26,
+        "confidence_entity": 0.7568768797086853,
+        "value": "1234568970035467",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "1478965230142678",
+    "entities": [
+      {
+        "start": 0,
+        "end": 16,
+        "value": "1478965230142678",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 16,
+        "confidence_entity": 0.40929150581359863,
+        "value": "1478965230142678",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 0,
+        "end": 16,
+        "confidence_entity": 0.739963153003338,
+        "value": "1478965230142678",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "my account number is 1478965230654789",
+    "entities": [
+      {
+        "start": 21,
+        "end": 37,
+        "value": "1478965230654789",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 21,
+        "end": 37,
+        "confidence_entity": 0.969894289970398,
+        "value": "1478965230654789",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 21,
+        "end": 37,
+        "confidence_entity": 0.28123626817713065,
+        "value": "1478965230654789",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "1034278596321547",
+    "entities": [
+      {
+        "start": 0,
+        "end": 16,
+        "value": "1034278596321547",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 16,
+        "confidence_entity": 0.40929150581359863,
+        "value": "1034278596321547",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 0,
+        "end": 16,
+        "confidence_entity": 0.7341263261454093,
+        "value": "1034278596321547",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "I have an issue with my credit card",
+    "entities": [
+      {
+        "start": 0,
+        "end": 35,
+        "value": "I have an issue with my credit card",
+        "entity": "problem"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "problem",
+        "start": 0,
+        "end": 35,
+        "confidence_entity": 0.9844641089439392,
+        "value": "I have an issue with my credit card",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "problem",
+        "start": 0,
+        "end": 35,
+        "confidence_entity": 0.6456941735626694,
+        "value": "I have an issue with my credit card",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "I have an email issue with transactions",
+    "entities": [
+      {
+        "start": 0,
+        "end": 39,
+        "value": "I have an email issue with transactions",
+        "entity": "problem"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "problem",
+        "start": 0,
+        "end": 39,
+        "confidence_entity": 0.9832983613014221,
+        "value": "I have an email issue with transactions",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "problem",
+        "start": 0,
+        "end": 39,
+        "confidence_entity": 0.8157338667796699,
+        "value": "I have an email issue with transactions",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "I cant't get the desired credit amount",
+    "entities": [
+      {
+        "start": 0,
+        "end": 38,
+        "value": "I cant't get the desired credit amount",
+        "entity": "problem"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "problem",
+        "start": 0,
+        "end": 38,
+        "confidence_entity": 0.9789822101593018,
+        "value": "I cant't get the desired credit amount",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "problem",
+        "start": 0,
+        "end": 38,
+        "confidence_entity": 0.733141414957336,
+        "value": "I cant't get the desired credit amount",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "i want to check all bank agencies",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "currency_dep",
+        "start": 16,
+        "end": 19,
+        "value": "all",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "currency_arriv",
+        "start": 16,
+        "end": 19,
+        "value": "all",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "i want to see all agencies",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "currency_dep",
+        "start": 14,
+        "end": 17,
+        "value": "all",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "currency_arriv",
+        "start": 14,
+        "end": 17,
+        "value": "all",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Yes track my location",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "Yes",
+        "entity": "track_status"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "track_status",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.9908639788627625,
+        "value": "Yes",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "track_status",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.5405699196181931,
+        "value": "Yes",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "NO don't track my location",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "NO",
+        "entity": "track_status"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "track_status",
+        "start": 0,
+        "end": 2,
+        "confidence_entity": 0.9927858114242554,
+        "value": "NO",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "track_status",
+        "start": 0,
+        "end": 2,
+        "confidence_entity": 0.7108269231948031,
+        "value": "NO",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "The reciver name is Ahmed Boukadida",
+    "entities": [
+      {
+        "start": 20,
+        "end": 35,
+        "value": "Ahmed Boukadida",
+        "entity": "full_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "full_name",
+        "start": 20,
+        "end": 35,
+        "confidence_entity": 0.9998212456703186,
+        "value": "Ahmed Boukadida",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "full_name",
+        "start": 20,
+        "end": 35,
+        "confidence_entity": 0.9718982915843104,
+        "value": "Ahmed Boukadida",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Amine Dhif",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "Amine Dhif",
+        "entity": "full_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.9995895028114319,
+        "value": "Amine Dhif",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.966040585120456,
+        "value": "Amine Dhif",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Jamel chaari",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "Jamel chaari",
+        "entity": "full_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.9995999932289124,
+        "value": "Jamel chaari",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.8931820164321668,
+        "value": "Jamel chaari",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Hassen ben Hmida",
+    "entities": [
+      {
+        "start": 0,
+        "end": 16,
+        "value": "Hassen ben Hmida",
+        "entity": "full_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 16,
+        "confidence_entity": 0.9989299178123474,
+        "value": "Hassen ben Hmida",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "full_name",
+        "start": 0,
+        "end": 16,
+        "confidence_entity": 0.9382709333957637,
+        "value": "Hassen ben Hmida",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "The reciver RIB is 1111112342",
+    "entities": [
+      {
+        "start": 19,
+        "end": 29,
+        "value": "1111112342",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "rib",
+        "start": 19,
+        "end": 29,
+        "confidence_entity": 0.9899823069572449,
+        "value": "1111112342",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 19,
+        "end": 29,
+        "confidence_entity": 0.8925182050279872,
+        "value": "1111112342",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "1111117428",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "1111117428",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.40929150581359863,
+        "value": "1111117428",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.8825826970416191,
+        "value": "1111117428",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "1111115745",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "1111115745",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.40929150581359863,
+        "value": "1111115745",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.8837101198383945,
+        "value": "1111115745",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "1111117989",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "1111117989",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.40929150581359863,
+        "value": "1111117989",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.8775841009755625,
+        "value": "1111117989",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "1111117976",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "1111117976",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.40929150581359863,
+        "value": "1111117976",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.8837101198383945,
+        "value": "1111117976",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "I want to send 250",
+    "entities": [
+      {
+        "start": 15,
+        "end": 18,
+        "value": "250",
+        "entity": "amount-of-money"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount-of-money",
+        "start": 15,
+        "end": 18,
+        "confidence_entity": 0.9985961318016052,
+        "value": "250",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "amount-of-money",
+        "start": 15,
+        "end": 18,
+        "confidence_entity": 0.7492649892902387,
+        "value": "250",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "1200",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "1200",
+        "entity": "amount-of-money"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_number",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.40929150581359863,
+        "value": "1200",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "amount-of-money",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.7551434065162691,
+        "value": "1200",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "340.700",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "340.700",
+        "entity": "amount-of-money"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount-of-money",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.9983261227607727,
+        "value": "340.700",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "amount-of-money",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.7245456523596309,
+        "value": "340.700",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "I want to convert 150 from EUR to USD",
+    "entities": [
+      {
+        "start": 18,
+        "end": 21,
+        "value": "150",
+        "entity": "transf_amount"
+      },
+      {
+        "start": 27,
+        "end": 30,
+        "value": "EUR",
+        "entity": "currency_dep"
+      },
+      {
+        "start": 34,
+        "end": 37,
+        "value": "USD",
+        "entity": "currency_arriv"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "transf_amount",
+        "start": 18,
+        "end": 21,
+        "confidence_entity": 0.9953659772872925,
+        "value": "150",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "currency_dep",
+        "start": 27,
+        "end": 30,
+        "confidence_entity": 0.9982947707176208,
+        "value": "EUR",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "currency_arriv",
+        "start": 34,
+        "end": 37,
+        "confidence_entity": 0.9985349178314209,
+        "value": "USD",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "currency_dep",
+        "start": 27,
+        "end": 30,
+        "value": "EUR",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "currency_dep",
+        "start": 34,
+        "end": 37,
+        "value": "USD",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "currency_arriv",
+        "start": 27,
+        "end": 30,
+        "value": "EUR",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "currency_arriv",
+        "start": 34,
+        "end": 37,
+        "value": "USD",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "amount-of-money",
+        "start": 18,
+        "end": 21,
+        "value": "150",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "transf_amount",
+        "start": 18,
+        "end": 21,
+        "confidence_entity": 0.9064269269090645,
+        "value": "150",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "currency_dep",
+        "start": 27,
+        "end": 30,
+        "confidence_entity": 0.9469016465098942,
+        "value": "EUR",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "currency_arriv",
+        "start": 34,
+        "end": 37,
+        "confidence_entity": 0.9546508202922239,
+        "value": "USD",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "I wish to transform 75 from EUR to USD",
+    "entities": [
+      {
+        "start": 20,
+        "end": 22,
+        "value": "75",
+        "entity": "transf_amount"
+      },
+      {
+        "start": 28,
+        "end": 31,
+        "value": "EUR",
+        "entity": "currency_dep"
+      },
+      {
+        "start": 35,
+        "end": 38,
+        "value": "USD",
+        "entity": "currency_arriv"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "transf_amount",
+        "start": 20,
+        "end": 22,
+        "confidence_entity": 0.9959509372711182,
+        "value": "75",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "currency_dep",
+        "start": 28,
+        "end": 31,
+        "confidence_entity": 0.9986226558685303,
+        "value": "EUR",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "currency_arriv",
+        "start": 35,
+        "end": 38,
+        "confidence_entity": 0.9986656904220581,
+        "value": "USD",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "currency_dep",
+        "start": 28,
+        "end": 31,
+        "value": "EUR",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "currency_dep",
+        "start": 35,
+        "end": 38,
+        "value": "USD",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "currency_arriv",
+        "start": 28,
+        "end": 31,
+        "value": "EUR",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "currency_arriv",
+        "start": 35,
+        "end": 38,
+        "value": "USD",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "transf_amount",
+        "start": 20,
+        "end": 22,
+        "confidence_entity": 0.8462234429243256,
+        "value": "75",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "currency_dep",
+        "start": 28,
+        "end": 31,
+        "confidence_entity": 0.9468367236593842,
+        "value": "EUR",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "currency_arriv",
+        "start": 35,
+        "end": 38,
+        "confidence_entity": 0.9546508111117482,
+        "value": "USD",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Convert 220 from EUR to USD",
+    "entities": [
+      {
+        "start": 8,
+        "end": 11,
+        "value": "220",
+        "entity": "transf_amount"
+      },
+      {
+        "start": 17,
+        "end": 20,
+        "value": "EUR",
+        "entity": "currency_dep"
+      },
+      {
+        "start": 24,
+        "end": 27,
+        "value": "USD",
+        "entity": "currency_arriv"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "transf_amount",
+        "start": 8,
+        "end": 11,
+        "confidence_entity": 0.997506320476532,
+        "value": "220",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "currency_dep",
+        "start": 17,
+        "end": 20,
+        "confidence_entity": 0.9985172152519226,
+        "value": "EUR",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "currency_arriv",
+        "start": 24,
+        "end": 27,
+        "confidence_entity": 0.9987848401069641,
+        "value": "USD",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "currency_dep",
+        "start": 17,
+        "end": 20,
+        "value": "EUR",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "currency_dep",
+        "start": 24,
+        "end": 27,
+        "value": "USD",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "currency_arriv",
+        "start": 17,
+        "end": 20,
+        "value": "EUR",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "currency_arriv",
+        "start": 24,
+        "end": 27,
+        "value": "USD",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "transf_amount",
+        "start": 8,
+        "end": 11,
+        "confidence_entity": 0.8887700430094452,
+        "value": "220",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "currency_dep",
+        "start": 17,
+        "end": 20,
+        "confidence_entity": 0.9469262493494489,
+        "value": "EUR",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "currency_arriv",
+        "start": 24,
+        "end": 27,
+        "confidence_entity": 0.9546507378630978,
+        "value": "USD",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Transform 350 from EUR to USD",
+    "entities": [
+      {
+        "start": 10,
+        "end": 13,
+        "value": "350",
+        "entity": "transf_amount"
+      },
+      {
+        "start": 19,
+        "end": 22,
+        "value": "EUR",
+        "entity": "currency_dep"
+      },
+      {
+        "start": 26,
+        "end": 29,
+        "value": "USD",
+        "entity": "currency_arriv"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "transf_amount",
+        "start": 10,
+        "end": 13,
+        "confidence_entity": 0.9974017143249512,
+        "value": "350",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "currency_dep",
+        "start": 19,
+        "end": 22,
+        "confidence_entity": 0.9987592697143555,
+        "value": "EUR",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "currency_arriv",
+        "start": 26,
+        "end": 29,
+        "confidence_entity": 0.998781144618988,
+        "value": "USD",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "currency_dep",
+        "start": 19,
+        "end": 22,
+        "value": "EUR",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "currency_dep",
+        "start": 26,
+        "end": 29,
+        "value": "USD",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "currency_arriv",
+        "start": 19,
+        "end": 22,
+        "value": "EUR",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "currency_arriv",
+        "start": 26,
+        "end": 29,
+        "value": "USD",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "transf_amount",
+        "start": 10,
+        "end": 13,
+        "confidence_entity": 0.8954398086025261,
+        "value": "350",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "currency_dep",
+        "start": 19,
+        "end": 22,
+        "confidence_entity": 0.9469660222721382,
+        "value": "EUR",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "currency_arriv",
+        "start": 26,
+        "end": 29,
+        "confidence_entity": 0.9546506941835081,
+        "value": "USD",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Change 50 from EUR to USD",
+    "entities": [
+      {
+        "start": 7,
+        "end": 9,
+        "value": "50",
+        "entity": "transf_amount"
+      },
+      {
+        "start": 15,
+        "end": 18,
+        "value": "EUR",
+        "entity": "currency_dep"
+      },
+      {
+        "start": 22,
+        "end": 25,
+        "value": "USD",
+        "entity": "currency_arriv"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "transf_amount",
+        "start": 7,
+        "end": 9,
+        "confidence_entity": 0.9969794750213623,
+        "value": "50",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "currency_dep",
+        "start": 15,
+        "end": 18,
+        "confidence_entity": 0.9982849955558777,
+        "value": "EUR",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "currency_arriv",
+        "start": 22,
+        "end": 25,
+        "confidence_entity": 0.9985681772232056,
+        "value": "USD",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "currency_dep",
+        "start": 15,
+        "end": 18,
+        "value": "EUR",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "currency_dep",
+        "start": 22,
+        "end": 25,
+        "value": "USD",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "currency_arriv",
+        "start": 15,
+        "end": 18,
+        "value": "EUR",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "currency_arriv",
+        "start": 22,
+        "end": 25,
+        "value": "USD",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "amount-of-money",
+        "start": 7,
+        "end": 9,
+        "value": "50",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "transf_amount",
+        "start": 7,
+        "end": 9,
+        "confidence_entity": 0.8994765400431303,
+        "value": "50",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "currency_dep",
+        "start": 15,
+        "end": 18,
+        "confidence_entity": 0.9470389605572788,
+        "value": "EUR",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "currency_arriv",
+        "start": 22,
+        "end": 25,
+        "confidence_entity": 0.9546506333606142,
+        "value": "USD",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Convert 12 EUR to USD",
+    "entities": [
+      {
+        "start": 8,
+        "end": 10,
+        "value": "12",
+        "entity": "transf_amount"
+      },
+      {
+        "start": 11,
+        "end": 14,
+        "value": "EUR",
+        "entity": "currency_dep"
+      },
+      {
+        "start": 18,
+        "end": 21,
+        "value": "USD",
+        "entity": "currency_arriv"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "transf_amount",
+        "start": 8,
+        "end": 10,
+        "confidence_entity": 0.9958384037017822,
+        "value": "12",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "currency_dep",
+        "start": 11,
+        "end": 14,
+        "confidence_entity": 0.997796893119812,
+        "value": "EUR",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "currency_arriv",
+        "start": 18,
+        "end": 21,
+        "confidence_entity": 0.9983695149421692,
+        "value": "USD",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "currency_dep",
+        "start": 11,
+        "end": 14,
+        "value": "EUR",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "currency_dep",
+        "start": 18,
+        "end": 21,
+        "value": "USD",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "currency_arriv",
+        "start": 11,
+        "end": 14,
+        "value": "EUR",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "currency_arriv",
+        "start": 18,
+        "end": 21,
+        "value": "USD",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "amount-of-money",
+        "start": 8,
+        "end": 10,
+        "value": "12",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "transf_amount",
+        "start": 8,
+        "end": 10,
+        "confidence_entity": 0.8517378688405206,
+        "value": "12",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "currency_dep",
+        "start": 11,
+        "end": 14,
+        "confidence_entity": 0.9814509888364651,
+        "value": "EUR",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "currency_arriv",
+        "start": 18,
+        "end": 21,
+        "confidence_entity": 0.9546437521293799,
+        "value": "USD",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  }
+]

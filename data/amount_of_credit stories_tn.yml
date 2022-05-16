@@ -1,0 +1,153 @@
+version: "3.0"
+stories:
+- story: possible_personal_credit_amount_5_tn
+  steps:
+  - intent: possible_credit_tn
+  - action: action_credit_type_tn
+  - intent: personal_credit_tn
+    entities: 
+      - credit_type: "credit personnel"
+  - slot_was_set:
+      - credit_type: "credit personnel"
+  - action: utter_enter_salary_tn
+  - intent: salaire_tn
+  - action: action_personal_credit_duration_tn
+  - intent: get_duration5_tn
+    entities: 
+      - duration: "5"
+  - slot_was_set:
+      - duration: "5"
+  - action: action_possible_credit_tn
+
+- story: possible_personal_credit_amount_7_tn
+  steps:
+  - intent: possible_credit_tn
+  - action: action_credit_type_tn
+  - intent: personal_credit_tn
+    entities: 
+      - credit_type: "credit personnel"
+  - slot_was_set:
+      - credit_type: "credit personnel"
+  - action: utter_enter_salary_tn
+  - intent: salaire_tn
+  - action: action_personal_credit_duration_tn
+  - intent: get_duration7_tn
+    entities: 
+      - duration: "7"
+  - slot_was_set:
+      - duration: "7"
+  - action: action_possible_credit_tn
+
+- story: possible_car_credit_amount_5_tn
+  steps:
+  - intent: possible_credit_tn
+  - action: action_credit_type_tn
+  - intent: car_credit_tn
+    entities: 
+      - credit_type: "credit voiture"
+  - slot_was_set:
+      - credit_type: "credit voiture"
+  - action: utter_enter_salary_tn
+  - intent: salaire_tn
+  - action: action_car_credit_duration_tn
+  - intent: get_duration5_tn
+    entities: 
+      - duration: "5"
+  - slot_was_set:
+      - duration: "5"
+  - action: action_possible_credit_tn
+
+- story: possible_car_credit_amount_7_tn
+  steps:
+  - intent: possible_credit_tn
+  - action: action_credit_type_tn
+  - intent: car_credit_tn
+    entities: 
+      - credit_type: "credit voiture"
+  - slot_was_set:
+      - credit_type: "credit voiture"
+  - action: utter_enter_salary_tn
+  - intent: salaire_tn
+  - action: action_car_credit_duration_tn
+  - intent: get_duration7_tn
+    entities: 
+      - duration: "7"
+  - slot_was_set:
+      - duration: "7"
+  - action: action_possible_credit_tn
+
+- story: possible_car_credit_amount_10_tn
+  steps:
+  - intent: possible_credit_tn
+  - action: action_credit_type_tn
+  - intent: car_credit_tn
+    entities: 
+      - credit_type: "credit voiture"
+  - slot_was_set:
+      - credit_type: "credit voiture"
+  - action: utter_enter_salary_tn
+  - intent: salaire_tn
+  - action: action_car_credit_duration_tn
+  - intent: get_duration10_tn
+    entities: 
+      - duration: "10"
+  - slot_was_set:
+      - duration: "10"
+  - action: action_possible_credit_tn
+
+- story: possible_real_estate_credit_amount_10_tn
+  steps:
+  - intent: possible_credit_tn
+  - action: action_credit_type_tn
+  - intent: real_estate_credit_tn
+    entities: 
+      - credit_type: "credit immobilier"
+  - slot_was_set:
+      - credit_type: "credit immobilier"
+  - action: utter_enter_salary_tn
+  - intent: salaire_tn
+  - action: action_real_estate_credit_duration_tn
+  - intent: get_duration10_tn
+    entities: 
+      - duration: "10"
+  - slot_was_set:
+      - duration: "10"
+  - action: action_possible_credit_tn
+
+- story: possible_real_estate_credit_amount_15_tn
+  steps:
+  - intent: possible_credit_tn
+  - action: action_credit_type_tn
+  - intent: real_estate_credit_tn
+    entities: 
+      - credit_type: "credit immobilier"
+  - slot_was_set:
+      - credit_type: "credit immobilier"
+  - action: utter_enter_salary_tn
+  - intent: salaire_tn
+  - action: action_real_estate_credit_duration_tn
+  - intent: get_duration15_tn
+    entities: 
+      - duration: "15"
+  - slot_was_set:
+      - duration: "15"
+  - action: action_possible_credit_tn
+
+- story: possible_real_estate_credit_amount_20_tn
+  steps:
+  - intent: possible_credit_tn
+  - action: action_credit_type_tn
+  - intent: real_estate_credit_tn
+    entities: 
+      - credit_type: "credit immobilier"
+  - slot_was_set:
+      - credit_type: "credit immobilier"
+  - action: utter_enter_salary_tn
+  - intent: salaire_tn
+  - action: action_real_estate_credit_duration_tn
+  - intent: get_duration20_tn
+    entities: 
+      - duration: "20"
+  - slot_was_set:
+      - duration: "20"
+  - action: action_possible_credit_tn

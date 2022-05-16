@@ -1,0 +1,115 @@
+version: "3.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: intent Name after utter_enter_your_name
+  steps:
+  - action: utter_enter_your_name
+  - intent: Name
+
+- rule: utter_enter_your_last_name after Name  
+  steps:
+  - intent: Name
+  - action: utter_enter_your_last_name
+
+- rule:  intent last_name after utter_enter_your_last_name    
+  steps:
+  - action: utter_enter_your_last_name
+  - intent: last_Name
+
+- rule:  utter_enter_email after last_Name
+  steps:
+  - intent: last_Name
+  - action: utter_enter_email
+
+- rule: intent email after utter_enter_email 
+  steps:
+  - action: utter_enter_email
+  - intent: email 
+
+- rule: utter_enter_birthdate after intent email 
+  steps:
+  - intent: email 
+  - action: utter_enter_birthdate
+
+- rule: intent birthdate after utter_enter_birthdate 
+  steps:
+  - action: utter_enter_birthdate
+  - intent: birthdate
+
+- rule: utter_enter_number after intent birthdate 
+  steps:
+  - intent: birthdate
+  - action: utter_enter_number
+
+- rule: intent number after utter_enter_number 
+  steps:
+  - action: utter_enter_number
+  - intent: number
+
+- rule: utter_enter_adress after intent number 
+  steps:
+  - intent: number
+  - action: utter_enter_adress
+
+- rule: intent address after utter_enter_adress 
+  steps:
+  - action: utter_enter_adress
+  - intent: address
+
+- rule: action_create_account after intent address 
+  steps:
+  - intent: address
+  - action: action_create_account
+
+- rule: Say goodbye anytime the user says goodbye_tn
+  steps:
+  - intent: goodbye_tn
+  - action: utter_goodbye_tn
+
+- rule: Say 'I am a bot' anytime the user challenges_tn
+  steps:
+  - intent: bot_challenge_tn
+  - action: utter_iamabot_tn
+
+- rule: Ask the user to rephrase whenever they send a message with low NLU confidence_tn
+  steps:
+  - intent: nlu_fallback_tn
+  - action: utter_please_rephrase_tn
+
+- rule: currency_convert_tn
+  steps:
+  - intent: convert_currency_tn
+  - action: action_currency_calculator_tn
+
+- rule: utter_why_our_bank after intent why_your_bank_tn
+  steps:
+  - intent: why_your_bank_tn
+  - action: utter_why_our_bank_tn
+
+- rule: utter_request_number after cheque_request_status_tn
+  steps:
+    - intent: cheque_request_status_tn
+    - action: utter_request_number_tn
+  
+- rule: cheque_request_number after utter_request_number_tn
+  steps:
+    - action: utter_request_number_tn
+    - intent: cheque_request_number_tn
+
+- rule: action_cheque_request_status after cheque_request_number_tn 
+  steps:
+    - intent: cheque_request_number_tn
+    - action: action_cheque_request_status_tn
+
+

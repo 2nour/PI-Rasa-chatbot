@@ -1,0 +1,29 @@
+version: "3.0"
+stories:
+- story: transfer_money_story with submit_tn
+  steps:
+  - intent: transfer_money_tn
+  - action: utter_enter_reciever_rib_tn
+  - intent: reciever_rib_tn
+  - action: action_verif_rib_name_tn
+  - intent: submit_bool
+    entities: 
+      - sub_b: "oui"
+  - slot_was_set:
+      - sub_b: "oui"
+  - action: utter_enter_amount_send_tn
+  - intent: amount_sent_tn
+  - action: action_transfer_money_tn
+
+- story: transfer_money_story with no submit_tn
+  steps:
+  - intent: transfer_money_tn
+  - action: utter_enter_reciever_rib_tn
+  - intent: reciever_rib_tn
+  - action: action_verif_rib_name_tn
+  - intent: submit_bool
+    entities: 
+      - sub_b: "non"
+  - slot_was_set:
+      - sub_b: "non"
+  - action: utter_check_rib_tn

@@ -1,0 +1,9 @@
+version: "3.0"
+stories:
+- story: possible_account_types1
+  steps:
+  - intent: check_type_of_accounts
+  - action: utter_show_account_types
+  - action: utter_need_more_assist
+
+

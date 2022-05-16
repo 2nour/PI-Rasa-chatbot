@@ -1,0 +1,6 @@
+version: "3.0"
+stories:
+- story: extrait_bnk
+  steps:
+  - intent: extrait_bnk_fr
+  - action: action_extrait_bnk_fr
